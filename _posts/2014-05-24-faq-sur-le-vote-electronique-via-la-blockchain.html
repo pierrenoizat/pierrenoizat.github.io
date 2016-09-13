@@ -1,0 +1,58 @@
+---
+layout: post
+title: FAQ sur le vote électronique via la blockchain
+date: 2014-05-24 13:01:10.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Technologie
+tags: []
+meta:
+  dsq_thread_id: '2709555624'
+  _edit_last: '1'
+  _bitmonet: ''
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>En complément de mon article précédent décrivant une méthode de vote électronique à bulletin secret, vérifiable et gratuit, voici une brève foire aux questions. Les questions ont été posées par des lecteurs que je remercie pour leur compréhension (merci Laurent et Meska!) et leur perspicacité.</p>
+<p><img src="{{ site.baseurl }}/assets/344752_un-bureau-de-vote-a-nantes-le-17-juin-2012-e1400947735437.jpg" alt="Bureau de vote traditionnel" /></p>
+<p><strong>Quel avantage par rapport à un vote traditionnel ?</strong></p>
+<p>Evidemment, la mise en place du vote est simplifiée: gain de temps pour les électeurs et les organisateurs, notamment la location des lieux de vote et la mobilisation des équipes pour les garder. Le dépouillement est immédiat: le juge arbitre est la chaîne de blocs. Elle ne peut pas être compromise en pratique et elle peut être explorée par des outils open source, gratuits et indépendants. Exemples d'explorateurs de la chaîne de blocs Bitcoin: <a href="https://blockchain.info" target="_blank">blockchain.info</a>, <a href="http://blockr.io" target="_blank">blockr.io</a> et <a href="https://chain.com" target="_blank">chain.com</a>.</p>
+<p><strong>Qu'est ce qui empêche quelqu'un de voter plusieurs fois depuis plusieurs adresses ?</strong> </p>
+<p>Chacun des N électeurs est identifié par une clé publique KeyA différente, fournie par l'organisateur.<br />
+L'organisateur publie la racine de l'arbre de Merkle comprenant toute ces clés. Il fournit aussi à l'électeur le chemin reliant sa clé KeyA à la racine de sorte que chacun peut vérifier la liste électorale.<br />
+L'électeur prépare une adresse multi-signature qui est l'équivalent d'un bulletin de vote dans une enveloppe scellée.<br />
+Lorsque N adresses multi-signature, chacune représentant un bulletin secret, ont été enregistrées auprès des organisateurs, ils stoppent l'enregistrement et publient la liste des adresses. A ce moment là, si un électeur se plaint que son adresse n'est pas dans la liste ou qu'il n'a pas pu enregistré une adresse, c'est qu'il y a un tricheur qui a enregistré plusieurs adresses.</p>
+<p>Bien sûr, la vérification proposée via la blockchain ne permet pas de déterminer qui a voté quoi mais simplement les deux points suivants:<br />
+1. combien de vote a reçu chaque candidat.<br />
+2. chaque vote correspond à une adresse enregistrée (impossible de l'associer à un électeur : seul l'électeur sait qu'elle lui appartient).<br />
+Chaque électeur peut vérifier que son adresse figure bien dans la liste des adresses enregistrées.<br />
+On peut vérifier qu'il n'y a pas plus d'adresses que d'électeurs.</p>
+<p><strong>Le candidat Dupont sait quand même, avec un simple "getbalance" combien il a de votes en temps réel?</strong></p>
+<p>La recommandation doit être de n'envoyer son vote que le jour du scrutin et pas avant.</p>
+<p>Le candidat peut en effet savoir en temps réel où il en est et essayer d'influencer les indécis.<br />
+A cet égard, sur ce point particulier, la situation ne serait pas pire qu'avec le vote traditionnel où des sondages sont faits le jour du vote mais ne peuvent être publiés qu'après la clôture. En réalité, il y a des fuites et les partis les plus puissants connaissent les résultats avant le dépouillement.</p>
+<p>En synthèse, le schéma de vote électronique proposé n'est pas parfait mais il est simplement plus performant que le vote traditionnel sur à peu près tous les critères et il est gratuit !</p>
+<p><strong>KeyB est une clé publique détenue par le votant et connue de lui seul. C'est bien ça ?</strong></p>
+<p>C'est ça. Cependant, en cas de contrôle suite à une contestation, la commission de contrôle peut demander à l'électeur sa clé KeyB.</p>
+<p><strong>KeyC est publiée par le candidat et connue de tous pour permettre le vote. Exact ?</strong></p>
+<p>Non le candidat fournit à chaque électeur une clé KeyC différente. Si il y a N électeurs, le candidat doit donc générer N clés KeyC et publier la racine d'un arbre de Merkle constitué de toutes ces clés. La commission de contrôle peut demander au candidat la liste (anonyme) de ces clés et vérifier que la liste fournie après coup correspond bien à la racine de Merkle publiée précédemment par le candidat avec son adresse 1Dupont...</p>
+<p><strong>A l'étape 3, comment l'association fait elle pour vérifier que l'addresse proposée est valide ?</strong> Dans ma compréhension de BIP16, le hash fourni n'est pas réversible et il n'est donc pas possible pour l'association de vérifier qu'il contient KeyA. Qu'ai-je raté ?</p>
+<p>L'étape 3 correspond, dans un vote traditionnel, à la préparation de l'enveloppe scellée contentant le bulletin secret. Elle peut se dérouler pendant toute la campagne électorale jusqu'au jour du vote, quand le bulletin est définitivement placé dans l'urne (étape 4).<br />
+C'est vrai, l'électeur peut fournir une adresse Bitcoin quelconque: ça signifie un vote blanc car l'input de la transaction à destination de l'adresse V doit être de la forme<br />
+SignatureB SignatureC SerializedScript<br />
+où SerializedScript = OP_0 OP_2 KeyA KeyB KeyC OP_3 OP_CHECKMULTISIG<br />
+Tout le monde peut vérifier que l'input contient une clé KeyA de la liste électorale.<br />
+Si l'adresse fournie par l'électeur était quelconque, il n'y aucune chance qu'un tel input marche avec l'adresse en question.</p>
+<p><strong>A l'étape 4, l'idée est que les candidats ne connaissent pas les transactions qui les concernent et essaient donc de signer toutes les outputs reçues, seules celles les concernant pouvant être validées au final. C'est bien ça ?</strong><br />
+C'est exactement ça.</p>
+<p><strong>A l'étape 4, concernant l'impossibilité de connaitre les votes avant le dépouillement</strong>:<br />
+Dans ma compréhension, Bip16 nécessite de révéler les clés publiques (et donc KeyC) au moment de consommer une addresse multisig . Même sans tenir compte de BIP16, le fait de pouvoir retrouver la clé publique à partir d'une signature ecdsa me parait poser problème pour cacher les transactions signées avec succès par KeyC et donc le nombre de votes reçus par le candidat.</p>
+<p>C'est vrai: à l'étape 4, le candidat Dupont (et l'électeur) qui sont les seuls à savoir à qui appartient Key C (cf ma réponse à votre deuxième question) savent qu'un vote a été effectué en faveur de Dupont. Le candidat sait où il en est en temps réel, contrairement à l'électeur, qui, lui, ne connait pas les clés KeyC des autres électeurs. C'est un peu comme les sondages "sorties des urnes"  mais en plus exact. Comme pour ces sondages, il doit y avoir un embargo sur cette information jusqu'à la fin de la période de vote qui doit être réduite à une journée au plus.</p>
+<p><strong>A l'étape 5, une fois les votes révélés (fonds transférés vers l'adresse du candidat), une analyse de la blockchain ne risque t'elle pas de révéler la chaine des transactions amonts et donc l'association KeyB (votant) / KeyC (candidat) et potentiellement l'identité du votant s'il n'a pas pris de mesures particulières pour anonymiser sa possession de KeyB ?</strong></p>
+<p>C'est vrai aussi: il faut peut être prévoir la possibilité pour chaque électeur de faire passer préalablement ses bitcoins par un "mixer" de la communauté des électeurs.</p>

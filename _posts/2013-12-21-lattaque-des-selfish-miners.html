@@ -1,0 +1,46 @@
+---
+layout: post
+title: L'attaque des "selfish miners"
+date: 2013-12-21 18:49:52.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '2065533221'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Une récente publication de Cornell University prétendait avoir trouvé une faille dans les protocole bitcoin.<br />
+Ce n'est pas la première fois que des chercheurs en mal de célébrité essayent de "désinventer" bitcoin à défaut de pouvoir en revendiquer l'invention.<br />
+Une fois de plus, leur travail en chambre, sans échanges avec la communauté bitcoin, comportent des erreurs et leurs conclusions sont fausses.<br />
+Toutefois, cette publication a eu le mérite de susciter une discussion publique et intéressante sur la mécanique subtile du minage, cette activité qui régule la création monétaire des bitcoins et assure la sécurité des transactions.<br />
+Pour rappel et pour simplifier, la puissance de calcul combinée des mineurs assure l'intégrité de la base de données des transactions bitcoin (la "chaîne de blocs") car la réécriture de l'historique des transactions supposerait de mobiliser durablement une puissance de calcul supérieure.<br />
+L'intérêt de cet exercice académique n'est finalement pas négligeable: en imaginant une attaque d'un nouveau type sur le réseau bitcoin, ils nous forcent à expliciter les contre-mesures déjà implicitement intégrées dans ce protocole.<br />
+Commençons par décrire l'attaque imaginée par ces chercheurs ingénieux, que nous appellerons l'attaque des "selfish miners" (mineurs égoïstes): un ou plusieurs mineurs cessent de miner la chaîne la plus longue (non pas au sens du nombre de blocs mais au sens de la difficulté, c'est à dire du temps de calcul qui serait nécessaire pour réécrire l'historique des transactions ) pour miner leur propre chaîne. Au début, leur propre chaîne est identique à la chaîne la plus longue.</p>
+<p><img src="{{ site.baseurl }}/assets/decentralization-e1384688301740.jpg" alt="Décentralisation" /></p>
+<p>Pourquoi les conclusions sont fausses: parce que certaines hypothèses sont fausses.<br />
+La plus flagrante est la suivante:<br />
+<strong>"We assume that miners are rational; that is, they try to maximize their revenue, and may deviate from the protocol to do so."<br />
+</strong><br />
+Si les mineurs dévient du protocole, ils contribuent à diminuer la valeur des bitcoins, qui représentent précisément la valeur du réseau et de son protocole.<br />
+Leur revenue en bitcoin (les mineurs sont payés en bitcoins) est donc affecté négativement par cet effet de bord, dans une proportion que ce travail académique ignore complètement.<br />
+En particulier, si le "selfish" mining pool regroupait plus de 50% de la puissance de calcul,comme les auteurs le supposent, le réseau perdrait son caractère décentralisé et, par là, une grande partie de sa valeur: les bitcoins se rapprocheraient d'une monnaie numérique centralisée comme il en a existé beaucoup par le passé (par exemple, Liberty Reserve).<br />
+Par conséquent, conscients de cette possibilité, les mineurs rationnels ne rejoindraient pas ce pool. On est donc ramené à supposer qu'une seule et même entité constituerait ce pool. De fait, cette attaque "selfish mine" n'est pas fondamentalement différente de l'attaque des 51%: dans tous les cas, les mineurs honnêtes (ceux qui minent systématiquement la chaîne la pus longue conformément au protocole) identifieraient l'origine des blocs de ce pool au bout d'un certains temps: ils leur suffiraient d'invalider alors la chaîne hostile en plaçant un point de contrôle (checkpoint) dans le code, à la faveur d'un upgrade.</p>
+<p><strong>"if at any time a single pool exceeds threshold (le document calcule 25% de la puissance de calcul comme seuil) it can execute Selfish-Mine, causing a phase transition where rational miners will want to join that pool, leading to a collapse."</strong><br />
+Cette phrase est carrément contradictoire: les mineurs qui adoptent une stratégie conduisant à la centralisation du réseau ne sont pas rationnels au sens de la maximisation de leurs revenus tirés du réseau. Ils agissent donc dans le seul but de prendre le contrôle du réseau pour maximiser d'autres revenus: il s'agit en fait d'une attaque des 51%.</p>
+<p><strong>" ..a savvy pool operator can perform a sybil attack on honest miners by adding a significant number of zero-power miners to the Bitcoin miner network. These virtual miners act as advance sensors by participating in data dissemination, but do not mine new blocks."</strong><br />
+C'est la partie la plus intéressante de la publication car cette attaque est tout à fait possible.<br />
+La recommandation finale contre cette attaque est remarquablement simple: les mineurs doivent choisir au hasard entre plusieurs blocs valides reçus quasiment en même temps plutôt que de ne garder que le premier bloc valide reçu.<br />
+Toutefois l'avantage espéré avec cette nouvelle stratégie  (faire passer le seuil de faisabilité d'une attaque "selfish mine" de 0 à 25% de la puissance de calcul du réseau) n'est pas pertinent puisqu'il faut en réalité une attaque des 51% pour faire basculer la situation. La stratégie des mineurs rationnels reste donc la même: quitter tout mining pool qui se rapproche du seuil fatidique des 51% ou qui se livre à des stratégies susceptibles d'influencer négativement la valeur des bitcoins.<br />
+Par ailleurs, il est possible d'introduire sur le réseau bitcoin quelques nouvelles règles pour les relais du réseau qui protégerait son protocole de messagerie contre ce type d'attaque. Ces règles pourraient comporter par exemple l'obligation pour un noeud du réseau de présenter une preuve de calcul pour se connecter et/ou l'obligation d'être préalablement reconnu par un certain nombre d'autres noeuds réputés "honnêtes".<br />
+On voit bien que la robustesse du protocole actuel résiste déjà à toutes sortes de scénarios et fait avancer à grands pas les réflexions sur les réseaux peser-to-peer décentralisés: attendons nous à ce que la décentralisation continue de s'appliquer à l'ensemble des secteurs économiques et plus seulement au courrier ou aux transactions électroniques.</p>

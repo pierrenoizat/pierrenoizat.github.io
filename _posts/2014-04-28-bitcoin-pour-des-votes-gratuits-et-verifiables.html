@@ -1,0 +1,61 @@
+---
+layout: post
+title: Bitcoin pour des votes gratuits et vérifiables
+date: 2014-04-28 09:02:32.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- vote
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+  dsq_thread_id: '2644490555'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Le champs d'application des transactions sécurisées est très vaste. Une transaction électronique n'est rien d'autre qu'un message numérique signé.<br />
+Dès lors, on peut envisager un vote électronique via le réseau bitcoin.</p>
+<p><img src="{{ site.baseurl }}/assets/votez_pour_moi-e1398679254383.jpg" alt="Votez pour moi" /></p>
+<p>Avant l'invention de bitcoin, les solutions de votes électroniques n'étaient pas satisfaisantes car elles n'étaient pas facilement auditables et pas assez transparentes, ni pour les candidats ni pour les électeurs. De plus elles nécessitaient une mise en place parfois coûteuse.<br />
+Avec la blockchain Bitcoin, n'importe quelle communauté peut organiser gratuitement un vote électronique sécurisé.<br />
+Je pense à des associations ou des entreprises qui pourraient envisager cette technologie pour les votes aux AG.<br />
+Voici comment ça pourrait se dérouler pour une association:</p>
+<p>1) <strong>Connaître la liste des candidats:</strong><br />
+Chaque candidat (C) fournit une clé publique KeyC à l'électeur et publie partout une adresse associée à son nom du genre 1Dupont.. pour le candidat Dupont</p>
+<p>2) <strong>Contrôler la liste électorale:</strong><br />
+Chaque électeur (B) reçoit aussi de l'association (A) une clé publique KeyA qui est listée sur le site.<br />
+La liste électorale est contrôlable indépendamment par toutes les parties car chacun peut vérifier qu'il est sur liste et que le nombre de clés publiques est égal au nombre de membres dans l'association. Les clés publiques <keya> doivent être quelconques, c'est à dire ne pas se trouver sur la courbe elliptique bitcoin pour éviter que les organisateurs (l'association) puisse produire une signature valide. Cette précaution est aussi vérifiable indépendamment. </p>
+<p>3) <strong>Préparer son bulletin de vote</strong><br />
+Avant le jour du vote, avec ces clés publiques, l'électeur crée une <strong>adresse multi-signature 2-sur-3</strong> et envoie vers elle une micro-transaction 0,001 BTC (environ le prix d'un timbre poste) sur cette adresse pour préparer son bulletin de vote qui s'inscrit dans la blockchain.<br />
+L'output (destination) de sa micro-transaction a cet aspect:<br />
+<strong>OP_HASH160 Hash OP_EQUAL</strong></p>
+<p>où Hash est l'empreinte numérique calculée par le wallet bitcoin à partir du script SerializedScript suivant:<br />
+<strong>OP_0 OP_2 KeyA KeyB KeyC OP_3 OP_CHECKMULTISIG</strong></p>
+<p>Cette transaction est conforme à <a href="https://en.bitcoin.it/wiki/BIP_0016" title="BPI 0016" target="_blank">BIP-16</a>.<br />
+Les "Bitcoin Improvement Proposals" (BIP) sont l'équivalent des RFC pour le web: ce sont des documents techniques qui spécifient une amélioration du protocole que chacun peut implémenter.<br />
+L'électeur saisit l'adresse sur le site de l'association sans avoir à s'identifier: le site la valide en vérifiant qu'elle a reçue une transaction de 0,001 BTC.<br />
+Le montant de la micro-transaction permet de <strong>prévenir une attaque de déni de service</strong>: les bulletins de vote ont un coût négligeables pour l'électeur mais prohibitif pour le spam.<br />
+Les montants des micro-transactions peuvent d'ailleurs être renvoyés par les candidats aux électeurs nécessiteux ou être comptabilisés comme des cotisations à l'association.</p>
+<p>4) <strong>Mettre son bulletin dans l'urne</strong><br />
+Le jour du vote, le candidat Dupont crée une signature SignatureC qui dépense  l'output de la micro-transaction multi-signature (0,001 BTC) vers une adresse V qu'il contrôle et publie SignatureC et V sur le site en regard de l'adresse multi-signature 2-sur-3 enregistrée. Comme l'adresse V est différente pour chaque adresse multi-signature, il est impossible de relier une adresse multi-signature (un électeur) à un candidat.<br />
+Avec SignatureC et V, l'électeur peut maintenant confirmer son vote (mettre le bulletin dans l'urne) en créant sa signature SignatureB de la même transaction  et en publiant sur le réseau bitcoin la transaction valide combinant sa signature avec celle du candidat, sans avoir à s'identifier (<strong>bulletin secret</strong>).<br />
+La transaction à destination de l'adresse V comprend l'input suivant:<br />
+<strong>SignatureB SignatureC SerializedScript</strong></p>
+<p>A ce stade, seul le candidat et l'électeur savent que V appartient à Dupont de sorte que les résultats du vote ne sont pas encore connus.<br />
+En effet, les candidats ne peuvent pas savoir à qui est destinée l'adresse multi-signature préparée par l'électeur de sorte que chaque candidat doit fournir une adresse différente à chaque électeur.<br />
+Si l'adresse fournie par Dupont était la même pour tous les électeurs, les résultats du vote seraient connus avant l'étape du dépouillement avec le risque d'influencer les suffrages non encore exprimés.<br />
+Notons au passage que ce système exploite un avantage d'une signature numérique par rapport à une signature manuelle: une signature numérique ne permet d'identifier son auteur qu'avec son consentement, lorsqu'il révèle lui-même son identité.</p>
+<p>5) <strong>Dépouillement des résultats de l'élection</strong><br />
+Après les votes, pour le dépouillement, le candidat Dupont transfère simplement les bitcoins de l'adresse V vers l'adresse 1Dupont..<br />
+Désormais tout le monde sait que l'adresse V appartient à Dupont et peut compter les votes en faveur de chaque candidat via la blockchain:<br />
+Chaque adresse mutli-signature enregistrée (représentant un électeur) qui peut être reliée à l'adresse 1Dupont.. par une transaction est un vote en faveur de Dupont.<br />
+Les votes sont parfaitement vérifiables par les candidats et les électeurs, indépendamment de toute organisation , avec des logiciels open source et une base de données publique et sécurisée, la blockchain.</p>
+<p>Pierre Noizat</keya></p>

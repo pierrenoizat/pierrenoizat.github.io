@@ -1,0 +1,34 @@
+---
+layout: post
+title: Questions sur le vote électronique via Blockchain
+date: 
+type: post
+published: false
+status: draft
+categories: []
+tags: []
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p><strong>Qu'est ce qui empêche quelqu'un de voter plusieurs fois depuis plusieurs adresses ?</strong> </p>
+<p>Chacun des N électeurs est identifié par une clé publique KeyA différente, fournie par l'organisateur.<br />
+L'organisateur publie la racine de l'arbre de Merkle comprenant toute ces clés. Il fournit aussi à l'électeur le chemin reliant sa clé KeyA à la racine de sorte que chacun peut vérifier la liste électorale.<br />
+L'électeur prépare une adresse multi-signature qui est l'équivalent d'un bulletin de vote dans une enveloppe scellé.<br />
+Lorsque N adresses multi-signature, chacune représentant un bulletin secret, ont été enregistrées auprès des organisateurs, ils stoppent l'enregistrement et publient la liste des adresses. A ce moment là, si un électeur se plaint que son adresse n'est pas dans la liste ou qu'il n'a pas pu enregistré une adresse, c'est qu'il y a un tricheur qui a enregistré plusieurs adresses.</p>
+<p>Bien sûr, la vérification proposée via la blockchain ne permet pas de déterminer qui a voté quoi mais simplement les deux points suivants:<br />
+1. combien de vote a reçu chaque candidat.<br />
+2. chaque vote correspond à une adresse enregistrée (impossible de l'associer à un électeur : seul l'électeur sait qu'elle lui appartient).<br />
+Chaque électeur peut vérifier que son adresse figure bien dans la liste des adresses enregistrées.<br />
+On peut vérifier qu'il n'y a pas plus d'adresses que d'électeurs.</p>
+<p><strong>Le candidat Dupont sait quand même, avec un simple "getbalance" combien il a de votes en temps réel?</strong></p>
+<p>La recommandation doit être de n'envoyer son vote que le jour du scrutin et pas avant.</p>
+<p>Le candidat peut en effet savoir en temps réel où il en est et essayer d'influencer les indécis.<br />
+A cet égard, sur ce point particulier, la situation ne serait pas pire qu'avec le vote traditionnel où des sondages sont faits le jour du vote mais ne peuvent être publiés qu'après la clôture. En réalité, il y a des fuites et les partis les plus puissants connaissent les résultats avant le dépouillement.</p>
+<p>En synthèse, le schéma de vote électronique proposé n'est pas parfait mais il est simplement plus performant que le vote traditionnel sur à peu près tous les critères et il est gratuit !</p>

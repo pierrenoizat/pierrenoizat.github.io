@@ -1,0 +1,51 @@
+---
+layout: post
+title: Comment augmenter la taille des blocs?
+date: 2015-06-20 12:29:05.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+  dsq_thread_id: '3864360145'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>L'augmentation de la taille des blocs semble une nécessité maintenant reconnue par la majorité des "voix" dans l'écosystème Bitcoin.<br />
+La chaîne de blocs Bitcoin est devenu un <strong>registre de propriété ouvert et mondial</strong> dont la sécurité est testée et avérée depuis 2009 et dont les applications sont potentiellement innombrables.<br />
+La limite de 1 Mo par bloc, soit environ 7 transactions par secondes, semble en effet très basse pour accueillir toutes ces applications servant potentiellement entre 3 et 5 milliards d'internautes et de mobinautes sur le planète (<a href="http://www.kpcb.com/internet-trends">2015 Internet Trends</a>).<br />
+Les blocs sont déjà remplis à 30-40% et il serait dangereux de s'approcher des 100%:<br />
+les confirmations de transactions deviendraient imprévisibles et la rediffusion des transactions non confirmées saturerait le réseau.</p>
+<p>La régulation du traffic par les commissions de transactions est imparfaite car il n'existe pas encore un véritable <strong>marché des commissions de transaction</strong>:<br />
+il faudrait pour cela que chaque wallet puisse accéder avant d'envoyer une transaction à un prix de marché pour la commission associée.<br />
+Ce mécanisme de "<strong>price discovery</strong>" devrait mobiliser à la fois les wallets (la demande) et les mineurs (l'offre) dans un processus d'échange d'information complexe et probablement coûteux en ressources réseau.<br />
+La solution envisagée se focalise donc sur l'augmentation de la taille des blocs.</p>
+<p><img src="{{ site.baseurl }}/assets/Bitcoin_Block_Data-650x276.png" alt="Blockchain data diagram" /></p>
+<p>Une telle augmentation peut s'effectuer avec un "<strong>hard fork</strong>", c'est à dire la création d'une nouvelle branche de la blockchain: Gavin Andresen a proposé que les blocs horodatés après le 1 mars 2016 à 0h00:00 UTC soient publiés avec une nouvelle limite de 20 Mo.</p>
+<p><img src="{{ site.baseurl }}/assets/s-BITCOIN-GAVIN-ANDRESEN-large.jpg" alt="Gavin Andresen" /><br />
+<em>Gavin Andresen</em></p>
+<p>Un "hard fork", c'est à dire une mise à jour où les nouveaux blocs créés ne seraient pas acceptés par la version précédente, présente le risque de créer une partition de la communauté entre ceux qui adoptent la nouvelle version du protocole et ceux qui resteraient fidèles à l'ancienne version:<br />
+les deux branches de la blockchain pourraient se développer en parallèle car la règle de "la chaîne valable est la chaîne la plus longue au sens de la difficulté" pourrait être interprétée de deux façons différentes.<br />
+Les utilisateurs pourraient potentiellement dépenser leurs bitcoins deux fois, une fois sur la chaîne nouvelle version et une autre fois sur l'ancienne.<br />
+Pour prévenir ce risque, les "wallets" devraient donc, pendant un certain temps, garder un oeil sur les deux branches en attendant que l'une d'elle tombe en désuétude.<br />
+Notons que le 11 mars 2013, avec le passage de la version 0.7 à la version 0.8.0, un "hard fork" accidentel s'est produit, causant la confusion parmi les mineurs pendant quelques heures, corrigé par une autre mise à jour (0.8.1). Ce précédent est plutôt rassurant sur la capacité de l'écosystème à gérer un hard fork, surtout avec plusieurs mois de discussions et de préparation en amont.</p>
+<p>Un risque de centralisation a aussi été objecté à l'augmentation de la taille des blocs car le changement pourrait s'accompagner d'une baisse durable des commissions qui inciterait les "petits" mineurs à cesser leur activité.<br />
+Cependant, les principales causes de la centralisation restent les économies d'échelle et la spécialisation.</p>
+<p>Par ailleurs, le niveau des commissions est actuellement insuffisant pour assurer seul la profitabilité du minage:<br />
+les incitations liées à des activités autres que le minage existent déjà.<br />
+Par exemple, un exchange ou une "bitcoin bank" peut décider de miner des blocs pour assurer un niveau de service contractuel minimal et sécuriser ses commissions de transaction hors réseau ("offchain").</p>
+<p>Un autre "core developer", Jeff Garzik, a donc proposé (<a href="http://gtf.org/garzik/bitcoin/BIP100-blocksizechangeproposal.pdf">BIP 100</a>) un processus de vote des mineurs pour déterminer la nouvelle limite, entre 1 et 32 Mo, de manière dynamique, en évitant un "hard fork":<br />
+la nouvelle limite serait flottante car calculée par comptage des votes des mineurs sur les 12 000 blocs précédents.<br />
+Le déploiement de <a href="https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki">BIP 34</a> a démontré que les mineurs pouvaient effectuer une telle évolution rétro-compatible sans problème.</p>
+<p>Cependant, la solution proposée par Gavin Andresen, soutenue par Coinbase, Bitpay et Paymium, reste la plus prometteuse.<br />
+Son déploiement permettrait à la fois d'augmenter significativement la capacité du réseau et de tester sa <strong>gouvernance informelle</strong> par les mineurs à travers la mise à jour d'un paramètre important (la taille maximale d'un bloc).<br />
+Une étape importante vers une adoption de masse sera franchie en 2016 lorsque cette proposition de '"hard fork" se réalisera tout en maintenant la continuité et la sécurité du service offert par la blockchain. </p>

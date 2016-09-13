@@ -1,0 +1,51 @@
+---
+layout: post
+title: 2016 année du consensus
+date: 2016-01-20 22:15:22.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Politique
+- Technologie
+tags: []
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '4509902861'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>Le réseau Bitcoin peut être vu comme une forme d'intelligence artificielle qui produit automatiquement du consensus parmi les participants.<br />
+Ce n'est pas par hasard qu'il séduit des développeurs conscients de la difficulté d'atteindre un consensus par les moyens traditionnels.<br />
+Les mécanismes considérés comme démocratiques y parviennent au prix de compromis parfois douteux.<br />
+Le vote au suffrage universel évoque la parabole des deux loups et du mouton qui votent le matin pour savoir ce qu'on va manger à midi.<br />
+Même si on y croit comme le pire système à l'exception de tous les autres, pour paraphraser Churchill, on ne peut que constater qu'une démocratie financiarisée, où les candidats doivent trouver toujours plus d'argent pour être audibles et faire campagne, ressemble fortement à une dictature douce.<br />
+Le premier tour des élections est réservé à ceux qui accordent les crédits aux partis sur la base des candidatures et des programmes qu'ils leur ont dictés, implicitement ou explicitement.<br />
+Nous votons donc au 2e et 3 tours alors que les investitures jouées d'avance ont réduits nos choix à "bonnet blanc" ou "blanc bonnet".<br />
+Cette expression nous vient d'ailleurs du deuxième tour des élections présidentelles de 1969 qui "opposaient" Georges Pompidou et Alain Poher, deux candidatures gaullistes très similaires.</p>
+<p>Nous militons aujourd'hui pour l'adoption de Bitcoin car la démocratie monétaire est un préalable à la démocratie politique, dont les élections de ces derniers temps ne sont qu'un simulacre.<br />
+La démocratie monétaire ne peut se concevoir dans un système comme l'euro où l'argent est créé par le crédit.<br />
+L'octroi du crédit par une minorité de décideurs, les banquiers, à une aristocratie de bénéficiaires, les mieux dotés pour rembourser, représente l'exacte antithèse de la démocratie où chacun doit avoir sa chance de recevoir une part de la création monétaire.<br />
+Le choix des projets à financer ne peut être délégué à une minorité porteuse d'intérêts privés et sélectionnée sur son goût pour le profit, l'accumulation du capital et sa peur de manquer.</p>
+<p>Concernant Bitcoin, le débat le plus animé en ce début d'année tourne autour des solutions au problème de scalablité (passage à l'échelle) du réseau Bitcoin.<br />
+En complément des quatre solutions déjà identifiées dans mon <a href="http://www.e-ducat.fr/decentralisation-performance-et-securite/" target="_blank">article du 4 octobre 2015</a>, <strong>Pieter Wuille</strong> a proposé le 7 décembre dernier, à la conférence "Scaling Bitcoin" de Hong Kong, une solution dite "<strong>segregated witness</strong>", segwit en abrégé, qui permet d'augmenter la capacité des blocs à taille constante.</p>
+<p><img src="{{ site.baseurl }}/assets/w2_pieter-300x300.jpg" alt="Pieter Wuille" /><br />
+<em>Pieter Wuille propose la solution "Segregated Witness"</em></p>
+<p>Pour ce faire, les signatures contenues dans les transactions sont compressées au sein d'un arbre binaire.<br />
+Les signatures représentent actuellement 60% du volume de données de la blockchain.<br />
+Après compression (calcul de l'arbre binaire), l'en-tête de bloc comporte non seulement une racine de Merkle pour les ID de transactions, comme avant, mais aussi désormais la racine de l'arbre binaire des signatures. </p>
+<p>Les noeuds "<strong>segwit</strong>" pourraient donc se contenter de stocker la blockchain sans les données de signatures, soit 20 Go environ actuellement, alors que les "full nodes" stockent l'intégralité de la blockchain soit 50 Go.<br />
+Avec les noeuds "Segwit" qui n'existaient pas avant, la proposition de Pieter Wuille permet donc de disposer sur le réseau Bitcoin d'un niveau de sécurité intermédiaire, entre les noeuds SPV (Simple Payment Verification) et les "full nodes"..<br />
+La proposition combine donc élégamment les exigences du <strong>passage à l'échelle et de la décentralisation du réseau</strong>. </p>
+<p>Cette nouvelle modification du protocole constitue un "<strong>soft fork</strong>", c'est à dire une modification rétro-compatible où<br />
+1) les noeuds du réseau restés sur l'ancienne version reconnaissent la nouvelle forme des blocs comme valide<br />
+2) les blocs produits selon l'ancienne version sont invalides pour les noeuds mis à jour avec la nouvelle version.</p>
+<p>Dans le cas d'un soft fork, il suffit qu'une majorité de mineurs se mettent à jour pour que les nouvelles règles s'appliquent aux transactions Bitcoin.<br />
+L'introduction, début 2012, des transactions "Pay-to-Script Hash", P2SH en abrégé, objet de la <a href="https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki" target="_blank">proposition BIP16</a> de Gavin Andresen, est un exemple de soft fork réussi.<br />
+Cette transition douce contraste avec un "hard fork", qui n'a pas encore été tenté, où les nouveaux blocs ne sont pas nécessairement reconnus comme valides par les anciens noeuds, créant de facto un "altcoin" dont la genèse est rattachée à ce hard fork.</p>

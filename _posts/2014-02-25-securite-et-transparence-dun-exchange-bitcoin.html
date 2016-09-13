@@ -1,0 +1,39 @@
+---
+layout: post
+title: Sécurité et transparence d'un exchange bitcoin
+date: 2014-02-25 15:19:38.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+tags:
+- exchange
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '2319576560'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p><strong>Suite aux questions soulevées par l'arrêt du plus ancien "bitcoin exchange" (MTGOX), quelles mesures ont été mises en place chez Bitcoin Central ?</strong></p>
+<p><img src="{{ site.baseurl }}/assets/Bitcoin-Central_Big_Logo_20140224-e1393345105322.png" alt="Logo Bitcoin Central" /></p>
+<p>1) Après la refonte du site bitcoin-central.net déployée depuis Octobre 2013, les dépôts en bitcoins sont stockés "à froid" ( cold storage en anglais) à 100 % : Bitcoin Central ne conserve aucune clé privée sur des serveurs.<br />
+Chaque clé privée est découpée en n parts par un procédé cryptographique qui exige de rassembler p parmi n parts pour reconstituer la clé (p < n).<br />
+Les parts sont imprimées sur papier et placées dans des enveloppes scellées et étanches, stockées en lieux sûrs, dans des juridictions différentes. De cette façon, même si une ou plusieurs ( jusqu'à n-p) enveloppes disparaissaient ou devenaient inaccessibles, il serait toujours possible de reconstituer la clé privée avec les parts restantes.</p>
+<p>2) Des procédures techniques et comptables rigoureuses ont été mises en place, avec une vérification manuelle des retraits avant exécution.<br />
+De cette manière, Bitcoin Central est protégé contre des tentatives d'exploiter une "malléabilité" des transactions bitcoin.<br />
+Des audits externes réguliers sont conduits par des spécialistes du protocole Bitcoin et de la sécurité informatique.</p>
+<p>3) Une sensibilisation à la sécurité a été communiquée auprès de nos clients : utilisation d'un mot de passe unique, authentification à double facteur par yubikey ou Google Auth.</p>
+<p><strong>Comment préparer l'avenir ?</strong></p>
+<p>Nous avons désormais une approche proactive en terme de transparence, nous allons publier dès que possible un premier rapport de solvabilité périodique, probablement trimestriel dans un premier temps.<br />
+Ce niveau de transparence n'a jamais été atteints et ne sera jamais atteints par le système bancaire traditionnel car il est rendu possible par les propriétés de la technologie Bitcoin. Nous étudions plusieurs options dont certaines ont déjà fait l'objet de discussion sur les forums spécialisés.<br />
+Des solutions triviales comme la publication simultanée d'une adresse de "cold storage" et d'un message Bitcoin Central signé avec la clé privée correspondante doivent être écartées.<br />
+En effet, si une clé privée sort de son lieu de stockage sécurisé pour composer la signature d'un message, l'adresse correspondante cesse d'être une adresse de stockage à froid, par définition.<br />
+Tout en évaluant les différentes solutions possibles, nous cherchons aussi une solution qui permette à chaque client de vérifier la solvabilité de Bitcoin central tout en révélant seulement l'information strictement nécessaire à cette vérification.</p>
+<p>Pierre Noizat<br />
+COO & Co-fondateur de Paymium SAS</p>

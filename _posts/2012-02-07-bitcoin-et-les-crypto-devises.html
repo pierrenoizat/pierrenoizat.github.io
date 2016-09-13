@@ -1,0 +1,31 @@
+---
+layout: post
+title: Bitcoin et les crypto-devises
+date: 2012-02-07 23:21:24.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '568326046'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>L'inventeur de Bitcoin a eu la suprême élégance de rester anonyme. Il ou elle a en fait choisi le pseudonymat (l'invention a été publiée en 2008 sous le pseudonyme de "Satoshi Nakamoto", soutenue par un collectif de développeurs incluant notamment Gavin Andresen, Nils Schneider, Pieter Wuille et Jeff Garzik) plutôt que l'anonymat en totale cohérence avec la technologie bitcoin qui offre cette propriété à ses utilisateurs. Un système nominatif comme les systèmes bancaires peut difficilement être rendu anonyme, tandis qu'un système conçu pour préserver une relative anonymité comme bitcoin peut facilement être rendu nominatif.<br />
+De même, la décentralisation du réseau bitcoin n'empêche pas de construire des services centralisés comme les "hosted wallets" qui sont en fait des banques de bitcoins.<br />
+Par contre, les réseaux centralisés par construction comme ceux des banques ne peuvent migrer aisément vers une architecture décentralisée.</p>
+<p>Bitcoin n'ayant pas d'inventeur identifié à ce jour a laissé une opportunité assez tentante pour tous ceux qui souffrent du syndrome NIBM (not invented by me) d'atteindre la célébrité d'une façon ou d'une autre: soit en inventant une variante de bitcoin, une crypto-devise qui lui serait supérieure, c'est à dire en trouvant l'argent après l'or (à moins que ce ne soit l'inverse), soit en trouvant une faille avérée dans la conception de bitcoin. Le moins qu'on puisse dire, c'est que, depuis 2009, beaucoup se sont livrés sans succès à l'une ou l'autre des tentatives.</p>
+<p>Prenons l'exemple de Litecoin, une chaîne de blocs alternative inspirée de bitcoin. Je ne sais pas si Litecoin sera l'argent de l'or numérique qu'est bitcoin mais je ne miserai pas un kopeck dessus car Litecoin résout un problème qui n'existe pas. C'est une solution en quête d'un problème. Le faux problème posé par Litecoin est celui de la spécialisation du matériel induite par les algorithmes utilisés par bitcoin.<br />
+En effet, l'extraction des bitcoins est favorisée par l'usage d'une carte graphique (GPU) de préférence à une unité centrale de calcul (CPU). Il même possible d'envisager des circuits intégrés spécialisés (ASIC) dans l'extraction des bitcoins. L'hypothèse de Litecoin est qu'une minorité de mineurs pourraient concevoir et produire un tel ASIC pour prendre le contrôle du réseau bitcoin.<br />
+Mais si cela se produisait, les autres mineurs, majoritaires, seraient fortement incités à changer l'algorithme en question pour rendre l'ASIC inopérant. Le processus est déjà prêt: c'est un BIP (Bitcoin Improvement Proposal) qui serait facilement adopté par la majorité, à compter d'un certain bloc de la chaîne. La majorité déciderait dans le BIP du nouvel algorithme et du numéro de bloc à partir duquel il serait requis. Les propriétaires de l'ASIC (minoritaires sinon ils n'auraient pas eu besoin de l'ASIC pour prendre le contrôle du réseau!) auraient ainsi dépensés beaucoup de ressources pour rien.</p>
+<p><img src="{{ site.baseurl }}/assets/logo-litecoin.png" alt="Logo Litecoin" /></p>
+<p>Un autre faux problème "résolu" par Litecoin est le temps requis pour obtenir plusieurs confirmations d'une transaction, une propriété qui serait "attendue" par les marchands acceptant cette crypto-devise. En réalité, les marchands soucieux s'adresseront à un tiers de confiance qui prendra pour eux le risque de la double-dépense (attaque par un acheteur malveillant qui envoie deux transactions simultanées avec la même signature, une vers l'adresse du marchand, une autre vers sa propre adresse ). Car aucun marchand n'acceptera un temps d'attente d'une confirmation, fut elle réduite par 4 comparé à bitcoin (bitcoin envoie sa première confirmation en moyenne 5 minutes après la diffusion d'une transaction puisque les blocs bitcoin sont ajoutés à la chaîne à raison de un bloc toutes les dix minutes).</p>
+<p>Beaucoup plus intéressante car très différente des autres chaines alternatives, Namecoin ne vise pas à concurrencer frontalement bitcoin en tant que devise universelle mais simplement utilise la puissance de calcul de bitcoin pour générer une monnaie complémentaire, les namecoins, dédiés à l'achat des noms de domaines en .bit. Le projet Namecoin est né du souci tout à fait légitime de fonder un contre-pouvoir à l'ICANN dans une gestion totalement décentralisée des noms de domaines, au moins pour une extension "libre", .bit.</p>

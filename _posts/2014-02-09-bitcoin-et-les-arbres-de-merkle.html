@@ -1,0 +1,54 @@
+---
+layout: post
+title: Bitcoin et les arbres de Merkle
+date: 2014-02-09 15:14:13.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+- merkle
+- protocole
+- racine
+- spécification
+- spv
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '2242603468'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Une conversation récente avec un ami qui travaille chez Google (hello Aurélien!) m'a rappelé opportunément que la technologie bitcoin est une invention incroyablement ingénieuse dont chaque facette gagne à être connue.<br />
+Notamment la présence d'une "racine" de Merkle dans l'en-tête de chaque blocs.</p>
+<p><img src="{{ site.baseurl }}/assets/merkle-tree.jpg" alt="Racine de Merkle" /><br />
+<em>Arbre de Merkle avec sa "racine" au sommet</em></p>
+<p>De quoi s'agit il et pourquoi faire ?<br />
+La racine de Merkle qu'on trouve dans l'en-tête d'un bloc est tout simplement une empreinte numérique condensée de l'ensemble des transactions du bloc.<br />
+La moindre modification d'une transaction dans le bloc modifie cette racine.<br />
+Voici comment se construit un arbre de Merkle:prenons un bloc comportant par exemple 3 transactions a, b et c.<br />
+h1 = hash(a)           # où hash(a) = SHA256(SHA256(a))<br />
+h2 = hash(b)<br />
+h3 = hash(c)<br />
+h4 = hash(c)            # comme nous avons un nombre impair de transactions (3), nous dupliquons la dernière, c.<br />
+Cette duplication permet d'avoir un nombre pair de feuilles sur l'arbre, même si le nombre de transactions est impair.</p>
+<p>h5 = hash(h1+h2)       # + signifie ici la concaténation des chaînes de caractères h1 et h2<br />
+h6 = hash(h3+h4)</p>
+<p>h7 = hash(h5+h6)      # h7 est la racine Merkle du bloc.</p>
+<p>Maintenant on peut donc se demander pourquoi Satoshi n'a pas tout simplement stipuler d'inclure une empreinte numérique simple (SHA256 ou autre) de l'ensemble des transactions concaténées dans un fichier texte:<br />
+h7 = hash(a+b+c) ?</p>
+<p>C'est qu'il a décrit dans <a href="http://www.e-ducat.fr/wp-content/uploads/2014/02/bitcoin-satoshi-nakamoto-paper.pdf" title="Bitcoin white paper">son papier fondateur</a> le moyen de concevoir un porte-monnaie bitcoin qui pourrait se connecter très rapidement au réseau: un tel porte-monnaie fonctionne sur un mode particulier appelé <strong>"Simple Payment Verification" ou SPV</strong>.<br />
+La structure de l'arbre de Merkle est utilisée dans le mode SPV, qui ne serait pas possible si on avait seulement un hash de l'ensemble des transaction du bloc.<br />
+Le mode SPV est utilisé par les clients légers du type Electrum ou Multibit qui, contrairement au client officiel (bitcoin-qt), ne téléchargent que les en-têtes des blocs (block headers).<br />
+Le client léger s'assure simplement que les en-têtes des blocs s'enchainent correctement les uns aux autres et que leur difficulté (nombre de zéros au début des hash de ses blocs) est suffisante par rapport au niveau de difficulté exigé par le réseau.<br />
+Ces clients ont la propriété très intéressante d'être "instant on", c'est à dire de fonctionner immédiatement sans avoir à se synchroniser bloc par bloc avec la blockchain entre deux démarrages.<br />
+Dans le mode SPV ("Simplified Payment Verification") décrit par Satoshi, le client léger se connecte à un noeud du réseau qui détient la chaîne de blocs complète.<br />
+Le client léger comporte en général un nombre limité d'adresses de réception: il demande au noeud du réseau une copie des transactions qui concernent ces adresses avec la branche de l'arbre de Merkle qui permet de relier chacune de ces transactions à la racine de Merkle du bloc où elle se trouve.<br />
+Ce mode SPV permet donc de prouver l'inclusion d'une transaction dans la chaîne de blocs sans avoir à télécharger l'ensemble du bloc où elle se trouve.</p>

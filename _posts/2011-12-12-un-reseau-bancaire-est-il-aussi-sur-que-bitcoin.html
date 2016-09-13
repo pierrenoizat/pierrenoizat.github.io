@@ -1,0 +1,40 @@
+---
+layout: post
+title: Un réseau bancaire est-il aussi sûr que bitcoin?
+date: 2011-12-12 19:07:27.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '502244098'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Comme l'a justement fait remarquer Bruce Schneier (un des meilleurs experts au monde en matière de cryptographie), la sécurité par l'obscurité n'est pas fiable: il suffit d'allumer la lumière pour tout compromettre.<br />
+A l'inverse, si les spécifications d'un système sont publiées, comme celles du protocole Bitcoin, et que ce système est sécurisé avec des secrets (des clés) suffisamment diversifiés, il est plus que probable que ce système est conçu pour résister à tout.<br />
+<img src="{{ site.baseurl }}/assets/bruce-blog2-e1323864674881.jpg" alt="Bruce Schneier" align="middle" /><br />
+<em>Bruce Schneier</em><br />
+Dans le cas de bitcoin, les clés privées (on parle de clés privées pour des mots de passe trop longs pour être utilisés par des êtres humains: les clés privées sont manipulées uniquement par des logiciels) font 50 caractères de long (chiffres ou lettres).<br />
+Chaque clé privée correspond à une adresse (empreinte de la clé publique associée à la clé privée) de 34 caractères (chiffres, lettres majuscules et minuscules, en excluant certains comme le l qui prêtent à confusion).</p>
+<p><img src="{{ site.baseurl }}/assets/Adresse-Bitcoin-e1323716590970.png" alt="Adresse bitcoin" /></p>
+<p>La clé publique associée à une adresse n'est révélée sur le réseau que lorsque les bitcoins reçus sur cette adresse sont dépensés. La connaissance de la clé publique ne permet pas de calculer la clé privée.<br />
+On peut donc dire que le logiciel bitcoin est un moyen, accessible à tous, aussi sûr qu'un réseau bancaire pour transférer de l'argent d'un point A à un point B.<br />
+Avec quelques précautions, consistant essentiellement à
+<ol>
+1/sauvegarder ses clés privées "offline" (par exemple sur une clé USB),<br />
+2/ne pas les laisser sur son disque dur si elles contiennent une somme conséquente et<br />
+3/utiliser un anti-virus (si on utilise un PC Windows), bitcoin permet aussi de stocker son argent liquide chez soi plus sûrement qu'avec des billets de banque.</ol>
+<p>Les 2 seules objections que les spécialistes de la cryptographie peuvent opposer aujourd'hui à la perspective d'une généralisation massive de bitcoin relèvent plutôt de la rançon du succès que d'un risque de sécurité:</p>
+<ol>
+1/ le réseau bitcoin ne se prête pas encore au traitement de plusieurs milliards de transactions (contrairement au réseau de cartes bancaires): le chargement de la chaîne de blocs sur un PC peut prendre plusieurs heures actuellement compte tenu de la taille de la base de données publique des transactions effectuées depuis 2009. Ce temps de chargement disparaît si on confie la gestion de son porte-monnaie bitcoin à un service en ligne (comme bitcoin-central.net) mais, ce faisant, on fait alors disparaître aussi l'autonomie de gestion qu'on attend d'un système décentralisé comme Bitcoin.<br />
+2/ le système n'est pas anonyme contrairement au cash sous forme de billets de banque: on parle seulement de "pseudonymat" pour bitcoin puisque les transactions sont publiées et que les adresses (celle du payeur et celle de receveur) permettent de retracer l'historique de chaque unité monétaire et des se fractions. Un organisme policier (FBI ou autre) peut donc chercher à remonter à la source d'un commerce illégal.C'est une des qualités du système d'un point de vue moral mais c'est aussi une de ses limitations quand on le compare à la monnaie fiduciaire (l'argent liquide) en usage aujourd'hui.</ol>

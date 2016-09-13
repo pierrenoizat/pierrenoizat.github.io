@@ -1,0 +1,44 @@
+---
+layout: post
+title: Le privilège de la création monétaire
+date: 2012-11-01 09:20:54.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Economie
+tags:
+- bitcoin
+- création
+- crédit
+- dette
+- monétaire
+- privilège
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '909595596'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Le problème fondamental des monnaies centrales qui sont créées par l'émission de dettes est le privilège de la création monétaire donné exclusivement à des banques, organisées en cartel autour d'une banque centrale.</p>
+<p><img src="{{ site.baseurl }}/assets/Schema-Creation-Monnaie-e1351764778607.png" alt="Création monétaire par la dette" /><br />
+<em>Création monétaire exclusive par la dette: l'économie au service des banques</em></p>
+<p>Une banque privée, lorsqu'elle vous accorde un prêt de 100 000 euros crée cette somme à partir de rien, dans son livre de comptes: ce qu'un prix Nobel d'économie comme Maurice Allais a appelé la magie du crédit. La banque inscrit 10 000 euros sur votre compte qui est la colonne "passif" de la banque. Elle inscrit aussi 10 000 euros dans la colonne "actif" de son bilan comptable car vous lui devez maintenant 10 000 euros sous forme de prêt (sana compter les intérêts). Son bilan reste équilibré: le tour est joué !Les remboursements qu'elle reçoit au titre du prêt viennent en déduction graduelle de la création monétaire initiale.</p>
+<p>Il y a bien sûr des limites dites "prudentielles" à cette création monétaire "ex nihilo" qui sont normalement imposées par la banque centrale pour éviter que trop de monnaie circule ce qui aurait pour effet de provoquer une inflation des prix. En gros, on impose à la banque de ne pas créer plus de 25 fois ses propres réserves de monnaie.</p>
+<p>On voit bien que, sans cette limite, les prêts seraient de plus en plus hasardeux, de moins en moins remboursés et qu'ainsi la monnaie centrale en circulation seraient dévaluée: elle apparaitrait pour ce qu'elle est vraiment c'est à dire une monnaie fictive dont la création est réservée à un lobby bancaire qui a mis l'économie en coupe réglée à son seul profit. Les banques sont d'ailleurs le seules sociétés privées aujourd'hui à pouvoir pratiquer le "mécénat" ou l'auto-promotion télévisée.</p>
+<p>Le probème n'est pas tant la création de monnaie par la dette que l'attribution de ce seigneuriage aux seules banques: pourquoi est ce que chacun ne pourrait pas, au moins une fois dans sa vie, créer une dette pour réaliser son projet ? Si le sujet n'est même pas débattu c'est que les tenants du vrai pouvoir ne veulent pas d'un débat aussi dévastateur pour leurs privilèges. Le bénéfice économique serait pourtant considérable car les énergies et les talents sont aujourd'hui bridés par le carcan d'un système monétaire unique et obsolète.</p>
+<p>Avec Bitcoin, la création monétaire se fait dans une transaction particulière dite "transaction de génération" qui figure en haut de chaque nouveau bloc de transactions validées par le réseau. 50 nouveaux Bitcoins sont donc créés à chaque nouveau bloc inscrit dans l'historique partagé des transactions bitcoin. Le "privilège " de mettre à jour l'historique et de recevoir ces 50 bitcoins s'obtient par un tirage au sort mathématiquement vérifiable entre tous ceux qui participent à la validation des transaction bitcoins. Plus la contribution en puissance de calcul est grande plus les chances de gagner sont élevées. Il y a là une démocratisation du privilège de création monétaire qui devient accessible, au prix d'un équipement informatique, à un nombre de participants beaucoup plus large qu'avec une monnaie centrale.</p>
+<p>Selon le protocole Bitcoin, l'historique des transactions est mis à jour par un nouveau bloc de transactions, périodiquement, toutes les 10 minutes en moyenne. Initialement fixé à 50 bitcoins par bloc, le montant des transactions de génération sera divisé par deux, périodiquement, tous les 210 000 blocs, c'est à dire tous les quatre ans environ. Il passera ainsi de 50 à 25 bitcoins en décembre 2012. On obtient ainsi pour représenter la création monétaire bitcoin une courbe asymptotique, d'allure logarithmique, avec une asymptote à 21 million.<br />
+Si la quantité de bitcoins créés dans chaque nouveau bloc est divisée par deux tous les 210 000 blocs et si la valeur initiale de la récompense a été fixée à 50 bitcoins, la quantité Q<sub>n</sub> de bitcoins créée au bout de n  fois 210 000 blocs s’écrit:</p>
+<p>Q<sub>n </sub>= 210 000 x ( 50 + 50/2 + 50/4 +...50/2<sup>n-1</sup>)</p>
+<p>    = 210 000 x 50 x  (1 + 1/2 + 1/4 + ....+1/2<sup>n-1</sup>)</p>
+<p>   = 21 000 000 x (1 - 1/2<sup>n</sup>)</p>
+<p>Le terme entre parenthèse s’appelle une série géométrique de raison 1/2 dont la valeur tend vers 1 par valeurs inférieures quand n tend vers l’infini. Ainsi Q<sub>n</sub> tend vers 21 millions par valeurs inférieures quand n tend vers l’infini.</p>
+<p><img src="{{ site.baseurl }}/assets/Total_bitcoins_over_time_graph-e1324570266936.png" alt="Courbe création monétaire des bitcoins" /><br />
+<em>Courbe de création monétaire des bitcoins</em></p>
+<p>On aurait pu aussi imaginer une même asymptote avec une courbe en S telle que P(t)= 1/(1+e<sup>-t</sup>). Je reviendrai sur la création monétaire des bitcoins dans un prochain post.</p>

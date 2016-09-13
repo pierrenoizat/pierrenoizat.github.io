@@ -1,0 +1,86 @@
+---
+layout: post
+title: g maxwell proposal for proof of solvency
+date: 
+type: post
+published: false
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>gmaxwell's prove-how-(non)-fractional-your-Bitcoin-reserves-are scheme.  Very slightly edited and reordered.</p>
+<p>Since this idea is getting some attention on HN today (which is especially<br />
+welcome in the current climate of exchange mistrust!), some notes/context:</p>
+<p> - The TL;DR: As a Bitcoin exchange it's (theoretically) fairly straightforward<br />
+   to let individual customers verify that you really hold the Bitcoin funds<br />
+   you claim to hold on their behalf.  There might well be practical/security<br />
+   considerations when it comes to cold storage though, and the system<br />
+   described relies on customers actually bothering to check.</p>
+<p> - In the context I heard it, I think this was compared to a trend towards<br />
+   provably fair gambling becoming a standard on betting sites.  Wouldn't it be<br />
+   great if this became standard to the degree that customers would avoid<br />
+   exchanges that didn't offer it?  Consider asking your exchange whether<br />
+   they'd do this, and if not, why not.  I've only heard of CoinKite offering<br />
+   anything comparable, but I've not looked into it.</p>
+<p> - I first heard this from gmaxwell, but patcon on HN has noted Peter Todd also<br />
+   described the idea; see <http://www.youtube.com/watch?v=4d3LA8KpdMQ#t=6m45s><br />
+   and <https://people.xiph.org/~greg/bitcoin-wizards-fraud-proof.log.txt>.<br />
+   I'm not asserting anything about the origin.</p>
+<p>Wednesday 08 May 2013 03:11 BST</p>
+<p><gmaxwell>   iwilcox: the idea is simple enough. Two halves. First you show how<br />
+             much funds you have via signmessage for actual coins on the chain.<br />
+             Thats easy enough.</p>
+<p><gmaxwell>   Then you need to prove how much you should have. This is a little<br />
+             tricker. You could just publish EVERYONE's balances e.g.  by<br />
+             account ID but thats undesirable for privacy and commercial reasons.</p>
+<p><gmaxwell>   But I described a way prove how much you should have without doing<br />
+             that.</p>
+<p><gmaxwell>   Here is how:   Say you have a collection of "nodes",   Each node<br />
+             has two fields.  node.value and node.hash.  create a node for<br />
+             every account.  E.g. I have 1 BTC, and my accounthash is 0.  so<br />
+             value=1 and hash=0.</p>
+<p><gmaxwell>   Now I define a NodeCombiner function:<br />
+               node NC(left_node, right_node) = {<br />
+                    n = new node;<br />
+                    n.value = left_node.value + right_node.value;<br />
+                    n.hash = sha256(left_node.value + right_node.value || left_node.hash || right_node.hash;<br />
+               }</p>
+<p><gmaxwell>   you take all your users and arrange them in a binary tree, that<br />
+             can have any shape you want.. e.g. a whole bunch of interior<br />
+             nodes.. ultimately connecting up to some root node.  And you use<br />
+             the NodeCombiner function to fill in the values of all the<br />
+             interior nodes up the tree.</p>
+<p><cusipzzz>   each user can verify their balance is covered by site owners<br />
+             funds, but can't see the total, or # of accounts?</p>
+<p><gmaxwell>   This is like the merkel trees used for transactions in bitcoin,<br />
+             except there is an additional value sum along with the hashes.</p>
+<p><gmaxwell>   The site then publishes the root hash and value widely where<br />
+             everyone can see it. ... and when you connect the site gives you<br />
+             your account balances and just the interior nodes between you and<br />
+             the root so you can verify that your account is included in the<br />
+             root but can't tell much about anything else.</p>
+<p><gmaxwell>   so it changes the problem from:<br />
+                 {prove how much they have, prove how much they should have}<br />
+             to:<br />
+                 {prove how much they have, _say_ how much they should have,<br />
+                     prove that your account was included in that total}</p>
+<p><gmaxwell>   one point about this is that it doesn't prevent fractional<br />
+             reserve --- but if used well, it prevents *dishonest* fractional<br />
+             reserve.</p>
+<p><cusipzzz>   and doesn't prevent the site owner from going MIA with the full<br />
+             reserve funds :)</p>
+<p><iwilcox>    That kind of absconding owner is unlikely to care much for proving<br />
+             they don't fractionally-reserve beyond stated fractions.</p>
+<p><gmaxwell>   Cusipzzz: indeed, but it can inhibit long cons or prevent them<br />
+             from hiding theft.</p>
+<p><cusipzzz>   you have to reveal # of accounts? some people would not want to<br />
+             reveal nuber of active accounts</p>
+<p><gmaxwell>   nope. not that either</gmaxwell></cusipzzz></gmaxwell></iwilcox></cusipzzz></gmaxwell></gmaxwell></gmaxwell></gmaxwell></cusipzzz></gmaxwell></gmaxwell></gmaxwell></gmaxwell></gmaxwell></gmaxwell></p>

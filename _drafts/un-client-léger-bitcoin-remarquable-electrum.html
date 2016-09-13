@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Un client léger Bitcoin remarquable: Electrum'
+date: 
+type: post
+published: false
+status: draft
+categories: []
+tags:
+- bitcoin
+- client léger
+- electrum
+- spv
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>La structure de l'arbre de Merkle est utilisée dans le mode SPV, qui ne serait pas possible si on avait seulement un hash de l'ensemble des transaction du bloc.<br />
+Le mode SPV est utilisé par les clients légers du type Electrum ou Multibit qui, contrairement au client officiel (bitcoin-qt), ne téléchargent que les en-têtes des blocs (block headers).<br />
+Le client léger s'assure simplement que les en-têtes des blocs s'enchainent correctement les uns aux autres et que leur difficulté (nombre de zéros au début des hash de ses blocs) est suffisante par rapport au niveau de difficulté exigé par le réseau.<br />
+Ces clients ont la propriété très intéressante d'être "instant on", c'est à dire de fonctionner immédiatement sans avoir à se synchroniser bloc par bloc avec la blockchain entre deux démarrages.<br />
+Dans le mode SPV ("Simplified Payment Verification") décrit par Satoshi, le client léger se connecte à un noeud du réseau qui détient la chaîne de blocs complète.<br />
+Le client léger comporte en général un nombre limité d'adresses de réception: il demande au noeud du réseau une copie des transactions qui concernent ces adresses avec la branche de l'arbre de Merkle qui permet de relier chacune de ces transactions à la racine de Merkle du bloc où elle se trouve.<br />
+Ce mode SPV permet donc de prouver l'inclusion d'une transaction dans la chaîne de blocs sans avoir à télécharger l'ensemble du bloc où elle se trouve.</p>

@@ -1,0 +1,89 @@
+---
+layout: post
+title: Les améliorations dans la nouvelle version du client Satoshi
+date: 2013-03-01 11:53:35.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+- client
+- satoshi
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '1112022915'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>L'implémentation de référence du client "bitcoin" permet de définir la base du consensus autour du protocole bitcoin.<br />
+Installer et faire tourner le client "Satoshi" sur son PC ou MAC le transforme en "full node" du réseau peer-to-peer Bitcoin, c'est à dire un noeud du réseau capable de vérifier et relayer les transactions tout en maintenant une copie à jour de la "chaîne de blocs" Bitcoin, c'est à dire l'historique complet des transactions Bitcoin depuis l'origine du 3 janvier 2009.</p>
+<p><img src="{{ site.baseurl }}/assets/Client-Satoshi-Main-Screen.png" alt="Ecran Client Satoshi" /><br />
+<em>L'écran d'accueil du porte-monnaie Bitcoin "officiel" (le client "Satoshi")</em></p>
+<p>Tout autre implémentation d'un porte-monnaie bitcoin peut tester sa compatibilité avec le réseau bitcoin en envoyant et en recevant depuis ce fameux client dit "Satoshi", maintenu par une équipe brillante d'une trentaine de développeurs "conduite" par Gavin Andresen (Lead Core Developper)*.</p>
+<p>La nouvelle version 0.8.0 intègre des améliorations notables en termes de performances afin de faire face à l'augmentation du nombre des transactions sur le réseau et de la taille de la base de donnée (la chaîne de blocs) qui en résulte, 5,3 giga-octets à fin février 2013.</p>
+<p>Checkpoint au bloc n°216116: une attaque des 51% ne peut pas réécrire l'historique plus loin que ce bloc, les transactions jusqu'à ce bloc sont devenues absolument irréversibles.<br />
+Nouvelle base de données<br />
+Plus de fichier blkindex.dat</p>
+<p>Incompatibilités<br />
+----------------<br />
+Cette version ne maintient plus un index complet des ids de transactions: la recherche d'une transaction quelconque par un appel RPC getrawtransaction ne marchera plus.</p>
+<p>Améliorations<br />
+--------------</p>
+<p>Les fichiers exécutables Mac et Windows sont maintenant signés avec des certificats détenus par la Bitcoin Foundation pour assurer la compatibilité avec les nouvelles fonctions de sécurité de OSX 10.8  et Windows 8.</p>
+<p>LevelDB, la base de données rapide, open source de Google, est maintenant utilisée pour stocker localement les transactions et les indices des blocs.</p>
+<p>Berkeley DB est toujours utilisée mais uniquement pour le fichier wallet.dat ( contenant les clés publiques et privées du wallet ainsi que les transactions qui les concernent).</p>
+<p>Pieter Wuille a développé de nombreuses optimisations dans la manière de vérifier les transactions de sorte que le client "satoshi" utilise beaucoup moins de mémoire et d'entrées/sorties.</p>
+<p>Nouvelles fonctionnalités<br />
+-------------------------</p>
+<p>Support d'un <a href="http://fr.wikipedia.org/wiki/Filtre_de_Bloom" title="Bloom Filter" target="blank">"Bloom filter"</a>  dans le protocole pour envoyer seulement les transactions pertinentes aux clients "légers".</p>
+<p>contrib/verifysfbinaries est un script (shell) pour vérifier l'intégrité des exécutables disponibles en téléchargement sur Source Forge.</p>
+<p>contrib/spendfrom est un utilitaire python en ligne de commande pour utiliser l'API JSON-RPC "raw transactions" JSON-RPC api permettant d'envoyer des bitcoins depuis une certaine adresse de réception (cf. "coin control").</p>
+<p>Nouvelles options de ligne de commande<br />
+--------------------------------------</p>
+<p>dbcache : contrôle l'utilisation de la mémoire par LevelDB. Par exemple bitcoind -dbcache=1000<br />
+utilisera un gigabyte de mémoire et accélèrera le chargement initial de la chaîne de blocs.</p>
+<p>par : contrôle le nombre de threads utilisés pour valider les transactions. Par défaut, le nombre de CPUs sur votre machine, -par=1 pour limiter à un seul CPU.</p>
+<p>txindex : maintient un index supplémentaire des anciennes transactions ids de sorte qu'elles peuvent être retrouvées par la méthode JSON-RPC getrawtransaction.</p>
+<p>reindex : reconstruit les index des blocs et des transactions à partir des données de blocs téléchargées.</p>
+<p>Nouvelles fonctions de l'API JSON-RPC<br />
+-------------------------------------</p>
+<p>lockunspent / listlockunspent: permet de bloquer des sorties de transactions pour un temps afin qu'elles ne soient pas dépensées par d'autres processus accédant au même wallet.</p>
+<p>addnode / getaddednodeinfo: permet de se connecter à un "pair" spécifique sans redémarrer.</p>
+<p>importprivkey: comporte désormais un paramètre booléen optionnel (par défaut: true) pour contrôler le rescan de la chaîne de blocs après l'importation d'un clé privée dans le wallet.</p>
+<p>(*) La liste des développeurs du client "Satoshi":<br />
+Gavin Andresen<br />
+Alexander Kjeldaas<br />
+Andrey Alekseenko<br />
+Arnav Singh<br />
+Christian von Roques<br />
+Eric Lombrozo<br />
+Forrest Voight<br />
+Gregory Maxwell<br />
+Jeff Garzik<br />
+Luke Dashjr<br />
+Matt Corallo<br />
+Mike Cassano<br />
+Mike Hearn<br />
+Peter Todd<br />
+Philip Kaufmann<br />
+Pieter Wuille<br />
+Richard Schwab<br />
+Robert Backhaus<br />
+Rune K. Svendsen<br />
+Sergio Demian Lerner<br />
+Wladimir J. van der Laan<br />
+burger2<br />
+default<br />
+fanquake<br />
+grimd34th<br />
+justmoon<br />
+redshark1802<br />
+tucenaber<br />
+xanatos</p>

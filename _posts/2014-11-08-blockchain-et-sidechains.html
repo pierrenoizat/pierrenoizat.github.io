@@ -1,0 +1,54 @@
+---
+layout: post
+title: Blockchain et Sidechains
+date: 2014-11-08 10:04:18.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Altcoins
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+- sidechains
+- spv
+- technologie
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '3204381174'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>Quand Adam Back, l'inventeur de hashcash, le procédé de "proof of work" utilisé par Bitcoin, co-signe <a href="http://www.e-ducat.fr/wp-content/uploads/2014/10/sidechains.pdf" title="Sidechains">un papier sur la technologie Bitcoin</a>, on se doit d'y prêter attention.<br />
+D'autant plus qu'il a co-fondé récemment au Canada, Blockstream, une startup dédiée au développement de ce concept.</p>
+<p><img src="{{ site.baseurl }}/assets/adam_back_300x300.jpg" alt="Adam Back" /><br />
+<em>Adam Back, inventor of Hashcash and co-founder of Blockstream</em></p>
+<p>Le papier en question traite d'une question cruciale pour la technologie Bitcoin qui est sa flexibilité: comment accommoder des cas d'usages toujours plus divers et variés tout en conservant l'excellent niveau de performance qui est atteint et désormais attendu par ses utilisateurs ?<br />
+Par exemple, comment réaliser une multitude de micro-paiements sans polluer la blockchain avec autant de microtransactions ?<br />
+Au moins trois solutions sont envisagées actuellement, premièrement les <strong>altcoins</strong>, une solution radicale qui postule que la blockchain Bitcoin n'y parviendra pas et qu'il faut donc un ou plusieurs autres réseaux dédiés pour y parvenir, ensuite l'augmentation de la <strong>taille des blocs</strong> et enfin les "<strong>sidechains</strong>" (qu'on pourrait traduire par "chaîne collatérale").</p>
+<p><img src="{{ site.baseurl }}/assets/sidechains_blockstream1-e1415444457711.png" alt="Sidechain Diagram" /><br />
+<em>Source: blockstream.com</em></p>
+<p>Les altcoins posent deux problèmes non résolus à ce jour: le premier est la fragmentation de l'infrastructure qui induit un gaspillage d'énergie et des risques de sécurité. Les vulnérabilités d'un altcoin peuvent passer inaperçue et sont exploitées seulement lorsque l'altchain commence à véhiculer une valeur importante.<br />
+Le second problème est la valeur flottante d'un altcoin qui , contrairement à Bitcoin, est attachée à une altchain encore balbutiante.<br />
+Les néophytes peuvent être floués par de fausses promesses sur la sécurité ou la décentralisation d'un altcoin et toute expérience négative retarde l'adoption des monnaies décentralisées.</p>
+<p>L'augmentation de la taille des blocs est une solution pratique et relativement simple à déployer, déjà préconisée par Gavin Andresen. Elle s'accompagne bien sûr d'un alourdissement de la blockchain qui peut être géré grâce aux <strong>checkpoints</strong>.<br />
+Un checkpoint est un numéro de bloc codé "en dur" dans le wallet qui est considéré comme sûr par les mineurs pour reconstituer l'historique complet des transactions.<br />
+Le consensus s'établit sur le fait que les transactions antérieures à ce bloc, par exemple des transactions confirmées il y a plus de deux ans, ne peuvent plus être invalidées par une réorganisation de la blockchain résultant d'une attaque des 51%.</p>
+<p>Cependant, les solutions de scalabilité ne s'opposent pas et peuvent co-exister.<br />
+Le concept des sidechains semble prometteur et fonctionne de la manière suivante:</p>
+<p>1) Une sidechain est créée avec un stock initial de sidecoins, disons pour simplifier 21 millions de sidecoins. Ces sidecoins sont initialement tous verrouillés et ne peuvent être dépensés qu'en verrouillant une quantité égale de bitcoin sur la blockchain Bitcoin. Les bitcoins ne peuvent être libérés à leur tour qu'une verrouillant à nouveau les sidecoins correspondants. On a donc créé une sidechain où peuvent circuler des sidecoins avec un taux de conversion à parité (1:1) avec les bitcoins.</p>
+<p>2) une transaction spéciale sur le réseau Bitcoin permet de verrouiller une certaine quantité de Bitcoin, disons pour simplifier un Bitcoin: les inputs de la transaction sont standard mais l'output est un script particulier qui utilise une instruction nouvelle (OP_SIDECHAINPROOFVERIFY). Cette instruction verrouille le bitcoin impliqué tout en libérant un sidecoin qui peut être dépensé sur la sidechain dans une troisième étape.</p>
+<p>3) une fois que la transaction de verrouillage du bitcoin est confirmée et après une période de latence d'un jour ou deux ("contest period"), une transaction sur la sidechain peut être créée pour loger le "sidecoin" ainsi libéré sur une adresse sidecoin contrôlée par le propriétaire du bitcoin verrouillé.<br />
+Les inputs de cette transaction sidecoin contiennent une preuve cryptographique du verrouillage du bitcoin ("SPV proof") et font référence à la chaîne d'origine, par exemple avec le hash du genesis block de Bitcoin.<br />
+La "<strong>contest period</strong>" permet d'invalider le transfert sur la sidechain en produisant une preuve de l'existence d'une blockchain plus longue où ne figurerait pas la transaction qui a verrouillé le bitcoin.<br />
+Le procédé proposé pour la preuve cryptographique s'appuie sur le protocole "Simple Payment Verification" décrit dans le papier fondateur de Satoshi Nakamoto ("<a href="http://www.e-ducat.fr/wp-content/uploads/2014/02/bitcoin-satoshi-nakamoto-paper.pdf" target="_blank">Bitcoin, an electronic cash system</a>") qui fait l'objet d'un <a href="http://www.e-ducat.fr/bitcoin-et-les-arbres-de-merkle/" target="_blank">blog post précédent</a>.</p>
+<p>4) pour récupérer le Bitcoin précédemment verrouillé, il faut que l'utilisateur réunisse la quantité requise de sidecoin (dans notre exemple, un sidecoin) et crée une transaction de verrouillage du sidecoin sur la sidechain. Une fois cette transaction confirmée sur la sidechain et après une "contest period", le Bitcoin redevient disponible sur la blockchain sur une adresse contrôlée par l'utilisateur.</p>
+<p>Il reste beaucoup de questions ouvertes qui font débat sur IRC et sur les forums concernant les sidechains, notamment la question du transfert retour qui assure la convertibilité des sidecoins en bitcoins avec une preuve SPV, c'est à dire sans que les valideurs de la sidechain aient besoin d'avoir une copie complète de la blockchain Bitcoin ("symetric 2-way peg").<br />
+Si les participants de la sidechain s'appuient sur une copie complète de la blockchain pour valider les transferts en provenance de la blockchain, on parle de "asymetric 2-way-peg".<br />
+L'asymétrie induit une contrainte sur les sidechains qui les lient plus fermement à Bitcoin et empêcherait sans doute, en pratique, le développement de cascades de chaînes qui seraient ingérables du point de vue de la sécurité. A suivre donc..</p>

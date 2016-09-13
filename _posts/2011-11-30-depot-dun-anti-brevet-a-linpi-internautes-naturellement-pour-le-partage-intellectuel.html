@@ -1,0 +1,49 @@
+---
+layout: post
+title: Dépôt d'un anti-brevet à l'INPI (Internautes Naturellement pour le Partage
+  Intellectuel)
+date: 2011-11-30 11:08:19.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '501856933'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p> Le <a href="https://bitcointalk.org/" title="Bitcoin Forum" target="_blank">forum Bitcoin</a> comporte maintes discussions sur à peu près tous les sujets possibles: pas facile dans ces conditions pour les spécialistes du logiciel privateur, comme Microsoft, ou pour un "patent troll" de déposer un brevet sans craindre que l'originalité supposée de leur invention ne soit battue en brèche par un simple post sur ce forum extraordinairement actif.<br />
+Car déposer un brevet coûte cher (autour de 20 000  euros pour un brevet européen) même si ça peut rapporter gros (un patent troll peut négocier un lot de brevets américains en moyenne 500 000 dollars par brevet). En publiant une invention celle-ci devient juridiquement impossible à breveter.<br />
+Les brevets et, plus généralement, toute la construction du droit de la propriété intellectuelle, sont un héritage de l'ancienne économie de la rente, rendu caduc par la nouvelle économie de la connaissance qui se met en place.<br />
+<img src="{{ site.baseurl }}/assets/citadelle-e1322652248641.jpg" alt="Citadelle" /><br />
+Les brevets perpétuent la construction des citadelles et des tours de garde dont les occupants pourront bientôt s'apercevoir qu'elles sont plantées au milieu du désert des tartares.<br />
+<img src="{{ site.baseurl }}/assets/richard-stallman-e1322537496686.jpg" alt="Richard Stalmann" /><br />
+<em>Richard Stalmann, photographié par Sam Ogden dans les années 80</em><br />
+Les avantages du logiciel libre et ses fondements philosophiques ont été exposés depuis longtemps, notamment par Richard Stalmann à travers la Free Software Foundation qu'il préside.<br />
+C'est pourquoi, nous allons déposer ici un premier anti-brevet sur l'interopérabilité de la technologie bitcoin: il s'agit de normaliser un protocole entre les échangeurs comme bitcoin-central.net<br />
+Les échangeurs jouent un rôle important dans l'économie des monnaies complémentaires car ils permettent de les convertir en n'importe quel autre type d'actif: devises, autres monnaies complémentaires, perles de culture, etc..<br />
+En fait, dans la nouvelle économie, la distinction entre un échangeur, un réseau social et un site de e-commerce s'efface peu à peu.<br />
+La multiplicité des échangeurs assure la résilience des systèmes alternatifs.<br />
+Il importe donc que les échangeurs puissent communiquer avec des messages normalisés pour éviter le syndrome de la tour de Babel.</p>
+<p>Donc pour, véhiculer les informations de compte de Boussac chez l'échangeur "bitcoin-central.net" par exemple, nous proposons le format suivant: numerodecompte.nom@bitcoin-central.net<br />
+C’est à dire par exemple BC-U123456.boussac@bitcoin-central.net<br />
+Ce format de message peut donc être utilisé pour fournir des informations afin de réaliser une transaction électronique sans que les deux parties soient contraintes d'utiliser le même échangeur.<br />
+Le message peut être présenté sous forme d'un code optique (code 2D: Flashcode ou QRcode) dans une application mobile ou sur un site web. Il peut aussi être envoyé par un échangeur à un autre échangeur.</p>
+<p>Pour illustrer avec une transaction simple, prenons le cas de Alice qui a un compte chez l'échangeur A et de Bob qui a un compte chez l'échangeur B: Alice souhaite envoyer 25 bitcoins à Bob.<br />
+L’application de Bob (émise par l’échangeur B) lui présente un QR code contenant les informations : numerodecompte.bob@echangeurb.ext et le montant souhaité.<br />
+L’application d’Alice (émise par l’échangeur A) capture ces informations. Le protocole suivant peut alors se dérouler :</p>
+<p>1.	A envoie à B un message signé comprenant les informations de compte  (numéro de compte, bob) et le montant souhaité<br />
+2.	B accuse réception du message de A, soit en acceptant de poursuivre la transaction (cas de deux échangeurs qui ont déjà réalisé ensemble au moins une transaction),  soit en demandant à A d’ouvrir un compte chez B d’un solde minimum correspondant au montant la transaction.<br />
+3.	L’échangeur A débite alors le compte de ALICE de 25 BTC et en notifie B.<br />
+4.	B crédite le compte de BOB de 25 BTC, débite celui de A (ouvert par A chez l’échangeur B à la faveur d’une transaction précédente) et en notifie A.<br />
+5.	Pour compenser la transaction, A rajoute 25 BTC sur le compte de B (ouvert par B chez l’échangeur A à la faveur d’une transaction précédente ou créé dynamiquement par A pour cette transaction) et en notifie B.<br />
+6.	Si le montant de la transaction souhaité par ALICE dépasse celui de l’enveloppe disponible chez B pour l’échangeur A (transaction refusée par B à l’étape 2 si le compte n’existe pas encore ou si son solde est insuffisant), A paie BOB directement via le réseau Bitcoin (paiement garanti mais pas instantané).</p>
+<p>Davout et moi préparons un document de spécifications techniques détaillées sur ce principe, qui sera publié prochainement: n'hésitez pas à partager vos commentaires.</p>

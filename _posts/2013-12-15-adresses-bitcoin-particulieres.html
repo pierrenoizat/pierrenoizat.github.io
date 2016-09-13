@@ -1,0 +1,52 @@
+---
+layout: post
+title: Adresses bitcoin particulières
+date: 2013-12-15 21:07:25.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- adresses
+- vanity
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+  dsq_thread_id: '2052732861'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Les adresses bitcoin ne sont pas vraiment parlantes ni faciles à retenir car ce n'est pas leur fonction. Elles sont conçues pour être sûres: il est statistiquement impossible que deux personnes différentes créent indépendamment la même adresse. Elles sont aussi conçues pour être très nombreuses (diversifiées) de sorte qu'une nouvelle adresse peut être générée pour chaque nouvelle transaction sans risque de collision avec une transaction précédente.<br />
+L'entropie d'une adresse, c'est à dire une mesure du nombre de valeurs différentes qu'elle peut prendre, est une suite aléatoire de 160 bits. Pour former une adresse, on ajoute aussi 4 octets de vérifications qui sont une empreinte du reste de l'adresse.<br />
+Elles se présentent donc en général sous la forme d'une suite de 32 à 35 caractères à l'aspect aléatoire:<br />
+<strong>1D3WbrJkG7rdeZ8RFLfmmnZtFoGFnt2xi</strong></p>
+<p>Elles sont de longueur variable. La plus courte que je connaisse comporte 27 caractères à l'aspect bizarre:<br />
+1111111111111111111114oLvT2<br />
+Elle est apparue sur le réseau en aout 2010 mais personne ne semble en connaitre la clé.<br />
+En effet,une adresse valide peut être fabriquée sans même connaître sa clé privée:<br />
+1BitcoinEaterAddressDontSendf59kuE</p>
+<p>Dans ce cas, il ne faut surtout pas envoyer de bitcoin vers elle car ils sont perdus à jamais: personne ne pourra les transférer vers une autre adresse à partir de celle-ci. Vous pouvez vérifier sur un site comme <a href="https://blockchain.info/address/1BitcoinEaterAddressDontSendf59kuE" title="Adresse bitcoin particulière" target="_blank">blockchain.info</a>: quelques uns se sont amusés à envoyer des bitcoins vers cette adresse mais jamais personne n'a pu les dépenser, et pour cause. Il faut considérer ces bitcoin comme une donation aux autres propriétaires de bitcoin: les bitcoins ainsi disparus contribuent à réduire la quantité de bitcoins disponibles donc à en augmenter le prix.<br />
+Evidemment, il faut garder à l'esprit que les bitcoins étant divisibles pratiquement à l'infini, la disparition de ces bitcoins n'affectent en rien la capacité du réseau bitcoin à traiter des transactions.</p>
+<p><img src="{{ site.baseurl }}/assets/vanity_plate-e1387132746846.jpg" alt="Vanity plate" /><br />
+<em>"Vanity plate" sur la voiture d'un dirigeant de la banque Morgan Stanley !</em></p>
+<p>Enfin, il existe une catégorie particulière d'adresses qu'on appelle adresses "vanity". Il s'agit d'adresses qui commencent par une suite de caractères déterminés comme <strong>1PierreFUi7RuFkkA812MQyRruDZhzzh7Y</strong><br />
+Le mot vanity vient de "vanity plate", qui désigne aux US les plaques d'immatriculation particulières qu'on peut voir sur certaines voitures.<br />
+Pour calculer la clé privée correspondant à une telle adresse, il faut un logiciel spécifique comme "vanitygen" qui va effectuer une attaque "brute force" sur cette adresse cible: dès qu'il trouve une adresse commençant par la chaine de caractère recherchée, le logiciel s'arrête et fournit la clé privée. Bien entendu, plus la chaîne recherchée est longue, plus l'attaque est difficile: le temps estimé pour la résolution du problème est affiché par le programme et augmente exponentiellement avec la longueur de la chaîne.</p>
+<p><code>$ ./vanitygen 1Pierre<br />
+Difficulty: 15058417127<br />
+[107.19 Kkey/s][total 691130122][Prob 4.5%][50% in 1.1d]</code></p>
+<p>Mon Mac estime qu'il a 50% de chance en 1.1 jour de trouver une clé privée pour une adresse commençant par 1Pierre (recherche sensible à la casse).<br />
+Si un autre ordinateur est lancé sur la même recherche il trouvera une autre adresse commençant par 1Pierre.<br />
+Contrairement au apparence, la sécurité des adresses bitcoin n'est aucunement menacée par un tel logiciel.<br />
+Par exemple, si je cherche la clé privée d'une adresse commençant par une suite de neuf 1, mon ordinateur annonce qu'il lui faudra  sans doute au moins 3 millions d'années:<br />
+<code>$ ./vanitygen 111111111<br />
+Difficulty: 18446744073709551616<br />
+[109.55 Kkey/s][total 6698240][Prob 0.0%][50% in 3.701061e+06y]</code></p>
+<p>Pour trouver la clé privée d'une adresse commençant par 1D3WbrJkG7rdeZ8, début identique à l'adresse citée plus haut, il annonce 400 milliards d'années. Une coïncidence sur 14 caractères est donc pratiquement impossible. Chaque caractère supplémentaire augmente exponentiellement la difficulté au point qu'une coïncidence parfaite, c'est à dire la découverte d'une clé privée par attaque brute force, est impossible avant l'extinction du soleil.<br />
+Bien sur, la découverte d'une clé privée au hasard est toujours théoriquement possible mais les chances de gagner le gros lot au loto sont infiniment plus grandes.</p>

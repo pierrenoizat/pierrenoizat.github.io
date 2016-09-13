@@ -1,0 +1,38 @@
+---
+layout: post
+title: Crowdfunding and Bitcoin scripts
+date: 
+type: post
+published: false
+status: draft
+categories:
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+- crowdfunding
+- scripts
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Crowdfunding 100 BTC in one month:<br />
+1) To make a pledge, you create a new transaction spending some of your coins to the announced crowdfunding address, but you do not broadcast it. </p>
+<p>2) There cannot be any change: spend the desired amount to one of your own addresses.</p>
+<p>3) The input script signature is signed with SIGHASH_ALL | SIGHASH_ANYONECANPAY (*). </p>
+<p>4) The output value is set to 100 BTC: this is not yet a valid transaction because the output value is larger than the input value.</p>
+<p>5) Do not broadcast the transaction: simply upload it as a private transaction to the entrepreneur's server. </p>
+<p>6) At the same time, broadcast a transaction that spends the coins to a refund address of yours with a locktime set to the blocknumber corresponding to the end date of the crowdfunding campaign (published by the entrepreneur). lockTime prevents a transaction from getting into blocks. For instance, at the time of this writing the current block number is 287 042, "locktime" : 291 542 in the transaction data means a transaction that can't be spent in any block before block #291 542, i.e over a month from now. Once it's in a block, the previously time-locked transaction can be spent. Nodes will accept time-locked transactions and hold them in their memory pool (and thus drop conflicting transactions), but they won't forward otherwise-valid replacements, and only miners with custom rules will mine them for you. If you want to replace a time-locked transaction, you're going to have to mine it yourself, or go find a miner to agree to help you. Once a replacement is mined (or even just a regular transaction spending one of the inputs), all nodes holding the time-locked tx will see the conflict and drop the one in their memory pool. Note that if all the inputs have a UINT_MAX sequence number then lockTime is ignored by the miners. The scope of a crowdfunding platform could include mining power to ensure that the refund transactions go through in the event of an unsuccessfull crowdfunding campaign because if you wait long enough, only a subset of the network would have the time-locked transaction (because new nodes, old nodes restarting and emptying their memory pools). However a double-spending transaction of your own coins to yourself without a timelock would get mined fairly soon if the entrepreneur fails to merge enough funds before the end date of the crowdfunding campaign.</p>
+<p>7) The entrepreneur saves the private transaction and updates its count of how many coins have been pledged.</p>
+<p>8) Once the server has enough coins, it merges the separate transactions together into a new transaction and broadcast it. The new transaction has the same output as the output on each contributed transaction. The inputs to the transaction are collected from the contributed pledges. The merged transaction must be broadcast and mined before one month to avoid a double spend against the time-locked transaction broadcast in step 6. If the entrepreneur succeeds in collecting 100 BTC in less than a month and in getting the merged transaction mined to the blockchain before the set blocknumber, all the time-locked refund transactions will be considered a double spend and therefore will be dropped from the miners memory pools.</p>
+<p>There are at least two observations about this process to bear in mind if you intend to implement it on a crowdfunding platform<br />
+A. Step 6 is optionnal because any pledge can be "double-spent" by its contributor until the last moment, as long as its before the merged transaction is broadcast. Step 6 is explained here to give a warm feeling to the contributors that they do not have to worry about the outcome of the corwdfunding campaign: they will get their refund without any further action on their part if the entrepreneur is unable to merge the transactions before the end date of the campaign. This holds true if and only if the refund transactions are mined at that time: unless a mining pool is involved, the longer the campaign the less likely the miners are to have kept the lock-timed refund transactions in their memory pools.<br />
+However, if the refund transactions are not mined, the contributors can simply issue a new refund transactions.</p>
+<p>B. The entrepreneur can merge an insufficient set of transactions, one that  does not reach the required fundraising target, simply by adding his own funds as if he were a contributor. This is true of any crowdfunding mechanism and should be explicitely forbidden or allowed the terms and conditions of the platform.</p>
+<p>(*) The SIGHASH_ALL flag is the default and means « sign all of the outputs ». SIGHASH_ANYONECANPAY is an additional modifier that means the signature only covers the input it’s found in - the other inputs can be anything.By combining these flags together, you are able to create a signature that is valid even when other inputs are added, but breaks if the outputs or other properties of the transaction are changed.</p>

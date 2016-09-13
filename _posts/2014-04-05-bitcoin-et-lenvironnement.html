@@ -1,0 +1,32 @@
+---
+layout: post
+title: Bitcoin et l'environnement
+date: 2014-04-05 14:30:01.000000000 +02:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '2588805651'
+  _bitmonet: ''
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>La question de l’impact environnemental d’un réseau comme Bitcoin est souvent posée. Trop souvent, la réponse ignore les bénéfices environnementaux pour se focaliser uniquement sur la consommation d’énergie du réseau, aujourd’hui l’équivalent d’une centrale solaire.</p>
+<p><img src="{{ site.baseurl }}/assets/environnement_0-e1396711546281.jpg" alt="Environnement" /></p>
+<p>La consommation des "data centers" de Visa, Mastercard et des banques mais aussi l’empreinte carbone des innombrables déplacements en agence, des camions blindés de transports de fonds, des buildings de verre et d’acier occupés par les services des banques et des intermédiaires financiers traditionnels reste un mystère.</p>
+<p>En réalité, il est assez difficile d’évaluer l’empreinte carbone de bitcoin ne serait ce qu’à cause de la coexistence de CPU, GPU et ASICs, avec une meilleure efficacité énergétique pour les ASICs,  chez les différentes catégories de mineurs.<br />
+Un autre paramètre important à prendre en compte est la saisonnalité du minage chez les particuliers: une partie de la chaleur dégagée par le minage peut contribuer à réduire l’utilisation des appareils de chauffage.<br />
+C’est d’ailleurs une des idées à la base du lancement de la start up française <a href="http://www.qarnot-computing.com" title="Qarnot Computing" target="_blank">Qarnot Computing</a>, spécialisée dans le calcul distribué.</p>
+<p>L’idée de concevoir un algorithme de minage qui produise des résultats de calcul utile à d’autres fins que la sécurité du réseau a été avancée et mise en oeuvre dans le projet Primecoin. Cependant, toute réutilisation des résultats de calcul du minage entraine de facto une <strong>réduction de la sécurité du réseau</strong> de deux façons.<br />
+Premièrement, le <strong>coût d’opportunité d’une attaque</strong> des 51% est abaissé car la mobilisation d’une puissance de calcul pour attaquer le réseau peut être partiellement rentabilisée par la réutilisation des résultats à d’autres fins. Dans le cas de Primecoin, il s’agit de la découverte de très grands nombre premiers.<br />
+Deuxièmement, la <strong>décentralisation du réseau ne serait plus assurée</strong> par le même mécanisme mis en oeuvre dans Bitcoin. Les mining pools bitcoin se tiennent à l’écart des 51% de part de marché, soit volontairement, soit par désistement de mineurs eux-mêmes qui rejoignent un autre pool moins dominant quand le pool s’approche trop des 51%.<br />
+Si les résultats de calcul étaient réutilisables, le mining pool dominant pourrait arbitrer sa décision en considérant d’une part la baisse du cours provoquée par la centralisation et d’autre part le bénéfice qu’il pourrait tirer de la réutilisation des résultats. La décision du mining pool ne serait donc plus uniquement guidée par la sécurité du réseau.</p>
+<p>Il convient simplement de garder à l’esprit qu’un algorithme de minage est une fonction de coût appliquée à la possibilité d’écrire de nouvelles transactions dans la chaîne de blocs.</p>
+<p>Notons aussi que les réseaux alternatifs (altcoins) ont clairement un impact environnemental négatif car ils consomment une énergie supplémentaire sans apporter une fonctionnalité ou une sécurité supérieure au réseau Bitcoin. En réalité, comme nous venons de le voir avec Primecoin,  ils apportent toujours une fonctionnalité  supplémentaire ou différente <strong>au détriment de la protection contre la centralisation</strong>. Dans le cas de Litecoin, le délai de confirmation plus court favorise les pools dominants et par conséquent augmente le risque d’une prise de contrôle centralisée. L’explication est un peu technique mais concerne le taux de blocs minés inutilement (« stale blocks ») quand un autre pool a trouvé un bloc valide juste avant.</p>

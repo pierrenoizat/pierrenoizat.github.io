@@ -1,0 +1,49 @@
+---
+layout: post
+title: Nobel 2012 de Physique et Bitcoin
+date: 2012-10-13 13:44:19.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- bitcoin
+- nobel
+- ordinateur
+- quantique
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '883614531'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Le prix Nobel de Physique 2012 vient d'être co-attribué à un français, Serge Haroche, pour ses travaux sur l'observation non-destructive du photon, particule quantique constitutive de la lumière.<br />
+Une particule quantique se distingue d'une autre particule par sa masse très petite et sa vitesse très grande, de sorte que son état est décrit non par une position exacte à un instant t (comme dans la mécanique classique) mais par une loi de probabilité.</p>
+<p>Quel rapport avec Bitcoin ? Tout simplement que ces travaux pourraient avancer le développement d'ordinateurs quantiques, théoriquement capables de "craquer" les algorithmes cryptographiques utilisés dans les systèmes informatiques sécurisés, comme bitcoin, les systèmes bancaires, militaires ou nucléaires.</p>
+<p><img src="{{ site.baseurl }}/assets/haroche_postcard-e1350139336334.jpg" alt="Serge Haroche" /><br />
+Serge Haroche, prix Nobel de Physique 2012</p>
+<p>Qu'est ce qu'un ordinateur quantique ("quantum computer" en anglais) ?<br />
+Pour simplifier (façon de parler), c'est un ordinateur qui manipule des "qbits" (contraction de "quantum bits") au lieu de "bits" (contraction de "binary digits").<br />
+En clair, un ordinateur classique déterministe qui fonctionne avec un registre de trois bits par exemple, peut prendre 2<sup>3</sup> = 8 valeurs différentes.<br />
+Si on suppose maintenant que le registre ne peut pas être lu mais qu'on peut seulement mesurer la probabilité qu'il soit dans un état (par exemple 0,1,0) ou un autre (par exemple 1,1,0), nous avons affaire à un ordinateur classique probabiliste dont l'état est représenté par un octuple de nombres réels positifs (a,b,c,d,e,f,g,h) où a est la probabilité que la valeur du registre soit (0,0,0), b qu'elle soit (0,0,1), etc.<br />
+S'agissant de probabilités, la somme des possibles vaut 1 ( a + b + c + d + e + f + g + h = 1).<br />
+Avec un ordinateur quantique, la probabilité de chaque valeur du registre prend la forme d'un nombre complexe. L'état de l'ordinateur est alors décrit par un octuple de nombres complexes (a,b,c,d,e,f,g,h) avec cette fois:<br />
+|a|<sup>2</sup> +  |b|<sup>2</sup> + |c|<sup>2</sup> + |d|<sup>2</sup> + |e|<sup>2</sup> + |f|<sup>2</sup> + |g|<sup>2</sup> + |h|<sup>2</sup> = 1</p>
+<p>Un ordinateur quantique calculant sur 3 qbits est donc équivalent à un ordinateur classique travaillant sur 8 coefficients complexes.<br />
+Plus précisément, l'ordinateur quantique consiste alors en trois dispositifs ( qbits) permettant de mesurer un état constitué des amplitudes (réelles) de 8 coefficients complexes: en faisant varier les paramètres de la mesure, notamment les conditions initiales, avec un "programme", on peut donc effectuer les calculs d'un algorithme, théoriquement plus rapidement qu'avec un ordinateur classique. Tout le problème est de passer de la théorie à la pratique.<br />
+La fabrication et l'assemblage de ces dispositifs qbits au sein d'une machine et la programmation de la machine sont des problèmes non résolus, approchés aujourd'hui de manière expérimentale.<br />
+Cependant, même si ces problèmes étaient un jour surmontés, la seconde loi de la thermodynamique viendrait sans doute au secours de la cryptographie moderne.<br />
+Ce que Bruce Schneier, grand spécialiste de la cryptographie, a résumé élégamment dans son livre "Applied Cryptography":<br />
+"..les attaques brute force contre des clés de 256 bits resteront impraticables jusqu’à ce que les ordinateurs soient construits avec autre chose que de la matière et occupent quelque chose d’autre que de l’espace."</p>
+<p>Pour illustrer ce qu'on entend par "attaque brute force", en voici un exemple théorique: la loterie chinoise. Le gouvernement chinois imposerait à tous les fabricants de téléviseurs en Chine d’intégrer un circuit dédié capable de calculer plusieurs millions d’empreintes par secondes. Quand le gouvernement voudrait craquer une clé, il la publierait vers tous les téléviseurs en utilisant les fréquences TV. Une récompense serait offerte au premier foyer qui lui communique la solution.</p>
+<p>Cependant, la seconde loi de la thermodynamique implique qu’une information (quelle qu’elle soit) requiert de l’énergie pour être simplement représentée: si nous avons un système (un ordinateur) qui doit enregistrer la valeur d’un bit, nous avons besoin d’une énergie au moins égale à kT, où 'k' est la constante de Boltzman (k = 1.38*10<sup>-23</sup> Joule/oK) et 'T' est la température du système en degré Kelvin en vertu de l’équation qui relie l’énergie à la température d’un système: E = kT. Supposant que notre ordinateur idéal fonctionne à la température moyenne du cosmos (3.2 <sup>o</sup>K) (de sorte qu’il n’a pas besoin de refroidissement), l’énergie requise pour enregistrer un bit serait de l’ordre de 4.416*10<sup>-23</sup> Joule.</p>
+<p>Le soleil rayonne chaque année environ 1.21*10<sup>34</sup> Joule. En divisant par l’énergie requise pour représenter un bit d’information, nous calculons qu’en utilisant toute l’énergie rayonnée par le soleil pendant un an, nous pourrions alimenter notre ordinateur idéal pour effectuer 2.74*10<sup>56</sup> changements de valeur d’un bit. Ceci revient à parcourir l’ensemble des valeurs d’une clé de 187 bits. Ceci n’inclut aucun calcul de vérification de la validité d’une clé privée par rapport à une clé publique cible.</p>
+<p>En utilisant une supernova au lieu du soleil nous pourrions parcourir toutes les valeurs d’un compteur de 219 bits... Parcourir les valeurs possibles d’une clé de 256 bits comme celle d'une signature bitcoin demanderait donc l’énergie du soleil pendant au moins 400.000.000.000.000.000.000 ans...</p>
+<p>Notez bien que ces calculs sont totalement indépendants de tout progrès technologique: tant que la seconde loi de la thermodynamique reste valable, les progrès des ordinateurs ne changeront rien à ces chiffres.<br />
+Le prix Nobel 2012 de physique restera donc une bonne nouvelle pour les "bitcoiners" français.</p>

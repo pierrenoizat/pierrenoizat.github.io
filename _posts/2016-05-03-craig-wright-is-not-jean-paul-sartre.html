@@ -1,0 +1,42 @@
+---
+layout: post
+title: Craig Wright is not Jean-Paul Sartre
+date: 2016-05-03 16:40:44.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+tags:
+- satoshi
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '4797208411'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>Craig Wright, cryptologue australien en mal d'attention, a publié un article sur son blog laissant croire qu'il pourrait être Satoshi.<br />
+EDIT (22 mai): Devant les nombreuses questions soulevées par son article, Craig Wright a depuis placé son blog en mode "offline" !</p>
+<p><img src="{{ site.baseurl }}/assets/Sartre_1967_crop.jpg" alt="Jean-Paul Sartre en 1967" /></p>
+<p>Il a en particulier publié la signature suivante comme "exemple":</p>
+<p>------------------------- Signature File -------------------------<br />
+MEUCIQDBKn1Uly8m0UyzETObUSL4wYdBfd4ejvtoQfVcNCIK4AIgZmMsXNQWHvo6KDd2Tu6euEl1<br />
+3VTC3ihl6XUlhcU+fM4=<br />
+------------------------- End Signature --------------------------</p>
+<p>Il se trouve que cette signature est en fait un copié/collé de l'input de la transaction <a href="https://blockchain.info/tx/828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe" target="_blank">828ef3b079f9c23829c56fe86e85b4a69d9e06e5b54ea597eef5fb3ffef509fe</a>, visible par tous dans la blockchain !</p>
+<p>Pour le vérifier, il suffit de taper les 3 lignes suivantes dans n'importe quel terminal:<br />
+<pre style="width:750px"><code>$ irb<br />
+2.3.0 :001 > require('base64')<br />
+ => true<br />
+2.3.0 :002 > s='MEUCIQDBKn1Uly8m0UyzETObUSL4wYdBfd4ejvtoQfVcNCIK4AIgZmMsXNQWHvo6KDd2Tu6euEl13VTC3ihl6XUlhcU+fM4='<br />
+ => "MEUCIQDBKn1Uly8m0UyzETObUSL4wYdBfd4ejvtoQfVcNCIK4AIgZmMsXNQWHvo6KDd2Tu6euEl13VTC3ihl6XUlhcU+fM4="<br />
+2.3.0 :003 > hex=Base64.decode64(s).unpack('H*').first<br />
+ => "3045022100c12a7d54972f26d14cb311339b5122f8c187417dde1e8efb6841f55c34220ae0022066632c5cd4161efa3a2837764eee9eb84975dd54c2de2865e9752585c53e7cce"</pre></code></p>
+<p>Quoique la transaction en question porte la signature de Satoshi, le simple fait de copier ladite signature dans un blog ne prouve absolument rien.<br />
+Il est donc très peu probable que Satoshi se révèle avec une "preuve" aussi peu convaincante.<br />
+La référence à Jean-Paul Sartre, qui a refusé le prix Nobel de littérature en 1964, semble par contre tout à fait pertinente concernant la fuite de Satoshi devant les honneurs médiatiques que lui vaudrait son invention.</p>

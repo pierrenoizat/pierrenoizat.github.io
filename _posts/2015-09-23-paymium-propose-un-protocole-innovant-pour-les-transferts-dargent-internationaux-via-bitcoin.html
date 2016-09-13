@@ -1,0 +1,36 @@
+---
+layout: post
+title: Paymium propose un protocole innovant pour les transferts d'argent internationaux
+  via Bitcoin
+date: 2015-09-23 13:48:23.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+  dsq_thread_id: '4158008075'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>De nombreux acteurs de l'écosystème Bitcoin ont identifié le potentiel de la technologie Blockchain pour faciliter les transferts d'argent internationaux.<br />
+Les coûts élevés et la qualité de service déplorable des acteurs traditionnels (Western Union, Moneygram, etc) nous laissent penser que la marge de progression dans ce secteur est importante.</p>
+<p><img src="{{ site.baseurl }}/assets/money-remittance-hk.jpg" alt="money-remittance-hk" width="599" height="405" class="aligncenter size-full wp-image-1440" /></p>
+<p>Il faut être conscient du temps perdu en files d'attentes aux guichets de ces organisations, par des utilisateurs le plus souvent payés au salaire minimum pour un seul jour de congés dans la semaine..<br />
+La start up <a href="http://nypost.com/2015/09/10/bitcoin-based-mobile-app-abra-raises-12-million/" target="_blank">Abra</a> vient d'ailleurs de lever 12 millions de dollars pour lancer son application mobile de transfert d'argent dans le monde entier. L'application n'est pour le moment utilisable qu'aux US.</p>
+<p><a href="https://paymium.com" target="_blank">Paymium</a> propose un protocole permettant aux bourses Bitcoin (Bitcoin exchanges) de coopérer pour assurer un service de transfert d'argent efficace, utilisant le réseau Bitcoin comme mécanisme de compensation entre exchanges.<br />
+Selon ce protocole, une transaction de compensation (en bitcoins) intervient entre deux exchanges lorsque le solde du compte d'un exchange A chez son confrère B dépasse un certain seuil. La situation se produit typiquement quand l'exchange A est situé dans un pays émergent et B dans un pays développé: les flux d'argent sont alors majoritairement de B vers A. La compensation de A vers B équilibre les comptes périodiquement entre les deux exchanges.</p>
+<p>Le <a href="http://www.e-ducat.fr/wp-content/uploads/2015/09/Paymium_remittance_protocol_v0_2.pdf">document publié aujourd'hui par Paymium</a> spécifie comment implémenter ce protocole de compensation en termes techniques et opérationnels.<br />
+La solution consiste en points d'API permettant à deux exchanges de négocier entre eux un transfert de devises.<br />
+Supposons que Alice veut réaliser un transfert d'une somme en euros vers Bob au Nigeria où un exchange opérant avec des Nairas (la monnaie officielle du Nigeria, symbole NGN) s'est mis d'accord avec l'exchange d'Alice situé, lui, en zone Euro.<br />
+Grâce au protocole proposé, les deux exchanges s'accordent sur un taux de change EUR/BTC et un taux NGN/BTC et utilisent Bitcoin comme monnaie pivot pour maintenir un compte entre les deux exchanges.<br />
+Lorsque ce compte dépasse un certain montant convenu entre les deux exchanges, une transaction de compensation en bitcoins le ramène à zéro.<br />
+Les commentaires ou questions à propos de ce protocole peuvent être adressés directement par email à contact@paymium.com</p>

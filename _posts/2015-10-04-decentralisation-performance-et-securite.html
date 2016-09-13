@@ -1,0 +1,52 @@
+---
+layout: post
+title: Décentralisation, performance et sécurité
+date: 2015-10-04 16:25:48.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '4193451136'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>Sécurité, résilience et décentralisation d'un système sont des notions relatives et étroitement corrélées.<br />
+La sécurité ne peut être que relative à la performance.<br />
+Plus précisément, la sécurité est une abstraction qui ne se matérialise que dans un compromis entre sécurité et performance.</p>
+<p>La performance elle-même est le résultat de nombreux compromis, issu de la conception du système, entre facilité d'usage, rapidité et capacité de traitement.</p>
+<p>Le débat sur l'évolution de la taille des blocs au sein de la communauté Bitcoin en est l'illustration.<br />
+Certains, tels Gavin Andresen et Mike Hearn, s'inquiètent des performances à court terme du réseau, concernant sa capacité de traitement et choisissent d'accepter le risque d'une moindre décentralisation.</p>
+<p>La décentralisation garantit pourtant la meilleure protection contre la création de passages obligés, les mineurs, qui, moins nombreux, deviendraient des points de vulnérabilités. Ce que le système bancaire traditionnel confond avec des points de contrôle.<br />
+La recherche de la performance ne peut pas ignorer la finalité du réseau qui reste la sécurisation des transactions pour le plus grand nombre.</p>
+<p>Une solution plus durable consiste à développer des protocoles de paiement s'appuyant sur des transactions "off chain", c'est à dire des transactions où les participants s'échangent des messages de transaction (donc messages en clair et signés) sans que celles ne soient publiées immédiatement sur le réseau.<br />
+Le plus bel exemple nous est proposé par le Lightning Network, protocole de paiement qui permet l'établissement d'un canal de paiement Bitcoin entre deux parties.<br />
+La vision du Lightning Network, développé par Joseph Poon et Thaddeus Dryja, correspond à celle d'un avatar du protocole IP où les paquets de données seraient remplacés par des micro-transactions "off-chain", routées vers les participants et agrégées in fine dans des transactions de compensation "on-chain".<br />
+Dans cette vision, le nombre de participants au Lightning Network peut croître considérablement sans provoquer de centralisation excessive du réseau Bitcoin.<br />
+L'implémentation du protocole du Lightning Network repose sur des "hashed timelock contracts" entre les deux participants établissant un canal de paiement entre eux.<br />
+Ceci suppose l'intégration dans le protocole Bitcoin de deux nouveaux paramètres de signature (sighhash types: SIGHASH_NORMALIZED et SIGHASH_NOINPUT ) et d'un nouvel OP code dans le langage de script ( CHECKLOCKTIMEVERIFY ).<br />
+Les nouveaux "sighash types" sont requis pour éviter les problèmes de malléabilité (incertitudes sur le périmètre de la signature) qui sont critiques pour les transactions "off chain". En effet, ces transactions, par définition, n'ont pas de d'ID de transaction vérifiable dans la blockchain.<br />
+Le nouvel opérande ("OP code") CHECKLOCKTIMEVERIFY permet d'intégrer une contrainte de temps sur un output dans une transaction "on-chain" en évitant le risque d'une double-dépense de l'input correspondant.<br />
+Au total, pas moins de 4 "Bitcoin Improvement Proposals" (BIP) seront nécessaires: BIP 62, 65, 68 et 112.</p>
+<p><img src="{{ site.baseurl }}/assets/thaddeus_dryja.jpeg" alt="Tadge Dryja" /><br />
+<em>Thaddeus Dryja, co-author of the Lightning Network white paper</em></p>
+<p>Après une série de micro-transactions, seule une transaction finale de compensation va s'inscrire dans la blockchain.<br />
+Or Bitcoin apporte un maximum d'avantages dans le cas des micro-transactions, mal traitées par les systèmes traditionnels.<br />
+C'est le "sweet spot" du marché servi par Bitcoin.</p>
+<p>En synthèse, nous disposons aujourd'hui de 4 solutions pour assurer la montée en puissance du réseau Bitcoin:</p>
+<p>1) SQL sidechains: ce sont les services par Paymium et ses concurrents. Les dépôts de bitcoins chez Paymium transfèrent des bitcoins chez Paymium où ils vont faire l'objet de transactions "off-chain" enregistrées dans une base de données SQL. Ces "Paymium coins" sont échangeables un-pour-un avec des bitcoins: il suffit de les retirer de chez Paymium pur qu'ils réintègrent la blockchain. Paymium peut donc être considéré comme l'opérateur d'une "sidechain" SQL centralisée.</p>
+<p>2) Sidechains: ce concept est développé actuellement par la société Blockstream. Il consiste à créer des sidecoins dans une base de données de type blockchain. La technologie blockchain se substitue dans ce cas à la technologie SQL. Comme pour les SQL sidecoins, les sidecoins sont échangeables un-pour-un avec des bitcoins dans une transaction de retour de la sidechain vers la blockchain Bitcoin.<br />
+Une sidechain peut être théoriquement centralisée ou décentralisée selon le protocole qui la gouverne.</p>
+<p>3) Canaux de micro-transactions "off chain": protocole d'échanges de micro-transactions "off-chain" tel que le Lightning Network.</p>
+<p>4) Augmentation de la taille des blocs: en dernier recours et en veillant à ne pas compromettre la décentralisation du réseau.<br />
+Toute augmentation de la taille de blocs tend en effet à favoriser les gros mineurs au détriment des petits et à diminuer le nombre des "full nodes", ces participants au réseau qui maintiennent une copie complète de la blockchain.</p>
+<p>Les solutions 2, 3 et 4 complètent bien la solution 1 mais nécessiteront chacune au moins un "soft fork" du réseau Bitcoin à travers une mise à jour du protocole.</p>

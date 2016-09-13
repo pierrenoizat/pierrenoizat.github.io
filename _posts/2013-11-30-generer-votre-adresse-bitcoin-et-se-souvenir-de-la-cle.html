@@ -1,0 +1,80 @@
+---
+layout: post
+title: Générer votre adresse bitcoin et se souvenir de la clé
+date: 2013-11-30 13:43:01.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+  dsq_thread_id: '2012455926'
+  _post_restored_from: a:3:{s:20:"restored_revision_id";i:1057;s:16:"restored_by_user";i:1;s:13:"restored_time";i:1385834487;}
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Commencer par imaginer une phrase que vous allez retenir facilement: une série de 10 à 12 mots que vous aurez tiré au sort dans un dictionnaire de 20 000 mots ou plus.<br />
+Par exemple: <strong>je te salue Mauricette</strong><br />
+A l'évidence, les mots de cette phrase ne sont pas tirés au sort mais faciles à retenir.<br />
+Si vous voulez une sécurité optimale, ce sera plus difficile à retenir mais il vaut mieux tirer au sort.</p>
+<p>Calculez l'empreinte numérique de cette suite de mots (attention à la casse majuscule/minuscule) avec la fonction SHA256:<br />
+vous obtenez une clé privée bitcoin sous la forme d'une suite de 256 bits, codée sous forme de 64 caractères hexadécimaux (0-9, A-F)<br />
+La clé privée s'écrit<br />
+29d5b2d551d8412063c493aedfce8f7c95a4777a96e69d9afe38d24101393910</p>
+<p>Convertie en base 58, elle s'écrit de manière plus compacte:<br />
+<strong>5J8iCDu6Bc9nzNjaJFeKoPWWbmqmdrpys9Hea2pyhw4app8ihuy</strong></p>
+<p>Cette clé privée permet de calculer l'adresse bitcoin:<br />
+<strong>1QC4eewsWZ6EPsXQsosnwA9sLjVcbbJDk8</strong></p>
+<p>Vous pouvez vérifier que l'adresse correspond bien à la clé privée ci-dessus grâce à un site comme www.bitaddress.org: collez simplement la clé privée en base 58 dans l'onglet "Wallet details". La page de bitaddress calculera et affichera l'adresse bitcoin correspondante.</p>
+<p><img src="{{ site.baseurl }}/assets/Capture-d&#8217;&#233;cran-2013-11-30-&#224;-15.48.31-e1385823053737.png" alt="Capture d'écran Bitaddress.org" /></p>
+<p>Quand vous utilisez bitaddress.org, veillez à déconnecter votre ordinateur du réseau et désactiver le wifi avant de coller une clé privée. Lorsque vous avez fini avec bitaddress, quittez le navigateur et redémarrez l'ordinateur avant de réactiver le wifi et/ou de le reconnecter.</p>
+<p>Grâce aux logiciels libres comme le langage Ruby et ses nombreuses librairies ("gems"), le code informatique permettant d'effectuer ces opération est d'une concision et une simplicité désarmante.<br />
+Il est très facile à mettre en oeuvre <strong>si vous disposez d'un Mac ou d'une machine Linux</strong>.<br />
+Si vous n'avez qu'une machine Windows, il est temps de l'emmener au recyclage et de vous doter d'un ordinateur (donc une machine Linux ou un Mac OSX, qui contient une machine Unix).<br />
+Voici la marche à suivre.<br />
+Installez d'abord Xcode et Homebrew sur votre Mac (les utilisateurs de Linux sauront configurer leur machine).<br />
+Installez Xcode depuis l'Appstore sans oublier d'installer les Command-line Tools (dans Xcode Preferences -> Downloads). Pour cela, ouvrez une fenêtre d'application Terminal pour installer homebrew:<br />
+<code>$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"</code></p>
+<p>Installez ruby 2.0 et bitcoin-ruby:<br />
+<code>$ brew install ruby<br />
+$ gem install bitcoin-ruby</code></p>
+<p>Vous pouvez aussi installer des gems utiles avec bitcoin-ruby si vous vous sentez l'âme d'un développeur mais elles sont facultatives:<br />
+$ gem install eventmachine<br />
+$ gem install sequel<br />
+$ gem install sqlite3</p>
+<p>Créer le fichier brainwallet.rb avec le contenu suivant (merci David!)  :<br />
+<code>#!/usr/bin/env ruby<br />
+# Lister les librairies nécessaires :<br />
+require 'rubygems'<br />
+require 'digest'<br />
+require 'bitcoin'<br />
+# Saisir la phrase de passe et calculer la clé en base 58 ainsi que l'adresse correspondante:<br />
+passphrase = ARGV.join(' ')<br />
+k = Digest::SHA2.hexdigest(passphrase)<br />
+key = Bitcoin::Key.new(k)<br />
+# Afficher les résultats:<br />
+puts "Private key : #{k}"<br />
+puts "Base 58     : #{key.to_base58}"<br />
+puts "Address     : #{key.addr}"</code></p>
+<p>Désactiver le wifi et débrancher le câble réseau.<br />
+Lancer l'application Terminal et taper (remplacer par "votre phrase" par votre propre phrase de passe):<br />
+<code>$ ./brainwallet.rb votre phrase</code></p>
+<p>Vous obtiendrez:<br />
+$ ./brainwallet.rb votre phrase<br />
+Private key : ccf73fef51916bf5e0a341f7b40d4b6def728c03d41e745bda18b93bdcdbf234<br />
+Base 58     : 5KNZA8g8ZTQjojKFa5sbuCKuNEewfgfPWhNwtGs5WvJ6yDk1sGc<br />
+Address     : 1ENSmBUvaM5WoF3K4Uwj7vrsWBLJJgGxYw</p>
+<p>Copiez et collez dans un fichier texte que vous sauvegardez uniquement sur une clé USB.<br />
+Retirez la clé USB et éteignez (ou redémarrez) l'ordinateur.<br />
+Vous avez maintenant en tête et sur votre clé USB une clé privée correspondant à une adresse bitcoin.<br />
+Placez la clé USB dans une enveloppe scellée dans un coffre à la banque.<br />
+Vous pouvez utiliser cette adresse bitcoin pour recevoir des paiements ou des donations en toute sécurité car la clé privée n'est pas stockée sur votre ordinateur et n'a jamais été en contact avec internet.<br />
+Pour dépenser ultérieurement les bitcoins reçus ou les déplacer vers une autre adresse bitcoin, il vous suffira d'importer la clé privée au format base 58 dans un wallet Bitcoin. </p>

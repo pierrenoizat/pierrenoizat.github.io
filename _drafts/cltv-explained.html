@@ -1,0 +1,86 @@
+---
+layout: post
+title: CLTV Explained
+date: 
+type: post
+published: false
+status: draft
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _edit_last: '1'
+  _bitmonet: ''
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Signed raw tx (da46c558db198e969ab3f75dec0e5bbc37a68e8d033ae61ab078611c3349efda ) spending CLTV output from 3M7trrZdWspbN3GrANtEh1d38n5UgkSk5x to 1NxPqNDy9jk3k7Ngn6rZXgmRgB8aEMCyxc explained:</p>
+<p>010000000180235a895ee6547dd47a9c63a9263d9bbd39e84cb953a8bd6cdce1a39b95bfb700000000744830450221009f0b8d4e71c0fee261c40e080c18cb83e263380cf21bf3cb9d4a047e9106ed330220012ca00ad33f5cc35429c6a05dc8caaf772de71f1899df341bc5780b460bd0fa012a0400f91857b17521026edc650b929056b58e4247274a02e3f1665dd10fb1da2575ebae27447f24363eac000000000118f00100000000001976a914f0d49483a296c82bcf3a6730377435b8f688484688ac00f91857</p>
+<p>Explanation:</p>
+<p>01 00 00 00<br />
+=> tx version</p>
+<p>inputs:<br />
+01<br />
+=> input count</p>
+<p>80235a895ee6547dd47a9c63a9263d9bbd39e84cb953a8bd6cdce1a39b95bfb7<br />
+=> previous tx hash, reversed</p>
+<p>00 00 00 00<br />
+=> previous output index</p>
+<p>74<br />
+=> ? push 116 bytes</p>
+<p>48<br />
+=> next 72 bytes (begin scriptSig)</p>
+<p>30<br />
+=> sequence</p>
+<p>45<br />
+=> signature length is 69 bytes</p>
+<p>02<br />
+=> integer</p>
+<p>21<br />
+=> length is 33 bytes</p>
+<p>009f0b8d4e71c0fee261c40e080c18cb83e263380cf21bf3cb9d4a047e9106ed33<br />
+=> 33-byte X</p>
+<p>02<br />
+=> integer</p>
+<p>20<br />
+=> length is 32 bytes</p>
+<p>012ca00ad33f5cc35429c6a05dc8caaf772de71f1899df341bc5780b460bd0fa<br />
+=> 32-byte Y (end of signature)</p>
+<p>01<br />
+=> sigHashAll (signature modifier flag)</p>
+<p>2a<br />
+=> length is 42 bytes (beginning of 42-byte redeem script)</p>
+<p>04<br />
+=> push next 4 bytes</p>
+<p>00f91857<br />
+=> 4-byte expiry time, little endian (beginning of redeem script)</p>
+<p>b1<br />
+=> CHECKLOCKTIMEVERIFY</p>
+<p>75<br />
+=> DROP</p>
+<p>21<br />
+=> length is 33 bytes</p>
+<p>026edc650b929056b58e4247274a02e3f1665dd10fb1da2575ebae27447f24363e<br />
+=> 33-byte compressed public key</p>
+<p>ac<br />
+=> CHECKSIG  (end of redeem script, end scriptSig)</p>
+<p>00 00 00 00<br />
+=> sequence</p>
+<p>outputs:<br />
+01<br />
+=> output count</p>
+<p>18 f0 01 00 00 00 00 00<br />
+=> 8-byte amount in satoshis, little endian</p>
+<p>19<br />
+=> push next 25 bytes</p>
+<p>76 a9 14f0d49483a296c82bcf3a6730377435b8f6884846 88 ac<br />
+=> DUP H160 (H160 of address 1NxPqNDy9jk3k7Ngn6rZXgmRgB8aEMCyxc) EQUALVERIFY CHECKSIG</p>
+<p>00f91857<br />
+=> expiry time</p>
+<p>(Yet to be explained) Unsigned tx was:<br />
+0100000001daef49331c6178b01ae63a038d8ea637bc5b0eec5df7b39a968e19db58c546da000000002a0400f91857b17521026edc650b929056b58e4247274a02e3f1665dd10fb1da2575ebae27447f24363eacffffffff0118f00100000000001976a914f0d49483a296c82bcf3a6730377435b8f688484688ac00000000</p>

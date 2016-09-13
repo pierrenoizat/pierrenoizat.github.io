@@ -1,0 +1,42 @@
+---
+layout: post
+title: Bitcoin et la propriété intellectuelle
+date: 2015-03-03 21:38:59.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- preuve
+- propriété intellectuelle
+meta:
+  dsq_thread_id: '3572332869'
+  _bitmonet: ''
+  _edit_last: '1'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<p>Tout d'abord, je dois féliciter spoke999 pour avoir, le premier, découvert la clé privée cachée dans la couverture du livre "Bitcoin, mode d'emploi".<br />
+Une nouvelle couverture a été publiée, contenant la clé privée de l'adresse <a href="https://blockchain.info/address/1K7WXkzDMzesAXzd1PLVzPYiKvKzSVSUV1" target="_blank">1K7WXkzDMzesAXzd1PLVzPYiKvKzSVSUV1</a>.<br />
+Bonne chance aux chercheurs de bitcoins: c'est un peu plus difficile mais tout à fait accessible à un bitcoiner déterminé.</p>
+<p>Pour maitriser les droits d'un livre, il peut être utile de prouver l'antériorité d'une publication avant une autre.<br />
+Par exemple, j'ai publié "Bitcoin, mode d'emploi" sous format papier et électronique, sous licence Creative Commons et je souhaite m'assurer que personne ne puisse contester mes droits d'auteur pour imposer d'autres conditions de publication.</p>
+<p>Avant l'invention de Bitcoin, les solutions pour prouver l'antériorité étaient plutôt coûteuses et peu pratiques: enveloppe Soleau à l'<a href="http://www.inpi.fr/fr/enveloppes-soleau.html" title="INPI, enveloppes Soleau" target="_blank">INPI</a> ou services propriétaires en ligne comme <a href="http://www.mapreuve.com" title="mapreuve.com" target="_blank">mapreuve.com</a><br />
+Grâce à la technologie Bitcoin, j'ai pu  facilement enregistrer une empreinte (SHA256) du fichier source dans la chaîne de blocs, plus précisément dans l'output de la transaction <a href="https://blockchain.info/tx/c2bb6812cd9200fbe23bf12663d3e89385824668c4ff09dee3e45295364c87d4" title="Transaction Bitcoin prouvant l'existence du fichier source" target="_blank">c2bb6812cd9200fbe23bf12663d3e89385824668c4ff09dee3e45295364c87d4</a>.<br />
+Ma preuve d'antériorité est vérifiable gratuitement, par n'importe quel explorateur de la chaîne de blocs comme <a href="https://blockchain.info/tx/c2bb6812cd9200fbe23bf12663d3e89385824668c4ff09dee3e45295364c87d4" target="_blank">blockchain.info</a> ou <a href="http://btc.blockr.io/tx/info/c2bb6812cd9200fbe23bf12663d3e89385824668c4ff09dee3e45295364c87d4" target="_blank">blockr.io</a> ou <a href="https://www.biteasy.com/blockchain/transactions/c2bb6812cd9200fbe23bf12663d3e89385824668c4ff09dee3e45295364c87d4" target="_blank">biteasy.com</a>.</p>
+<p>Cette transaction utilise l'instruction OP_RETURN du langage de script Bitcoin.<br />
+Cette instruction signifie simplement que les données qui suivent, constituant l'output de la transaction, ne contiennent ni montant ni destination mais simplement une message codé à la convenance de l'émetteur de la transaction.<br />
+De ce fait, la transaction est considérée comme "non standard" par le réseau et n'est donc pas relayée.<br />
+Elle doit être incluse dans un bloc miné par l'émetteur lui-même ou par un mineur coopératif à qui la transaction devra être envoyée.<br />
+Le mineur récupère le montant de l'input comme commission de transaction car l'output ne peut pas être dépensé directement.</p>
+<p>J'ai utilisé l'excellent service en ligne <a href="http://www.proofofexistence.com/about#technical" title="Proof of Existence" target="_blank">Proof of Existence</a> qui a construit la transaction et assuré son inclusion dans un bloc.<br />
+Je peux fournir le fichier source (format epub) dont l'empreinte est visible dans la sortie de la transaction en question:<br />
+98dc091e0ccf2d492c1cecc06aa30437ceac44dc54bf9b27e738a80566a664a8</p>
+<p>Un vérificateur indépendant peut obtenir le fichier et n'a qu'à recalculer l'empreinte pour s'assurer que ce fichier existait à coup sûr avant le bloc 341944, c'est à dire avant le 4 février 2015 à 16h08, heure de Paris.</p>
+<p>Ceci démontre que la chaîne de bloc est potentiellement un registre universel, gratuit et libre d'accès pour toutes les publications et tous les auteurs.. Le projet <a href="http://factom.org" title="Factom" target="_blank">Factom</a> s'occupe déjà d'industrialiser ce processus en évitant de polluer la blockchain avec un trop grand nombre de transactions OP_RETURN. On peut aussi imaginer une "<a href="http://www.e-ducat.fr/blockchain-et-sidechains/" title="Blockchain et Sidechains" target="_blank">sidechain</a>" dédiée à cet usage un peu particulier, non-financier, de Bitcoin.</p>

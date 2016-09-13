@@ -1,0 +1,54 @@
+---
+layout: post
+title: Crypto-art
+date: 2015-02-13 17:59:59.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags:
+- art
+- clé privée
+- d3
+meta:
+  dsq_thread_id: '3573684603'
+  wpd3-1327-0: '{"includes":[],"code":"var dataset = [];\n\t\t\tvar str = \"\";\n\t\t\tvar
+    color = \"yellow\";\n\t\t\t\n\t\t\tfor (var i = 0; i < 256; i++) {\n\t\t\t\tvar
+    alea = Math.floor((Math.random() * 20)/10);\n\t\t\t\tvar newNumber = parseInt(alea.toString(2),2);\n\t\t\t\tstr
+    = str + newNumber;\n\t\t\t\tdataset.push(newNumber);\n\t\t\t}\n\t\n\t\t\tvar h
+    = 1000;\n\t\t\tvar h1 = 798;\n\t\t\tvar w = 670;\n\t\t\t\n\t\t\tvar svg = d3.select(\".wpd3-1327-0\")\n\t\t\t.append(\"svg\")\n\t\t\t.attr(\"width\",w)\n\t\t\t.attr(\"height\",h);\n\t\t\t\n\t\t\tfor
+    (var i = 0; i < 16; i++) {\n\t\t\t\tsvg.append(\"text\")\n\t\t\t\t      .attr(\"x\",
+    0)\n\t\t\t\t      .attr(\"y\", h - 230 + i*15)\n\t\t\t\t      .text(function(d)
+    { return str.substring(i*16,(i+1)*16); });\n\t\t\t}\n\t\t\t\n\t\t\tvar circles
+    = svg.selectAll(\"circle\")\n\t\t\t.data(dataset)\n\t\t\t.enter()\n\t\t\t.append(\"circle\");\n\t\t\t\n\t\t\tcircles.attr(\"cx\",
+    function(d,i) {\n\t\t\t\treturn ((i%16)*(h1/24+h1/96)+h1/32);\n\t\t\t})\n\t\t\t.attr(\"cy\",function(d,i)
+    {\n\t\t\t\treturn (Math.floor(i/16)*(h1/32+h1/48) + h1/32); }\n\t\t\t)\n\t\t\t.attr(\"r\",
+    function(d) {\n\t\t\t\treturn h1/48;\n\t\t\t})\n\t\t\t.attr({\"fill\": function(d)
+    {\n\t\t\t\tif (d==0) { return \"yellow\"}\n\t\t\t\telse { return \"blue\"};\n\t\t\t},\n\t\t\t\"stroke\":function(d)
+    {\n\t\t\t\tif (d==0) { return \"green\"}\n\t\t\t\telse { return \"red\"};\n\t\t\t},\n\t\t\t\"stroke-width\":function(d)
+    { return h1/96;\n\t\t\t\t}});"}'
+  _bitmonet: ''
+  _edit_last: '1'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Tout d’abord, je dois féliciter <strong>spoke999</strong> pour avoir, le premier, découvert la clé privée cachée dans la couverture du livre.<br />
+Les commentaires sous mon article précédent attestent que ça n’était pas si simple dans la mesure où j’avais fait une erreur de codage couleur sur un des 256 carrés.<br />
+Marco et ejp (pseudo sur le forum Bitcointalk) ont trouvé la solution aussi mais ont été devancés pour la récupération des 0,075 Bitcoins logés sur l’adresse.<br />
+L’algorithme était résolument simple (1 pour un carré clair et 0 pour un foncé) mais l’erreur confirme qu’il ne faut <strong>pas</strong> faire de cryptographie à la main !<br />
+Je vous propose donc <a href="https://gist.github.com/pierrenoizat/77c7bfd29c6bba04ed61" title="Gist sur Github" target="_blank">ce petit script</a> utilisant l’excellente <a title="Librairie javascript D3" href="http://d3js.org" target="blank">librairie javascript d3</a> pour générer une clé privée aléatoire et la visualiser de manière colorée.<br />
+Il suffit de <a href="http://www.e-ducat.fr/?p=1327&preview=true">rafraichir la page</a> pour générer une nouvelle clé.</p>
+<p>[d3-source canvas="wpd3-1327-0"]</p>
+<p>&nbsp;</p>
+<p>Les 0 et les 1 peuvent être copiés et collés dans votre application Terminal:<br />
+sur Mac OSX, tapez simplement <code>irb</code> derrière le prompt $ pour accéder à la console Ruby puis convertissez le tout en héxadécimal<br />
+<code>string= "01.. "<br />
+"0x%02x " % string.to_i(2)</code><br />
+La clé privée au format héxadécimal peut être collée dans <a href="https://www.bitaddress.org/bitaddress.org-v2.9.8-SHA256-2c5d16dbcde600147162172090d940fd9646981b7d751d9bddfc5ef383f89308.html" title="bitaddress.org" target="_blank">bitaddress.org</a> pour l'obtenir au format WIF et l'importer dans un wallet.</p>
+<p>Je vais l’utiliser ce script pour vous <strong>proposer prochainement un nouveau challenge</strong>, avec un codage des couleurs différent pour que ça ne soit pas trop facile..</p>

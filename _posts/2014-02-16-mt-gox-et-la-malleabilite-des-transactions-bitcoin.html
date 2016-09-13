@@ -1,0 +1,39 @@
+---
+layout: post
+title: Mt Gox et la malléabilité des transactions Bitcoin
+date: 2014-02-16 13:33:05.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bitcoin
+- Technologie
+tags: []
+meta:
+  _bitmonet: ''
+  _edit_last: '1'
+  dsq_thread_id: '2275268836'
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: ''
+  last_name: ''
+---
+<p>Le problème de la « malléabilité » des transactions Bitcoin est remonté à la surface ces derniers jours quand mt gox a donné des explications à l’arrêt des retraits en bitcoin sur sa plate-forme.<br />
+Ce problème n’est pas nouveau car il a déjà été discuté sur les forums dès le printemps 2011. De quoi s’agit il ?<br />
+Supposons qu’un fraudeur fasse un retrait de bitcoins depuis son compte mt gox.<br />
+Mt gox émet une transaction sur le réseau et donne l’ID de transaction à son client peu scrupuleux.</p>
+<p><img src="{{ site.baseurl }}/assets/Bitcoin_Transaction_Visual.png" alt="Transaction Bitcoin" /><br />
+<em>L'empreinte (hash) d'une transaction bitcoin est son ID dans la chaîne de blocs</em></p>
+<p>Le fraudeur peut capter la transaction bitcoin (rapplelez vous, elles sont signées mais pas cryptées) émise par mt gox et modifier légèrement le format d’une signature sans que cette signature cesse d’être valide.<br />
+Ce faisant, le fraudeur peut donc diffuser cette même transaction (mêmes adresses, mêmes clés publiques, mêmes montants et signatures valides) avec une ID de transaction différente car quelques bits sont différents de la transaction reçue à l’origine.<br />
+En minant ou en collaborant avec un pool de minage, le fraudeur peut réussir à inscrire la transaction modifiée dans la blockchain avant que la transaction originale soit inscrite.<br />
+Dans ce cas, la transaction originale ne passera plus auprès des mineurs car elle sera considérée comme une tentative de double-dépense.<br />
+Notre fraudeur peut donc maintenant se retourner vers mt gox en prétendant que la transaction originale n’a pas été reçue: si le système comptable de mt gox ne peut pas retrouver automatiquement la trace d’une transaction dans la blcokchain autrement qu’avec l’ID de transaction, mt gox a un problème et doit arrêter les retraits si son équipe support est submergée de réclamations d ece genre.<br />
+C’est ce qui s’est passé. Mt fox n’a pas d’autre choix que de mettre à jour ses systèmes comptables afin de pouvoir retrouver automatiquement une transaction par le montant, l’adresse de destination et un index propriétaire qui permet de distinguer une transaction si le client fait rapidement plusieurs demandes de retraits du même montant vers la même adresse.</p>
+<p>Techniquement, il s’agit simplement d’une particularité de la libraire openssl utilisée par le client bitcoin de référence. Lorsque le client bitcoin fabrique une signature, il utilise un format appelé DER (Distinguished Encoding Rules) dans la norme X.690,  qui est une norme internationale de l’ ITU-Tl ASN.1 spécifiant comment des données doivent être encodées dans un flux binaire.<br />
+Ce format est sans ambiguité de sorte que, au moins depuis la version 0.8 du client bitcoin de référence, les signatures fabriquées par ce client sont conformes.<br />
+Cependant, ce même client utilise la librairie openssl pour décoder les signatures qu’il reçoit et cette librairie est plutôt tolérante vis à vis de la norme DER: un format de signature légèrement modifié par rapport à la norme DER sera accepté par le client bitcoin.</p>
+<p>Les développeurs du « core team » de Gavin Andresen ont donc le choix entre s’appuyer sur une librairie standard (openssl) avec cette « malléabilité » ou bien intégrer leur propre implémentation du décodage des signatures, plus rigoureuse, en perdant le bénéfice de la compatibilité avec une librairie standard.<br />
+Jusqu’à présent ils ont préféré la compatibilité ce qui doit inciter les « exchanges » à prendre en compte la malléabilité dans leurs systèmes comptables. C’est ce que fait bitcoin-central dont les clients n’ont pas été affectés par les problèmes de retraits que les clients des autres exchanges (mt gox, bitstamp, etc) ont connus. Mt gox a annoncé la reprise des retraits en bitcoins pour lundi prochain (17 février 2014).</p>
