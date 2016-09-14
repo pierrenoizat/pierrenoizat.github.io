@@ -23,12 +23,12 @@ description: Learn Bitcoin scripting language and play with scripts!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  A propos: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
+    - Ancien site e-ducat.fr: "http://e-ducat.fr"
+    - Tutoriel Markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Paymium: "https://paymium.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -40,7 +40,7 @@ avatar: "/img/Pierre_Noizat_Photo.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Pierre Noizat
-  email: "pierre.noizat@paymium.com"
+  email: "boussac.75011@gmail.com"
   facebook: pierre.noizat
   github: pierrenoizat
   twitter: PierreNoizat
@@ -49,6 +49,7 @@ author:
   stackoverflow: yourlink  # eg. "3943160/daattali"
   instagram: yourname # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
+  bitcoin: "1PierreFUi7RuFkkA812MQyRruDZhzzh7Y"
 
 # Select which links to show in the footer
 footer-links-active:
@@ -85,7 +86,7 @@ url-pretty: "bitcoinscri.pt"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Paris"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: bitcoinscri.pt
-subtitle: This is where I will tell my friends way too much about me
+subtitle: Bitcoin, internet des transactions et monnaie programmable
 bigimg: /img/path.jpg
 ---
 
@@ -19,12 +19,12 @@ bigimg: /img/path.jpg
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Publié le {{ post.date | date: "%d/%m/%Y" }}
     </p>
 
     <div class="post-entry">
       {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Lire&nbsp;la suite]</a>
     </div>
 
     {% if post.tags.size > 0 %}
@@ -48,12 +48,12 @@ bigimg: /img/path.jpg
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Articles plus récents</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Articles précédents &rarr;</a>
   </li>
   {% endif %}
 </ul>
