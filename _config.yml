@@ -50,6 +50,7 @@ author:
   instagram: yourname # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
   bitcoin: "1PierreFUi7RuFkkA812MQyRruDZhzzh7Y"
+  qrcode: "/assets/unitag_qrcode_Pierre.png"
 
 # Select which links to show in the footer
 footer-links-active:
@@ -58,6 +59,7 @@ footer-links-active:
   email: true
   twitter: true
   github: true
+  bitcoin: true
   linkedin: false
   xing: false
   stackoverflow: false

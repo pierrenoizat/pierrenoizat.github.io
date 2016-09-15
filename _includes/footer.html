@@ -1,6 +1,22 @@
 <footer>
   <div class="container beautiful-jekyll-footer">
     <div class="row">
+	
+		<!-- Bitcoin Address Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h5 class="modal-title" id="myModalLabel">Mon adresse Bitcoin:</h5>
+		      </div>
+		      <div class="modal-body">
+		        <strong>{{site.author.bitcoin}}</strong>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           {% if site.author.facebook and site.footer-links-active.facebook %}
@@ -33,14 +49,17 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.email and site.footer-links-active.email %}
+		  {% if site.author.bitcoin and site.footer-links-active.bitcoin %}
           <li>
-            <a href="mailto:{{ site.author.email }}" title="Email me">
+			<a href="#" data-toggle="modal" data-target="#myModal">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-bitcoin fa-stack-1x fa-inverse"></i>
               </span>
-            </a>
+			</a>
+
+			
+			
           </li>
           {% endif %}
 		  {% if site.author.email and site.footer-links-active.email %}
