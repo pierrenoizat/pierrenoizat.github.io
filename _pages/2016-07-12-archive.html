@@ -1,0 +1,64 @@
+---
+layout: page
+title: Archives
+date: 2016-07-12 14:57:32.000000000 +02:00
+type: page
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  _wp_page_template: onecolumn-page.php
+  _bitmonet: ''
+author:
+  login: admin
+  email: noizat@hotmail.com
+  display_name: Boussac
+  first_name: 'Pierre'
+  last_name: 'Noizat'
+---
+<nav>
+    <a href="#allposts">All posts</a>
+    {% for category in site.categories %}
+        <a href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
+    {% endfor %}
+</nav>
+
+<div class="catbloc" id="allposts">
+    <h2>All posts</h2>
+    
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">
+                    <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                    {{ post.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+</div>
+
+{% for category in site.categories %}
+    <div class="catbloc" id="{{ category | first | remove:' ' }}">
+        <h2>{{ category | first }}</h2>
+        
+        <ul>
+           {% for posts in category %}
+             {% for post in posts %}
+               {% if post.url %}
+                 <li>
+                   <a href="{{ post.url }}">
+                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                     {{ post.title }}
+                   </a>
+                 </li>
+               {% endif %}
+             {% endfor %}
+           {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+
+

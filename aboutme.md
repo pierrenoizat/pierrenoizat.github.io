@@ -21,12 +21,6 @@ Bitcoin réalise pour nos transactions ce que le web a réalisé pour nos public
 
 Pierre Noizat, Septembre 2011
 
-
-Mon adresse bitcoin:
-
-![1PierreFUi7RuFkkA812MQyRruDZhzzh7Y]({{ site.baseurl }}/assets/unitag_qrcode_Pierre.png)
-1PierreFUi7RuFkkA812MQyRruDZhzzh7Y
-
-### Une courte vidéo d'introduction sur Bitcoin
+#### Une courte vidéo d'introduction sur Bitcoin:
 
 [Vidéo figaro.tv de déc. 2013 sur youtube (10 min)](https://www.youtube.com/watch?v=18S_1n5u92g)

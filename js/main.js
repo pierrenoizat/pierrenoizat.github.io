@@ -135,6 +135,57 @@ var main = {
 
 // 2fc73a3a967e97599c9763d05e564189
 
-
-
 document.addEventListener('DOMContentLoaded', main.init);
+
+// d3.js crypto art example
+
+var dataset = [];
+var str = "";
+			
+for (var i = 0; i < 256; i++) {
+	var alea = Math.floor((Math.random() * 20)/10); // alea is between 0 and 2, 2 excluded
+	var newNumber = parseInt(alea.toString(2),2); // newNumber is 0 or 1
+	str = str + newNumber;  // the 256-bit private key is stored in str as a string
+	dataset.push(newNumber);  // the 256-bit private key generated is pushed to dataset
+			}
+	
+var h = 1000;
+var h1 = 798;
+var w = 670;
+
+var svg = d3.select(".bar-chart") // change "body" to the div class where the SVG image is to be displayed in
+	.append("svg")
+	.attr("width",w)
+	.attr("height",h);
+		
+for (var i = 0; i < 16; i++) {
+	svg.append("text")
+	.attr("x", 0)
+	.attr("y", h - 230 + i*15)
+	.text(function(d) { return str.substring(i*16,(i+1)*16); });  // print str as 16 lines of 16 bits each
+		}
+			
+var circles = svg.selectAll("circle")
+	.data(dataset)
+	.enter()
+	.append("circle");
+			
+circles.attr("cx", function(d,i) {
+		return ((i%16)*(5*h1)+3*h1)/96;
+			})
+	.attr("cy",function(d,i) {
+		return (Math.floor(i/16)*5*h1 + 3*h1)/96; 
+			})
+	.attr("r", function(d) {
+		return 2*h1/96;
+			})
+	.attr({"fill": function(d) {
+		if (d==0) { return "yellow"}
+		else { return "blue"};
+			},
+		"stroke":function(d) {
+		if (d==0) { return "green"}
+		else { return "red"};
+			},
+		"stroke-width":function(d) { return h1/96;
+			}});

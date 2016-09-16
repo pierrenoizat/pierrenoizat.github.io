@@ -9,6 +9,13 @@ body {
   position: relative;
   background: #FFF;
 }
+
+
+
+.catbloc:not(:target) {
+    display: none;
+}
+
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -625,4 +632,17 @@ td.gutter {
 
 #social-share-section {
   margin-bottom: 30px;
+}
+
+svg {
+  margin: 2em 0;
+  font: 10px sans-serif;
+}
+
+.foreground {
+  fill: #2D6A99;
+}
+
+.background {
+  fill: #eee;
 }
