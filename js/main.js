@@ -137,7 +137,7 @@ var main = {
 
 document.addEventListener('DOMContentLoaded', main.init);
 
-// d3.js crypto art example
+// d3.js crypto art example, works with d3.v3 but does NOT work with d3.v4"
 
 var dataset = [];
 var str = "";
