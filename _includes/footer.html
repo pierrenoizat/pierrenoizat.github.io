@@ -3,6 +3,11 @@
     <div class="row">
 	
 		<!-- Bitcoin Address Modal -->
+		<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.qrcode.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/qrcode.js"></script>
+		
+	
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
@@ -11,8 +16,13 @@
 		        <h5 class="modal-title" id="myModalLabel">Mon adresse Bitcoin:</h5>
 		      </div>
 		      <div class="modal-body">
-				<img src="{{ site.baseurl }}/assets/unitag_qrcode_Pierre.png" alt="QR code Pierre" />
+				<div id="qrcodeCanvas"></div>
 		        <strong>{{site.author.bitcoin}}</strong>
+				<script>
+					jQuery('#qrcodeCanvas').qrcode({
+						text	: "{{site.author.bitcoin}}"
+					});	
+				</script>
 		      </div>
 		    </div>
 		  </div>

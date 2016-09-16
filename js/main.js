@@ -189,3 +189,16 @@ circles.attr("cx", function(d,i) {
 			},
 		"stroke-width":function(d) { return h1/96;
 			}});
+			
+//  qrcode
+
+var ready;
+ready = function() {
+	
+	$('#myModal').on('click', function (event) {
+	  	var qrcodeString = "1PierreFUi7RuFkkA812MQyRruDZhzzh7Y";
+	  	var title = "Block ";
+		new QRCode(document.getElementById("test"), qrcodeString);
+	});
+}
+$(document).ready(ready);
