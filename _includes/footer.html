@@ -32,7 +32,7 @@
         <ul class="list-inline text-center footer-links">
           {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
-            <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+            <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -42,7 +42,7 @@
           {% endif %}
           {% if site.author.github and site.footer-links-active.github %}
           <li>
-            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
+            <a href="https://github.com/{{ site.author.github }}" title="GitHub" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -52,7 +52,7 @@
           {% endif %}
 		  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
-            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -62,11 +62,10 @@
           {% endif %}
 		  {% if site.author.bitcoin and site.footer-links-active.bitcoin %}
           <li>
-			<a href="#myModal" data-toggle="modal">
+			<a href="#myModal" data-toggle="modal" title="Bitcoin">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-bitcoin fa-stack-1x fa-inverse"></i>
-				</a>
               </span>
 			</a>
           </li>
@@ -83,7 +82,7 @@
           {% endif %}
 		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
           <li>
-            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn">
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -93,7 +92,7 @@
           {% endif %}
       	  {% if site.author.youtube and site.footer-links-active.youtube %}
           <li>
-            <a href="https://www.youtube.com/{{ site.author.youtube }}" title="YouTube">
+            <a href="https://www.youtube.com/{{ site.author.youtube }}" title="YouTube" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
@@ -125,7 +124,7 @@
 	        <!-- Please don't remove this, keep my open source work credited :) -->
 		<p class="theme-by text-muted">
 		  Theme:
-		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		  <a href="http://deanattali.com/beautiful-jekyll/" target="_blank">beautiful-jekyll</a>
 		</p>
       </div>
     </div>
