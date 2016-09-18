@@ -1,4 +1,4 @@
-var disqus_developer = 1;
+//var disqus_developer = 1;
 // comment out above line when in production
 var main = {
 
