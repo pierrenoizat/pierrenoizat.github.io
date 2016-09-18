@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 title: Introduction
 date: 2011-11-11 15:43:27.000000000 +01:00
 type: page
@@ -64,3 +65,7 @@ A chaque montant en bitcoin reçu sur une adresse correspond donc une clé secr�
 La propriété d’un bitcoin se résume donc à la connaissance de la clé secrète permettant de le transférer.
 
 Vous pouvez disposer d’autant de « coffres » que vous voulez et vous pouvez transférer des bitcoins vers n'importe quel coffre.
+
+{% if page.comments %}
+	{% include disqus.html %}
+{% endif %}

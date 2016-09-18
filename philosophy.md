@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 title: Vitre cassée
 date: 2011-11-12 00:41:23.000000000 +01:00
 type: page
