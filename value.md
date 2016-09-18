@@ -70,3 +70,7 @@ La communauté Bitcoin a déjà connu les péripéties inhérentes à toute inno
 Début avril 2011, 30 000 Bitcoins ont été cédés brutalement auprès du principal bureau de change (Mt Gox), provoquant une baisse du taux de change de près de 30% en une journée. Il n'y avait alors que 5 millions de bitcoins en circulation sur le maximum possible de 21 millions, pourtant, au bout de quelques jours, le bitcoin avait retrouvé son cours précédent.
 
 De même, mi-juin 2011, ce bureau de change s’est vu attaqué par un piratage informatique visant les clients qui avaient choisi un mot de passe faible pour accéder à leur compte sur ce site (mtgox.com) : là encore, les taux ont chuté pendant quelques jours puis le site en question a renforcé sa sécurité, les clients ont changé leurs mots de passe et Bitcoin a repris sa marche en avant.
+
+{% if page.comments %}
+	{% include disqus.html %}
+{% endif %}

@@ -34,3 +34,7 @@ Bastiat au contraire s’est intéressé à ce qu’on ne voit pas, même à tra
 Ce sophisme est à l’origine du concept industriel d’obsolescence programmée qui fonde la « mécroissance » que nous vivons. Dans une économie de cartel, où les prix n’intègrent pas l’empreinte environnementale de la production, il est possible de nous faire croire (merci TF1) que nous avons besoin de changer de téléviseur ou de voiture tous les 4 ans alors que ces produits peuvent durer plus de 10 ans : la manipulation repose sur le concept de déprogrammation mentale opérée par les médias pour entretenir le sentiment d’obsolescence matérielle au détriment d’un sentiment humain d’existence, ce sentiment d’existence qui définit la liberté selon Jean-Jacques Rousseau.
 
 Un autre sophisme, que je dénonce mais que Bastiat aurait dénoncé, est celui de la raison de la majorité. Il prétend que si la France ne représente que 1% de la population mondiale, elle ne peut avoir  d’influence dans le monde (sophisme répandu par des « économistes » autoproclamés et adoubés par le système). Ainsi, la cité d’Athènes (Socrate, Platon, Aristote, etc) qui ne représentait que 1% de la population mondiale de l’époque, continue de nous influencer, alors que Sparte, cité guerrière, n’a pas laissé de trace.
+
+{% if page.comments %}
+	{% include disqus.html %}
+{% endif %}

@@ -42,3 +42,7 @@ Par contre, l’inflation va frapper les retraités et les actifs qui touchent u
 Les taux d’intérêts sont donc antagonistes du seul mécanisme qui peut réguler efficacement la création monétaire par les banques.
 
 Les banques ne cesseraient pas de prêter si les prêts avec intérêts disparaissaient car elles parviendraient quand même à capturer de nouvelles richesses simplement grâce au privilège de la création monétaire par la dette.
+
+{% if page.comments %}
+	{% include disqus.html %}
+{% endif %}
