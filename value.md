@@ -33,9 +33,12 @@ La création monétaire des bitcoins se fait par le versement de ces récompense
 
 La valeur nominale de cette récompense sera divisée par deux tous les quatre ans afin d’appliquer la limite asymptotique (maximale) de 21 millions de bitcoins en circulation : récompense de 50 bitcoins par bloc actuellement, 25 bitcoins par bloc à partir de 2013, etc..
 
-En plus de cette récompense créatrice de nouvelles unités monétaires, le participant au processus de traitement des transactions bitcoins reçoit, lorsqu’il résout un bloc, les commissions de traitement contenues dans les transactions (les redevances de transaction) du bloc en question, typiquement 0.01 BTC par transaction.
+![Limite des 21 millions]({{ site.baseurl }}/img/bitcoin_money_supply_limit.png)
 
-Ces commissions sont destinées à maintenir la motivation des participants lorsque le montant de la récompense aura diminué significativement, à partir de 2017.
+
+En plus de cette récompense créatrice de nouvelles unités monétaires, le participant au processus de traitement des transactions bitcoins reçoit, lorsqu’il résout un bloc, les commissions de traitement contenues dans les transactions (les redevances de transaction) du bloc en question.
+
+Ces commissions sont destinées à maintenir la motivation des participants lorsque le montant de la récompense aura diminué significativement.
 	
 A cet horizon, on peut penser que la valeur des bitcoins aura augmenté suffisamment pour assurer la rentabilité du réseau de traitement des transactions.
 

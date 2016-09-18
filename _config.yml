@@ -23,8 +23,7 @@ description: Learn Bitcoin scripting language and play with scripts!
 
 # List of links in the navigation bar
 navbar-links:
-  A propos: "aboutme"
-  Archives: "archive"
+  Blog: "archive/#allposts"
   Livres: "livre"
   Bitcoin:
     - Introduction: "introduction"
@@ -49,27 +48,23 @@ author:
   email: "boussac.75011@gmail.com"
   facebook: pierre.noizat
   github: pierrenoizat
-  twitter: PierreNoizat
+  twitter: e_ducat
   linkedin: pierrenoizat  # eg. daattali
-  xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
-  instagram: yourname # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
   bitcoin: "1PierreFUi7RuFkkA812MQyRruDZhzzh7Y"
   qrcode: "/assets/unitag_qrcode_Pierre.png"
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
   github: true
   bitcoin: true
   linkedin: true
-  xing: false
   stackoverflow: false
-  instagram: false
   youtube: false
 
 # Select which share links to show in posts

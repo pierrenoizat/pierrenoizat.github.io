@@ -1,5 +1,5 @@
 // Dean Attali / Beautiful Jekyll 2016
-
+var disqus_developer = 1;
 var main = {
 
   bigImgEl : null,

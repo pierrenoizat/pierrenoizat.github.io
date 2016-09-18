@@ -12,17 +12,19 @@ meta:
   _edit_last: '1'
 author:
   login: admin
-  email: noizat@hotmail.com
   display_name: Boussac
   first_name: 'Pierre'
   last_name: 'Noizat'
 ---
+
 ![Vitrier]({{ site.baseurl }}/img/vitrier.png)
+
 _photo: Willy Ronis_
 
 Les vitriers ont inspiré Frédéric Bastiat au 19e siècle. Bastiat était un iconoclaste génial qui polémiquait avec Joseph Proudhon dans la Voix du Peuple (c’était l’époque où il y avait encore des journaux). Pourtant ils étaient très proches dans leur volonté de combattre les structures de pouvoir obsolètes : ils avaient compris qu’elles se maintenaient grâce au sophismes et aux mensonges dont la révélation devait être évitée à tout prix. Avec la généralisation de l’accès à internet, ça craque de partout : ils vont enfin avoir gain de cause.
 
 ![Bastiat-Proudhon]({{ site.baseurl }}/img/proudhon-bastiat-oddcouple.png)
+
 _Frédéric Bastiat - Joseph Proudhon_
 
 En tant qu’économiste, Bastiat a su reconnaître le caractère subjectif de toute valeur : si la valeur s’appuie sur l’utilité marginale et la rareté, ce qui m’est utile n’est pas forcément utile à mon voisin, ce qui est rare ici et maintenant ne le sera peut être pas ailleurs et ni demain. On a donc affaire à un humaniste plutôt qu’un collectiviste. A l’inverse, la notion de valeur travail, héritée d’Aristote, relevait d’une vision préindustrielle de l’économie où la quantité de travail à fournir serait la mesure de la valeur d’échange. L’humaniste l’emporte toujours sur le pessimiste dans la durée, le plus célèbre pessimiste de l’histoire restant Marx, qui a force de se focaliser sur le travail non qualifié n’a pas su intégrer l’importance du progrès technologique et de la création de la classe moyenne qui l’accompagne.

@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Archives
+title: Blog
 ---
 <nav>
-    <a href="#allposts">Tous les articles</a>
+    <a href="#allposts"><strong>Tous les articles, </strong></a>
     {% for category in site.categories %}
         <a href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
     {% endfor %}
 </nav>
 
 <div class="catbloc" id="allposts">
-    <h2>All posts</h2>
+    <h2>Tous les articles</h2>
     
         <ul>
             {% for post in site.posts %}
