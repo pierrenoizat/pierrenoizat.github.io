@@ -18,9 +18,11 @@ author:
   last_name: 'Noizat'
 ---
 
-Cet article marque la migration de e-ducat.fr de Wordpress à Jekyll, une autre technologie libre pour les blogs: j'espère que ce nouveau style vous plaira. En tout cas Jekyll devrait vous permettre de charger les pages plus rapidement.
+Cet article marque la migration de e-ducat.fr de Wordpress à Jekyll, une autre technologie libre pour les blogs: j'espère que ce nouveau style vous plaira. Il me reste encore à importer les commentaires des articles passés sur la version wordpress. Ce sera fait prochainement.
 
-Le sujet du jour, au lendemain de la conférence Ethereum de [Shanghai](shanghai devcon), porte sur les nombreuses questions autour des "améliorations" apportées, selon les "marketeurs" qui gravitent autour de ce projet, par le protocole Ethereum.
+En tout cas Jekyll devrait vous permettre de charger les pages plus rapidement.
+
+Le sujet du jour, au lendemain de la conférence Ethereum de Shanghai, porte sur les nombreuses questions autour des "améliorations" apportées, selon les "marketeurs" qui gravitent autour de ce projet, par le protocole Ethereum.
  
 ![Ethereum Founder Vitalik Buterin]({{ site.baseurl }}/assets/founder-of-ethereum-vitalik-buterin-disrupt-london-2015.jpg)
 
