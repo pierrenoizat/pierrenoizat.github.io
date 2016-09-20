@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Questions sur Ethereum
 date: 2016-09-19 00:40:51.000000000 +01:00
 type: post
