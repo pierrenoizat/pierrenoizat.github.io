@@ -30,6 +30,7 @@ navbar-links:
     - Démarrage: "./links/gettingstarted"
     - Blockchain: "./links/blockchain"
     - Signatures: "./links/ecdsa"
+    - Liens: "./links/links"
   Economie:
     - Création: "./links/supply"
     - Valeur: "./links/value"
