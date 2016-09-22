@@ -36,6 +36,10 @@ La valeur nominale de cette récompense sera divisée par deux tous les quatre a
 
 ![Limite des 21 millions]({{ site.baseurl }}/img/bitcoin_money_supply_limit.png)
 
+![Courbe de création monétaire des bitcoins]({{ site.baseurl }}/img/bitcoin_money_supply_curve.png)
+
+_Les bitcoins sont créés progressivement par les mineurs avec une asymptote à 21 millions_
+
 
 En plus de cette récompense créatrice de nouvelles unités monétaires, le participant au processus de traitement des transactions bitcoins reçoit, lorsqu’il résout un bloc, les commissions de traitement contenues dans les transactions (les redevances de transaction) du bloc en question.
 

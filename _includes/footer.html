@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="{{ site.baseurl }}/js/qrcode.js"></script>
 		
 	
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="bitcoinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -27,6 +27,21 @@
 		    </div>
 		  </div>
 		</div>
+		
+		<div class="modal fade" id="ccModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h5 class="modal-title" id="myModalLabel">Licence Creative Commons:</h5>
+		      </div>
+		      <div class="modal-body">
+		        <strong>{{site.author.creativecommons}}</strong>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	
 	
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -62,7 +77,7 @@
           {% endif %}
 		  {% if site.author.bitcoin and site.footer-links-active.bitcoin %}
           <li>
-			<a href="#myModal" data-toggle="modal" title="Bitcoin">
+			<a href="#bitcoinModal" data-toggle="modal" title="Bitcoin">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-bitcoin fa-stack-1x fa-inverse"></i>
@@ -106,6 +121,16 @@
 			  <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>
+          {% endif %}
+		{% if site.footer-links-active.creativecommons %}
+		  <li>
+			<a href="#ccModal" data-toggle="modal" title="License Creative Commons">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-creative-commons fa-stack-1x fa-inverse"></i>
 			  </span>
 			</a>
 		  </li>

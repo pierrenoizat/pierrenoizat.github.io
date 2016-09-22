@@ -23,17 +23,17 @@ description: Learn Bitcoin scripting language and play with scripts!
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "archive/#allposts"
-  Livres: "livre"
+  Blog: "./links/archive/#allposts"
+  Livres: "./links/livre"
   Bitcoin:
-    - Introduction: "introduction"
-    - Démarrage: "gettingstarted"
-    - Blockchain: "blockchain"
-    - Signatures: "ecdsa"
+    - Introduction: "./links/introduction"
+    - Démarrage: "./links/gettingstarted"
+    - Blockchain: "./links/blockchain"
+    - Signatures: "./links/ecdsa"
   Economie:
-    - Création: "supply"
-    - Valeur: "value"
-    - Philosophie: "philosophy"
+    - Création: "./links/supply"
+    - Valeur: "./links/value"
+    - Philosophie: "./links/philosophy"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -53,6 +53,7 @@ author:
   stackoverflow: yourlink  # eg. "3943160/daattali"
   youtube: yourlink # eg. user/daattali or channel/daattali
   bitcoin: "1PierreFUi7RuFkkA812MQyRruDZhzzh7Y"
+  creativecommons: "e-ducat.fr est publié sous la licence Creative Commons Paternité - Partage à l’Identique 2.0 France."
   qrcode: "/assets/unitag_qrcode_Pierre.png"
 
 # Select which links to show in the footer
@@ -63,6 +64,7 @@ footer-links-active:
   twitter: true
   github: true
   bitcoin: true
+  creativecommons: true
   linkedin: true
   stackoverflow: false
   youtube: false

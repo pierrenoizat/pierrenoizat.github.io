@@ -17,7 +17,7 @@ author:
   first_name: ''
   last_name: ''
 ---
-Une organisation qui crée la monnaie peut dépenser cette monnaie pour s'approprier des actifs AVANT que la monnaie ne circule dans l'économie.
+Une licence bancaire permet de créer l'argent par l'émission de crédits: de fait, une banque peut dépenser cette monnaie pour s'approprier des actifs AVANT que la monnaie ne circule dans l'économie.
 Prenons l'exemple d'un prêt immobilier émis par une banque pour l'achat d'un appartement.
 
 Pour créer l’argent ex-nihilo, la banque crée deux dettes, une à son actif qui est le prêt que vous devez lui rembourser, une autre à son passif qui est le compte de dépôt où elle dépose l’argent emprunté : elle vous le doit car vous pouvez le retirer à tout moment, ce que vous ferez pour payer l’appartement.
