@@ -67,8 +67,10 @@ Il serait alors clairement moins coûteux d'attaquer la chaîne PoS que la chaî
 Nous pouvons d'ailleurs constater expérimentalement que, depuis l'invention publiée par Satoshi Nakamoto il y a 7 ans, aucune chaîne PoS n'a pu approcher, même de loin, la valorisation de Bitcoin.
 
 
+J'ajoute que la périodicité des blocs, contrôlée par la difficulté avec comme cible la production d'un bloc toutes les dix minutes en moyenne, fait du réseau Bitcoin un **serveur de temps distribué pratiquement infalsifiable**. Cette propriété fait défaut aux réseaux PoS qui doivent considérer le temps écoulé comme une donnée externe au même titre que le cours du dollar ou la température de l'air à Paris.
+
 ![Une preuve de travail monumentale]({{ site.baseurl }}/assets/Elia-Locardi-Our-Lady-Of-Paris-Notre-Dame-1440-WM-DM-60q.jpg)
 _ND de Paris, une preuve de travail monumentale, photographiée par Elia Locardi_
 
 
-La blockchain Bitcoin forme une preuve de travail monumentale dont la fonction de salle des coffres numérique justifie le coût de construction. Avant elle, beaucoup d'institutions politiques ou religieuses ont utilisé des preuves de travail physiques, parfois inutiles, souvent majestueuses, comme les pyramides des Pharaons ou les cathédrales, pour témoigner de leur capacité phénoménale à mobiliser les énergies des sujets et des croyants.
+Le réseau Bitcoin héberge une preuve de travail monumentale dont la fonction de salle des coffres numérique justifie le coût de construction. Avant elle, beaucoup d'institutions politiques ou religieuses ont utilisé des preuves de travail physiques, parfois inutiles, souvent majestueuses, comme les pyramides des Pharaons ou les cathédrales, pour témoigner de leur capacité phénoménale à mobiliser les énergies des sujets et des croyants.
