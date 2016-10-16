@@ -63,7 +63,9 @@ Son utilisation combinée en tant que méta-devise, réserve de valeur et résea
 
 En synthèse, on peut considérer que la valeur des bitcoins est fondée sur le consensus d’une communauté d’utilisateurs pour les reconnaître comme monnaie circulante. Par analogie, les sociétés traditionnelles primitives qui utilisaient des coquillages rares que tout le monde pouvait rechercher préfiguraient l’utilisation de ces « coquillages numériques » que sont les bitcoins. 
 	
-Avec 3 avantages fondamentaux pour les bitcoins, 
+Avec 3 avantages fondamentaux pour les bitcoins,
+
+
 1) la communauté des « bitcoiners » ne connait pas de frontières,
 
 2) les échanges peuvent se faire instantanément et 

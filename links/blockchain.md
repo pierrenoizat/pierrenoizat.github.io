@@ -24,4 +24,4 @@ L'intérêt majeur de la Blockchain Bitcoin est sa résistance absolue à toute 
 
 La Blockchain Bitcoin permet de construire des applications jusque là impensables, comme une monnaie décentralisée, ou de simplifier des applications existantes, comme l'authentification de documents.
 
-Si quelqu'un parle de "La Blockchain", faites lui **préciser de quelle blockchain** il/elle parle..
+Si quelqu'un parle de "La Blockchain", faites lui **préciser de quelle blockchain** il s'agit..
