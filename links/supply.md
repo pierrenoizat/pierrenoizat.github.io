@@ -28,7 +28,8 @@ On est toujours dans un jeu d’écritures à somme nulle mais la banque possèd
 
 Si l'emprunteur rembourse, la banque ne perd pas, si il ne rembourse pas elle gagne un appartement ou fait jouer l'assurance qu'elle lui a fait payer (en sus des intérêts)..
 
-[Vidéo sur la création monétaire, en anglais (4 min)](http://www.youtube.com/embed/hx16a72j__8)
+<iframe width="560" height="315" src="http://www.youtube.com/embed/hx16a72j__8?rel=0" frameborder="0" allowfullscreen></iframe>
+_Vidéo sur la création monétaire, en anglais (4 min)_
 
 La banque a prêté une somme qui n’existait pas auparavant et qu’elle a créée en la faisant apparaître sur le compte de l’emprunteur, mais l’emprunteur lui rembourse avec l’argent qu’il possède et qu’il gagne avec son travail.
 
