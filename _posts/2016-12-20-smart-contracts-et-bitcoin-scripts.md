@@ -20,17 +20,23 @@ author:
 Alice et Bob viennent de conclure un contrat, disons par exemple un contrat d’assurance annulation car Alice est assureur et Bob a acheté un aller-retour Paris-Tokyo.
 
 Bob aimerait bien recevoir une indemnité si son vol est annulé mais hésite à souscrire une assurance car il n’a pas envie de lire les 4 pages de conditions générales qui évitent à l’assureur de payer dans certains cas.
+
 Alice s’oblige à écrire des conditions générales qui couvrent tous les cas de fraude ou d’obligations imposées par le régulateur.
+
 Alice et Bob s’attendent donc à devoir encore payer des avocats ou des huissiers en cas de problème et intègrent ces anticipations négatives dans leur appréciation du prix de l’assurance.
-En gros, **le principe d’une assurance automatisée est un marché non servi à ce jour par les assureurs**.
+
+En gros, **le principe d’une assurance complètement automatisée est un marché non servi à ce jour par les assureurs**.
 
 ![Assurance annulation de vol]({{ site.baseurl }}/assets/flight_canceled.png)
 
 Alice s’intéresse alors aux “**smart contracts**”.
 
 Le terme de [smart contract](https://en.wikipedia.org/wiki/Smart_contract), proposé par Nick Szabo dès 1994, désigne tout protocole informatique qui facilite l’exécution d’un contrat.
+
 Un “smart contract" idéal rend le contrat complètement auto-exécutable et réduit les coûts de gestion du contrat.
+
 En particulier, le “smart contract” vise à **automatiser les clauses du contrat qui déclenchent un paiement**.
+
 Les coûts de gestion d’un contrat sont en effet essentiellement liés aux frais de recouvrement lorsque le payeur (Alice) refuse de reconnaitre les conditions externes qui déclenchent normalement un paiement.
 
 Les applications au-delà de l’assurance pourraient concerner les instruments financiers comme les actions, les obligations et les produits dérivés, avec le triple objectif de minimiser le risque de contre-partie, les délais de paiements et les coûts d’accès aux informations.
