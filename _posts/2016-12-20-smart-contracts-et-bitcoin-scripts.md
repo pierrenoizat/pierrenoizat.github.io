@@ -17,15 +17,15 @@ author:
   last_name: 'Noizat'
 ---
 
-Alice et Bob viennent de conclure un contrat, disons par exemple un contrat d’assurance annulation car Alice est assureur et Bob a acheté un aller-retour Paris-Tokyo.
+Alice est une compagnie d’assurance et propose une assurance annulation pour les clients des compagnie aériennes.
+Alice s’est obligée à écrire des conditions générales qui couvrent tous les cas de fraude ou d’obligations imposées par le régulateur.
 
-Bob aimerait bien recevoir une indemnité si son vol est annulé mais hésite à souscrire une assurance car il n’a pas envie de lire les 4 pages de conditions générales qui évitent à l’assureur de payer dans certains cas.
-
-Alice s’oblige à écrire des conditions générales qui couvrent tous les cas de fraude ou d’obligations imposées par le régulateur.
+Bob qui vient d’acheter un aller-retour Paris-Tokyo aimerait bien recevoir une indemnité si son vol est annulé mais hésite à souscrire une assurance.
+Il n’a pas envie de lire les 4 pages des conditions générales qui évitent à l’assureur de payer dans certains cas.
 
 Alice et Bob s’attendent donc à devoir encore payer des avocats ou des huissiers en cas de problème et intègrent ces anticipations négatives dans leur appréciation du prix de l’assurance.
 
-En gros, **le principe d’une assurance complètement automatisée est un marché non servi à ce jour par les assureurs**.
+Bob ne souscrit pas et Alice finit par ne plus proposer de contrat. **Le principe d’une assurance automatisée est un marché non servi à ce jour par les assureurs**.
 
 ![Assurance annulation de vol]({{ site.baseurl }}/assets/flight_canceled.png)
 
