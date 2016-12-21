@@ -73,7 +73,7 @@ Chaque oracle disposera d’une clé publique qui servira au calcul d’une adre
 
 Si la promesse d’Alice à Bob de payer sans discussion l’indemnité dès que au moins 2 des 3 oracles impliqués dans l’adresse multisignature ont signés la transaction, il faut que ladite adresse multisignature porte le montant de l’indemnité.
 
-Alice devrait donc immobiliser la totalité du montant de l’indemnité multiplié par le nombre d'assuré.
+Alice devrait donc immobiliser la totalité du montant de l’indemnité multiplié par le nombre d'assurés.
 Le coût financier non négligeable d’une telle immobilisation de capital serait un obstacle majeur au passage à l’échelle et annihilerait les économies réalisées sur les autres coûts de gestion du contrat.
 
 Une solution ingénieuse à ce problème réside dans une proposition de soft fork Bitcoin intitulée [Merkelized Abstract Syntax Tree](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki) (MAST).
@@ -99,6 +99,8 @@ seul le premier qui sera valablement présenté au réseau sera confirmé dans l
 On peut dire que MAST réalise un OU exclusif entre un très grand nombre de conditions distinctes.
 
 Alice peut donc déposer le montant de l’indemnité sur une telle adresse en mutualisant le risque pour 4 asssurés différents au lieu d’immobiliser 4 fois le montant de l’indemnité.
+
+Alice évitera de placer les passagers d'un même vol sur une même adresse. Comme il y a plusieurs milliers d'avions en l'air à tout instant, il doit être possible de regrouper sur une adresse des assurés qui sont tous sur un vol différent.
 
 MAST permet le passage à l’échelle car l’arbre binaire peut comporter jusqu’à 32 niveaux, c’est à dire des centaines de milliers de clients rattachés à une même adresse P2SH pour l’indemnisation.
 
