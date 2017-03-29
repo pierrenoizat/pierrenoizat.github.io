@@ -31,5 +31,3 @@ Pierre Noizat, Septembre 2011
 <iframe width="560" height="315" src="https://www.youtube.com/embed/18S_1n5u92g?rel=0" frameborder="0" allowfullscreen></iframe>
 
 _Vidéo figaro.tv de déc. 2013 sur youtube (10 min)_
-
-e-ducat.fr est publié sous la licence Creative Commons Paternité - Partage à l'Identique 2.0 France.
