@@ -19,7 +19,7 @@ author:
 
 Le remplissage moyen d’un bloc Bitcoin atteint depuis fin 2016 presque 100%. Il est en progression linéaire depuis 2012 et c’est un autre signe du succès de Bitcoin.
 
-De fait, ceci peut retarder de plusieurs heures la confirmation de certaines transactions, celles dont les commissions de réseaux sont jugées trop basses par les mineurs.
+De fait, ceci peut retarder de plusieurs heures la confirmation de certaines transactions, celles dont les commissions de réseau sont jugées trop basses par les mineurs.
 
 Pour une confirmation en 10 minutes, on estime aujourd’hui que le wallet du payeur doit prévoir une commission de réseau de 200 satoshis/octets (environ 0,002 €/octet).
 
