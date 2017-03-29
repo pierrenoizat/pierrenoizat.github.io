@@ -90,7 +90,7 @@ En résumé et **pour rassurer ceux qui auraient été alarmés par la perspecti
 2. affichage du solde BTU, égal au solde BTC d’avant le hard fork: tout se passe comme si chaque client avait désormais deux fois plus de coins mais la valeur du BTC pre-fork serait répartie sur les deux coins.
 3. séparation des coins par Paymium
 4. reprise du traitement des demandes de retraits BTC
-5. traitement des demandes de retraits BTU (il n’y aura pas de trading BTU chez Paymium, seulement dépôts et retraits).
+5. traitement des demandes de retraits BTU.
 
 La **séparation des coins** s’impose car une transaction post-fork qui dépense des BTC reçus pre-fork est en général valide sur les deux chaines.
 
