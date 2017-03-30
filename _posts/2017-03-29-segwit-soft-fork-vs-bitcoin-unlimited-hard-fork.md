@@ -61,6 +61,7 @@ Les mineurs qui refusent la suppression d'une règle considèront les nouveaux b
 Le hard fork crée donc de facto un altcoin qui va vivre sur une chaîne indépendante commençant au niveau du bloc où le hard fork s'est produit.
 
 ![Hard Fork]({{ site.baseurl }}/assets/hardfork.png)
+
 _Hard Fork_
 
 
@@ -71,6 +72,7 @@ Par contre, les blocs produits par des mineurs mis à jour seront acceptés par 
 Ainsi, lors d'un soft fork, les mineurs qui ne sont pas à jour verront leurs blocs devenir orphelins si et seulement si la nouvelle règle a réuni une majorité simple (51% ou plus) de la puissance de calcul.
 
 ![soft Fork]({{ site.baseurl }}/assets/softfork.png)
+
 _Soft Fork_
 
 [SegWit](https://bitcoincore.org/en/2016/01/26/segwit-benefits/) qui exige, entre autres, un numéro de version pour les scripts,est un autre exemple de soft fork, beaucoup plus pertinent.
