@@ -25,7 +25,7 @@ Pour une confirmation en 10 minutes, on estime aujourd’hui que le wallet du pa
 
 Une transaction standard dépensant plusieurs entrées-sources (inputs) et créditant plusieurs sorties-destinations (outputs) est un message signé pouvant occuper 250 octets et jusqu’à 1 000 octets ou plus (en fonction du nombre d’entrées/sorties et de la complexité des entrées): la commission recommandée se situe donc entre 0,50 € et 2 €.
 
-Cependant si vous pouvez attendre quelques heures, une commission bien inférieure sera suffisante: le 18 mars, j’ai envoyé un micro-paiement dans une transaction de 1500 octets ([a1e8de90cc04fcd4a96da47ffd9566e68cf8872472c77a161c6c20590fc927c6](https://live.blockcypher.com/btc/tx/a1e8de90cc04fcd4a96da47ffd9566e68cf8872472c77a161c6c20590fc927c6/ )
+Cependant si vous pouvez attendre quelques heures, une commission bien inférieure sera suffisante: le 18 mars, j’ai envoyé un micro-paiement dans une transaction de 1500 octets ( [a1e8de90cc04fcd4a96da47ffd9566e68cf8872472c77a161c6c20590fc927c6](https://live.blockcypher.com/btc/tx/a1e8de90cc04fcd4a96da47ffd9566e68cf8872472c77a161c6c20590fc927c6/ ) )
 minée par BTC.com pour moins de 10 sat/byte en moins de 10 heures.
 
 Les affirmations alarmistes d’une minorité concernant une congestion soit-disant fatale du réseau sont donc largement exagérées, comme toutes les affirmations alarmistes répandues depuis 2010 et toujours démenties dans les faits par la résilience de Bitcoin.
@@ -81,7 +81,7 @@ De nouveaux [opcodes](http://bitcoinscri.pt) voire de nouveaux systèmes de scri
 Ces nouveaux scripts seront correctement interprétés par les noeuds SegWit pour dépenser une adresse P2SH SegWit (P2SH-P2WSH) et ces noeuds accepteront aussi une transaction dépensant une adresse P2SH à l’ancienne.
 
 Bien entendu, il faudra mettre à jour son wallet pour envoyer et recevoir des transactions SegWit.
-SegWit est déjà intégré dans Bitcoin Core depuis la version 0.13.1 mais l’activation de cette fonctionnalité interviendra seulement lorsque 95% des mineurs auront signalé leur accord.
+SegWit est déjà intégré dans [Bitcoin Core](https://bitcoin.org/fr/telecharger) depuis la version 0.13.1 mais l’activation de cette fonctionnalité interviendra seulement lorsque 95% des mineurs auront signalé leur accord.
 
 Notez que les transactions SegWit ne seront pas correctement traitées par le réseau avant l’activation et que, d’ici là, il ne faut donc pas anticiper en envoyant des fonds vers une adresse P2SH SegWit au risque de les geler jusqu’à l’activation.
 
