@@ -19,7 +19,7 @@ author:
 
 Le hard fork Bitcoin Cash (BCC), effectif depuis le minage du premier bloc BCC le 1er aout (bloc 478559) par ViaBTC contenant près de 2 Mo de transactions, est une expérience inédite et passionnante non seulement pour les Bitcoiners mais aussi pour les investisseurs dans les tokens et autres altcoins.
 
-La taille des blocs, par son impact sur la scalabilité et la décentralisation du réseau, a déjà fait l'objet de débats passionnés dès les premiers échanges entre James A. Donald et Satoshi Nakamoto après la publication de son papier en  novembre 2008 sur une mailing list de cryptographie. 
+La taille des blocs, la scalabilité et la décentralisation du réseau ont déjà fait l'objet de débats passionnés dès les premiers échanges entre James A. Donald et Satoshi Nakamoto après la publication de son papier en  novembre 2008 sur une mailing list de cryptographie. 
 
 
 Le lancement de BCC représente le point culminant de l'opposition entre "big blockers" et partisans de Segwit. 
@@ -43,7 +43,7 @@ Cette **protection anti-rejeu** est renforcée par l'implémentation de [BIP143]
 
 A l'heure où j'écris ces lignes, le minage des bitcoins est 3 fois plus profitable que celui des BCC: il est donc probable que ViaBTC et Bitmain restent isolés dans cette aventure.
 
-![Cours du Bitcoin Cash]({{ site.baseurl }}/assets/cours_BCC_170805.png)
+![Cours du Bitcoin Cash]({{ site.baseurl }}/assets/Cours_BCC_170805.png)
 
 _Cours du Bitcoin Cash_
 
