@@ -19,15 +19,17 @@ author:
 
 Le hard fork Bitcoin Cash (BCC), effectif depuis le minage du premier bloc BCC le 1er aout (bloc 478559) par ViaBTC contenant près de 2 Mo de transactions, est une expérience inédite et passionnante non seulement pour les Bitcoiners mais aussi pour les investisseurs dans les tokens et autres altcoins.
 
-La taille des blocs, la scalabilité et la décentralisation du réseau ont déjà fait l'objet de débats passionnés dès les premiers échanges entre James A. Donald et Satoshi Nakamoto après la publication de son papier en  novembre 2008 sur une mailing list de cryptographie. 
+La taille des blocs et, plus généralement, la scalabilité et la décentralisation du réseau ont déjà fait l'objet de débats passionnés dès les premiers échanges publics, en novembre 2008, entre James A. Donald et Satoshi Nakamoto. 
 
 
 Le lancement de BCC représente le point culminant de l'opposition entre "big blockers" et partisans de Segwit. 
 
+Les "big blockers" revendiquent l'héritage de Satoshi, notamment l'utilisation confusante de Bitcoin Cash pour désigner un altcoin, au motif que, ayant inventé le protocole SPV, Satoshi aurait été convaincu d'une scalabilité "on-chain". Rien ne permet de l'affirmer. SPV (Simple Payment Verification), protocole de paiement destiné aux appareils dépourvus de la capacité de stocker la blockchain Bitcoin, comme les smartphones, n'est pas une solution de scalabilité.
+
 
 Rappelons que [Segwit](http://e-ducat.fr/2017-03-29-segwit-soft-fork-vs-bitcoin-unlimited-hard-fork/) favorise une scalabilité off-chain via un réseau dit de niveau 2 (layer 2) comme le Lightning Network.
 
-Bitcoin Cash (BCC), proposé initialement par ViaBTC (pool de minage) et Bitmain (mineur et fabricant d'ASIC de minage), lève en effet deux contraintes fondamentales du protocole Bitcoin:
+Bitcoin Cash (BCC), proposé initialement par ViaBTC (pool de minage), bitcoin.com (site contrôlé par Roger Ver) et Bitmain (mineur et fabricant d'ASIC de minage), lève en effet deux contraintes fondamentales du protocole Bitcoin:
 
 1) **la taille d'un bloc peut dépasser 1 Mo** pour aller jusqu'à 8 Mo
 
