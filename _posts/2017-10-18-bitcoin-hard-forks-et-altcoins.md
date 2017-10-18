@@ -24,7 +24,14 @@ Le hard fork crée temporairement une crise identitaire en nous demandant de dis
 
 Comme Bitcoin Cash en son temps (août dernier), Bitcoin S2X lève la contrainte de taille maximale d'un bloc.
 Le S de S2X signifie simplement l'activation de Segwit, désormais acquise, alors que BCH n'intègre pas Segwit.
-Le 2X de S2X signifie que la taille maximale d'un block post-Segwit est doublée, passant de 4 Mo à 8 Mo.
+
+Le 2X de S2X signifie que le "poids" maximal des transactions d'un bloc post-Segwit est doublé, passant de 4 Mo à 8 Mo.
+
+Le "poids" d'une transaction tx est une notion nouvelle introduite par SegWit qui se calcule selon la formule simplifiée suivante: poids de tx = 3* (taille de tx sans signatures) + (taille de tx)
+
+Le poids d'une transaction non-Segwit (qui ne dépense aucun output Segwit) est donc 4 fois la taille de la transaction.
+
+Une transaction inhabituellement volumineuse de 1 000 001 octets ne pourrait donc pas être minée dans un bloc Bitcoin Core, contrairement à un bloc S2X qui pourrait l'accepter.
 
 Les partisans de S2X, regroupés dans le cartel des signataires du fumeux New York Agreement, revendiquent l'héritage de Satoshi en prétendant que l'inventeur de Bitcoin aurait soutenu leur initiative, ce qui est évidemment invérifiable en l'absence concupiscente de l'intéressé.
 
@@ -44,8 +51,8 @@ L'absence de "replay protection" dans le client BTC1 pourrait conduire à une si
 
 Alice utiliserait son wallet BTC1 pour payer Bob 1 Bitcoin afin de lui acheter sa voiture d'occasion. Le lendemain, Bob rejouerait la transaction d'Alice sur le réseau Bitcoin Core et récupèrerait 1 Bitcoin supplémentaire. Alice aurait alors payé 2 Bitcoins en croyant payer seulement 1.
 
-Le seul moyen de "splitter" les coins post hard fork S2X serait de fabriquer (programmatiquement) et diffuser sur le réseau S2X une transaction de taille supérieure à 2 Mo afin qu'elle ne soit pas rejouable sur le réseau Bitcoin Core. 
+Un moyen de "splitter" les coins post hard fork S2X serait de fabriquer (programmatiquement) et diffuser sur le réseau S2X une énorme transaction non-segwit d'une taille supérieure à 1 Mo afin qu'elle ne soit pas rejouable sur le réseau Bitcoin Core. 
 
-Sachant qu'une transaction standard ( 2 inputs sans scripts complexes, 2 outputs) occupe environ 400 octets signatures comprises, une transaction de 2 Mo devrait comporter 5000 fois plus d'entrées /sorties...
+Sachant qu'une transaction standard ( 2 inputs sans scripts complexes, 2 outputs) occupe environ 400 octets signatures comprises, une transaction de 1 Mo devrait comporter 2500 fois plus d'entrées /sorties...
 
-Paymium termine en ce moment un chantier important: la capacité pour notre plateforme de change de gérer de multiples cybermonnaies, en particulier les altcoins issus de hard fork, sans créer de vulnérabilités et en gardant une base comptable saine. Cette feuille de route prudente demande un peu de patience mais reste le meilleure garant pour la pérennité de notre exchange.
+Paymium termine en ce moment un chantier important: la capacité pour notre plateforme de change de gérer de multiples cybermonnaies, en particulier les altcoins issus de hard fork, sans créer de vulnérabilités et en gardant une base comptable saine. Cette feuille de route prudente demande un peu de patience mais reste la meilleure garantie de pérennité pour notre exchange.
