@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: NO2X, Bitcoin Hard Forks et Altcoins
+title: NO2X pour nos bitcoins
 date: 2017-10-17 00:00:01.000000000 +01:00
 type: post
 published: true
