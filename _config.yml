@@ -25,6 +25,7 @@ description: Learn Bitcoin scripting language and play with scripts!
 navbar-links:
   Blog: "./links/archive/#allposts"
   Livres: "./links/livre"
+  Media: "./links/media"
   Bitcoin:
     - Introduction: "./links/introduction"
     - Démarrage: "./links/gettingstarted"
