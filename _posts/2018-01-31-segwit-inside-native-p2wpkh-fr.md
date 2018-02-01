@@ -36,7 +36,7 @@ Les entrées décrivent l'origine des fonds dépensés dans la transaction. Chaq
 
 Dans le cas de coins bloqués sur une adresse P2PKH ("pay-to-public-key-hash") standard, ces données, appelées "scriptSig", consistent en une signature suivie de son type de “sighash” suivi de la clé publique permettant de vérifier la signature et correspondant à l’adresse en question.
 
-![P2PKH Sighash]({{ site.baseurl }}/assets/P2PKH_Sighash.png)
+![P2PKH Sighash]({{ site.baseurl }}/assets/P2PKH_SigHash.png)
 
 _Message à signer pour un transfert d'une adresse P2PKH vers une adresse P2SH_
 
