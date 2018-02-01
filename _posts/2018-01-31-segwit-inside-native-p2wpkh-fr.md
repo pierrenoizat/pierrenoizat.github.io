@@ -40,8 +40,7 @@ Dans le cas de coins bloqués sur une adresse P2PKH ("pay-to-public-key-hash") s
 
 _Message à signer pour un transfert d'une adresse P2PKH vers une adresse P2SH_
 
-Le “sighash” est l’empreinte du message de transaction: la signature consiste à chiffrer ce "sighash" avec la clé privée correspondant à la clé publique dont le hash figure dans le "Signature Script". 
-
+Le “sighash” est l’empreinte du message de transaction à signer.
 Plusieurs types de “sighash” (ALL, NONE, SINGLE, etc..) permettent de spécifier le périmètre du message couvert par la signature. 
 
 La valeur par défaut (ALL) signifie que la signature couvre toutes les entrées et toutes les sorties de la transaction. Les autres types de sighash sont utilisés dans des cas d’usage particuliers comme le crowdfunding
@@ -51,7 +50,6 @@ Les sorties déterminent la destination des fonds dépensés par la transaction.
 Les sorties d'une transaction consistent en un montant (exprimés en satoshis) suivi d'un "scriptPubKey", c'est-à-dire un script Bitcoin définissant les conditions pour que le montant en question soit débloqué par une transaction ultérieure.
 
 Les entrées de transaction sont signées en chiffrant le “sighash" avec une clé privée.
-
 Parce que les signatures ne peuvent pas exister avant de signer, pour le calcul de sighash, le scriptSig est remplacé par le "scriptCode". 
 Pour une entrée P2PKH traditionnelle, le scriptCode est simplement le scriptPubKey de l'utxo (sortie de la transaction précédente) qui la finance:
 
