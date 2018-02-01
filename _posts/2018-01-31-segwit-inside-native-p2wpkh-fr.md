@@ -18,7 +18,7 @@ author:
   first_name: ''
   last_name: ''
 ---
-Segwit, abréviation de «Seggregated Witness» ou “signatures séparées” en français, est un changement fondamental dans la manière dont les transactions Bitcoin sont construites à partir d’entrées (inputs) et de sorties (outputs).
+Segwit, abréviation de «Segregated Witness» ou “signatures séparées” en français, est un changement fondamental dans la manière dont les transactions Bitcoin sont construites à partir d’entrées (inputs) et de sorties (outputs).
 
 Cet article décrit les nouvelles adresses Bitcoin Segwit et explique comment les développeurs peuvent générer des transactions vers et depuis ces nouvelles adresses.
 
@@ -36,7 +36,11 @@ Les entrées décrivent l'origine des fonds dépensés dans la transaction. Chaq
 
 Dans le cas de coins bloqués sur une adresse P2PKH ("pay-to-public-key-hash") standard, ces données, appelées "scriptSig", consistent en une signature suivie de son type de “sighash” suivi de la clé publique permettant de vérifier la signature et correspondant à l’adresse en question.
 
-Le “sighash” est l’empreinte du message de transaction effectivement signé. 
+![P2PKH Sighash]({{ site.baseurl }}/assets/P2PKH_Sighash.png)
+
+_Message à signer pour un transfert d'une adresse P2PKH vers une adresse P2SH_
+
+Le “sighash” est l’empreinte du message de transaction: la signature consiste à chiffrer ce "sighash" avec la clé privée correspondant à la clé publique dont le hash figure dans le "Signature Script". 
 
 Plusieurs types de “sighash” (ALL, NONE, SINGLE, etc..) permettent de spécifier le périmètre du message couvert par la signature. 
 
@@ -81,15 +85,23 @@ Avec Segwit, le format de transaction original n'inclut pas les signatures (dans
 
 Après Segwit, txid, l'identifiant de transaction, reste l'identifiant primaire de la transaction dans la chaîne de blocs Bitcoin.
 
+![Witness ID]({{ site.baseurl }}/assets/witnesstx.png)
+
+_Les inputs d'une transaction Segwit ne contiennent pas de signatures: elles se retrouvent dans le witness_
+
 Le “witness” est ajouté à la fin de la transaction Segwit, juste avant le dernier élément de la transaction qui est son locktime.
 
 Le locktime peut être utilisé dans un scriptPubKey pour spécifier que la transaction ne peut être incluse dans la blockchain qu'après l'heure et la date correspondant au locktime.
+
+Le "Witness ID" (wtxid) est un double hachage SHA256 du message de transaction avec son "witness". Le wtxid de chaque transaction du bloc est rangé dans un arbre binaire dont la racine est incluse dans la transaction de minage (coinbase transaction) du bloc.
+
+Ainsi les signatures d'une transaction, si elles ont été conservées dans un wallet, peuvent être vérifiées avec le bloc contenant la transaction. 
 
 
 **Adresse P2WPKH native**
 
 Contrairement aux adresses Segwit imbriquées dans une adresse P2SH classique (P2SH-P2WPKH ou P2SH-P2WSH), on ne peut pas envoyer des fonds à une adresse Segwit native depuis un “wallet” non compatible Segwit.
-Autrement dit, le “wallet” doit être mis à niveau pour prendre en charge les adresses Segwit natives. 
+Autrement dit, **le “wallet” doit être mis à niveau pour prendre en charge les adresses Segwit natives**. 
 
 C'est l'une des principales raisons pour lesquelles l’adoption de segwit a été relativement lente et prend de l'ampleur à mesure que de plus en plus de portefeuilles Bitcoin (applications ou portefeuilles hébergés) implémentent Segwit.
 
