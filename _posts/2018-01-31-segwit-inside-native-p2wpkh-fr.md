@@ -20,6 +20,10 @@ author:
 ---
 Segwit, abréviation de «Segregated Witness» ou “signatures séparées” en français, est un changement fondamental dans la manière dont les transactions Bitcoin sont construites à partir d’entrées (inputs) et de sorties (outputs).
 
+![P2PKH Sighash]({{ site.baseurl }}/assets/tx_inputs_outputs.png)
+
+_Entrées (inputs) et sorties (outputs) d'une transaction: le cadre vert englobe le message signé avec la signature 1 (SIGHASH ALL)_
+
 Cet article décrit les nouvelles adresses Bitcoin Segwit et explique comment les développeurs peuvent générer des transactions vers et depuis ces nouvelles adresses.
 
 Il y a 4 nouveaux types d'adresse Bitcoin Segwit, "native" ou contenue dans une adresse P2SH: P2WPKH natif, P2WSH natif, P2SH-P2WPKH, P2SH-P2WSH.
@@ -38,7 +42,7 @@ Dans le cas de coins bloqués sur une adresse P2PKH ("pay-to-public-key-hash") s
 
 ![P2PKH Sighash]({{ site.baseurl }}/assets/P2PKH_SigHash.png)
 
-_Message à signer pour un transfert d'une adresse P2PKH vers une adresse P2SH_
+_Message à signer pour un transfert d'une adresse P2PKH vers une adresse P2SH (Source: Medium, Jaqen Hash’ghar)_
 
 Le “sighash” est l’empreinte du message de transaction à signer.
 Plusieurs types de “sighash” (ALL, NONE, SINGLE, etc..) permettent de spécifier le périmètre du message couvert par la signature. 
@@ -107,7 +111,7 @@ Les adresses natives P2WPKH (Pay-To-Witness-Public-Key-Hash) sont codées en Bec
 
 L'acronyme Bech32 provient du code de correction d’erreur BCH combiné avec un encodage en base 32. BCH signifie Bose-Chaudhuri-Hocquenghem: ces codes correcteurs d'erreurs ont été inventés en 1959 par le mathématicien français A. Hocquenghem.
 
-Les adresses P2WPKH natives utilisent le même format de clé publique que P2PKH, avec une exception importante: la clé publique utilisée dans P2WPKH DOIT être comprimée, c'est-à-dire de 33 octets, et commencer par 0x02 ou 0x03.
+Les adresses P2WPKH natives utilisent le même format de clé publique que P2PKH, avec une exception importante: la clé publique utilisée dans P2WPKH DOIT être compressée, c'est-à-dire de 33 octets, et commencer par 0x02 ou 0x03.
 
 Le scriptPubKey P2WPKH consiste toujours en 22 octets. Il commence par un OP_0, suivi du keyhash précédé de sa taille (20 octets) , c’est-à-dire 0x0014 {keyhash}. Le keyhash est RIPEMD160(SHA256) de la clé publique compressée.
 
@@ -120,8 +124,6 @@ require 'btcruby'
 require 'bitcoin'
 require 'bech32'
 require 'segwit_addr'
-require 'active_support'
-require 'active_support/core_ext'
 BTC::Network.default= BTC::Network.mainnet
 puts "\n Saisir la clé publique au format hex:"
 public_key = STDIN.gets.chomp # public_key DOIT être compressée
