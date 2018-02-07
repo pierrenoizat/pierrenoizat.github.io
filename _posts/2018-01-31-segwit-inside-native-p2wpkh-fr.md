@@ -146,6 +146,49 @@ Clé publique: 02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def
 
 Adresse Segwit P2WPKH native: **bc1qg9stkxrszkdqsuj92lm4c7akvk36zvhqw7p6ck**
 
+**Transaction envoyant des fonds vers une adresse P2WPKH native:**
+
+```ruby
+puts "\n Enter (origin) private key in wif compressed format:"
+@wif = STDIN.gets.chomp
+begin  
+  @user_key = BTC::Key.new(wif:@wif)
+rescue Exception => e
+  puts "Invalid user private key."
+  return
+end
+# Private keys associated with compressed public keys are 52 characters and start with a capital L or K on mainnet (c on testnet).
+
+puts "\n Enter previous tx id:"
+prev_out = STDIN.gets.chomp
+
+puts "\n Enter previous tx output index:"
+prev_out_index = STDIN.gets.chomp.to_i
+
+puts "\n Enter previous tx output value:"
+value = STDIN.gets.chomp.to_i
+
+fee = 15000
+
+tx = BTC::Transaction.new(version: 2)
+tx.lock_time = 0
+tx.add_input(BTC::TransactionInput.new( previous_id: prev_out,
+                                        previous_index: prev_out_index,
+                                        sequence: 0))
+tx.add_output(BTC::TransactionOutput.new(value: value-fee, script: script_pub_key))
+hashtype = BTC::SIGHASH_ALL
+
+sighash = tx.signature_hash(input_index: 0,
+                            output_script: BTC::PublicKeyAddress.parse(@user_key.address.to_s).script,
+                            hash_type: hashtype)
+
+tx.inputs[0].signature_script = BTC::Script.new
+tx.inputs[0].signature_script << (@user_key.ecdsa_signature(sighash) + BTC::WireFormat.encode_uint8(hashtype))
+tx.inputs[0].signature_script << @user_key.public_key
+puts "Hex transaction:"
+puts tx.to_hex
+```
+
 **Transaction envoyant des fonds depuis une adresse P2WPKH native:**
 
 ```ruby
