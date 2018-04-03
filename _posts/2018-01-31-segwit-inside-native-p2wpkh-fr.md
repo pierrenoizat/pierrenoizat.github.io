@@ -8,7 +8,7 @@ status: draft
 categories:
 - Bitcoin
 - Technologie
-tags: []
+tags: [segwit]
 meta:
   _edit_last: '1'
 author:
@@ -188,6 +188,7 @@ tx.inputs[0].signature_script << @user_key.public_key
 puts "Hex transaction:"
 puts tx.to_hex
 ```
+Exemple: [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchain.info/tx/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
 
 **Transaction envoyant des fonds depuis une adresse P2WPKH native:**
 
@@ -221,6 +222,12 @@ end
 
 signed_tx = spend_tx.to_payload.unpack('H*')[0] # signed raw tx (in hex)
 ```
+Exemple: [1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee](https://blockchain.info/tx/1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee)
+
+Taille de la transaction: 195 octets
+
+Transaction non-segwit comparable: 268a21f8dea0ef5466c02e96174968273d6f9baeb7566ba7f018a2907bd510b7
+Taille: 192 octets
 
 Avertissement: même si ce code a été testé, vous l'utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau.
 
