@@ -18,15 +18,15 @@ author:
   first_name: ''
   last_name: ''
 ---
-Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. Contrairement à une adresse P2WPKH qui correspond à une clé publique et une signature, **une adresse P2WSH peut contenir un script arbitrairement complexe** avec de multiples signatures et de multiples conditions. Dans cet article, nous prenons l'exemple d'un **script multisignature "2-of-2"**.
+Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. Contrairement à une adresse P2WPKH qui correspond à une clé publique et une signature, **une adresse P2WSH peut contenir un script arbitrairement complexe** (**"witness script"**) avec de multiples signatures et de multiples conditions. Dans cet article, nous prenons l'exemple d'un witness script **multisignature "2-of-2"**.
 
 **Adresse Native P2WSH**
 
 P2WSH est l'acronyme pour Pay-To-Witness-Script-Hash: ces adresses sont codées en Bech32.
 
-Le scriptPubKey P2WSH consiste toujours en 34 octets. Il commence par un OP_0, suivi du keyhash précédé de sa taille (32 octets) , c’est-à-dire 0x0020 {keyhash}. Le keyhash est l'empreinte SHA256 de la clé publique compressée.
+Le scriptPubKey P2WSH consiste toujours en 34 octets. Il commence par un OP_0, suivi du keyhash précédé de sa taille (32 octets) , c’est-à-dire 0x0020 {keyhash}. Le keyhash est l'empreinte SHA256 du "witness script".
 
-Le premier octet (OP_0) est appelé le “version byte” et les 33 octets suivants le “witness program”.
+Le premier octet (OP_0) est appelé le “version byte” et les 33 octets suivants le **“witness program”**.
 
 Voici un exemple d’implémentation en ruby ​​pour les développeurs:
 
