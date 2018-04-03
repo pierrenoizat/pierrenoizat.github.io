@@ -65,7 +65,7 @@ Transaction envoyant des fonds VERS une adresse P2WSH native:
 
 ```ruby
 # clé privée de notre utxo (adresse 16xgoSrGkG3z6eddGr3m4iqoBDTFWuV6J4)"
-@wif = "KxUkvjMRkesgTmRY8mdXQdrTfB7LvmGeSMXp4WyBLCp8gUgHQUFC"
+@wif = "KxUkvjMRkes.....MXp4WyBLCp8gUgHQUFC"
 @user_key = BTC::Key.new(wif:@wif)
 prev_out="8088b36e51d8dfad24af9d8b4dcf8624eff9d2c678caf74c7f2c93819918c4a9"
 prev_out_index = 1
@@ -90,6 +90,9 @@ tx.inputs[0].signature_script << @user_key.public_key
 puts "Hex transaction:"
 puts tx.to_hex
 ```
+
+Exemple de transaction envoyant des fonds vers une adresse P2WSH:
+[cb2f672c5f5ca91c67fb610972b18b5a2514725ff48586b06569b325c6921044](https://blockchain.info/tx/cb2f672c5f5ca91c67fb610972b18b5a2514725ff48586b06569b325c6921044)
 
 Transaction envoyant des fonds DEPUIS une adresse P2WSH native:
 
@@ -129,7 +132,7 @@ tx.in[0].script_witness.stack << ''
 tx.in[0].script_witness.stack << sig0 << sig1 << witness_script.to_payload
 tx.to_witness_payload.bth
 ```
-Example of transaction spending from a P2WSH address:
+Exemple de transaction envoyant des fonds depuis une adresse P2WSH:
 [42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5](https://blockchain.info/tx/42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5)
 
 Avertissement: même si ce code a été testé, vous l’utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau.
