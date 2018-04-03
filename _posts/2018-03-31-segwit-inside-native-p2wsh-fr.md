@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bitcoin, Segwit Inside - Part 2 - Native P2WSH Addresses
+title: Bitcoin, Segwit Inside - Part 2 - Adresses P2WSH natives
 date: 2018-03-31 00:40:51.000000000 +01:00
 type: post
 published: true
