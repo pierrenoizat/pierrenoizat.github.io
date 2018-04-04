@@ -20,7 +20,7 @@ author:
 ---
 Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. Contrairement à une adresse P2WPKH qui correspond à une clé publique et une signature, **une adresse P2WSH peut contenir un script arbitrairement complexe** (**"witness script"**) avec de multiples signatures et de multiples conditions. Dans cet article, nous prenons l'exemple d'un witness script **multisignature "2-of-2"**.
 
-**Adresse Native P2WSH**
+**Adresse P2WSH native**
 
 P2WSH est l'acronyme pour Pay-To-Witness-Script-Hash: ces adresses sont codées en Bech32.
 
@@ -28,7 +28,7 @@ Le scriptPubKey P2WSH consiste toujours en 34 octets. Il commence par un OP_0, s
 
 Le premier octet (OP_0) est appelé le “version byte” et les 33 octets suivants le **“witness program”**.
 
-Voici un exemple d’implémentation en ruby ​​pour les développeurs:
+Voici un exemple d’implémentation en ruby​pour les développeurs:
 
 ```ruby
 require 'btcruby'
@@ -87,8 +87,7 @@ sighash = tx.signature_hash(input_index: 0,
 tx.inputs[0].signature_script = BTC::Script.new
 tx.inputs[0].signature_script << (@user_key.ecdsa_signature(sighash) + BTC::WireFormat.encode_uint8(hashtype))
 tx.inputs[0].signature_script << @user_key.public_key
-puts "Hex transaction:"
-puts tx.to_hex
+tx.to_hex # signed transaction in hex
 ```
 
 Exemple de transaction envoyant des fonds vers une adresse P2WSH:
@@ -107,8 +106,8 @@ value = 85000
 script_pubkey = script_pub_key.to_hex.htb
 fee = 15000
 @destination_address = "1Bwyn5f5EvUPazh3H2rns6ENjTUYnK9ben"
-user_key = Bitcoin.open_key("25940addfaec25439d348186e30976d8f1aaeb3da976cad59cb7fb2cf7f7b2d9") # clé privée au format hex
-escrow_key = Bitcoin.open_key("4b5d5ef7b85148cff94fcacbc6019fc41313be6a88a267a9a84b890872d6975c")
+user_key = Bitcoin.open_key("25940addbaec2...f7b2d9") # clé privée au format hex
+escrow_key = Bitcoin.open_key("4b5d5df7...72d6975c")
 
 @witness_script = witness_script.data
 witness_script = Bitcoin::Script.new(@witness_script)
@@ -130,9 +129,13 @@ sig0 = Bitcoin::Secp256k1.sign(sig_hash0, user_key.private_key.to_hex.htb) + [Tx
 sig1 = Bitcoin::Secp256k1.sign(sig_hash0, escrow_key.private_key.to_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
 tx.in[0].script_witness.stack << ''
 tx.in[0].script_witness.stack << sig0 << sig1 << witness_script.to_payload
-tx.to_witness_payload.bth
+tx.to_witness_payload.bth # signed transaction in hex
 ```
 Exemple de transaction envoyant des fonds depuis une adresse P2WSH:
 [42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5](https://blockchain.info/tx/42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5)
 
-Avertissement: même si ce code a été testé, vous l’utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau.
+Avertissement: même si ce code a été testé, vous l’utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau. Utilisez testnet dans un premier temps.
+
+Mon prochain article (part 3/4) traitera des adresses P2SH-P2WPKH.
+
+Lien github: [native_p2wsh.rb](https://gist.github.com/pierrenoizat/6880a12a599fa03a2099e3b38e8664e0)

@@ -69,7 +69,7 @@ value = 100000
 
 fee = 15000
 @destination_address = "1Bwyn5f5EvUPazh3H2rns6ENjTUYnK9ben"
-@user_key = Bitcoin.open_key("25940addfaec25439d348186e30976d8f1aaeb3da976cad59cb7fb2cf7f7b2d9") # clé privée au format hex
+
 @redeem_script = redeem_script.data
 
 spend_tx = build_tx do |t|
@@ -89,9 +89,12 @@ tx = Tx.new(spend_tx.to_payload) # yet unsigned tx
 tx.in[0].script_sig = Bitcoin::Script.new(Bitcoin::Script.pack_pushdata(@redeem_script)).to_payload
 
 sig_hash = tx.signature_hash_for_witness_input(0, @redeem_script, value)
-sig = Bitcoin.sign_data(@user_key, sig_hash)
+
+private_key_hex = "25940addfae...cf7f7b2d9"
+sig = Bitcoin::Secp256k1.sign(sig_hash, private_key_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
+
 tx.in[0].script_witness.stack << sig
-tx.in[0].script_witness.stack << @user_key.public_key.to_bn.to_s(2)
+tx.in[0].script_witness.stack << Bitcoin::Key.new(private_key_hex, nil, true).pub.htb
 tx.to_witness_payload.bth
 ```
 
