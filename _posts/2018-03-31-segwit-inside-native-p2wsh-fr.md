@@ -106,7 +106,7 @@ value = 85000
 script_pubkey = script_pub_key.to_hex.htb
 fee = 15000
 @destination_address = "1Bwyn5f5EvUPazh3H2rns6ENjTUYnK9ben"
-user_key = Bitcoin.open_key("25940addbaec2...f7b2d9") # clé privée au format hex
+user_key = Bitcoin.open_key("2594...f7b2d9") # clé privée au format hex
 escrow_key = Bitcoin.open_key("4b5d5df7...72d6975c")
 
 @witness_script = witness_script.data
@@ -123,13 +123,13 @@ spend_tx = build_tx do |t|
   end
 end
 
-tx = Tx.new(spend_tx.to_payload) # yet unsigned tx
+tx = Tx.new(spend_tx.to_payload) # tx pas encore signée
 sig_hash0 = tx.signature_hash_for_witness_input(0, script_pubkey, value, witness_script.to_payload, Tx::SIGHASH_TYPE[:all])
 sig0 = Bitcoin::Secp256k1.sign(sig_hash0, user_key.private_key.to_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
 sig1 = Bitcoin::Secp256k1.sign(sig_hash0, escrow_key.private_key.to_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
 tx.in[0].script_witness.stack << ''
 tx.in[0].script_witness.stack << sig0 << sig1 << witness_script.to_payload
-tx.to_witness_payload.bth # signed transaction in hex
+tx.to_witness_payload.bth # transaction signée au format hex
 ```
 Exemple de transaction envoyant des fonds depuis une adresse P2WSH:
 [42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5](https://blockchain.info/tx/42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5)

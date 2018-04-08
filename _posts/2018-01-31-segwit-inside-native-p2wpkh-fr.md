@@ -125,8 +125,7 @@ require 'bitcoin'
 require 'bech32'
 require 'segwit_addr'
 BTC::Network.default= BTC::Network.mainnet
-puts "\n Saisir la clé publique au format hex:"
-public_key = STDIN.gets.chomp # public_key DOIT être compressée
+public_key="02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7" # Clé publique compressée, au format hex.
 ```
 **Calcul de l'adresse P2WPKH native:**
 
@@ -149,25 +148,13 @@ Adresse Segwit P2WPKH native: **bc1qg9stkxrszkdqsuj92lm4c7akvk36zvhqw7p6ck**
 **Transaction envoyant des fonds vers une adresse P2WPKH native:**
 
 ```ruby
-puts "\n Enter (origin) private key in wif compressed format:"
-@wif = STDIN.gets.chomp
-begin  
-  @user_key = BTC::Key.new(wif:@wif)
-rescue Exception => e
-  puts "Invalid user private key."
-  return
-end
-# Private keys associated with compressed public keys are 52 characters and start with a capital L or K on mainnet (c on testnet).
+@wif = "L2ULKxeRK...TEwcoX3hF" # private key in wif compressed format
+@user_key = BTC::Key.new(wif:@wif)
 
-puts "\n Enter previous tx id:"
-prev_out = STDIN.gets.chomp
+prev_out="0dbf14f92a2929032b8628031c755e8320fd08bb350f416eaa9c134e2acf98fe"
+prev_out_index = 0
 
-puts "\n Enter previous tx output index:"
-prev_out_index = STDIN.gets.chomp.to_i
-
-puts "\n Enter previous tx output value:"
-value = STDIN.gets.chomp.to_i
-
+value = 2440000 # previous tx output value in satoshis
 fee = 15000
 
 tx = BTC::Transaction.new(version: 2)
@@ -179,8 +166,8 @@ tx.add_output(BTC::TransactionOutput.new(value: value-fee, script: script_pub_ke
 hashtype = BTC::SIGHASH_ALL
 
 sighash = tx.signature_hash(input_index: 0,
-                            output_script: BTC::PublicKeyAddress.parse(@user_key.address.to_s).script,
-                            hash_type: hashtype)
+   output_script: BTC::PublicKeyAddress.parse(@user_key.address.to_s).script,
+   hash_type: hashtype)
 
 tx.inputs[0].signature_script = BTC::Script.new
 tx.inputs[0].signature_script << (@user_key.ecdsa_signature(sighash) + BTC::WireFormat.encode_uint8(hashtype))
@@ -195,8 +182,7 @@ Exemple: [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](http
 ```ruby
 include Bitcoin::Builder
 
-puts "\n Saisir la clé privée au format hex:"
-hex_priv_key = STDIN.gets.chomp
+hex_priv_key = # clé privée au format hex
 # adresse Bitcoin standard ("legacy") de destination:
 destination_address = "1FiwwBm4KApZX1mHqxtxKniuL419o5icCC"
 # previous txid:
@@ -242,8 +228,5 @@ and Shigeyuki Azuchi ([Bech32](https://github.com/azuchi/bech32rb/tree/master/li
 
 Mon prochain article (part 2/4) traitera des adresses P2WSH natives, part 3  de P2SH-P2WPKH et finalement part 4 de P2SH-P2WSH.
 
-Liens utiles pour approfondir:
-
-[bitcoinscri.pt](http://bitcoinscri.pt)
-
+Lien utile pour approfondir:
 [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
