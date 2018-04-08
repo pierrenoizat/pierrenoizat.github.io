@@ -172,8 +172,7 @@ sighash = tx.signature_hash(input_index: 0,
 tx.inputs[0].signature_script = BTC::Script.new
 tx.inputs[0].signature_script << (@user_key.ecdsa_signature(sighash) + BTC::WireFormat.encode_uint8(hashtype))
 tx.inputs[0].signature_script << @user_key.public_key
-puts "Hex transaction:"
-puts tx.to_hex
+tx.to_hex # transaction signée, au format hex
 ```
 Exemple: [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchain.info/tx/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
 
@@ -181,11 +180,11 @@ Exemple: [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](http
 
 ```ruby
 include Bitcoin::Builder
-
-hex_priv_key = # clé privée au format hex
+# clé privée de l'adresse P2WPKH, au format hex:
+hex_priv_key="25940add...7f7b2d9"
 # adresse Bitcoin standard ("legacy") de destination:
 destination_address = "1FiwwBm4KApZX1mHqxtxKniuL419o5icCC"
-# previous txid:
+
 prev_out="6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd"
 prev_out_index = 0 # index de l'unspent output (utxo) dans tx ci-dessus
 value = 2425000 # valeur de l'utxo en satoshis
