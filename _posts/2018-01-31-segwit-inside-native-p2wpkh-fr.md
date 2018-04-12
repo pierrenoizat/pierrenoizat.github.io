@@ -153,7 +153,6 @@ Adresse Segwit P2WPKH native: **bc1qg9stkxrszkdqsuj92lm4c7akvk36zvhqw7p6ck**
 
 prev_out="0dbf14f92a2929032b8628031c755e8320fd08bb350f416eaa9c134e2acf98fe"
 prev_out_index = 0
-
 value = 2440000 # previous tx output value in satoshis
 fee = 15000
 
