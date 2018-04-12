@@ -227,5 +227,9 @@ and Shigeyuki Azuchi ([Bech32](https://github.com/azuchi/bech32rb/tree/master/li
 
 Mon prochain article (part 2/4) traitera des adresses P2WSH natives, part 3  de P2SH-P2WPKH et finalement part 4 de P2SH-P2WSH.
 
-Lien utile pour approfondir:
+Liens utiles pour les développeurs:
+[Ruby script funding a native P2WPKH address](https://gist.github.com/pierrenoizat/16ba9e5b7455c6fe9358840ce38e0021)
+
 [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
+
+Pour expérimenter les adresses segwit: [bitcoinscri.pt](http://bitcoinscri.pt/pages/segwit_native_p2wpkh_address)
