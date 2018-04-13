@@ -35,9 +35,8 @@ Les adresses P2SH-P2WPKH doivent être utilisées (comme les adresses standard P
 Pour une adresse P2SH-P2WPKH, le "redeemScript" P2SH comporte toujours 22 octets: 0x0014{20-byte keyhash}.
 
 Il commence par OP_0, suivi par la taille de keyhash (20, soit 0x14 codé en hexadécimal) puis keyhash. Keyhash est le condensat hash160 (20 octets) de la clé publique compressée:
-```
 0 <hash160(compressed public key)>
-```
+
 
 Voici le code Ruby pour les développeurs.
 
