@@ -43,11 +43,6 @@ Voici le code Ruby pour les développeurs.
 ```ruby
 require 'btcruby'
 require 'bitcoin'
-require 'bech32'
-require './segwit_addr'
-require 'active_support'
-require 'active_support/core_ext'
-require 'ffi'
 
 # Calcul de l'adresse P2SH-P2WPKH
 
