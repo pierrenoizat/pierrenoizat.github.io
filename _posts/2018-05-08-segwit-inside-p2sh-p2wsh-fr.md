@@ -99,8 +99,8 @@ tx.in[0].script_sig = Bitcoin::Script.new(Bitcoin::Script.pack_pushdata(@redeem_
 
 sig_hash = tx.signature_hash_for_witness_input(0, @redeem_script, value, witness_script.to_payload, Tx::SIGHASH_TYPE[:all])
 
-user_private_key_hex = "b1afa5dc9d3e01f28b2952219b49e10defc8727337ebc19231e2ab3c83b3e556"
-escrow_private_key_hex = "7b26055f4ca3f4271e526927362356c4cecab7b7037f18f296fd24351b8f86df"
+user_private_key_hex = "b1a5dc...556"
+escrow_private_key_hex = "7b25...86ef"
 user_sig = Bitcoin::Secp256k1.sign(sig_hash, user_private_key_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
 escrow_sig = Bitcoin::Secp256k1.sign(sig_hash, escrow_private_key_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
 
