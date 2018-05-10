@@ -18,7 +18,9 @@ author:
   first_name: ''
   last_name: ''
 ---
-Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. Contrairement à une adresse P2WPKH qui correspond à une clé publique et une signature, **une adresse P2WSH peut contenir un script arbitrairement complexe** (**"witness script"**) avec de multiples signatures et de multiples conditions. Dans cet article, nous prenons l'exemple d'un witness script **multisignature "2-of-2"**.
+Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. 
+
+Contrairement à une adresse P2WPKH qui correspond à une clé publique et une signature, **une adresse P2WSH peut contenir un script arbitrairement complexe** (**"witness script"**) avec de multiples signatures et de multiples conditions. Dans cet article, nous prenons l'exemple d'un witness script **multisignature "2-of-2"**.
 
 **Adresse P2WSH native**
 
