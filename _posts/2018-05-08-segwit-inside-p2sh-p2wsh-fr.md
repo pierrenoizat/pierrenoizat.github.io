@@ -114,6 +114,6 @@ Exemple:
 Transaction envoyant des fonds depuis une adresse P2SH-P2WSH: [718b84ed26a1178efc61b6b500d775df6392fb91816c2e7a48b9d018d66159c4](https://blockchain.info/tx/718b84ed26a1178efc61b6b500d775df6392fb91816c2e7a48b9d018d66159c4)
 
 Liens utiles pour les développeurs:
-[Ruby script sur Github pour adresses P2SH-P2WSH](https://gist.github.com/pierrenoizat/f082d62d49e49f81978b97ad5900789a)
+[Ruby script sur Github pour adresses P2SH-P2WSH](https://gist.github.com/pierrenoizat/a418968f2af4eaacfbff71e7a99c47fd)
 
 [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
