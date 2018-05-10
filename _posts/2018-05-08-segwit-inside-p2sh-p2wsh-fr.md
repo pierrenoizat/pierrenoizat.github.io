@@ -18,20 +18,20 @@ author:
   first_name: ''
   last_name: ''
 ---
-Ce 4e et dernier article de ma série sur les adresses Segwit traite des adresses **P2SH-P2WSH**.
+Ce 4e et dernier article de ma série sur les adresses Segwit traite des adresses **P2SH-P2WSH** ("Pay-to-Script-Hash - Pay-to-Witness-Script-Hash"). Il décrit comment générer une adresse P2SH-P2WSH et comment les développeurs peuvent construire une transaction débloquant les fonds verrouillés sur une telle adresse.
 
 Comme les adresses [P2SH-P2WPKH](http://e-ducat.fr/2018-04-11-segwit-inside-p2sh-p2wpkh-fr/) et pour la même raison d'interopérabilité avec les wallets existants, les adresses P2SH-P2WSH peuvent recevoir des fonds en provenance d'un wallet non-segwit qui les voit comme n'importe quelle adresse P2SH standard ([BIP 16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)).
 
 Comme les adresses [natives P2WSH](http://e-ducat.fr/2018-03-31-segwit-inside-native-p2wsh-fr/), les adresses P2SH-P2WSH peuvent contenir un **script Bitcoin arbitrairement complexe ("witnessScript")**. Nous prendrons ici le même exemple d'un script multisignature 2-sur-2.
 
-Cet article décrit comment générer une adresse P2SH-P2WSH et comment les développeurs peuvent construire une transaction débloquant les fonds verrouillés sur une telle adresse.
-
-Pour une adresse P2SH-P2WSH, le "redeemScript" P2SH comporte toujours 34 octets: 0x0020{32-byte scripthash}.
-
-Il commence par OP_0, suivi par la taille de scripthash (32, soit 0x20 codé en hexadécimal) puis scripthash. Scripthash est le condensat sha256 (32 octets) du "witness script":
+**"Scripthash"** est l'empreinte numérique sha256 (32 octets) du "witness script":
 0 <sha256(witness script)>
 
-Comme pour toute adresse P2SH, le "scriptPubKey" est OP_HASH160 hash160(redeemScript) OP_EQUAL, l'adresse correspondante commence par le préfixe 3.
+Pour une adresse P2SH-P2WSH, le **"redeemScript"** P2SH comporte toujours 34 octets: 0x0020{32-byte scripthash}.
+
+Il commence par OP_0, suivi par la taille de scripthash (32, soit 0x20 codé en hexadécimal) puis scripthash. 
+
+Comme pour toute adresse P2SH, le "scriptPubKey" intégré dans l'adresse P2SH-P2WSH est OP_HASH160 hash160(redeemScript) OP_EQUAL. L'adresse correspondante commence par le préfixe 3.
 
 Voici le code Ruby pour les développeurs.
 
