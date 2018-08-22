@@ -1,7 +1,10 @@
 ---
-permalink: /
-layout: page
+layout: post
 title: Dai Stablecoin System Simplified, v0.8
+date: 2020-05-08 00:40:51.000000000 +01:00
+type: post
+published: false
+status: draft
 ---
 
 # The Dai Stablecoin System

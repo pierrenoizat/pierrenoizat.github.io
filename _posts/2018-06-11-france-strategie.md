@@ -7,7 +7,7 @@ published: true
 status: draft
 categories:
 - Bitcoin
-- Technologie
+- Environnement
 tags: [empreinte carbone]
 meta:
   _edit_last: '1'
