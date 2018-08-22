@@ -15,8 +15,8 @@ author:
   login: admin
   email: noizat@hotmail.com
   display_name: Boussac
-  first_name: ''
-  last_name: ''
+  first_name: 'Pierre'
+  last_name: 'Noizat'
 ---
 Les adresses segwit P2SH-P2WPKH ont été conçues pour permettre la création d'utxo ("unspent transaction output") segwit à partir d'un wallet standard ne supportant pas encore segwit.
 

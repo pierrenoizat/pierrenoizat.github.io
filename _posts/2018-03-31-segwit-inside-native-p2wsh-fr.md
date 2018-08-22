@@ -15,8 +15,8 @@ author:
   login: admin
   email: noizat@hotmail.com
   display_name: Boussac
-  first_name: ''
-  last_name: ''
+  first_name: 'Pierre'
+  last_name: 'Noizat'
 ---
 Après l'article décrivant les adresses [natives P2WPKH](http://e-ducat.fr/2018-01-31-segwit-inside-native-p2wpkh-fr/), celui-ci s'intéresse aux adresses natives P2WSH en expliquant comment les développeurs peuvent simplement créer ces adresses, y envoyer des fonds puis les dépenser. 
 

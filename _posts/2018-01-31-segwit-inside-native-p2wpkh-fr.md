@@ -15,8 +15,8 @@ author:
   login: admin
   email: noizat@hotmail.com
   display_name: Boussac
-  first_name: ''
-  last_name: ''
+  first_name: 'Pierre'
+  last_name: 'Noizat'
 ---
 Segwit, abréviation de «Segregated Witness» ou “signatures séparées” en français, est un changement fondamental dans la manière dont les transactions Bitcoin sont construites à partir d’entrées (inputs) et de sorties (outputs).
 

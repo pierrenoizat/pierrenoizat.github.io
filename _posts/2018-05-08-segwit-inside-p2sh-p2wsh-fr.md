@@ -15,14 +15,14 @@ author:
   login: admin
   email: noizat@hotmail.com
   display_name: Boussac
-  first_name: ''
-  last_name: ''
+  first_name: 'Pierre'
+  last_name: 'Noizat'
 ---
 Ce 4e et dernier article de ma série sur les adresses Segwit traite des adresses **P2SH-P2WSH** ("Pay-to-Script-Hash - Pay-to-Witness-Script-Hash"). Il décrit comment générer une adresse P2SH-P2WSH et comment les développeurs peuvent construire une transaction débloquant les fonds verrouillés sur une telle adresse.
 
 Comme les adresses [P2SH-P2WPKH](http://e-ducat.fr/2018-04-11-segwit-inside-p2sh-p2wpkh-fr/) et pour la même raison d'interopérabilité avec les wallets existants, les adresses P2SH-P2WSH peuvent recevoir des fonds en provenance d'un wallet non-segwit qui les voit comme n'importe quelle adresse P2SH standard ([BIP 16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)).
 
-Comme les adresses [natives P2WSH](http://e-ducat.fr/2018-03-31-segwit-inside-native-p2wsh-fr/), les adresses P2SH-P2WSH peuvent contenir un **script Bitcoin arbitrairement complexe ("witnessScript")**. Nous prendrons ici le même exemple d'un script multisignature 2-sur-2.
+Comme les adresses [natives P2WSH](http://e-ducat.fr/2018-03-31-segwit-inside-native-p2wsh-fr/), les adresses P2SH-P2WSH peuvent contenir un **script Bitcoin arbitrairement complexe ("witnessScript")**. Nous prendrons ici le même exemple simple d'un script multisignature 2-sur-2 car il y a tout de même des limites à la complexité du script qui sont rappelées [ici](https://bitcoincore.org/en/segwit_wallet_dev/).
 
 **"Scripthash"** est l'empreinte numérique sha256 (32 octets) du "witness script":
 0 <sha256(witness script)>
