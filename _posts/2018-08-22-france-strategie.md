@@ -1,7 +1,7 @@
 ---
 layout: post
 title: France, où est ta stratégie ?
-date: 2018-06-11 00:40:51.000000000 +01:00
+date: 2018-08-22 00:40:51.000000000 +01:00
 type: post
 published: true
 status: draft
