@@ -8,6 +8,7 @@ status: draft
 categories:
 - Bitcoin
 - Environnement
+- Politique
 tags: [economie]
 meta:
   _edit_last: '1'
@@ -34,7 +35,11 @@ Philosophie et mathématiques sont des abstractions de natures différentes, sé
 
 _Jean-Pierre Landau: «Les crypto-monnaies apportent de mauvaises réponses à une bonne question» – L'Opinion_
 
-Ainsi le [rapport Landau](https://minefi.hosting.augure.com/Augure_Minefi/r/ContenuEnLigne/Download?id=A198A35B-AA8B-422D-BE40-CC4E53B8C8B0&filename=570%20bis%20Rapport%20Landau.pdf) peut être à la fois bien écrit pour jouer sur les émotions de certains lecteurs, notamment la peur du changement, et affligé d'innumérisme, notamment quand il affirme:
+Ainsi le [rapport Landau](https://minefi.hosting.augure.com/Augure_Minefi/r/ContenuEnLigne/Download?id=A198A35B-AA8B-422D-BE40-CC4E53B8C8B0&filename=570%20bis%20Rapport%20Landau.pdf) joue sur les émotions de certains lecteurs, notamment la peur du changement:
+
+"Il existe un danger immédiat de voir les crypto-monnaies pénétrer les portefeuilles de placement des organismes de placement collectif. Elles acquéraient par ce biais une liquidité et un statut, ouvrant la voie à de nombreux développements (construction d’indices, de produits dérivés, de fonds dédiés) propres à l’apparition d’un risque systémique."
+
+Mais le rapport semble surtout affligé d'innumérisme, notamment quand il affirme:
 
 "Les crypto-monnaies sont des monnaies privées, sans cours légal, **sans aucun adossement physique** ou financier et totalement virtuelles : elles se créent et circulent indépendamment de toute banque et sont détachées de tout compte bancaire."
 
