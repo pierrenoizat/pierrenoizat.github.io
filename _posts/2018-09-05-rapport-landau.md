@@ -72,7 +72,7 @@ La communauté des crypto-enthousiastes et des "early adopters" n'est pas compos
 
 A quel prix ? Au prix de passer à côté d'une transition numérique réussie et de s'enfoncer dans une vassalisation rampante par les géants américains du numérique.
 
-Le rapport Landau est aussi affecté de **myopie et victime de l'effet d'horizon**:
+La rédaction du rapport Landau est aussi affectée de l'effet d'horizon:
 
 "Les crypto-monnaies sont lentes et grandes consommatrices de ressources énergétiques : avec une consommation d’électricité égale à celle de la Hongrie, Bitcoin opère aujourd’hui environ 80 transactions par minute, quand Visa et Mastercard en exécutent respectivement près de 100 000."
 
@@ -80,7 +80,7 @@ Je passe sur le sujet de la conso énergétique que j'ai amplement traité [par 
 C'est déjà le cas pour les transactions d'échanges sur les plateformes comme [Paymium](https://paymium.com) et ce sera la cas pour les micro-paiements à travers le réseau [Lightning](https://lightning.network), en cours de déploiement.
 On appréciera la publicité pour Visa et Mastercard dont la consommation électrique reste bizarrement un mystère.
 
-Le rapport Landau souffre aussi d'un biais cognitif que les américains appellent parfois le double standard:
+Concernant l'efficacité des systèmes monétaires, le prisme d'un [double standard](https://fr.wikipedia.org/wiki/Deux_poids,_deux_mesures) trouble la perception des auteurs:
 
 "**La cause profonde de cette inefficacité réside dans la gestion décentralisée de la monnaie**. Celle-ci impose un processus de validation des transactions lourd, long et coûteux – souvent délibérément coûteux, comme dans le cas du Bitcoin.
 Ce handicap est durable voire permanent : il est impossible pour un système monétaire de concilier les trois exigences de sécurité, de décentralisation et d’efficacité."
