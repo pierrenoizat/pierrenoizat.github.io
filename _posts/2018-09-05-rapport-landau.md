@@ -51,11 +51,9 @@ Le prix de marché du Bitcoin est donc adossé à l'utilisation du réseau qui e
 
 L'insistance des banquiers centraux à employer le mot "virtuel" relève du déni de réalité ou d'un langage de propagande mais n'a pas sa place dans la rédaction d'un rapport au gouvernement.
 
-Bien sûr, le rapport dénigre les usages, volontaires, de Bitcoin qui seraient limités à la spéculation ou à des fins illicites.
+Le rapport dénigre les usages, volontaires, de Bitcoin qui seraient limités à la spéculation ou à des fins illicites. Une page entière constate que les crypto-monnaies sont encore peu utilisées en 2018 comme instruments d’échange et de paiement. 
 
-Une page entière du rapport constate que les crypto-monnaies sont encore peu utilisées en 2018 comme instruments d’échange et de paiement. 
-
-En 1994, lors de la rédaction du rapport Théry, l'auteur visionnaire aurait il comparé le nombre d'emails envoyés  par internet aux quantités de lettres envoyées par la poste cette année-là pour appuyer ses recommandations ?
+En 1994, lors de la rédaction du [rapport Théry](http://www.ladocumentationfrancaise.fr/var/storage/rapports-publics/064000675.pdf), l'auteur visionnaire aurait il comparé le nombre d'emails envoyés par internet aux quantités de lettres envoyées par la poste cette année-là pour appuyer ses recommandations ?
 
 Rappelons que **Bitcoin est une monnaie librement choisie et utilisée** tandis que l'utilisation de l'euro est imposée aux entreprises et aux particuliers pour payer leurs impôts.
 
