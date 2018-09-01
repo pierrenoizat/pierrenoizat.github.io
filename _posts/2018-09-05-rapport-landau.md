@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Rapport Landau, la réponse est non mais quelle était la question ?
-date: 2018-09-05 00:40:51.000000000 +01:00
+date: 2018-09-01 00:40:51.000000000 +01:00
 type: post
-published: false
+published: true
 status: draft
 categories:
 - Bitcoin
@@ -20,26 +20,26 @@ author:
   last_name: 'Noizat'
 ---
 
-L'[**innumérisme**](https://fr.wikipedia.org/wiki/Innumérisme), pendant de l'illétrisme, est caractérisé par une difficulté avec cette abstraction du réel que constituent les mathématiques.
+Philosophie et mathématiques sont des abstractions de natures différentes, séparées par l'espace entre la tribu des humains et celle des machines.
 
-La philosophie n'est pas l'abstraction du réel mais celle des émotions.
+Les mathématiques proposent une abstraction du réel tandis que la philosophie constitue une abstraction des émotions.
 Même si les émotions sont des algorithmes comme l'a brillamment expliqué Yuval Harari dans [Homo Deus](https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow), tout dépend de l'organisme qui exécute l'algorithme.
 
 Si nous effectuons l'algorithme de minage ["Proof of Work"](https://en.wikipedia.org/wiki/Proof-of-work_system) à la main avec un calculette, nous n'arrivons à rien. Seul l'ordinateur peut exécuter cet algorithme efficacement.
 
-De même, les émotions échappent aux ordinateurs tandis qu'elles nous servent tous les jours.
+A l'inverse, les émotions échappent aux ordinateurs tandis qu'elles nous servent à nous adapter tactiquement à certaines situations. Daniel Khaneman a écrit très clairement sur l'utilité d'une [deuxième vitesse de la pensée](https://www.amazon.fr/Système-deux-vitesses-pensée/dp/2081211475/ref=sr_1_1?s=books&ie=UTF8&qid=1474231292&sr=1-1&keywords=daniel+kahneman), davantage affranchie des émotions, pour prendre des décision plus stratégiques.
 
-Philosophie et mathématiques sont des abstractions de natures différentes, séparées par l'espace entre la tribu des humains et celle des machines.
 
 ![Jean-Pierre Landau]({{ site.baseurl }}/assets/jean-pierre_landau_sipa.jpg)
 
 _Jean-Pierre Landau: «Les crypto-monnaies apportent de mauvaises réponses à une bonne question» – L'Opinion_
 
-Ainsi le [rapport Landau](https://minefi.hosting.augure.com/Augure_Minefi/r/ContenuEnLigne/Download?id=A198A35B-AA8B-422D-BE40-CC4E53B8C8B0&filename=570%20bis%20Rapport%20Landau.pdf) joue sur les émotions de certains lecteurs, notamment la peur du changement:
+
+Malencontreusement, le [rapport Landau](https://minefi.hosting.augure.com/Augure_Minefi/r/ContenuEnLigne/Download?id=A198A35B-AA8B-422D-BE40-CC4E53B8C8B0&filename=570%20bis%20Rapport%20Landau.pdf), malgré sa vocation stratégique, joue sur les émotions de certains lecteurs, notamment la peur du changement:
 
 "Il existe un danger immédiat de voir les crypto-monnaies pénétrer les portefeuilles de placement des organismes de placement collectif. Elles acquéraient par ce biais une liquidité et un statut, ouvrant la voie à de nombreux développements (construction d’indices, de produits dérivés, de fonds dédiés) propres à l’apparition d’un risque systémique."
 
-Mais le rapport semble surtout affligé d'innumérisme, notamment quand il affirme:
+On y trouve aussi la peur du vide, notamment quand il affirme:
 
 "Les crypto-monnaies sont des monnaies privées, sans cours légal, **sans aucun adossement physique** ou financier et totalement virtuelles : elles se créent et circulent indépendamment de toute banque et sont détachées de tout compte bancaire."
 
@@ -55,7 +55,7 @@ Bien sûr, le rapport dénigre les usages, volontaires, de Bitcoin qui seraient 
 
 Une page entière du rapport constate que les crypto-monnaies sont encore peu utilisées en 2018 comme instruments d’échange et de paiement. 
 
-En 1995, l'auteur visionnaire aurait il comparé le nombre d'emails envoyés  par internet aux quantités de lettres envoyées par la poste ?
+En 1994, lors de la rédaction du rapport Théry, l'auteur visionnaire aurait il comparé le nombre d'emails envoyés  par internet aux quantités de lettres envoyées par la poste cette année-là pour appuyer ses recommandations ?
 
 Rappelons que **Bitcoin est une monnaie librement choisie et utilisée** tandis que l'utilisation de l'euro est imposée aux entreprises et aux particuliers pour payer leurs impôts.
 
@@ -63,7 +63,7 @@ Dans une dictature, l’opposition obtient en général un pourcentage très fai
 En quoi, cela réduit il la validité de ses propositions ?
 Un dictateur prétend volontiers protéger la population du chaos qui ne manquerait pas selon lui de suivre l'instauration d'un régime plus démocratique.
 
-Dans cette logique, le rapport Landau entreprend de caractériser ainsi la communauté crypto: 
+Dans cette logique, pour compléter la revue des peurs avec la peur du chaos, le rapport Landau entreprend de caractériser ainsi la communauté crypto: 
 
 "Les crypto-monnaies sont l’expression d’un mouvement de société, d’inspiration libertaire, qui rejette les systèmes centralisés et normalisés."
 
@@ -79,23 +79,21 @@ Le rapport Landau est aussi affecté de **myopie et victime de l'effet d'horizon
 "Les crypto-monnaies sont lentes et grandes consommatrices de ressources énergétiques : avec une consommation d’électricité égale à celle de la Hongrie, Bitcoin opère aujourd’hui environ 80 transactions par minute, quand Visa et Mastercard en exécutent respectivement près de 100 000."
 
 Je passe sur le sujet de la conso énergétique que j'ai amplement traité [par ailleurs](http://e-ducat.fr/2018-08-22-france-strategie/) mais pourquoi ignorer que certaines transactions Bitcoin se font off-chain afin d' être agrégées pour un minage plus efficient ?
-C'est déjà le cas pour les transactions d'échanges sur les plateformes comme Paymium et ce sera la cas pour les micro-paiements à travers le réseau [Lightning](https://lightning.network), en cours de déploiement.
+C'est déjà le cas pour les transactions d'échanges sur les plateformes comme [Paymium](https://paymium.com) et ce sera la cas pour les micro-paiements à travers le réseau [Lightning](https://lightning.network), en cours de déploiement.
 On appréciera la publicité pour Visa et Mastercard dont la consommation électrique reste bizarrement un mystère.
 
-Le rapport Landau souffre d'un biais cognitif, ce que les américains appellent parfois le double standard:
+Le rapport Landau souffre aussi d'un biais cognitif que les américains appellent parfois le double standard:
 
-"La cause profonde de cette inefficacité réside dans la gestion décentralisée de la monnaie. Celle-ci impose un processus de validation des transactions lourd, long et coûteux – souvent délibérément coûteux, comme dans le cas du Bitcoin.
+"**La cause profonde de cette inefficacité réside dans la gestion décentralisée de la monnaie**. Celle-ci impose un processus de validation des transactions lourd, long et coûteux – souvent délibérément coûteux, comme dans le cas du Bitcoin.
 Ce handicap est durable voire permanent : il est impossible pour un système monétaire de concilier les trois exigences de sécurité, de décentralisation et d’efficacité."
 
-Ah bon ? **Le système de validation des transactions bancaires n'est il pas long et couteux ?**
+Certes, mais **le système de validation des transactions bancaires n'est il pas encore plus long et couteux ?**
 
 Parmi les trois points cardinaux énoncés (sécurité, décentralisation, efficacité), la sécurité et l'efficacité du système bancaire traditionnel sont-elles indiscutablement supérieures à celle d'un système décentralisé ?
 
-Rien n'est moins sûr.
- 
-L'insécurité du sytème bancaire est concentrée au niveau collectif avec la nécessité de sauvetage périodique (tous les dix ans en moyenne) suite aux crises bancaires et n'est pas négligeable au niveau individuel avec des taux de fraude en hausse constante sur les moyens de paiements traditionnels (virements et CB).
+La sécurité du sytème bancaire est menacée au niveau collectif (tous les dix ans en moyenne) par les crises bancaires et au niveau individuel par la fraude sur les moyens de paiements traditionnels (virements et CB).
 
-Surtout, parlant d'efficacité, **le coût du système bancaire centralisé est faramineux**, résultat d'une rente de situation, porté pour l'essentiel par les acteurs économiques non-financiers:
+Surtout, parlant d'efficacité, **le coût du système bancaire centralisé est faramineux**:
 
 - profits des banques françaises en 2017: 23 Milliards d'euros. Rappelons qu'entre 2009 et 2015, le taux d’imposition sur leurs bénéfices n’aura été que de 8 %, bien loin du taux officiel de 33,5 %. (source: entreprendre.fr et Attac)
 
@@ -103,34 +101,28 @@ Surtout, parlant d'efficacité, **le coût du système bancaire centralisé est 
 
 Au gros salaires et avantages impensables pour les acteurs économiques non-financiers, s'ajoute le coût d'opportunité de ces 400 000 emplois qui manquent dans les secteurs essentiels de la santé et de l'éducation, faute de moyens nous dit on !
 
-Au total, **les banques françaises nous coûtent donc environ 65 milliards d'euros par an**, sans compter les plans de sauvetage périodiques, pour délivrer un service dont la qualité n'échappe à personne. 
+Au total, **les banques françaises nous coûtent donc environ 65 milliards d'euros par an**, sans compter les plans de sauvetage périodiques. Pour rappel, suite à la crise de 2008, les contribuables ont du financer 30 Milliards d'euros pour le plan de sauvetage des banques françaises.
 
-Suite à la crise de 2008, les contribuables ont du financer 30 Milliards d'euros pour le plan de sauvetage des banques françaises.
+Je vous laisse estimer le chiffre au niveau mondial. Les auteurs du rapport avaient plus de moyens que moi pour faire cette estimation qui aurait tempéré leur analyse de l'efficacité d'un système décentralisé.
 
 ![Bénéfices 2017 des banques françaises]({{ site.baseurl }}/assets/profits_2017_banques_france.png)
 
 _Source: leparisien.fr_
 
 
-Parfois, le rapport s'égare dans l'analyse de raisonnements que personne ne fait sauf peut-être M. Landau lui-même: 
+Parfois, le rapport s'égare dans l'analyse de raisonnements incomplets: 
 
 "Le raisonnement qui conduit à l’équivalence entre rareté et valeur est partiel, et, dans le cas des crypto-monnaies, problématique."
 
-Nul ne "raisonne" comme ça dans la communauté crypto. 
-
-Dans les faits, il y a l’équivalence utilité relative + rareté relative (quantité limitée) = valeur relative.
+Dans les faits, ce raisonnement est faux si on oublie l'utilité car le déterminant de la valeur relative est plutôt la combinaison de l'utilité relative  et de la rareté relative.
 
 La notion de valeur est toujours relative et une valeur intrinsèque, pourtant évoquée dans le rapport, n'existe pas précisément parce que quelque chose qui m'est utile n'est pas forcément utile à tout le monde.
 
 On est donc ramené, une fois de plus, à une discussion sur l’utilité. 
 
-**L’utilité relative des crypto-monnaies provient des imperfections du système actuel**, imperfections que M. Landau, enchaîné à son passé et à son titre de gouverneur honoraire, est incapable de reconnaitre, . 
+**L’utilité relative des crypto-monnaies provient des imperfections du système actuel**, imperfections que le rapport Landau ignore commodément. 
 
-La contestation de l’utilité de Bitcoin évoque celle adressée au courrier électronique à ses débuts (“personne ne l’utilise”) ou à la voiture électrique autonome aujourd’hui: 
-
-"combien de km parcourus ?" mais aussi "qui serait responsable en cas d'accident?", toujours cette obsession du contrôle juridique et cette fascination pour le sujet de la gouvernance, obsession peut être légitime mais paralysante si elle devient un préalable à l'action. 
-
-L’innovation ne “sert” à rien car elle ne s’appuie pas sur une demande omnisciente: l’innovation répond à une logique de l’offre qui nait d'une invention. Relire Steve Jobs sur ce sujet maintes fois rebattu.
+L’innovation ne “sert” à rien car elle ne s’appuie pas sur une demande omnisciente: l’innovation répond à la logique de l’offre qui nait d'une invention. Relire Steve Jobs sur ce sujet maintes fois rebattu.
 
 ![Steve Jobs]({{ site.baseurl }}/assets/steve_jobs_750x466.jpg)
 
@@ -155,6 +147,10 @@ Quelle est la **politique industrielle préconisée au gouvernement pour la tran
 Comment soutenir que le modèle d'une monnaie monopolistique et centralisée, pilotée depuis Francfort sans responsabilité politique, ne pourrait supporter l'**expérimentation d'un système alternatif décentralisée en 2018** ?
 
 Pourquoi ressasser la régulation des exchanges comme nécessité impérieuse alors que les exchanges européens sont déjà soumis aux directives sur les services de paiement ?
+
+Un exchange Euro/Bitcoin est une infrastructure de marché essentielle dans la construction de l'internet de la valeur et doit pouvoir traiter des flux considérables. Sous la pression de la banque de France et de l'ACPR, aucune banque française à ce jour ne souhaite prendre des responsabilités dans ce domaine. 
+
+La CDC pourrait en être chargée dans le cadre de ses missions de services publics mais le rapport Landau est loin de le préconiser. Il ne propose pas vraiment de compromis entre la protection contre les risques et la création de conditions favorables au développement des entreprises du secteur.
 
 **La France risque d'être de plus en plus isolée dans cette posture** comme en témoigne notamment cet extrait d'un rapport publié en juin 2018 à la demande du Comité des Affaires Economiques Monétaires du Parlement Européen:
 
