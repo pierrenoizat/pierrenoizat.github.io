@@ -53,7 +53,7 @@ L'insistance des banquiers centraux à employer le mot "virtuel" relève du dén
 
 Le rapport dénigre les usages, volontaires, de Bitcoin qui seraient limités à la spéculation ou à des fins illicites. Une page entière constate que les crypto-monnaies sont encore peu utilisées en 2018 comme instruments d’échange et de paiement. 
 
-En 1994, lors de la rédaction du [rapport Théry](http://www.ladocumentationfrancaise.fr/var/storage/rapports-publics/064000675.pdf), l'auteur visionnaire aurait il comparé le nombre d'emails envoyés par internet aux quantités de lettres envoyées par la poste cette année-là pour appuyer ses recommandations ?
+En 1994, lors de la rédaction du [rapport Théry](http://www.ladocumentationfrancaise.fr/var/storage/rapports-publics/064000675.pdf), l'auteur visionnaire aurait-il, pour étayer ses recommandations, comparé le nombre d'emails envoyés par internet aux quantités de lettres envoyées par la poste cette année-là ?
 
 Rappelons que **Bitcoin est une monnaie librement choisie et utilisée** tandis que l'utilisation de l'euro est imposée aux entreprises et aux particuliers pour payer leurs impôts.
 
