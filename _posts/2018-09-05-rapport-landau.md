@@ -37,11 +37,11 @@ _Jean-Pierre Landau: «Les crypto-monnaies apportent de mauvaises réponses à u
 
 Malencontreusement, le [rapport Landau](https://minefi.hosting.augure.com/Augure_Minefi/r/ContenuEnLigne/Download?id=A198A35B-AA8B-422D-BE40-CC4E53B8C8B0&filename=570%20bis%20Rapport%20Landau.pdf), malgré sa vocation stratégique, joue sur les émotions de certains lecteurs, notamment la peur du changement:
 
-"Il existe un danger immédiat de voir les crypto-monnaies pénétrer les portefeuilles de placement des organismes de placement collectif. Elles acquéraient par ce biais une liquidité et un statut, ouvrant la voie à de nombreux développements (construction d’indices, de produits dérivés, de fonds dédiés) propres à l’apparition d’un risque systémique."
+>"Il existe un **danger immédiat** de voir les crypto-monnaies pénétrer les portefeuilles de placement des organismes de placement collectif. Elles acquéraient par ce biais une liquidité et un statut, ouvrant la voie à de nombreux développements (construction d’indices, de produits dérivés, de fonds dédiés) propres à l’apparition d’un **risque systémique**."
 
 On y trouve aussi la peur du vide, notamment quand il affirme:
 
-"Les crypto-monnaies sont des monnaies privées, sans cours légal, **sans aucun adossement physique** ou financier et totalement virtuelles : elles se créent et circulent indépendamment de toute banque et sont détachées de tout compte bancaire."
+>"Les crypto-monnaies sont des monnaies privées, sans cours légal, **sans aucun adossement physique** ou financier et totalement virtuelles : elles se créent et circulent indépendamment de toute banque et sont détachées de tout compte bancaire."
 
 Pourtant, transacter sur le réseau Bitcoin nécessite de posséder une quantité de bitcoins correspondant à la valeur de la transaction. 
 
@@ -63,7 +63,7 @@ Un dictateur prétend volontiers protéger la population du chaos qui ne manquer
 
 Dans cette logique, pour compléter la revue des peurs avec la peur du chaos, le rapport Landau entreprend de caractériser ainsi la communauté crypto: 
 
-"Les crypto-monnaies sont l’expression d’un mouvement de société, d’inspiration libertaire, qui rejette les systèmes centralisés et normalisés."
+>"Les crypto-monnaies sont l’expression d’un mouvement de société, d’inspiration libertaire, qui rejette les systèmes centralisés et normalisés."
 
 C'est une caricature: souhaiter la fin du monopole de création monétaire ne se réduit pas à un rejet du système unique mais passe par la construction d'un système alternatif.
 En démocratie, on devrait pouvoir critiquer un système sans souhaiter sa disparition et **critiquer un monopole sans souhaiter le remplacer par un autre monopole**.
@@ -74,7 +74,7 @@ A quel prix ? Au prix de passer à côté d'une transition numérique réussie e
 
 La rédaction du rapport Landau est aussi affectée de l'effet d'horizon:
 
-"Les crypto-monnaies sont lentes et grandes consommatrices de ressources énergétiques : avec une consommation d’électricité égale à celle de la Hongrie, Bitcoin opère aujourd’hui environ 80 transactions par minute, quand Visa et Mastercard en exécutent respectivement près de 100 000."
+>"Les crypto-monnaies sont lentes et grandes consommatrices de ressources énergétiques : avec une consommation d’électricité égale à celle de la Hongrie, Bitcoin opère aujourd’hui environ 80 transactions par minute, quand Visa et Mastercard en exécutent respectivement près de 100 000."
 
 Je passe sur le sujet de la conso énergétique que j'ai amplement traité [par ailleurs](http://e-ducat.fr/2018-08-22-france-strategie/) mais pourquoi ignorer que certaines transactions Bitcoin se font off-chain afin d' être agrégées pour un minage plus efficient ?
 C'est déjà le cas pour les transactions d'échanges sur les plateformes comme [Paymium](https://paymium.com) et ce sera la cas pour les micro-paiements à travers le réseau [Lightning](https://lightning.network), en cours de déploiement.
@@ -82,7 +82,7 @@ On appréciera la publicité pour Visa et Mastercard dont la consommation élect
 
 Concernant l'efficacité des systèmes monétaires, le prisme d'un [double standard](https://fr.wikipedia.org/wiki/Deux_poids,_deux_mesures) trouble la perception des auteurs:
 
-"**La cause profonde de cette inefficacité réside dans la gestion décentralisée de la monnaie**. Celle-ci impose un processus de validation des transactions lourd, long et coûteux – souvent délibérément coûteux, comme dans le cas du Bitcoin.
+>"**La cause profonde de cette inefficacité réside dans la gestion décentralisée de la monnaie**. Celle-ci impose un processus de validation des transactions lourd, long et coûteux – souvent délibérément coûteux, comme dans le cas du Bitcoin.
 Ce handicap est durable voire permanent : il est impossible pour un système monétaire de concilier les trois exigences de sécurité, de décentralisation et d’efficacité."
 
 Certes, mais **le système de validation des transactions bancaires n'est il pas encore plus long et couteux ?**
@@ -110,7 +110,7 @@ _Source: leparisien.fr_
 
 Parfois, le rapport s'égare dans l'analyse de raisonnements incomplets: 
 
-"Le raisonnement qui conduit à l’équivalence entre rareté et valeur est partiel, et, dans le cas des crypto-monnaies, problématique."
+>"Le raisonnement qui conduit à l’équivalence entre rareté et valeur est partiel, et, dans le cas des crypto-monnaies, problématique."
 
 Dans les faits, ce raisonnement est faux si on oublie l'utilité car le déterminant de la valeur relative est plutôt la combinaison de l'utilité relative  et de la rareté relative.
 
@@ -132,7 +132,7 @@ _"Innovation is not about convincing people that they want something they don’
 
 Enfin, on trouve dans le rapport des "fake news" à base d'affirmations gratuites, maintes fois répétées mais toujours aussi infondées:
 
-"La détention des crypto-monnaies est très concentrée: 2,5% des adresses détiennent plus de 95 % des montants totaux en circulation, tandis que 40 % des bitcoins en circulation à fin 2017 seraient détenus par moins de 1 000 personnes." 
+>"La détention des crypto-monnaies est très concentrée: 2,5% des adresses détiennent plus de 95 % des montants totaux en circulation, tandis que 40 % des bitcoins en circulation à fin 2017 seraient détenus par moins de 1 000 personnes." 
 
 Dans les faits, une seule adresse de cold storage d’un exchange peut contenir les coins de milliers d’utilisateurs.
 
@@ -144,15 +144,15 @@ Quelle est la **politique industrielle préconisée au gouvernement pour la tran
 
 Comment soutenir que le modèle d'une monnaie monopolistique et centralisée, pilotée depuis Francfort sans responsabilité politique, ne pourrait supporter l'**expérimentation d'un système alternatif décentralisée en 2018** ?
 
-Pourquoi ressasser la régulation des exchanges comme nécessité impérieuse alors que les exchanges européens sont déjà soumis aux directives sur les services de paiement ?
+Pourquoi ressasser la régulation des exchanges comme nécessité impérieuse alors que les places de marché européennes sont déjà soumises aux directives sur les services de paiement ?
 
 Un exchange Euro/Bitcoin est une infrastructure de marché essentielle dans la construction de l'internet de la valeur et doit pouvoir traiter des flux considérables. Sous la pression de la banque de France et de l'ACPR, aucune banque française à ce jour ne souhaite prendre des responsabilités dans ce domaine. 
 
 La CDC pourrait en être chargée dans le cadre de ses missions de services publics mais le rapport Landau est loin de le préconiser. Il ne propose pas vraiment de compromis entre la protection contre les risques et la création de conditions favorables au développement des entreprises du secteur.
 
-**La France risque d'être de plus en plus isolée dans cette posture** comme en témoigne notamment cet extrait d'un rapport publié en juin 2018 à la demande du Comité des Affaires Economiques Monétaires du Parlement Européen:
+**La France risque d'être de plus en plus isolée dans cette posture** comme en témoigne notamment cet extrait d'un [rapport publié en juin 2018](http://www.europarl.europa.eu/cmsdata/149900/CASE_FINAL%20publication.pdf) à la demande du Comité des Affaires Economiques Monétaires du Parlement Européen:
 
-_"Economists who attempt to dismiss the justifications for and importance of virtual currencies, considering them as a new incarnation of monetary utopia or mania, fraud, or simply as a convenient instrument for money laundering, are mistaken"_
+>"Economists who attempt to dismiss the justifications for and importance of virtual currencies, considering them as a new incarnation of monetary utopia or mania, fraud, or simply as a convenient instrument for money laundering, are mistaken"
 
 
 
