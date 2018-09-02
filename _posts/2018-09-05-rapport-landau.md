@@ -27,7 +27,7 @@ Même si les émotions sont des algorithmes comme l'a brillamment expliqué Yuva
 
 Si nous effectuons l'algorithme de minage ["Proof of Work"](https://en.wikipedia.org/wiki/Proof-of-work_system) à la main avec un calculette, nous n'arrivons à rien. Seul l'ordinateur peut exécuter cet algorithme efficacement.
 
-A l'inverse, les émotions échappent aux ordinateurs tandis qu'elles nous servent à nous adapter tactiquement à certaines situations. Daniel Khaneman a écrit très clairement sur l'utilité d'une [deuxième vitesse de la pensée](https://www.amazon.fr/Système-deux-vitesses-pensée/dp/2081211475/ref=sr_1_1?s=books&ie=UTF8&qid=1474231292&sr=1-1&keywords=daniel+kahneman), davantage affranchie des émotions, pour prendre des décision plus stratégiques.
+A l'inverse, les émotions échappent aux ordinateurs tandis qu'elles nous servent à nous adapter tactiquement à certaines situations. Daniel Kahneman a écrit très clairement sur l'utilité d'une [deuxième vitesse de la pensée](https://www.amazon.fr/Système-deux-vitesses-pensée/dp/2081211475/ref=sr_1_1?s=books&ie=UTF8&qid=1474231292&sr=1-1&keywords=daniel+kahneman), davantage affranchie des émotions, pour prendre des décision plus stratégiques.
 
 
 ![Jean-Pierre Landau]({{ site.baseurl }}/assets/jean-pierre_landau_sipa.jpg)
@@ -59,14 +59,14 @@ Rappelons que **Bitcoin est une monnaie librement choisie et utilisée** tandis 
 
 Dans une dictature, l’opposition obtient en général un pourcentage très faible des voix aux élections.
 En quoi, cela réduit il la validité de ses propositions ?
-Un dictateur prétend volontiers protéger la population du chaos qui ne manquerait pas selon lui de suivre l'instauration d'un régime plus démocratique.
+Un dictateur évoque volontiers le chaos pour décrire la situation qui résulterait d'une transition démocratique.
 
 Dans cette logique, pour compléter la revue des peurs avec la peur du chaos, le rapport Landau entreprend de caractériser ainsi la communauté crypto: 
 
 >"Les crypto-monnaies sont l’expression d’un mouvement de société, d’inspiration libertaire, qui rejette les systèmes centralisés et normalisés."
 
 C'est une caricature: souhaiter la fin du monopole de création monétaire ne se réduit pas à un rejet du système unique mais passe par la construction d'un système alternatif.
-En démocratie, on devrait pouvoir critiquer un système sans souhaiter sa disparition et **critiquer un monopole sans souhaiter le remplacer par un autre monopole**.
+En démocratie, on devrait pouvoir critiquer un système sans souhaiter sa disparition et **critiquer l'existence d'un monopole sans souhaiter le remplacer par un autre monopole**.
 
 La communauté des crypto-enthousiastes et des "early adopters" n'est pas composée uniquement d'anti-euro libertaires radicalisés: les intégristes de la monnaie sont plutôt dans le camp du maintien à tout prix du statu quo et de son monopole.
 
@@ -114,7 +114,7 @@ Parfois, le rapport s'égare dans l'analyse de raisonnements incomplets:
 
 Dans les faits, ce raisonnement est faux si on oublie l'utilité car le déterminant de la valeur relative est plutôt la combinaison de l'utilité relative  et de la rareté relative.
 
-La notion de valeur est toujours relative et une valeur intrinsèque, pourtant évoquée dans le rapport, n'existe pas précisément parce que quelque chose qui m'est utile n'est pas forcément utile à tout le monde.
+La notion de valeur est toujours relative et une valeur intrinsèque, pourtant évoquée dans le rapport, n'existe pas, précisément parce que quelque chose qui m'est utile n'est pas forcément utile à tout le monde. Quelque chose qui est rare ici peut être abondant ailleurs.
 
 On est donc ramené, une fois de plus, à une discussion sur l’utilité. 
 
@@ -138,11 +138,11 @@ Dans les faits, une seule adresse de cold storage d’un exchange peut contenir 
 
 De plus il est impossible de connaitre le nombre de parts dans une adresse multisig ou dans une clé partagée contrôlant une adresse standard (partage de secret grâce à un algorithme comme Shamir Secret Splitting Scheme).
 
-Pour conclure, la lecture du rapport n'apporte aucune réponse nouvelle et n'appelle que des questions non traitées:
+Pour conclure, la lecture du rapport n'apporte pas vraiment de réponses nouvelles et n'appelle que des questions non traitées:
 
 Quelle est la **politique industrielle préconisée au gouvernement pour la transition numérique** que nous vivons ? 
 
-Comment soutenir que le modèle d'une monnaie monopolistique et centralisée, pilotée depuis Francfort sans responsabilité politique, ne pourrait supporter l'**expérimentation d'un système alternatif décentralisée en 2018** ?
+Est ce que le modèle d'une monnaie monopolistique et centralisée, pilotée depuis Francfort sans responsabilité politique, pourrait supporter l'**expérimentation d'un système alternatif décentralisée en 2018** ?
 
 Pourquoi ressasser la régulation des exchanges comme nécessité impérieuse alors que les places de marché européennes sont déjà soumises aux directives sur les services de paiement ?
 
