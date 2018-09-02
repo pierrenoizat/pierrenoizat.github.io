@@ -136,7 +136,7 @@ Enfin, on trouve dans le rapport des "fake news" à base d'affirmations gratuite
 
 Dans les faits, une seule adresse de cold storage d’un exchange peut contenir les coins de milliers d’utilisateurs.
 
-De plus il est impossible de connaitre le nombre de parts dans une adresse multisig ou dans une clé partagée contrôlant une adresse standard (partage de secret grâce à un algorithme comme Shamir Secret Splitting Scheme).
+De plus il est impossible de connaitre a priori (avant qu'elle soit dépensée) le nombre de parts dans une adresse multisig et même a posteriori dans le cas d'une clé partagée contrôlant une adresse standard (partage de secret grâce à un algorithme comme [Shamir's secret-sharing scheme](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)).
 
 Pour conclure, la lecture du rapport n'apporte pas vraiment de réponses nouvelles et n'appelle que des questions non traitées:
 
