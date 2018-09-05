@@ -22,7 +22,7 @@ author:
 
 La [présentation](http://cristal.univ-lille.fr/~jdelahay/temporaire/DelahayeFranceStrat4juin2018.pdf) cautionnée par l'officine publique [France Stratégie](http://www.strategie.gouv.fr/publications) (sponsorisée par Matignon) sur l'impact énergétiques des crypto-monnaies est dans la lignée des publications pseudo-scientifiques produites par les climato-sceptiques pétroliers et le lobby nucléaire. 
 
-L'énergie reste un sujet de prédilection pour les idiots utiles et les scientifiques de pacotille, hélas parfois mensualisés par le contribuable ( certains se parant de titres ronflants au CNRS, certains professeurs d'université, etc).
+L'énergie reste un sujet de prédilection pour les idiots utiles et la science de pacotille, hélas parfois financée par le contribuable.
 Pour les chercheurs qui ne trouvent rien, il est plus simple de dénigrer, au mépris de la vérité.
 Nicolas  Taleb a écrit brillamment pas moins de 2 livres, [Anti-fragile ](https://www.amazon.fr/Antifragile-bienfaits-Nassim-Nicholas-Taleb/dp/2251444769) et [Jouer sa peau](https://www.amazon.fr/Jouer-peau-Asymétries-cachées-quotidienne/dp/2251447598), sur les lobbyistes qui vivent sans risques.
 Qu'en est il en réalité de l'impact environnemental de Bitcoin ?
