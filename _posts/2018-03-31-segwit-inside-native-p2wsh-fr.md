@@ -30,7 +30,7 @@ Le scriptPubKey P2WSH consiste toujours en 34 octets. Il commence par un OP_0, s
 
 Le premier octet (OP_0) est appelé le “version byte” et les 33 octets suivants le **“witness program”**.
 
-Voici un exemple d’implémentation en ruby​pour les développeurs:
+Voici un exemple d’implémentation en langage Ruby pour les développeurs:
 
 ```ruby
 require 'btcruby'
