@@ -27,7 +27,7 @@ Une fois glorifiés par une définition dévoyée du culturel, les traditions et
 
 ![Les Tuche et les gilets jaunes]({{ site.baseurl }}/assets/tuche_3_gilets_jaunes.jpeg)
 
-_Alain Finkielkraut: «arrachement des êtres à ce réseau d'attitudes qui constitue leur identité collective, inculcation des valeurs dominantes élévées à la dignité de significations idéales» – La défaite de la pensée_
+_Alain Finkielkraut: «..arrachement des êtres à ce réseau d'attitudes qui constitue leur identité collective, inculcation des valeurs dominantes élevées à la dignité de significations idéales..» – La défaite de la pensée_
 
 Ce n'est pas par hasard que les banquiers centraux veulent structurer les débats sur la monnaie autour d'une **histoire de la monnaie écrite sous leur dictée**. Leur version exclurait toute possibilité d'une définition alternative qui entrerait en concurrence avec ce qu'ils appellent avec insistance la "monnaie légale". 
 
@@ -40,7 +40,7 @@ Pourtant, à l'époque du monopole de France Telecom, le gouvernement ne se priv
 Pourquoi cette différence de traitement entre le secteur des telecoms et le secteur bancaire ? La réponse est simple: la **capture réglementaire** qui a donné naissance à cette rente crée une dépendance financière absolue du pouvoir politique vis à vis du secteur bancaire.
 Les banquiers décident désormais quels partis auront droit à un prêt et quels autres partis en seront privés. Ce pouvoir discrétionnaire s'applique même à l'ouverture d'un compte, avant même de parler d'endettement.
 
-L'ISF est donc agité par les opportunistes comme étendard indépassable de la lutte contre les inégalités. Ils sont soutenus par des économistes incapables de dénoncer la racine du problème: l'argent-dette, comme un protocole "proof of stake" accroit mécaniquement les inégalités en **fléchant la création monétaire vers ceux qui détiennent déjà le plus de monnaie**.
+L'ISF est donc agité par les opportunistes comme étendard indépassable de la lutte contre les inégalités. Ils sont soutenus par des économistes incapables de dénoncer la racine du problème: en situation de quasi monopole monétaire, l'argent-dette, comme un protocole ["proof of stake"](https://fr.wikipedia.org/wiki/Preuve_d%27enjeu), accroit inexorablement les inégalités en **fléchant la création monétaire vers ceux qui détiennent déjà le plus de monnaie**.
 
 La redistribution, déjà arrivé au plateau de la [courbe de Laffer](https://fr.wikipedia.org/wiki/Courbe_de_Laffer), ne saurait donc suffire à pallier ce biais systémique. La solution passe par le développement de circuits de création monétaire s'appuyant sur des projets créateurs de valeur.
 
@@ -52,17 +52,17 @@ Pour finir sur une observation plus pragmatique, la baisse du prix des cryptos e
 
 ![Indice Dow Jones en 2018]({{ site.baseurl }}/assets/dow_jones_average_ 2018.png)
 
-Ces courbes mettent à mal le côté valeur refuge (digital gold) des cryptos. Le prix de l'or s'est d'ailleurs envolé à partir d'octobre quand les marchés action ont vraiment plongé. 
+Ces courbes contredisent temporairement le côté valeur refuge (digital gold) des cryptos. Le prix de l'or s'est d'ailleurs envolé à partir d'octobre quand les marchés action ont vraiment plongé. 
 
 En fait, les spécialistes expliquent que les traders doivent vendre des actifs, dont les cryptos qu'ils détiennent éventuellement, pour faire face aux "margin calls" quand les marchés baissent brutalement, en clair, pour éponger leurs pertes.
 
-Conclusion possible: Bitcoin deviendra vraiment une valeur contra-cyclique quand l'adoption en tant que réseau de paiement se généralisera pour compenser les tendances spéculatives.
+Conclusion possible: Bitcoin révèlera son caractère véritablement contra-cyclique quand l'adoption de masse en tant que réseau de paiement et réserve de valeur pourra compenser les artefacts purement financiers.
 
 Notons enfin que les trois plus gros crypto-exchanges sont valorisés aujourd'hui autour de 20 milliards USD alors que le marché qu'ils servent représentent 115 milliards USD. 
 
 A titre de comparaison, la maison mère du NYSE (la bourse de New York) est valorisée 44 millards USD comme infrastructure de marché pour un total de 21 300 milliards USD des actions qui y sont cotées  (185 fois plus que les cryptos!).
 
-Je crois donc que les gros crypto-exchanges sont survalorisés et que le marché des crypto est sous-évalué en cette fin 2018. Joyeuse fêtes !
+Je crois donc que ces gros crypto-exchanges sont légèrement survalorisés et que le marché des crypto est bien sous-évalué en cette fin 2018. Joyeuse fêtes !
 
 
 
