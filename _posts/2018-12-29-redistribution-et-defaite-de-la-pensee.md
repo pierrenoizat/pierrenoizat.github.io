@@ -42,9 +42,9 @@ Les banquiers décident désormais quels partis auront droit à un prêt et quel
 
 L'ISF est donc agité par les opportunistes comme étendard indépassable de la lutte contre les inégalités. Ils sont soutenus par des économistes incapables de dénoncer la racine du problème: en situation de quasi monopole monétaire, l'argent-dette, comme un protocole ["proof of stake"](https://fr.wikipedia.org/wiki/Preuve_d%27enjeu), accroit inexorablement les inégalités en **fléchant la création monétaire vers ceux qui détiennent déjà le plus de monnaie**.
 
-La redistribution, déjà arrivé au plateau de la [courbe de Laffer](https://fr.wikipedia.org/wiki/Courbe_de_Laffer), ne saurait donc suffire à pallier ce biais systémique. La solution passe par le développement de circuits de création monétaire s'appuyant sur des projets créateurs de valeur.
+La redistribution, déjà arrivée au plateau de la [courbe de Laffer](https://fr.wikipedia.org/wiki/Courbe_de_Laffer), ne saurait donc suffire à pallier ce biais systémique. La fin d'un monopole naturel que certains voulaient éternel, sous le slogan totalitaire de la "monnaie unique", doit désormais être actée dans le code monétaire et financier. La loi doit accompagner le développement d'une création monétaire décentralisée fondée sur des projets créateurs de valeur.
 
-L'argent-valeur et son incarnation par l'**adoption des monnaies décentralisées** doivent revenir au coeur du grand débat national suscité par la crise sociale de grande ampleur que nous connaissons.
+L'argent-valeur et son incarnation par l'**adoption des monnaies décentralisées** doivent revenir au coeur du grand débat national suscité par la crise sociale que nous connaissons en cette fin d'année.
 
 Pour finir sur une observation plus pragmatique, la baisse du prix des cryptos en 2018 semble accompagner la chute des marchés action:
 
