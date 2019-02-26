@@ -169,4 +169,6 @@ Pour en savoir (encore) plus:
 
 [https://bitcointalk.org](https://bitcointalk.org/index.php?topic=193281.msg2224949#msg2224949)
 
+[http://atomic.bitcoinscri.pt/pages/about](http://atomic.bitcoinscri.pt/pages/about)
+
 
