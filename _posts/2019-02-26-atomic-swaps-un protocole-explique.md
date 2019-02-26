@@ -157,6 +157,8 @@ Toute tentative de diffusion d'une transaction avant son heure de verrouillage d
 
 Comme le paramètre “locktime” (plus précisément nLockTime dans le code de Bitcoin Core) s’applique à toute la transaction, une instruction, CHECKLOCKTIMEVERIFY ou CLTV en abrégé, a été ajoutée en 2015 au langage Bitcoin Script, permettant d’appliquer une contrainte de temps sur une seule sortie d’une transaction, sans affecter les autres sorties.
 
+![Locktime]({{ site.baseurl }}/assets/locktime.jpg)
+
 Par exemple, si une transaction T1 envoie des fonds vers une adresse comportant l’instruction CLTV t, une transaction T2 transférant les fonds de cette adresse ne pourra être validée par le réseau que si son locktime se situe après t. 
 Les autres sorties de la transaction T1 peuvent être dépensées sans cette contrainte.
 
