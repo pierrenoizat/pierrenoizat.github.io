@@ -75,7 +75,7 @@ TX2 utilise TX1 [0] comme entrée (txin) et présente le scriptSig suivant:
 qui passe par la branche ELSE du script. 
 Le “scriptSig” permet de prouver que les conditions fixées dans le smart contract sont réunies pour déverrouiller les fonds.
 
-Alice transmet TX2 à Bob et lui demande de la signer et de la renvoyer. Une fois qu'Alice aura reçu la signature sigB2 de Bob, Alice publiera TX1, sachant qu'elle pourrait récupérer ses bitcoins après 48 heures en cas de problème via la transaction TX2, à condition qu'elle ne révèle pas S. 
+Alice transmet TX2 à Bob et lui demande de la signer et de la renvoyer. Une fois qu'Alice a reçu la signature sigB2 de Bob, Alice peut publier TX1 en toute sécurité, à condition qu'elle ne révèle pas S: en cas de problème, elle pourrait récupérer ses bitcoins en publiant TX2 après 48 heures. 
 
 Une fois que TX1 est confirmée sur le réseau Bitcoin, Alice est engagée dans le swap.
 
