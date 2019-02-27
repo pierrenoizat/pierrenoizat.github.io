@@ -43,8 +43,6 @@ Alice ou Bob lancent une recherche dans le carnet d’ordres pour une correspond
 
 ![Atomic Swap: Transactions]({{ site.baseurl }}/assets/atomic_swap_transactions.jpg)
 
-_Atomic Swap: Schema des transactions_
-
 
 **Phase 1: Alice s’engage**
 
