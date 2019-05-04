@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minage dans le dur
+title: Minage et enfumage
 date: 2019-05-02 00:40:51.000000000 +01:00
 type: post
 published: true
@@ -29,18 +29,18 @@ En effet, si l'énergie est nécessaire à tout processus de transformation donc
 
 Ainsi, quand nous n'utilisons pas un système, sa consommation nous semblera forcément excessive.
 La BCE, a déclaré le réseau Bitcoin "énergivore" car elle n'a aucune l'intention de l'utiliser, même pas pour expérimenter.
-D'ailleurs, l'utilisation de l'euro étant obligatoire pour payer les taxes, la BCE estime sans doute que sa consommation énergétique ne fait pas débat. Avec un coût opérationnel annuel de plus de 2000 milliards de dollars, le système bancaire mondial a pourtant une facture d'électricité globale probablement supérieure à celle des mineurs Bitcoin, voisine de 5 milliards.
+D'ailleurs, l'utilisation de l'euro étant obligatoire pour payer les taxes, la BCE estime sans doute que sa consommation énergétique ne fait pas débat. **Avec un coût opérationnel annuel de plus de 2000 milliards de dollars, le système bancaire mondial a pourtant une facture d'électricité globale probablement supérieure à celle des mineurs Bitcoin, voisine de 5 milliards**.
 
-Pire, l'impact énergétique de l'argent-dette monopolistique ne se limite pas à sa consommation car le monopole décide aussi les financements de projets d'infrastructures énergétiques. Ces prêts bancaires octroyés par une oligarchie non-élue vont souvent à l'encontre des politiques publiques souhaitées par les citoyens.
+Pire, l'impact énergétique de l'argent-dette monopolistique ne se limite pas à sa consommation car le monopole décide aussi les financements de projets d'infrastructures énergétiques. **Ces prêts bancaires octroyés par une oligarchie non-élue vont souvent à l'encontre des politiques publiques souhaitées par la majorité des citoyens.**
 
 ![Banques françaises, pétrole et charbon]({{ site.baseurl }}/assets/les_banques_fr_financent_le_charbon_181125.jpg)
 
 Dans son édition du 25 novembre 2018, Le Monde titrait sur **les banques françaises fléchant la création monétaire vers des énergies fossiles**, synonymes de profits à court-terme tant que les coûts réels pour l'environnement ne sont pas imputés aux producteurs.
 
 Outre la décentralisation de la confiance, le minage Bitcoin incite à la recherche d'une électricité au meilleur coût car, contrairement à l'or, le minage de Bitcoin peut s'installer au plus près des gisements d'énergie.
-La proportion d'énergies renouvelables dans la consommation du minage Bitcoin est ainsi estimée par [Dan Held](https://www.danheld.com/blog) à 77% qui écrit:
+La proportion d'énergies renouvelables dans la consommation du minage Bitcoin se monterait à 77% selon [Dan Held](https://www.danheld.com/blog) qui écrit:
 
-"En agissant en tant qu'acheteur d'électricité de dernier ressort, Bitcoin crée un prix plancher qui incite à financer des projets autour de nouvelles sources d'énergie qui seraient restées autrement inexploitées."
+**"En agissant en tant qu'acheteur d'électricité de dernier ressort, Bitcoin crée un prix plancher qui incite à financer des projets autour de nouvelles sources d'énergie qui seraient restées autrement inexploitées."**
 
 Le financement des énergies renouvelables devient même prioritaire lorsque les progrès de la technologie de minage se heurtent à la loi des retours décroissants.
 Début 2019, Bitmain Technologies Ltd a annoncé son nouvel ASIC 7 nm SHA256, le BM1397, pour le minage de Bitcoin.
@@ -67,6 +67,8 @@ En tout cas, on est très loin de la consommation estimée du minage de l'or (13
 Pour en savoir (encore) plus:
 
 ["PoW is efficient" par Dan Held](https://blog.picks.co/pow-is-efficient-aa3d442754d3)
+
+[Empreinte carbone de bitcoin, légende ou réalité](https://bitcoin.fr/lempreinte-carbone-de-bitcoin-legende-ou-realite/#more-30047) par Sébastien Gouspillou
 
 [Why "energy consumption" math sucks par A. Antonopoulos](https://www.youtube.com/watch?v=uvFqEofdAZ0&feature=youtu.be)
 
