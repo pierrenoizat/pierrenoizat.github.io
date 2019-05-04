@@ -20,10 +20,10 @@ author:
 ---
 
 La consommation énergétique de l'algorithme PoW reste le mantra favori des crypto-sceptiques.
-Le sujet est abondamment couvert par des productions dénuées de toute rigueur scientifique qui tentent de démontrer que cette consommation serait excessive. Excessive par rapport à quoi d'ailleurs ?
+Le sujet est abondamment couvert par des publications dénuées de toute rigueur scientifique qui tentent de démontrer que cette consommation serait excessive. Excessive par rapport à quoi d'ailleurs ?
 
-A. Antonopoulos a souligné déjà le rôle particulier de l'énergie dans l'échelle des valeurs, **l'énergie pouvant être considérée comme la seule valeur universelle, toutes les autres formes de valeurs étant subjectives**.
-En effet, si l'énergie est nécessaire à tout processus de transformation donc à tout projet, sa valeur est objective alors que les décisions relatives à son utilisation dans tel ou tel projet sont discrétionnaires donc subjectifs.
+A. Antonopoulos a souligné déjà le rôle particulier de l'énergie dans l'échelle des valeurs, **l'énergie pouvant être considérée comme la seule valeur universelle, toutes les autres formes de valeurs étant davantage subjectives**.
+En effet, si l'énergie est nécessaire à tout processus de transformation donc à tout projet, sa valeur est liée aux limites physiques du stockage et/ou du transfert alors que son utilisation dans tel ou tel projet est discrétionnaire.
 
 ![Global Power Consumption]({{ site.baseurl }}/assets/global_power_consumption.jpg)
 
