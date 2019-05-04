@@ -61,7 +61,7 @@ La consommation théorique du réseau s'établit donc autour de
 
 On retrouve bien un écart de facteur 3 environ entre cette consommation théorique, qui fait l'hypothèse d'un parc optimisé, et la consommation pratique constatée (16,7 TWh) qui intègre l'inertie du parc.
 
-En tout cas, on est très loin de la consommation estimée du minage de l'or (132 TWh), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière reflète bien la culture d'une institution tournée vers le passé.
+En tout cas, on est très loin de la consommation estimée du minage de l'or (132 TWh), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême, dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière, reflète bien la culture d'une institution tournée vers le passé.
 
 
 Pour en savoir (encore) plus:
