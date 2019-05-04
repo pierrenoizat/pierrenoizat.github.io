@@ -8,7 +8,7 @@ status: final
 categories:
 - Bitcoin
 - Technologie
-tags: [trustless]
+tags: [trustless, atomic, swaps]
 meta:
   _edit_last: '1'
 author:
