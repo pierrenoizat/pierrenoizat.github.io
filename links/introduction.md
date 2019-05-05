@@ -1,6 +1,6 @@
 ---
 layout: page
-comments: true
+comments: false
 title: Introduction
 date: 2011-11-11 15:43:27.000000000 +01:00
 type: page
@@ -18,20 +18,20 @@ author:
   first_name: 'Pierre'
   last_name: 'Noizat'
 ---
-Bitcoin est une nouvelle monnaie numérique pour des transactions sans tiers de confiance : c’est de l’argent liquide sur internet.
+Bitcoin est une nouvelle monnaie numérique pour des transactions avec ou sans tiers de confiance 
 
 A la différence des monnaies traditionnelles, Bitcoin est une monnaie programmable, permettant des transactions complexes ("smart contracts"), et fonctionne sans banque centrale: équipé d'un porte-monnaie Bitcoin, vous pouvez être votre propre banque.
 
 Pour le comprendre, le plus simple est de partir d’une application d’internet que tout le monde peut utiliser : le web. Le web est un réseau coordonné par un protocole libre (« open source »), comme bitcoin.
-Sur le web, il y a des éditeurs qui publient des sites (les nœuds du réseau) et des internautes qui surfent en utilisant un explorateur (browser) comme Internet Explorer, Chrome, Safari, etc..
+Sur le web, les éditeurs publient librement des contenus sur des sites (les nœuds du réseau) et les internautes y accèdent tout aussi librement en utilisant un explorateur (browser) comme Internet Explorer, Chrome, Safari, etc..
 
 Bitcoin fonctionne de manière similaire : les participants au réseau sont des vérificateurs (que les initiés appellent des « mineurs ») et/ou des gens qui effectuent des transactions en utilisant un porte-monnaie (wallet).
 
 Vous pouvez télécharger et installer gratuitement un porte-monnaie comme [electrum](https://electrum.org) (sur PC ou mobile android) ou [breadwallet](https://breadwallet.com) sur mobile iOS.
 
-Fondamentalement, Bitcoin est une nouvelle application sur internet qui permet de payer un correspondant par voie électronique mais sans passer par une banque : l’usage de cette nouvelle « monnaie » électronique est donc comparable à celui que nous faisons des billets de banque et des pièces de monnaie dans le monde physique.
+Fondamentalement, Bitcoin permet de payer ou de recevoir un paiement par voie électronique sans passer par une banque. L’usage de cette nouvelle « monnaie » électronique est donc comparable à celui que nous faisons des billets de banque et des pièces de monnaie dans le monde physique:c’est de l’argent liquide sur internet.
 
-Un bitcoin est donc une sorte de jeton numérique qui peut être divisé à l’infini en fractions plus petites et s’échanger sur internet aussi simplement qu’un message électronique.
+Un bitcoin est donc une sorte de jeton numérique qui peut être divisé à l’infini en fractions plus petites et s’échanger aussi simplement qu’un message électronique.
 
 Comme il peut s’échanger contre un bien ou un service dont le prix est exprimé en bitcoin, il peut aussi s’échanger contre des euros auprès d’un [bureau de change en ligne](https://paymium.com).
 

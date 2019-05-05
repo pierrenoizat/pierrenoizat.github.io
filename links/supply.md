@@ -1,6 +1,6 @@
 ---
 layout: page
-comments: true
+comments: false
 title: Création monétaire ex nihilo
 date: 2011-11-12 00:42:45.000000000 +01:00
 type: page

@@ -1,6 +1,6 @@
 ---
 layout: page
-comments: true
+comments: false
 title: D'où vient la valeur des bitcoins ?
 date: 2011-11-11 17:36:44.000000000 +01:00
 type: page
