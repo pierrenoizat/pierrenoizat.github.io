@@ -42,6 +42,8 @@ La proportion d'énergies renouvelables dans la consommation du minage Bitcoin s
 
 **"En agissant en tant qu'acheteur d'électricité de dernier ressort, Bitcoin crée un prix plancher qui incite à financer des projets autour de nouvelles sources d'énergie qui seraient restées autrement inexploitées."**
 
+En d'autres termes, lorsqu'une énergie ne peut pas être stockée, sa valeur peut l'être grâce au minage Bitcoin.
+
 Le financement des énergies renouvelables devient même prioritaire lorsque les progrès de la technologie de minage se heurtent à la loi des retours décroissants.
 Début 2019, Bitmain Technologies Ltd a annoncé son nouvel ASIC 7 nm SHA256, le BM1397, pour le minage de Bitcoin.
 Selon Bitmain, ce circuit offre un rapport consommation/puissance de calcul de 30 J/TH, une amélioration de 25% par rapport au précédent ASIC BM1391.
