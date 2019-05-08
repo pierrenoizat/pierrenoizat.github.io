@@ -41,7 +41,6 @@ Outre la décentralisation de la confiance, le minage Bitcoin incite à la reche
 La proportion d'énergies renouvelables dans la consommation du minage Bitcoin se monterait à 77% selon [Dan Held](https://www.danheld.com/blog) qui écrit:
 
 **"En agissant en tant qu'acheteur d'électricité de dernier ressort, Bitcoin crée un prix plancher qui incite à financer des projets autour de nouvelles sources d'énergie qui seraient restées autrement inexploitées."**
-
 En d'autres termes, lorsqu'une énergie ne peut pas être stockée, sa valeur peut l'être grâce au minage Bitcoin.
 
 Le financement des énergies renouvelables devient même prioritaire lorsque les progrès de la technologie de minage se heurtent à la loi des retours décroissants.
@@ -58,12 +57,9 @@ La puissance de calcul du réseau Bitcoin se monte aujourd'hui à 50 million TH/
 
 La consommation théorique du réseau s'établit donc autour de  
 
-30 J x 50 million TH/s = 1 500 MJ/s = 5.4 TWh
+30 J x 50 million TH/s = 1 500 MJ/s soit une énergie cumulée de 13.14 TWh sur un an.
 
-
-On retrouve bien un écart de facteur 3 environ entre cette consommation théorique, qui fait l'hypothèse d'un parc optimisé, et la consommation pratique constatée (16,7 TWh) qui intègre l'inertie du parc.
-
-En tout cas, on est très loin de la consommation estimée du minage de l'or (132 TWh), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême, dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière, reflète bien la culture d'une institution tournée vers le passé.
+On est très loin de la consommation estimée du minage de l'or (132 TWh par an), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême, dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière, reflète bien la culture d'une institution tournée vers le passé.
 
 
 Pour en savoir (encore) plus:
