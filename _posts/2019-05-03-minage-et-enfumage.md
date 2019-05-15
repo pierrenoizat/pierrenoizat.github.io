@@ -59,7 +59,10 @@ La consommation théorique du réseau s'établit donc autour de
 
 30 J x 50 million TH/s = 1 500 MJ/s soit une énergie cumulée de 13.14 TWh sur un an.
 
-On est très loin de la consommation estimée du minage de l'or (132 TWh par an), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême, dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière, reflète bien la culture d'une institution tournée vers le passé.
+A titre de comparaison, on estime qu'il faut 15 MWh pour produire une tonne d'aluminium en fusion (avant usinage et logistique donc).
+Avec 64 million de tonnes produites en 2018, on peut donc estimer que la production d'aluminium consomme à elle seule plus de 960 TWh par an.
+
+On est aussi très loin de la consommation estimée du minage de l'or (132 TWh par an), commodément ignorée dans les publications des lobbys bancaires. De même, la dangerosité du minage de l'or, provoquant 50 000 morts chez les mineurs sur les 100 dernières années, est passée sous silence. Il faut dire que **la Banque de France est lourdement investie en or** (2 436 tonnes, soit environ 90 milliards d'euros au cours du jour) tout en ayant fait le choix d'une impasse totale sur Bitcoin. Ce choix extrême, dont les conséquences risquent fort de revenir hanter les locaux rue de la Vrillière, reflète bien la culture d'une institution tournée vers le passé.
 
 
 Pour en savoir (encore) plus:
