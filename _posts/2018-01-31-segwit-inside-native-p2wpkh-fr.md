@@ -34,7 +34,7 @@ Avant de nous pencher sur ces nouvelles adresses, nous allons d'abord passer en 
 
 **Entrées et sorties d'une transaction**
 
-Les entrées d’une transaction pointent vers des scripts dans des transactions précédentes où les coins sont bloqués jusqu'à ce que la transaction soit confirmée dans la blockchain.
+Les entrées d’une transaction X pointent vers des scripts dans des transactions précédentes où les coins sont bloqués jusqu'à ce que la transaction X soit confirmée dans la blockchain.
 
 Les entrées décrivent l'origine des fonds dépensés dans la transaction. Chaque entrée est constituée d'une référence à une sortie de transaction précédente (“unspent transaction output”, utxo en abrégé) ainsi que de toutes les données requises pour déverrouiller les coins.
 
@@ -135,7 +135,7 @@ script_pub_key = BTC::Script.new << BTC::Script::OP_0 << p2pkh_address.hash
 
 native_p2wpkh_address = SegwitAddr.new
 native_p2wpkh_address.hrp = 'bc' # hrp = human-readable part
-native_p2wpkh_address.scriptpubkey = script_pub_key.to_hex
+native_p2wpkh_address.script_pubkey = script_pub_key.to_hex
 puts "\n Adresse P2WPKH native: #{native_p2wpkh_address.addr} \n\n"
 ```
 
