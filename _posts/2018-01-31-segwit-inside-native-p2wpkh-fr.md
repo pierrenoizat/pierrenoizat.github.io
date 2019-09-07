@@ -123,7 +123,7 @@ Voici un exemple d’implémentation en ruby ​​pour les développeurs:
 require 'btcruby'
 require 'bitcoin'
 require 'bech32'
-require 'segwit_addr'
+
 BTC::Network.default= BTC::Network.mainnet
 public_key="02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7" # Clé publique compressée, au format hex.
 ```
@@ -133,7 +133,7 @@ public_key="02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7" 
 p2pkh_address = BTC::PublicKeyAddress.new(public_key: public_key.htb)
 script_pub_key = BTC::Script.new << BTC::Script::OP_0 << p2pkh_address.hash
 
-native_p2wpkh_address = SegwitAddr.new
+native_p2wpkh_address = Bech32::SegwitAddr.new
 native_p2wpkh_address.hrp = 'bc' # hrp = human-readable part
 native_p2wpkh_address.script_pubkey = script_pub_key.to_hex
 puts "\n Adresse P2WPKH native: #{native_p2wpkh_address.addr} \n\n"
