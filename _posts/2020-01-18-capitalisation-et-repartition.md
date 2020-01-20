@@ -30,7 +30,9 @@ Comme l’a souligné [Bernard Maris](https://fr.wikipedia.org/wiki/Bernard_Mari
 
 Il fut aussi le premier à souligner l’importance de la psychanalyse comme clé de lecture du capitalisme. Selon Freud, l’homme est traversé à la fois par des pulsions de mort qui vise à un état d’apaisement extrême libéré de toute tension et par des pulsions sexuelles pour le renouvellement de la vie.
 
-Pour Maris, la recherche du profit maximal répond à une pulsion de mort qui détruit toute opposition et tend à libérer l’entrepreneur des pressions négatives qui peuvent s’exercer sur lui tandis que la pulsion de vie le pousse à coopérer davantage pour construire collectivement un futur plus consensuel.
+Pour Maris, la recherche du profit maximal répond à une [pulsion de mort](https://www.albin-michel.fr/ouvrages/capitalisme-et-pulsion-de-mort-9782226186997) qui détruit toute opposition et tend à libérer l’entrepreneur des pressions négatives qui s’exercent sur lui tandis que la pulsion de vie le pousse à coopérer davantage pour construire collectivement un futur plus consensuel.
+
+Si ces pulsions contraires poussent les humains tantôt à créer, tantôt à détruire, elles s'expriment aussi dans les opinions contradictoires. Nous pouvons être tout à la fois libertarien, par exemple en matière monétaire, et autoritarien, par exemple sur la sécurité routière, selon les sujets.
 
 **Capitalisation et répartition**
 
@@ -46,8 +48,8 @@ Pire, un institution publique comme le Sénat a dévoyé la répartition en une 
 
 Notons d’ailleurs que les sénateurs auraient pu doubler leurs réserves d’aujourd’hui en plaçant en bitcoins seulement 0,2 % de ces réserves en 2011. La capitalisation réclame une clairvoyance dans les placements qui semblent faire défaut à certains élus et à beaucoup de banquiers centraux.
 
-Dans tous les cas, la notion même de retraite par répartition n’est pas tenable dans le temps. La fin du travail la remplacera inéluctablement par un revenu universel. 
+Dans tous les cas, la notion même de retraite par répartition n’est pas tenable dans le temps. Avec la transition numérique vers un monde où les robots sont les équivalents modernes des esclaves de la Grèce antique, la fin du travail poussera inéluctablement les pensions vers une forme de revenu universel.
 
-Stéphane Laborde (Galuel) avait dès 2010 théorisé une monnaie alternative permettant la distribution d’un revenu universel pouvant se substituer aux laborieux mécanismes de redistribution actuellement en vigueur. Tout comme les projections des caisses de retraite, la création monétaire dans la [Théorie Relative de la Monnaie](https://www.creationmonetaire.info/2012/11/theorie-relative-de-la-monnaie-2-718.html) (TRM) prend en compte le temps d’existence individuel.
+Stéphane Laborde (Galuel) avait dès 2010 théorisé une monnaie alternative permettant la distribution d’un revenu universel pouvant se substituer aux laborieux mécanismes de redistribution actuellement en vigueur. Tout comme les projections des caisses de retraite, la création monétaire dans la [Théorie Relative de la Monnaie](https://www.creationmonetaire.info/2012/11/theorie-relative-de-la-monnaie-2-718.html) (TRM) prend en compte **le temps d’existence individuel**.
 
 Mais sur ce sujet la retraite, si l’imagination était au pouvoir, elle s’opposerait nécessairement aux idées passées au crible du conformisme requis pour un aussi large consensus. 
