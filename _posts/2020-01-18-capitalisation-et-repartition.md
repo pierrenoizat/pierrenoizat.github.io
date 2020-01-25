@@ -60,11 +60,11 @@ Si Bernard Maris a correctement mis en lumière l'influence primordiale du psych
 
 Rien que ça. En réalité, cette phrase est délirante à plusieurs niveaux. 
 
-Elle implique d'abord que tout le monde devrait avoir les mêmes préférences temporelles et trouveraient toujours des opportunités de consommation ou de placements, ce qui est une vision des acteurs économiques à la fois simpliste et totalitaire. 
+Elle suggère d'abord une vision des acteurs économiques à la fois simpliste et totalitaire. En effet, pour ne pas devenir un méchant thésaurisateur, tout le monde devrait avoir les mêmes préférences temporelles et chacun trouverait toujours des opportunités de consommation ou d'investissement.
 
 Plus important, elle suppose que la thésaurisation de certains acteurs auraient nécessairement une incidence significative sur les échanges, ce qui n'a de sens que dans le contexte d'un monopole monétaire où une seule forme de monnaie peut circuler. 
 
-Au contraire, dans un régime de **multimodalité monétaire** qui est précisément celui qui est rendu possible par Bitcoin et les  monnaies alternatives en général, la fameuse loi de Gresham peut s'appliquer: la mauvaise monnaie chasse la bonne dans des échanges qui ne sont nullement ralentis. 
+Au contraire, dans un régime de **multimodalité monétaire** qui est précisément celui qui est rendu possible par Bitcoin et les  monnaies alternatives en général, la fameuse [loi de Gresham](https://fr.wikipedia.org/wiki/Loi_de_Gresham) peut s'appliquer: la mauvaise monnaie chasse la bonne dans des échanges qui ne sont nullement ralentis. 
 
 **La bonne monnaie étant par définition liquide, et Bitcoin l'est en dépit de son large usage en tant que réserve de valeur, elle peut s'échanger dans l'instant de raison contre la mauvaise**: la monnaie suffisamment élastique pour assurer les échanges dans une relative stabilité des prix complète la monnaie inélastique qui sert de réserve de valeur après l'échange.
 
