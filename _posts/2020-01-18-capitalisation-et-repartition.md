@@ -52,4 +52,22 @@ Dans tous les cas, la notion même de retraite par répartition n’est pas tena
 
 Stéphane Laborde (Galuel) avait dès 2010 théorisé une monnaie alternative permettant la distribution d’un revenu universel pouvant se substituer aux laborieux mécanismes de redistribution actuellement en vigueur. Tout comme les projections des caisses de retraite, la création monétaire dans la [Théorie Relative de la Monnaie](https://www.creationmonetaire.info/2012/11/theorie-relative-de-la-monnaie-2-718.html) (TRM) prend en compte **le temps d’existence individuel**.
 
-Mais sur ce sujet la retraite, si l’imagination était au pouvoir, elle s’opposerait nécessairement aux idées passées au crible du conformisme requis pour un aussi large consensus. 
+Mais sur ce sujet la retraite, si l’imagination était au pouvoir, elle s’opposerait nécessairement aux idées passées au crible du conformisme requis pour un aussi large consensus.
+
+**Capitalisation et thésaurisation**
+
+Si Bernard Maris a correctement mis en lumière l'influence primordiale du psychisme sur le fonctionnement de l'économie, il s'est totalement fourvoyé, comme Keynes, au sujet de la thésaurisation, en écrivant: "Le thésaurisateur pervertit tous kes échanges dans la communauté des hommes. Il est le trou noir qui engloutit les énergies détournées du plaisir et toutes celles qui sont liées à la pulsion de mort." 
+
+Rien que ça. En réalité, cette phrase est délirante à plusieurs niveaux. 
+
+Elle implique d'abord que tout le monde devrait avoir les mêmes préférences temporelles et trouveraient toujours des opportunités de consommation ou de placements, ce qui est une vision des acteurs économiques à la fois simpliste et totalitaire. 
+
+Plus important, elle suppose que la thésaurisation de certains acteurs auraient nécessairement une incidence significative sur les échanges, ce qui n'a de sens que dans le contexte d'un monopole monétaire où une seule forme de monnaie peut circuler. 
+
+Au contraire, dans un régime de **multimodalité monétaire** qui est précisément celui qui est rendu possible par Bitcoin et les  monnaies alternatives en général, la fameuse loi de Gresham peut s'appliquer: la mauvaise monnaie chasse la bonne dans des échanges qui ne sont nullement ralentis. 
+
+**La bonne monnaie étant par définition liquide, et Bitcoin l'est en dépit de son large usage en tant que réserve de valeur, elle peut s'échanger dans l'instant de raison contre la mauvaise**: la monnaie suffisamment élastique pour assurer les échanges dans une relative stabilité des prix complète la monnaie inélastique qui sert de réserve de valeur après l'échange.
+
+
+
+
