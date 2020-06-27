@@ -75,7 +75,7 @@ Les intérêts sur les prêts bancaires, exprimés en pourcentage de la quantit�
 Bitcoin, comme l’or, possède la double propriété de représenter l’énergie dépensée pour le créer et d‘exister en quantité limitée.
 D’autres points communs méritent d’être soulignés: des applications non-monétaires (dans l’industrie et l’artisanat pour l’or et dans un service ouvert et décentralisé de signature électronique pour Bitcoin) où ils jouissent de propriétés uniques (esthétique et conductivité pour l’or, sécurité et résilience pour Bitcoin) et d'une popularité mondiale.
 
-Miner des bitcoins équivaut à frapper une monnnaie métallique avec une différence essentielle: la taille des pièces (utxos: "unspent transaction outputs") reste variable car elles sont systématiquement fondues à chaque transaction les impliquant pour être divisées ou recombinées.
+Miner des bitcoins équivaut à frapper une monnnaie métallique avec une différence essentielle: **la taille des pièces (utxos: "unspent transaction outputs") reste variable car elles sont systématiquement fondues à chaque transaction les impliquant pour être divisées ou recombinées.**
 
 Le mot minage est donc trompeur dans le cas de Bitcoin car il correspond davantage à l’utilisation de Bitcoin qu’à son extraction (“minting” plus exact que “mining”). En effet, on doit considérer que l’intégralité des Bitcoins a été “émise” le 3 janvier 2009 avec le premier bloc fondateur de la blockchain Bitcoin et l’application du protocole.
 
@@ -94,7 +94,7 @@ Selon le même principe thermodynamique, il en résulte que, en l’absence d’
 Par exemple, dans une système “proof of stake”, une majorité relative des coins, accumulée au fil du temps ou simplement prêtée, peut être contrôlée par une entité centralisatrice qui peut ensuite décider d’inverser telle ou telle transaction. Aucune contre-mesure n’est possible si l’entité ne vend pas ses coins.
 Il n’existe pas de barrière thermodynamique protégeant le système contre la réécriture des transactions passées.
 
-Pire, il existe une véritable incitation pour les détenteurs de coins PoS à les prêter contre unne promesse de remboursement dans un coin concurrent PoW: dans ce cas, l'emprunteur, organisateur de la prise de contrôle du coin PoS, paye les prêteurs avec les bénéfices liés à la plus-value observée sur le coin PoW.
+Pire, il existe une véritable incitation pour les détenteurs de coins PoS à les prêter contre une promesse de remboursement dans un coin concurrent PoW. Dans ce cas, l'emprunteur, organisateur de la prise de contrôle du coin PoS, rembourserait les prêteurs avec les bénéfices liés à la plus-value observée sur le coin PoW, qui sortirait gagnant de l'opération.
 
 Dans le système proof of work, une majorité est forcément temporaire car elle peut être contestée par d’autres mineurs investissant dans davantage de matériel. La confirmation des transactions peut être temporairement perturbée mais pas durablement remise en cause.
 
