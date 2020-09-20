@@ -6,7 +6,7 @@ type: post
 published: true
 status: draft
 categories:
-- Retaite
+- Retraite
 - Economie
 tags: []
 meta:
