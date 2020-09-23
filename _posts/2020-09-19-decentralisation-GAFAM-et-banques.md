@@ -33,7 +33,7 @@ C'est pourquoi les débats actuels sur les politiques publiques sociales ou envi
 
 Déjà en 2011, une [étude de l’Ecole Polytechnique fédérale de Zurich](https://www.swissinfo.ch/fre/economie/etude-zurichoise_une-poignée-de-firmes-contrôle-l-économie-mondiale/31495932) soulignait que l’économie fonctionne plus que jamais en réseau et les gagnants sont ceux qui en contrôlent les carrefours. Selon cette étude, 147 multinationales contrôlent environ 40% du chiffre d'affaires de plus de 40 000 entreprises actives sur les cinq continents. Parmi ces 147 sociétés, 110 sont des banques. Cette centralisation ne fait que s'accentuer.
 
-S’agissant des banques et contrairement aux GAFAM, leur position dominante ne résulte pas d’une innovation ou d’un service peformant mais du monopole, stade ultime de la capture réglementaire par une oligarchie: chaque individu, chaque entreprise est désormais obligé d’utiliser leur service sans aucune marge de négociation, dans un rapport de force totalement déséquilibré.
+S’agissant des banques et contrairement aux GAFAM, leur position dominante ne résulte pas d’une innovation ou d’un service performant mais du monopole, stade ultime de la capture réglementaire par une oligarchie: chaque individu, chaque entreprise est désormais obligé d’utiliser leur service sans aucune marge de négociation, dans un rapport de force totalement déséquilibré.
 
 Cette idéologie du globalisme (contraire du localisme), vassalise les acteurs économiques non-financiers qui, faute d’obtenir des prêts dans les mêmes proportions que les financiers, ne bénéficient que d’une portion congrue de la création monétaire.
 
