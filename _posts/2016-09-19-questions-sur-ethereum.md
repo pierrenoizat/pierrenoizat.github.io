@@ -25,11 +25,11 @@ En tout cas Jekyll devrait vous permettre de charger les pages plus rapidement.
 
 Le sujet du jour, au lendemain de la conférence Ethereum de Shanghai, porte sur les nombreuses questions autour des "améliorations" apportées, selon les "marketeurs" qui gravitent autour de ce projet, par le protocole Ethereum.
  
-![Ethereum Founder Vitalik Buterin]({{ site.baseurl }}/assets/founder-of-ethereum-vitalik-buterin-disrupt-london-2015.jpg)
+![Ethereum Founder Vitalik Buterin]({{ site.baseurl }}/assets/vitalik-buterin-disrupt-london-2015.jpg)
 
 _Vitalik Buterin, Co-fondateur de l'Ethereum Foundation_
 
-Je me demande si un(e) paricipant(e) en a profité pour ramener de Shanghai des réponses aux questions suivantes:
+Je me demande si un(e) participant(e) en a profité pour ramener de Shanghai des réponses aux questions suivantes:
 
 1) **Minage**: 
 
