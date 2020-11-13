@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
+ruby '2.6.3'
 
 gem 'execjs'
-gem 'therubyracer'
 gem 'github-pages'
 gem 'jekyll-paginate'

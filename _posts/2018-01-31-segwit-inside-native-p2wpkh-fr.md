@@ -73,7 +73,7 @@ Avec une transaction non-Segwit, un périphérique hors ligne n'aurait aucun moy
 
 **Séparer les signatures de la transaction**
 
-Le changement le plus significatif introduit par Segwit est la suppression des scripts de signature dans les entrées; les scripts de signature sont maintenant "séparés" dans une nouvelle section de la transaction Segwit appelée le “witness”.
+Le changement le plus significatif introduit par Segwit est la suppression des scripts de signature dans les entrées; les scripts de signature sont maintenant "séparés" dans une nouvelle section de la transaction Segwit appelée le “witness”. Dans une transaction Segwit, le "script_sig" d'un input est désormais vide, remplacé par un "script_witness".
 
 Parce que ECDSA, l'algorithme de signature utilisé dans Bitcoin, utilise un nonce aléatoire dans le calcul d'une signature, un signataire non autorisé peut produire plusieurs signatures valides pour la même entrée. 
 
@@ -81,7 +81,7 @@ Par conséquent, l'attaquant peut produire deux versions valides de la même tra
 
 `txid = SHA256(SHA256(nVersion|txins|txouts|nLockTime)`
 
-Ce problème a été identifié dès le début comme le problème de la «malléabilité des transactions» et est maintenant résolu par segwit. 
+Ce problème a été identifié dès le début comme le problème de la «malléabilité des transactions» et est maintenant résolu par Segwit. 
 
 Avec Segwit, le format de transaction original n'inclut pas les signatures (dans la section "txins" de la transaction) de sorte que le txid n'est plus malléable. 
 
@@ -117,26 +117,29 @@ Le scriptPubKey P2WPKH consiste toujours en 22 octets. Il commence par un OP_0, 
 
 Le premier octet (OP_0) est appelé le "version byte" et les 21 octets suivants le "witness program".
 
-Voici un exemple d’implémentation en ruby ​​pour les développeurs:
+Pour les développeurs, voici quelques exemples de transactions construites avec ruby, language libre reconnu pour sa concision et sa lisibilité:
 
-```ruby
-require 'btcruby'
-require 'bitcoin'
-require 'bech32'
-
-BTC::Network.default= BTC::Network.mainnet
-public_key="02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7" # Clé publique compressée, au format hex.
-```
 **Calcul de l'adresse P2WPKH native:**
 
 ```ruby
-p2pkh_address = BTC::PublicKeyAddress.new(public_key: public_key.htb)
-script_pub_key = BTC::Script.new << BTC::Script::OP_0 << p2pkh_address.hash
+include Bitcoin
+include Bitcoin::Builder
+include Bitcoin::Protocol
+include Bitcoin::Util
+include Bitcoin::Secp256k1
+include Bech32
+base_factor = 100000000
+mnemonic = "beyond .. satoshi" # saisir votre propre phrase de passe ici
+seed = BipMnemonic.to_seed(mnemonic: mnemonic)
+@btc_wallet = Bip44::Wallet.from_seed(seed, "m/44'/0")
+@btc_node = @btc_wallet.sub_wallet "m/0/0"
+public_key = Key.new(nil,@btc_node.public_key).pub_compressed
+script_pubkey = Script.from_string("0 "+"#{hash160(public_key)}").to_payload
 
-native_p2wpkh_address = Bech32::SegwitAddr.new
+native_p2wpkh_address = SegwitAddr.new
 native_p2wpkh_address.hrp = 'bc' # hrp = human-readable part
-native_p2wpkh_address.script_pubkey = script_pub_key.to_hex
-puts "\n Adresse P2WPKH native: #{native_p2wpkh_address.addr} \n\n"
+native_p2wpkh_address.script_pubkey = script_pubkey.bth
+puts native_p2wpkh_address.addr # adresse Segwit P2WPKH native
 ```
 
 Exemple:
@@ -145,84 +148,110 @@ Clé publique: 02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def
 
 Adresse Segwit P2WPKH native: **bc1qg9stkxrszkdqsuj92lm4c7akvk36zvhqw7p6ck**
 
-**Transaction envoyant des fonds vers une adresse P2WPKH native:**
+
+**Transaction Segwit DEPUIS une adresse P2WPKH native:**
 
 ```ruby
-@wif = "L2ULKxeRK...TEwcoX3hF" # private key in wif compressed format
-@user_key = BTC::Key.new(wif:@wif)
+# la destination peut être standard (legacy) ou native Segwit
+destination_address = "12qeTKzrK7wm1V8rCjYEysAdtD5D3PxfPV"
+# destination_address = "bc1q2xdndlad2njdd6vsnvqhhyu9l4dan2sm4dhrml"
 
-prev_out="0dbf14f92a2929032b8628031c755e8320fd08bb350f416eaa9c134e2acf98fe"
-prev_out_index = 0
-value = 2440000 # previous tx output value in satoshis
-fee = 15000
+utxo_txid="03e60e4671588c2dc94415ab21a95960e19ebe9316c5ee25a706ccba25535e36"
+utxo_index = 0
+amount = 0.00075135 * base_factor # conversion du montant en satoshis
+fee = 0.0001 * base_factor
+# sent_amount = 0.0005 * base_factor
+# change = amount - sent_amount - fee
+sent_amount = amount - fee
 
-tx = BTC::Transaction.new(version: 2)
-tx.lock_time = 0
-tx.add_input(BTC::TransactionInput.new( previous_id: prev_out,
-                                        previous_index: prev_out_index,
-                                        sequence: 0))
-tx.add_output(BTC::TransactionOutput.new(value: value-fee, script: script_pub_key))
-hashtype = BTC::SIGHASH_ALL
-
-sighash = tx.signature_hash(input_index: 0,
-   output_script: BTC::PublicKeyAddress.parse(@user_key.address.to_s).script,
-   hash_type: hashtype)
-
-tx.inputs[0].signature_script = BTC::Script.new
-tx.inputs[0].signature_script << (@user_key.ecdsa_signature(sighash) + BTC::WireFormat.encode_uint8(hashtype))
-tx.inputs[0].signature_script << @user_key.public_key
-tx.to_hex # transaction signée, au format hex
-```
-Exemple: [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchain.info/tx/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
-
-**Transaction envoyant des fonds depuis une adresse P2WPKH native:**
-
-```ruby
-include Bitcoin::Builder
-# clé privée de l'adresse P2WPKH, au format hex:
-hex_priv_key="25940add...7f7b2d9"
-# adresse Bitcoin standard ("legacy") de destination:
-destination_address = "1FiwwBm4KApZX1mHqxtxKniuL419o5icCC"
-
-prev_out="6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd"
-prev_out_index = 0 # index de l'unspent output (utxo) dans tx ci-dessus
-value = 2425000 # valeur de l'utxo en satoshis
-key = Bitcoin::Key.new(hex_priv_key)
-script_pubkey = script_pub_key.data
-fee = 15000
-
-spend_tx = build_tx do |t|
+tx = build_tx do |t|
  t.lock_time 0
  t.input do |i|
-  i.prev_out prev_out, prev_out_index, script_pubkey, value
+  i.prev_out utxo_txid, utxo_index, script_pubkey, amount
   i.sequence "ffffffff".htb
-  i.signature_key key
  end  
  t.output do |o|
-  o.value value-fee
+  o.value sent_amount
   o.script {|s| s.recipient destination_address }
  end
+ # t.output do |o|
+ #  o.value change
+ #  o.script { |s| s.recipient change_address }
+ # end
 end
 
-signed_tx = spend_tx.to_payload.unpack('H*')[0] # signed raw tx (in hex)
+tx.to_payload.bth # transaction non encore signée
+sig_hash = tx.signature_hash_for_witness_input(0, script_pubkey, amount)
+sig = Secp256k1.sign(sig_hash, @btc_node.private_key.htb)
+tx.in[0].script_witness.stack << sig + [Tx::SIGHASH_TYPE[:all]].pack("C")
+tx.in[0].script_witness.stack << public_key.htb
+puts tx.to_payload.unpack('H*')[0] # transaction signée (au format hex)
 ```
-Exemple: [1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee](https://blockchain.info/tx/1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee)
+Exemples:
+
+[346aa91e0854b34c63dfb655ac9b1fdcb9ac34de179f05760bf7dc49b6d0ba7a](https://blockchair.com/bitcoin/transaction/346aa91e0854b34c63dfb655ac9b1fdcb9ac34de179f05760bf7dc49b6d0ba7a)
+
+[9b0fccfc75f0dfbb36d424f786a6d40e3bac0b537dd912f1ae3bdc2cbb0f4e61](https://blockchair.com/bitcoin/transaction/9b0fccfc75f0dfbb36d424f786a6d40e3bac0b537dd912f1ae3bdc2cbb0f4e61)
+
+[1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee](https://blockchair.com/bitcoin/transaction/1b2daeacde58eb6edff643cefdd5bef1a8b9025c0fc52f5fa6e79051139453ee)
 
 Taille de la transaction: 195 octets
 
 Transaction non-segwit comparable: 268a21f8dea0ef5466c02e96174968273d6f9baeb7566ba7f018a2907bd510b7
 Taille: 192 octets
 
-Avertissement: même si ce code a été testé, vous l'utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau.
+
+**Transaction standard VERS une adresse P2WPKH native:**
+
+```ruby
+public_key = Key.new(nil,@btc_node.public_key).pub
+address = Key.new(nil,@btc_node.public_key).addr  # adresse standard
+script_pubkey = Script.to_hash160_script(hash160(public_key))
+
+destination_address = "bc1q2xdndlad2njdd6vsnvqhhyu9l4dan2sm4dhrml"
+
+utxo_txid="b2e85846105077e0eadaa570ba5962872f6bf22ef43ab50c58571f8cb39a3ce1"
+utxo_index =1
+amount = 0.00073192 * base_factor
+fee = 0.0001 * base_factor
+# sent_amount = 0.0005 * base_factor
+# change = amount - sent_amount - fee
+sent_amount = amount - fee
+
+tx = build_tx do |t|
+ t.input do |i|
+  i.prev_out utxo_txid
+  i.prev_out_index utxo_index
+ end  
+ t.output do |o|
+  o.value sent_amount
+  o.script {|s| s.recipient destination_address }
+ end
+end
+
+tx.to_payload.bth # transaction non encore signée
+sig_hash = tx.signature_hash_for_input(0, script_pubkey)
+sig = Secp256k1.sign(sig_hash, @btc_node.private_key.htb) 
+tx.in[0].script_sig = Script.to_signature_pubkey_script(sig, public_key.htb)
+puts tx.to_payload.unpack('H*')[0] # transaction signée (au format hex)
+```
+Exemples:
+
+ [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchair.com/bitcoin/transaction/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
+ 
+ [4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a](https://blockchair.com/bitcoin/transaction/4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a)
+ 
+
+
+
+Avertissement: même si ce code a été testé, vous l'utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux montants envoyés à l'adresse de destination, à l'adresse de change (rendu de monnaie, le cas échéant) et au montant des commissions de réseau.
 
 Remerciements à 
-Pieter Wuille, inventeur de Segwit.
-
-Oleg Andreev ([btcruby](https://github.com/oleganza/btcruby)), 
+Pieter Wuille, inventeur de Segwit. 
 
 Julian Langschaedel ([bitcoin-ruby](https://github.com/lian/bitcoin-ruby)) 
 
-and Shigeyuki Azuchi ([Bech32](https://github.com/azuchi/bech32rb/tree/master/lib)) pour avoir développé et publié les remarquables bibliothèques open source citées dans le code ci-dessus.
+et Shigeyuki Azuchi ([Bech32](https://github.com/azuchi/bech32rb/tree/master/lib)) pour avoir développé et publié les bibliothèques open source utilisées dans le code ci-dessus.
 
 Mon prochain article (part 2/4) traitera des adresses P2WSH natives, part 3  de P2SH-P2WPKH et finalement part 4 de P2SH-P2WSH.
 
@@ -232,3 +261,5 @@ Liens utiles pour les développeurs:
 [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
 
 Pour expérimenter les adresses segwit: [bitcoinscri.pt](http://bitcoinscri.pt/pages/segwit_native_p2wpkh_address)
+
+EDIT Novembre 2020: exemples de code simplifiés avec la librairie bitcoin-ruby
