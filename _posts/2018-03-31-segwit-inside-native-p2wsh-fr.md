@@ -62,10 +62,9 @@ escrow_public_key = Key.new(nil,@btc_node.public_key).pub_compressed
 
 # Creation du Witness Script:  2-of-2 multisig dans cet example
 
-witness_script_string = \
-"2 #{user_public_key} #{escrow_public_key} 2 OP_CHECKMULTISIG"
+witness_string = "2 #{user_public_key} #{escrow_public_key} 2 OP_CHECKMULTISIG"
 
-witness_script = Script.from_string(witness_script_string).to_payload
+witness_script = Script.from_string(witness_string).to_payload
 ```
 Calcul de l'adresse native P2WSH:
 
@@ -130,6 +129,6 @@ Avertissement: même si ce code a été testé, vous l’utilisez à vos risques
 
 Mon prochain article (part 3/4) traitera des adresses P2SH-P2WPKH.
 
-Lien github: [native_p2wsh.rb](https://gist.github.com/pierrenoizat/6880a12a599fa03a2099e3b38e8664e0)
+Lien GitHub: [native_p2wsh.rb](https://gist.github.com/pierrenoizat/6880a12a599fa03a2099e3b38e8664e0)
 
 EDIT Novembre 2020: exemples de code simplifiés avec la librairie bitcoin-ruby
