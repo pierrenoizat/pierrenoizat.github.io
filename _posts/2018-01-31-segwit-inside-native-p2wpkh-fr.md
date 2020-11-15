@@ -115,7 +115,7 @@ Les adresses P2WPKH natives utilisent le même format de clé publique que P2PKH
 
 Le scriptPubKey P2WPKH consiste toujours en 22 octets. Il commence par un OP_0, suivi du keyhash précédé de sa taille (20 octets) , c’est-à-dire 0x0014 {keyhash}. Le keyhash est RIPEMD160(SHA256) de la clé publique compressée.
 
-Le premier octet (OP_0) est appelé le "version byte" et les 21 octets suivants le "witness program".
+Le premier octet (OP_0) est appelé le "version byte" (seule la version 0 est reconnue pour le moment par le réseau) et les 21 octets suivants le "witness program".
 
 Pour les développeurs, voici quelques exemples de transactions construites avec ruby, language libre reconnu pour sa concision et sa lisibilité:
 
@@ -201,22 +201,19 @@ Transaction non-segwit comparable: 268a21f8dea0ef5466c02e96174968273d6f9baeb7566
 Taille: 192 octets
 
 
-**Transaction standard VERS une adresse P2WPKH native:**
+**Transaction standard VERS une adresse Segwit native:**
 
 ```ruby
 public_key = Key.new(nil,@btc_node.public_key).pub
-address = Key.new(nil,@btc_node.public_key).addr  # adresse standard
+# adresse standard d'origine (non compressée):
+puts Key.new(nil,@btc_node.public_key).addr  
 script_pubkey = Script.to_hash160_script(hash160(public_key))
-
-destination_address = "bc1q2xdndlad2njdd6vsnvqhhyu9l4dan2sm4dhrml"
-
 utxo_txid="b2e85846105077e0eadaa570ba5962872f6bf22ef43ab50c58571f8cb39a3ce1"
 utxo_index =1
 amount = 0.00073192 * base_factor
 fee = 0.0001 * base_factor
-# sent_amount = 0.0005 * base_factor
-# change = amount - sent_amount - fee
 sent_amount = amount - fee
+destination_address = "bc1q2xdndlad2njdd6vsnvqhhyu9l4dan2sm4dhrml"
 
 tx = build_tx do |t|
  t.input do |i|
@@ -237,11 +234,11 @@ puts tx.to_payload.unpack('H*')[0] # transaction signée (au format hex)
 ```
 Exemples:
 
- [6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchair.com/bitcoin/transaction/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
- 
- [4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a](https://blockchair.com/bitcoin/transaction/4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a)
+[6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd](https://blockchair.com/bitcoin/transaction/6e3a1a465405e242d30379a314fcb3f105df756f4c4ba4831a79a45af1a4f2cd)
  
 
+[4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a](https://blockchair.com/bitcoin/transaction/4b8bef4eda11479f3113eb1a88658bf1e368c8acd0b336c41c26c633f1585b9a)
+ 
 
 
 Avertissement: même si ce code a été testé, vous l'utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux montants envoyés à l'adresse de destination, à l'adresse de change (rendu de monnaie, le cas échéant) et au montant des commissions de réseau.
@@ -256,7 +253,8 @@ et Shigeyuki Azuchi ([Bech32](https://github.com/azuchi/bech32rb/tree/master/lib
 Mon prochain article (part 2/4) traitera des adresses P2WSH natives, part 3  de P2SH-P2WPKH et finalement part 4 de P2SH-P2WSH.
 
 Liens utiles pour les développeurs:
-[Ruby script funding a native P2WPKH address](https://gist.github.com/pierrenoizat/16ba9e5b7455c6fe9358840ce38e0021)
+
+GitHub: [native_p2wpkh.rb](https://gist.github.com/pierrenoizat/16ba9e5b7455c6fe9358840ce38e0021)
 
 [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
 
