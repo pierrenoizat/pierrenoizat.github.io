@@ -22,98 +22,110 @@ Ce 4e et dernier article de ma série sur les adresses Segwit traite des adresse
 
 Comme les adresses [P2SH-P2WPKH](http://e-ducat.fr/2018-04-11-segwit-inside-p2sh-p2wpkh-fr/) et pour la même raison d'interopérabilité avec les wallets existants, les adresses P2SH-P2WSH peuvent recevoir des fonds en provenance d'un wallet non-segwit qui les voit comme n'importe quelle adresse P2SH standard ([BIP 16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)).
 
-Comme les adresses [natives P2WSH](http://e-ducat.fr/2018-03-31-segwit-inside-native-p2wsh-fr/), les adresses P2SH-P2WSH peuvent contenir un **script Bitcoin arbitrairement complexe ("witnessScript")**. Nous prendrons ici le même exemple simple d'un script multisignature 2-sur-2 car il y a tout de même des limites à la complexité du script qui sont rappelées [ici](https://bitcoincore.org/en/segwit_wallet_dev/).
+Comme les adresses [natives P2WSH](http://e-ducat.fr/2018-03-31-segwit-inside-native-p2wsh-fr/), les adresses P2SH-P2WSH peuvent contenir un **script Bitcoin arbitrairement complexe ("witnessScript")**. Nous prendrons ici l'exemple simple d'un script multisignature 2-sur-3.
 
-**"Scripthash"** est l'empreinte numérique sha256 (32 octets) du "witness script":
-0 <sha256(witness script)>
+**"Scripthash"** est l'empreinte numérique sha256 (32 octets) du "witness script".
 
 Pour une adresse P2SH-P2WSH, le **"redeemScript"** P2SH comporte toujours 34 octets: 0x0020{32-byte scripthash}.
 
-Il commence par OP_0, suivi par la taille de scripthash (32, soit 0x20 codé en hexadécimal) puis scripthash. 
+Il commence par OP_0, suivi par la taille de scripthash (32, soit 0x20 codé en hexadécimal) puis scripthash.
+ 
 
-Comme pour toute adresse P2SH, le "scriptPubKey" intégré dans l'adresse P2SH-P2WSH est OP_HASH160 hash160(redeemScript) OP_EQUAL. L'adresse correspondante commence par le préfixe 3.
-
-Voici le code Ruby pour les développeurs.
+Voici le code Ruby pour les développeurs, en commençant par la construction du Witness Script multisig 2-sur-3. Pour simplifier la génération des clés nous utilisons dans cet exemple un wallet déterministe. En réalité, les 3 paires de clés peuvent être évidemment générées indépendamment les unes des autres, chaque participant conservant sa clé privée sans la divulguer.
 
 ```ruby
-require 'btcruby'
+include Bitcoin
+include Bitcoin::Builder
+include Bitcoin::Protocol
+include Bitcoin::Util
+include Bitcoin::Secp256k1
+base_factor = 100000000
+mnemonic = "beyond .. satoshi" # saisir votre propre phrase de passe ici
+seed = BipMnemonic.to_seed(mnemonic: mnemonic)
+@btc_wallet = Bip44::Wallet.from_seed(seed, "m/44'/0")
 
-# Création du Witness Script: ici un script multisig 2-sur-2
+@btc_node = @btc_wallet.sub_wallet "m/0/1"
+public_key_1 = Key.new(nil,@btc_node.public_key).pub_compressed
+@btc_node = @btc_wallet.sub_wallet "m/0/2"
+public_key_2 = Key.new(nil,@btc_node.public_key).pub_compressed
+@btc_node = @btc_wallet.sub_wallet "m/0/3"
+public_key_3 = Key.new(nil,@btc_node.public_key).pub_compressed
 
-@public_key = "02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7"
-@user_key = BTC::Key.new(public_key:BTC.from_hex(@public_key))
-@escrow_key = BTC::Key.new(public_key:BTC.from_hex("024fffe85607b555cf7697e4be0d3d34dc1868baa57c235d926e447e926c08d287"))
+witness_string = \
+"2 #{public_key_1} #{public_key_2} #{public_key_3} 3 OP_CHECKMULTISIG"
 
-witness_script = BTC::Script.new  << BTC::Script::OP_2 << @user_key.compressed_public_key << @escrow_key.compressed_public_key << BTC::Script::OP_2 
-witness_script << BTC::Script::OP_CHECKMULTISIG
-@witness_script = witness_script.data
+witness_script = Script.from_string(witness_string).to_payload
 
-redeem_script = BTC::Script.new   
-redeem_script<< BTC::Script::OP_0
-redeem_script<< BTC.sha256(@witness_script)
+redeem_string = "0 #{sha256(witness_script.bth)}"
+redeem_script = Script.from_string(redeem_string).to_payload
+```
 
-# Calcul de l'adresse P2SH-P2WSH
-p2sh_p2wsh_address = BTC::ScriptHashAddress.new(redeem_script:redeem_script).to_s 
-# exemple: 34c48TmtAUSpPZS5X1X8USNAUSWvZau6zn
+Calcul de l'adresse P2SH-P2WSH
+```ruby
+
+p2sh_p2wsh_address = hash160_to_p2sh_address(hash160(redeem_script.bth))
+
 ```
 
 Exemple:
-Clé publique (compressée) "User": 02530c548d402670b13ad8887ff99c294e67fc18097d236d57880c69261b42def7
+Clé publique (compressée) 1: 03591da02bf7c80dc5d0edee4bbbfad7e58320785e3e54d4dab117152361f7002c
 
-Clé publique (compressée) "Escrow": 024fffe85607b555cf7697e4be0d3d34dc1868baa57c235d926e447e926c08d287
+Clé publique (compressée) 2: 027ea2bc65ce49dcd748e4e41a0c8881be388b9182ad5e47579a0de0119803827b
 
-Adresse SegWit P2SH-P2WSH: **34c48TmtAUSpPZS5X1X8USNAUSWvZau6zn**
+Clé publique (compressée) 3: 03c5fdaf887f76119a73a7f738d5d4a451ff07bbbc83422c529452d8a36ae59e39
 
+Adresse SegWit P2SH-P2WSH: **356yCBhiW9tqg5iiPDhEZ8f8t3JfqkEihA**
+
+Construction d'une transaction Segwit envoyant des fonds DEPUIS l'adresse P2SH-P2WSH:
 
 ```ruby
-require 'bitcoin'
-include Bitcoin::Builder
-include Bitcoin::Protocol
-include Bitcoin::Secp256k1
-
-# Transaction envoyant des fonds DEPUIS une adresse P2SH-P2WSH
-
-prev_out="4922998c3a2f741a64c85f2bce7367485ff25495dfd349e3ae60e5265ed6381d"
-prev_out_index = 0
-value = 100000
-fee = 15000
-@destination_address = "1Bwyn5f5EvUPazh3H2rns6ENjTUYnK9ben"
-witness_script = Bitcoin::Script.new(@witness_script)
-@redeem_script = redeem_script.data
+utxo_txid="c57007980fabfd7c44895d8fc2c28c6ead93483b7c2bfec682ce0a3eaa4008ce"
+utxo_index = 0
+amount = 0.00074465 * base_factor
+fee = 0.0001 * base_factor
+destination_address = "12qeTKzrK7wm1V8rCjYEysAdtD5D3PxfPV"
 
 spend_tx = build_tx do |t|
   t.lock_time 0
   t.input do |i|
-    i.prev_out prev_out, prev_out_index, @redeem_script, value
+    i.prev_out utxo_txid, utxo_index, redeem_script, amount
     i.sequence "ffffffff".htb
   end
   t.output do |o|
-    o.value value-fee
-    o.script {|s| s.recipient @destination_address }
+    o.value amount-fee
+    o.script {|s| s.recipient destination_address }
   end
 end
 
 tx = Tx.new(spend_tx.to_payload) # transaction non encore signée
+tx.in[0].script_sig = \
+Script.new(Script.pack_pushdata(redeem_script)).to_payload
 
-tx.in[0].script_sig = Bitcoin::Script.new(Bitcoin::Script.pack_pushdata(@redeem_script)).to_payload
-
-sig_hash = tx.signature_hash_for_witness_input(0, @redeem_script, value, witness_script.to_payload, Tx::SIGHASH_TYPE[:all])
-
-user_private_key_hex = "b1a5dc...556"
-escrow_private_key_hex = "7b25...86ef"
-user_sig = Bitcoin::Secp256k1.sign(sig_hash, user_private_key_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
-escrow_sig = Bitcoin::Secp256k1.sign(sig_hash, escrow_private_key_hex.htb) + [Tx::SIGHASH_TYPE[:all]].pack("C")
-
-tx.in[0].script_witness.stack << user_sig << escrow_sig
-tx.in[0].script_witness.stack << witness_script.to_payload
-tx.to_witness_payload.bth # transaction signée prête à diffuser
+sig_hash = tx.signature_hash_for_witness_input(
+0, redeem_script, amount, witness_script, Tx::SIGHASH_TYPE[:all]
+)
+@btc_node = @btc_wallet.sub_wallet "m/0/2"
+sig_2 = Secp256k1.sign(sig_hash, @btc_node.private_key.htb)
+sig_2 << [Tx::SIGHASH_TYPE[:all]].pack("C")
+@btc_node = @btc_wallet.sub_wallet "m/0/3"
+sig_3 = Secp256k1.sign(sig_hash, @btc_node.private_key.htb)
+sig_3 << [Tx::SIGHASH_TYPE[:all]].pack("C")
+tx.in[0].script_witness.stack << '' # init stack
+tx.in[0].script_witness.stack << sig_2 << sig_3 << witness_script
+tx.to_payload.bth # transaction signée
 ```
 
-Exemple:
+Exemple de transaction envoyant des fonds depuis une adresse P2SH-P2WSH:
 
-Transaction envoyant des fonds depuis une adresse P2SH-P2WSH: [718b84ed26a1178efc61b6b500d775df6392fb91816c2e7a48b9d018d66159c4](https://blockchain.info/tx/718b84ed26a1178efc61b6b500d775df6392fb91816c2e7a48b9d018d66159c4)
+[55c7c71c63b87478cd30d401e7ca5344a2e159dc8d6990df695c7e0cb2f82783](https://blockchair.com/bitcoin/transaction/55c7c71c63b87478cd30d401e7ca5344a2e159dc8d6990df695c7e0cb2f82783)
+ 
 
 Liens utiles pour les développeurs:
-[Ruby script sur Github pour adresses P2SH-P2WSH](https://gist.github.com/pierrenoizat/a418968f2af4eaacfbff71e7a99c47fd)
 
-[bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
+GitHub: [p2sh_p2wsh.rb](https://gist.github.com/pierrenoizat/a418968f2af4eaacfbff71e7a99c47fd)
+
+Guide pour les développeurs de wallet: [bitcoincore.org/en/segwit_wallet_dev](https://bitcoincore.org/en/segwit_wallet_dev/)
+
+Avertissement: même si ce code a été testé, vous l’utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau. Utilisez testnet dans un premier temps.
+
+EDIT Novembre 2020: exemples de code simplifiés avec la librairie bitcoin-ruby

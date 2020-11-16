@@ -98,7 +98,7 @@ tx.to_payload.bth # transaction signée
 
 Exemple:
 
-Transaction envoyant des fonds depuis une adresse P2SH-P2WPKH: [75a18c29b34ae9a46f7daf020c8bf7b2f46418fa0ea7e8cd221ecbc857f56872](https://blockchain.info/tx/75a18c29b34ae9a46f7daf020c8bf7b2f46418fa0ea7e8cd221ecbc857f56872)
+Transaction envoyant des fonds depuis une adresse P2SH-P2WPKH: [75a18c29b34ae9a46f7daf020c8bf7b2f46418fa0ea7e8cd221ecbc857f56872](https://blockchair.com/bitcoin/transaction/75a18c29b34ae9a46f7daf020c8bf7b2f46418fa0ea7e8cd221ecbc857f56872)
 
 Liens utiles pour les développeurs:
 

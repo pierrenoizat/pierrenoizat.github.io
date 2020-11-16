@@ -121,9 +121,9 @@ puts tx.to_witness_payload.bth # transaction signée, au format hex
 ```
 Exemples de transactions envoyant des fonds depuis une adresse P2WSH:
 
-[42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5](https://blockchain.info/tx/42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5)
+[42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5](https://blockchair.com/bitcoin/transaction/42b2c123ed8b96b26d5442d181cb6dd8c5403340e46d16e6ec6784a1d50f82f5)
 
-[e097a3bad35d7e27adc9e770ea178bfb44e4a83d86421d3a69fb671844d878e9](https://blockchain.info/tx/e097a3bad35d7e27adc9e770ea178bfb44e4a83d86421d3a69fb671844d878e9)
+[e097a3bad35d7e27adc9e770ea178bfb44e4a83d86421d3a69fb671844d878e9](https://blockchair.com/bitcoin/transaction/e097a3bad35d7e27adc9e770ea178bfb44e4a83d86421d3a69fb671844d878e9)
 
 Avertissement: même si ce code a été testé, vous l’utilisez à vos risques et périls. Vous devez vous assurez de ce que vous faites avant de diffuser une transaction sur mainnet. Soyez particulièrement attentif aux valeurs des montants envoyés et au montant des commissions de réseau. Utilisez testnet dans un premier temps.
 
