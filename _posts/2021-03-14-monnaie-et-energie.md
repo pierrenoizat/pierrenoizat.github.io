@@ -106,8 +106,11 @@ Les systèmes PoS sont en fait des monnaies-valeur qui minimisent les frictions,
 
 Dès lors, la valeur des coins PoS est minime car ils sont non seulement porteurs de preuves de travail minimales (les signatures des stakers) mais aussi en quantité illimitée: un réseau PoS peut être cloné ou concurrencé par un autre réseau PoS simplement en installant une nouvelle application sur chaque noeud existant, sans capex supplémentaire.
 Dans une analogie avec les monnaies métalliques, un coin PoS se compare à une pièce en fer et un coin PoW à une pièce en métal rare.
+
 Cependant, l’acceptabilité d’un coin PoS reste très liée à la qualité du groupe des “stakers” et à leur loyauté. Les risques d’arbitrage opportuniste sont réels et beaucoup plus significatifs que pour un réseau PoW. Si un staker sur un réseau PoS A peut participer à un réseau PoS B sans surcoût, le jeu de fusion-acquisition ou des prise de contrôle hostile est ouvert: c’est précisément ce que la preuve de travail permet d’éviter en créant des coûts d’entrées et de sortie d’un système de minage à un autre.
-La décentralisation d’un réseau PoS fait l’hypothèse qu’il n’y a pas collusion entre les stakers alors qu’un réseau PoW, instaurant une concurrence entre mineurs fondées sur leur investissement en matériel (capex) et leurs dépenses en électricité (opex)
+
+La décentralisation d’un réseau PoS fait l’hypothèse qu’il n’y a pas collusion entre les stakers alors qu’un réseau PoW, instaurant une concurrence entre mineurs fondées sur leur investissement en matériel (capex) et leurs dépenses en électricité (opex).
+
 L’offre illimitée de coins PoS entraîne aussi un problème de gouvernance, plus pernicieux: l’apathie de l’électeur (“voter apathy”) qui va conduire le staker à s’abstenir ou à être suiveur d’une petite minorité, faute d’avoir le temps et les resources pour faire ses propres diligences sur une décision à prendre.
 
 Le pivot du réseau ETH de PoW à PoS, annoncé dès sa création en 2014, aura t il lieu ? Si c’est le cas, cette mutation fournira un cas d’école pour évaluer les conséquences d’un tel choix sur la gouvernance et l‘économie d’une monnaie-valeur.
