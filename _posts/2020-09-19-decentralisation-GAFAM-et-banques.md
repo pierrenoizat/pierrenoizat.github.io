@@ -46,7 +46,7 @@ Par quel processus de démocratie locale décide-t-on de financer tel projet imm
 **Le capital créé par la dette et non par une épargne préalable, favorise le capitalisme de connivence au détriment du capitalisme de progrès, les rentiers au détriment des innovateurs**.
 Le temps s’accélère mais seulement pour ceux qui bénéficient de la création monétaire. Les autres restent à la traîne en terme d’accès au capital et donc de revenus.
 
-Chaque secteur de services, chaque écosystème artisanal pourrait, depuis l’invention de Bitcoin, **fonctionner avec sa propre monnaie décentralisée afin de bénéficier d’un “circuit court” monétaire, débarassé de l’intermédiation parasitique des usuriers**.
+Chaque secteur de services, chaque écosystème artisanal pourrait, depuis l’invention de Bitcoin, **fonctionner avec sa propre monnaie décentralisée afin de bénéficier d’un “circuit court” monétaire, débarrassé de l’intermédiation parasitique des usuriers**.
 Ce court-circuit ne vise pas à supprimer les tiers de confiance mais à les mettre en concurrence avec d’autres options, la première consistant à transacter sans eux.
 
 La décentralisation de la monnaie corrige donc deux conséquences inéluctables de la centralisation:
