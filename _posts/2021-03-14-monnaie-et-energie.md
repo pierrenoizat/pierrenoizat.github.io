@@ -58,17 +58,17 @@ Energie = puissance multipliée par le temps pendant laquelle elle est appliqué
 
 Lorsqu’on parle d’énergie, il convient donc de préciser de quelle énergie il s’agit. La création de richesse se définit d’ailleurs selon F. Soddy, comme la conversion d’une énergie sous une forme utilisable, typiquement la conversion d’un flux d’énergie (travail) en un stock d’énergie (matière première utilisable, produit fini, énergie interne, énergie potentielle, etc).
 
-Un être vivant, selon François Roddier(1), est une “machine thermique” traversé par des flux d’énergie qui le maintiennent dans un état quasi-stationnaire, hors équilibre. Si ces flux cessent, l’entropie augmente et la vie s’arrête.
+Un être vivant, selon François Roddier(1), est une “machine thermique” traversée par des flux d’énergie qui le maintiennent dans un état quasi-stationnaire, hors équilibre. Si ces flux cessent, l’entropie augmente et la vie s’arrête.
 
 Remarquons enfin que les flux d’énergie sur Terre  (par exemple,  irradiance solaire = 1360 Watt/m2 ) sont majoritairement perdus (wasted), seule une petite fraction est absorbée par le vivant ou transformée en richesse (2). 
-L’efficacité des transformation de l’énergie d’une forme à une autre est faible. On estime par exemple que l’efficacité énergétique d’une éolienne est aujourd’hui inférieure à 60%, celle d’un panneau solaire 40%.
+L’efficacité des transformations de l’énergie d’une forme à une autre est faible. On estime par exemple que l’efficacité énergétique d’une éolienne est aujourd’hui inférieure à 60%, celle d’un panneau solaire 40%.
 
 
 **Monnaie-valeur**
 
 La monnaie-valeur se définit comme la représentation d’**une énergie déjà produite et stockée sous forme d’un jeton (token) physique ou électronique**: l’or et Bitcoin entrent naturellement dans cette catégorie.
 
-Une pièce d’or est porteuse d’une preuve de travail (proof of work en anglais, PoW en abregé), celui qu’il a fallu consacré à son extraction d’une mine, sa fabrication et sa logistique. Cette preuve est éclatante au sens propre du terme, sous réserve qu’on puisse vérifier facilement la teneur réelle en or. La vérification d’un lingot d’or par exemple nécessite de s’assurer qu’il ne s’agit pas d’une barre de tungstène plaquée d’or, le tungstène ayant une densité très proche de celle de l’or.
+Une pièce d’or est porteuse d’une preuve de travail (proof of work en anglais, PoW en abrégé), celui qu’il a fallu consacrer à son extraction d’une mine, sa fabrication et sa logistique. Cette preuve est éclatante au sens propre du terme, sous réserve qu’on puisse vérifier facilement la teneur réelle en or. La vérification d’un lingot d’or par exemple nécessite de s’assurer qu’il ne s’agit pas d’une barre de tungstène plaquée d’or, le tungstène ayant une densité très proche de celle de l’or.
 
 De la même façon, chaque Bitcoin ou fraction de Bitcoin est porteur d’une preuve de travail électronique, beaucoup plus facile à vérifier: celle du bloc où se trouve la toute dernière transaction concernant ce Bitcoin ou cette fraction de Bitcoin.
 
@@ -76,7 +76,7 @@ Grâce à la preuve de travail, **la monnaie-valeur transfère l’énergie pass
 
 Monnaie-valeur et rareté
 
-La rareté relative d’une monnaie-valeur assure que la quantité d’énergie transférée dans une transaction (pièce d’or ou fraction de Bitcoin) est suffisamment grande comparée au frais de transaction (logisitique  sécurisée d’une pièce d’or, frais du réseau Bitcoin) pour que le système reste efficace. En principe, l’eau pourrait être considérée comme une monnaie-valeur si elle n’était aussi abondante et si sa logistique était praticable dans une transaction.
+La rareté relative d’une monnaie-valeur assure que la quantité d’énergie transférée dans une transaction (pièce d’or ou fraction de Bitcoin) est suffisamment grande comparée aux frais de transaction (logistique  sécurisée d’une pièce d’or, frais du réseau Bitcoin) pour que le système reste efficace. En principe, l’eau pourrait être considérée comme une monnaie-valeur si elle n’était aussi abondante et si sa logistique était praticable dans une transaction.
 **La rareté d’une monnaie-valeur n’est donc qu’une nécessité pratique qui s’impose à son système monétaire. Les différentes formes de monnaie-valeur étant en concurrence les unes avec les autres, la rareté relative s’est affirmée comme un avantage déterminant et une caractéristique essentielle**.
 
 
@@ -99,7 +99,7 @@ Ce monopole de droit appliqué à la monnaie-dette ne veut pas dire monopole de 
 **La tentation des raccourcis**
 
 Un système monétaire peut il se positionner comme un hybride entre monnaie-dette et monnaie-valeur ?
-Serai-ce le cas des sytèmes dits proof-of-stake (PoS, preuve d’enjeu en français) qui cèdent à la tentation de réduire la preuve de travail jusqu'à s'en dispenser ? 
+Serait-ce le cas des systèmes dits proof-of-stake (PoS, preuve d’enjeu en français) qui cèdent à la tentation de réduire la preuve de travail jusqu'à s'en dispenser ? 
 Un système PoS désigne les détenteurs de coins (“stakers” qui s’engagent à conserver leurs coins sur une certaine durée, typiquement plusieurs mois)  comme les valideurs de blocks de transactions.
 Les coins PoS ne portent donc pas de preuves de travail qui pourraient les associer à une énergie passée. Cependant, si ils ne semblent pas correspondre à notre définition d’une monnaie-valeur, ils n’apparaissent pas non plus de la monnaie-dette car ils ne portent aucune créance évidente.
 Les systèmes PoS sont en fait des monnaies-valeur qui minimisent les frictions, les coût de transactions étant réduits aux coûts du calcul des signatures des “stakers”. On peut dire aussi que les coins PoS s’appuient davantage sur la théorie des jeux que sur la thermodynamique.
@@ -107,11 +107,11 @@ Les systèmes PoS sont en fait des monnaies-valeur qui minimisent les frictions,
 Dès lors, la valeur des coins PoS est minime car ils sont non seulement porteurs de preuves de travail minimales (les signatures des stakers) mais aussi en quantité illimitée: un réseau PoS peut être cloné ou concurrencé par un autre réseau PoS simplement en installant une nouvelle application sur chaque noeud existant, sans capex supplémentaire.
 Dans une analogie avec les monnaies métalliques, un coin PoS se compare à une pièce en fer et un coin PoW à une pièce en métal rare.
 
-Cependant, l’acceptabilité d’un coin PoS reste très liée à la qualité du groupe des “stakers” et à leur loyauté. Les risques d’arbitrage opportuniste sont réels et beaucoup plus significatifs que pour un réseau PoW. Si un staker sur un réseau PoS A peut participer à un réseau PoS B sans surcoût, le jeu de fusion-acquisition ou des prise de contrôle hostile est ouvert: c’est précisément ce que la preuve de travail permet d’éviter en créant des coûts d’entrées et de sortie d’un système de minage à un autre.
+Cependant, l’acceptabilité d’un coin PoS reste très liée à la qualité du groupe des “stakers” et à leur loyauté. Les risques d’arbitrage opportuniste sont réels et beaucoup plus significatifs que pour un réseau PoW. Si un staker sur un réseau PoS A peut participer à un réseau PoS B sans surcoût, le jeu de fusion-acquisition ou des prises de contrôle hostiles est ouvert: c’est précisément ce que la preuve de travail permet d’éviter en créant des coûts d’entrées et de sortie d’un système de minage à un autre.
 
 La décentralisation d’un réseau PoS fait l’hypothèse qu’il n’y a pas collusion entre les stakers alors qu’un réseau PoW, instaurant une concurrence entre mineurs fondées sur leur investissement en matériel (capex) et leurs dépenses en électricité (opex).
 
-L’offre illimitée de coins PoS entraîne aussi un problème de gouvernance, plus pernicieux: l’apathie de l’électeur (“voter apathy”) qui va conduire le staker à s’abstenir ou à être suiveur d’une petite minorité, faute d’avoir le temps et les resources pour faire ses propres diligences sur une décision à prendre.
+L’offre illimitée de coins PoS entraîne aussi un problème de gouvernance, plus pernicieux: l’apathie de l’électeur (“voter apathy”) qui va conduire le staker à s’abstenir ou à être suiveur d’une petite minorité, faute d’avoir le temps et les ressources pour faire ses propres diligences sur une décision à prendre.
 
 Le pivot du réseau ETH de PoW à PoS, annoncé dès sa création en 2014, aura t il lieu ? Si c’est le cas, cette mutation fournira un cas d’école pour évaluer les conséquences d’un tel choix sur la gouvernance et l‘économie d’une monnaie-valeur.
 
