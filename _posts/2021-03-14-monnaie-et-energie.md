@@ -56,6 +56,10 @@ Energie = puissance multipliée par le temps pendant laquelle elle est appliqué
 **L'énergie et le travail sont équivalents et mesurés en joules (J)**. La puissance est mesurée en Watt (W). Un joule égale un watt pendant 1 seconde.
 
 
+![Claude Shannon]({{ site.baseurl }}/assets/Claude_Shannon.jpeg)
+
+_Claude Shannon (1916-2001) ingénieur et mathématicien américain, posa les bases de la théorie de l'information._
+
 Lorsqu’on parle d’énergie, il convient donc de préciser de quelle énergie il s’agit. La création de richesse se définit d’ailleurs selon F. Soddy, comme la conversion d’une énergie sous une forme utilisable, typiquement la conversion d’un flux d’énergie (travail) en un stock d’énergie (matière première utilisable, produit fini, énergie interne, énergie potentielle, etc).
 
 Un être vivant, selon François Roddier(1), est une “machine thermique” traversée par des flux d’énergie qui le maintiennent dans un état quasi-stationnaire, hors équilibre. Si ces flux cessent, l’entropie augmente et la vie s’arrête.
