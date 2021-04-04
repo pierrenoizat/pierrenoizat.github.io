@@ -36,7 +36,6 @@ Autre définition:
 **Une monnaie est une technologie permettant de dépenser demain une valeur dont nous disposons aujourd’hui.**
 
 On dit aussi que la monnaie est un consensus social mais ces deux définitions se rejoignent car le consensus se fait bien autour de l’usage d’une technologie, hier la fonte de métaux précieux, aujourd’hui des réseaux numériques.
-C’est aussi un titre de propriété sur du temps de vie. Le monopole d’émission de ces titres de propriété, accordé actuellement aux banquiers, porte beaucoup de tentations d’en abuser.
 
 **Monnaie et énergie**
 
@@ -95,17 +94,17 @@ L’usage en tant que moyen d’échange est en fait conditionné par la liquidi
 Par exemple, Bitcoin peut tout à fait être utilisé comme moyen d’échange, malgré sa volatilité, car la liquidité des marchés Bitcoin/Euro est largement suffisante.
 Dans l’usage en tant qu’unité de compte, il est préférable que la monnaie en question conserve sa valeur au moins pendant la période comptable.
 
-Mais cette troisième fonction attribuée à la monnaie selon Aristote, l’unité de compte, est plus discutable car elle sous-entend l’exclusivité. Si une monnaie est utilisée comme unité de compte exclusive, elle bénéficie d’un avantage déterminant sur les autres et conduit assez naturellement au monopole monétaire. La fonction d’unité de compte non exclusive ouvre le champ des possibles à d’autres mesures comme l’énergie ou le temps qui s’éloignent de l’objectif dévolu à une unité de compte exclusive, à savoir la stabilité des prix exprimés dans cette unité.
+Mais cette troisième fonction attribuée à la monnaie selon Aristote, l’unité de compte, est plus discutable car elle sous-entend l’exclusivité. Si une monnaie est utilisée comme unité de compte exclusive, elle bénéficie d’un avantage déterminant sur les autres et conduit assez naturellement au monopole monétaire. La fonction d’unité de compte non exclusive ouvre le champ des possibles à d’autres mesures qui s’éloignent de l’objectif dévolu à une unité de compte exclusive, à savoir la stabilité des prix exprimés dans cette unité.
 
-En d’autres termes, dans une environnement numérique, l’unité de compte monopolistique pourrait faire place à une pluralité de comptes. Une entreprise pourrait ainsi publier des comptes florissant en euros et désastreux en empreinte carbone ou l’inverse. La pluralité des monnaies et des comptes est le préalable à une gouvernance d’entreprise responsable et à une économie soutenable.
+En d’autres termes, dans une environnement numérique, l’unité de compte monopolistique pourrait faire place à une pluralité de comptes. Une entreprise pourrait ainsi publier des comptes florissant en euros et désastreux en empreinte carbone ou l’inverse. La pluralité des monnaies et des comptes est le préalable à une gouvernance d’entreprise responsable et à des politiques publiques éclairées.
 
-L’usage en tant qu’unité de compte est aussi vulnérable à l’usure du temps ou à la volatilité des cours et des taux de changes. En fait, seul un “stablecoin” est optimisé pour remplir cette fonction dans une définition tautologique qui associe en réalité 3 systèmes, monétaire, comptable et fiscal, pour former un référentiel unique.
+L’usage en tant qu’unité de compte est aussi vulnérable à l’usure du temps ou à la volatilité des cours et des taux de changes. Un “stablecoin” est optimisé pour remplir cette fonction dans une définition tautologique qui associe en réalité 3 systèmes, monétaire, comptable et fiscal, pour former un référentiel unique.
 
 Rappelons la loi de Gresham: en tant que moyen d’échange, la mauvaise monnaie chasse la bonne. Si une monnaie a tendance à perdre de sa valeur par rapport à une autre, les porteurs vont vouloir s’en débarasser en l’utilisant pour leurs achats et garderont la meilleure monnaie, réserve de valeur.
 
-L’histoire de l’or illustre bien la dynamique des 3 fonctions: autrefois unité de compte et moyen d’échange, le métal jaune s’est mué en réserve de valeur, cédant le terrain des moyens d’échange à la monnaie papier. A l’inverse, Bitcoin, aujourd’hui réserve de valeur, pourrait bien s’imposer progressivement comme réseau de paiement global par ses qualités propres de logiciel libre résistant à la censure.
+L’histoire de l’or illustre bien la dynamique des 3 fonctions: autrefois unité de compte et moyen d’échange, le métal jaune s’est mué en réserve de valeur, cédant le terrain des moyens d’échange à la monnaie papier. A l’inverse, Bitcoin, aujourd’hui réserve de valeur, pourrait s’utiliser aussi de plus en plus comme réseau de paiement planétaire.
 
-L’autre problème de la définition aristotélicienne est qu’elle inclut la fonction d’unité de compte, ce qui la rend normative, la comptabilité servant de base à la fiscalité. En privilégiant explicitement un stablecoin de préférence à toute autre forme de monnaie, elle désigne implicitement une monnaie reconnnue par une autorité fiscale. On est donc pas loin de la définition de l’euro: c’est bien pour ça qu’on observe les banquiers centraux nous ressortir systématiquement ce bon Aristote pour définir la monnaie à leur façon.
+Le problème de la définition aristotélicienne est la fonction d’unité de compte, qui la rend normative, la comptabilité servant de base à la fiscalité. En privilégiant explicitement un stablecoin de préférence à toute autre forme de monnaie, elle désigne implicitement une monnaie reconnnue par une autorité fiscale. On est donc pas loin de la définition de l’euro: c’est bien pour ça qu’on observe les banquiers centraux nous ressortir systématiquement ce bon Aristote pour définir la monnaie à leur façon.
 
 **Monnaie-dette et monnaie-valeur**
 
