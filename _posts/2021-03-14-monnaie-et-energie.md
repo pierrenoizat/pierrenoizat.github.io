@@ -21,9 +21,9 @@ author:
   last_name: ''
 ---
 
-![Frederick Soddy]({{ site.baseurl }}/assets/Frederick_Soddy.jpg)
+![Claude Shannon]({{ site.baseurl }}/assets/Claude_Shannon.jpeg)
 
-_Frederick Soddy (Prix Nobel de Chimie 1921) précurseur de l'économie écologique, prôna une réforme radicale des systèmes monétaires, fondée sur les lois de la thermodynamique._
+_Claude Shannon (1916-2001) ingénieur et mathématicien américain, posa les bases de la théorie de l'information._
 
 Expliquant le lien entre information et énergie, deux sujets cruciaux pour ce siècle de transition numérique et énergétique. la [thermodynamique](https://e-ducat.fr/2020-06-26-bitcoin-et-thermodynamique/) permet d’analyser les phénomènes économiques sur les traces des scientifiques (Sadi Carnot, Frederick Soddy, Claude Shannon, François Roddier, entre autres) qui en ont posé les bases. Nous allons explorer ici le chemin qui relie la monnaie à l’énergie. Plus particulièrement, nous allons distinguer les deux catégories de monnaie, monnaie-valeur et monnaie-dette, chacune “tokenisant” l’énergie de manière très spécifique.
 
@@ -55,10 +55,9 @@ Energie = puissance multipliée par le temps pendant laquelle elle est appliqué
 
 **L'énergie et le travail sont équivalents et mesurés en joules (J)**. La puissance est mesurée en Watt (W). Un joule égale un watt pendant 1 seconde.
 
+![Frederick Soddy]({{ site.baseurl }}/assets/Frederick_Soddy.jpg)
 
-![Claude Shannon]({{ site.baseurl }}/assets/Claude_Shannon.jpeg)
-
-_Claude Shannon (1916-2001) ingénieur et mathématicien américain, posa les bases de la théorie de l'information._
+_Frederick Soddy (Prix Nobel de Chimie 1921) précurseur de l'économie écologique, prôna une réforme radicale des systèmes monétaires, fondée sur les lois de la thermodynamique._
 
 Lorsqu’on parle d’énergie, il convient donc de préciser de quelle énergie il s’agit. La création de richesse se définit d’ailleurs selon F. Soddy, comme la conversion d’une énergie sous une forme utilisable, typiquement la conversion d’un flux d’énergie (travail) en un stock d’énergie (matière première utilisable, produit fini, énergie interne, énergie potentielle, etc).
 
