@@ -25,7 +25,7 @@ author:
 
 _Claude Shannon (1916-2001) ingénieur et mathématicien américain, posa les bases de la théorie de l'information._
 
-Expliquant le lien entre information et énergie, deux sujets cruciaux pour ce siècle de transition numérique et énergétique. la [thermodynamique](https://e-ducat.fr/2020-06-26-bitcoin-et-thermodynamique/) permet d’analyser les phénomènes économiques sur les traces des scientifiques (Sadi Carnot, Frederick Soddy, Claude Shannon, François Roddier, entre autres) qui en ont posé les bases. Nous allons explorer ici le chemin qui relie la monnaie à l’énergie. Plus particulièrement, nous allons distinguer les deux catégories de monnaie, monnaie-valeur et monnaie-dette, chacune “tokenisant” l’énergie de manière très spécifique.
+Expliquant le lien entre information et énergie, deux sujets cruciaux pour ce siècle de transition numérique et énergétique. la [thermodynamique]( {{ site.baseurl }}{% link _posts/2020-06-26-bitcoin-et-thermodynamique.md %}) permet d’analyser les phénomènes économiques sur les traces des scientifiques (Sadi Carnot, Frederick Soddy, Claude Shannon, François Roddier, entre autres) qui en ont posé les bases. Nous allons explorer ici le chemin qui relie la monnaie à l’énergie. Plus particulièrement, nous allons distinguer les deux catégories de monnaie, monnaie-valeur et monnaie-dette, chacune “tokenisant” l’énergie de manière très spécifique.
 
 **Rappels utiles**
 

@@ -39,7 +39,7 @@ On dit aussi que la monnaie est un consensus social mais ces deux définitions s
 
 **Monnaie et énergie**
 
-J’ajouterai  une définition inédite que m’ont inspirée Satoshi Nakamoto et certains scientifiques qui, avant l’invention de Bitcoin, avaient écrit sur le lien entre monnaie et énergie, entre autres Frederick Soddy, Thomas Wallace et, plus récemment, François Roddier. 
+J’ajouterai  une définition inédite que m’ont inspirée Satoshi Nakamoto et certains scientifiques qui, avant l’invention de Bitcoin, avaient écrit sur le lien entre [monnaie et énergie]({{ site.baseurl }}{% link _posts/2021-03-14-monnaie-et-energie.md %}), entre autres Frederick Soddy, Thomas Wallace et, plus récemment, François Roddier. 
 
 Définition:
 **Une monnaie est un système permettant  d’échanger des stocks et des flux d’énergie sous forme de jetons physiques ou mathématiques.**
