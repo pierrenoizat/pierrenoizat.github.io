@@ -22,6 +22,11 @@ author:
 
 La science de l’énergie est une source d’inspiration pour repenser l’économie à la lumière des 3 principes fondamentaux qui régissent les forces de la nature: dans cet article, nous allons voir comment elle permet notamment de reformuler les définitions de la monnaie et de l’utilité.
 
+![Le travail est un flux d'énergie mécanique]({{ site.baseurl }}/assets/Equivalence_energie_travail.png)
+
+_Le travail est un flux d'énergie mécanique._
+
+
 En établissant une relation d’équivalence entre [monnaie, travail et énergie](https://e-ducat.fr/2021-03-14-monnaie-et-energie/), nous pouvons redéfinir une monnaie comme **une représentation d’une quantité d’énergie: une information sous forme de preuve d’une énergie passée ou promesse d’une énergie future.**
 Une monnaie est ainsi un système d'information permettant de transférer une quantité d’énergie (achetée avec la monnaie) dans le temps et dans l’espace.
 

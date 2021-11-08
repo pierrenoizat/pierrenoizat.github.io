@@ -24,7 +24,6 @@ La [présentation](http://cristal.univ-lille.fr/~jdelahay/temporaire/DelahayeFra
 
 L'énergie reste un sujet de prédilection pour les idiots utiles et la science de pacotille, hélas parfois financée par le contribuable.
 Pour les chercheurs qui ne trouvent rien, il est plus simple de dénigrer, au mépris de la vérité.
-Nicolas  Taleb a écrit brillamment pas moins de 2 livres, [Anti-fragile ](https://www.amazon.fr/Antifragile-bienfaits-Nassim-Nicholas-Taleb/dp/2251444769) et [Jouer sa peau](https://www.amazon.fr/Jouer-peau-Asymétries-cachées-quotidienne/dp/2251447598), sur les lobbyistes qui vivent sans risques.
 Qu'en est il en réalité de l'impact environnemental de Bitcoin ?
 
 1) **La conso de l'algorithme proof of work représente la barrière physique opposée à une réécriture de la blockchain.**
