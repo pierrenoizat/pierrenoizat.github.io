@@ -39,7 +39,7 @@ De ce fait, la preuve d’enjeu peut être vue comme une preuve d’énergie ave
  
 **Dépourvues de preuve d’énergie passée, les promesses d’énergie future ou les preuves d’enjeu peuvent être créées en quantité illimitée**. De plus, tous ces réseaux à preuve d’enjeu peuvent se multiplier et opérer en parallèle. Ces monnaies favorisent le court terme et la consommation en croissance illimitée plutôt que la frugalité et l’investissement.
 
-En général, l’inflation incite les épargnants à se “débarasser” au plus vite de leurs réserves en cash dans des investissements de toutes sortes, y compris de court terme. **La création monétaire en quantité illimitée conduit au financement d’un nombre illimité de projets avec épuisement inéluctable des ressources naturelles.**
+En général, l’inflation incite les épargnants à se “débarrasser” au plus vite de leurs réserves en cash dans des investissements de toutes sortes, y compris de court terme. **La création monétaire en quantité illimitée conduit au financement d’un nombre illimité de projets avec épuisement inéluctable des ressources naturelles.**
 
 A l’inverse, la preuve de travail de Bitcoin permet une création monétaire limitée, propice aux investissements de long terme. La valeur croissante de la monnaie rare évite aux investisseurs le souci de se protéger de l’hyperinflation caractéristique des monnaies créées en quantité illimitée: ils peuvent donc se tourner plus sereinement vers le financement de projets durables.
 
