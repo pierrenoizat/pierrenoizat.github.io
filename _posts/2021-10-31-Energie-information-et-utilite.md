@@ -90,10 +90,14 @@ Or les surplus n’apparaissent qu’avec un flux d’énergie (renouvelable) ca
 Un prix plancher sécurise les investissements dans les énergies renouvelables.
 
 Notons enfin que la notion de bilan carbone brandie à tout bout de champs par certains soit-disants écolos est souvent incomplète.
-L'ADEME en France, le WBCSD et le WRI aux USA ont défini un bilan carbone qui ne s'intéresse qu'aux émissions carbone et non à l'utilité telle que nous l'avons définie. Le bilan carbone est alors tronqué: le coût énergétique de la production ne représente que la colonne "passif".
-L'utilité, c'est dire l'énergie économisée ou libérée, devrait y figurer dans la colonne "actif" qui manque aujourd'hui. Par exemple, Bitcoin, en tant que substitut à l'or, permettrait d'économiser le coût du minage de l'or, nettement plus polluant. 
+L'ADEME en France, le [WBCSD et le WRI aux USA](https://ghgprotocol.org/about-wri-wbcsd) ont défini un "bilan" qui ne s'intéresse qu'aux émissions de gaz à effets de serrre et non à l'utilité telle que nous l'avons définie.
+
+Je cite la définition prônée par l'[ADEME](https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/principes/siGras/0): "Un Bilan GES est une évaluation de la quantité de gaz à effet de serre émise (ou captée) dans l’atmosphère sur une année par les activités d’une organisation ou d'un territoire."
+
+Le bilan est alors tronqué au sens comptable sous-tendu par le choix du mot "bilan": le coût énergétique et les émissions de gaz à effet de serre liés à la production ne représentent que la colonne "passif".
+L'utilité, c'est dire l'énergie économisée ou libérée, devrait y figurer dans une colonne "actif" qui manque aujourd'hui. 
+Par exemple, Bitcoin, en tant que substitut à l'or, permettrait d'économiser le coût du minage de l'or, nettement plus polluant. 
 On voit bien qu'exclure la colonne "utilité" du bilan carbone permet à certains de décider arbitrairement pour la collectivité ce qui est utile et ce qui ne l'est pas, en fonction de leur agenda.
-La méthodologie normalisée par l'ADEME et l'ORSE pour le calcul de ce faux bilan carbone ignore totalement l'utilité.
 
 La “green tech” n’est pas toujours celle qu’on croit.
 
