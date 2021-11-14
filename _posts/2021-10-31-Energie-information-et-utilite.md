@@ -20,6 +20,15 @@ author:
   last_name: 'Noizat'
 ---
 
+L'indice "baguette" représente le temps de travail nécessaire pour acheter une baguette. Il explicite ce lien intuitif que nous faisons entre le coût d'un bien ou d'un service et une quantité d'énergie. En effet, le temps de travail est relié à la quantité d'énergie utilisée à une puissance donnée par l'équation
+Puissance = Energie/Temps.
+
+![Lindice Baguette]({{ site.baseurl }}/assets/graphique_indice_baguette.jpeg)
+
+A ce stade, les plus attentifs de mes lecteurs pourraient objecter que la puissance de travail varie d'un individu à un autre et ils auraient raison: le temps de travail est une approximation et la quantité d'énergie est une mesure plus précise. Cependant, le temps de travail exprimé en minutes est une notion beaucoup plus parlante pour la plupart d'entre nous qu'une quantité d'énergie exprimée en Joule. d'où l'intérêt pédagogique de l'indice baguette.
+
+
+
 La science de l’énergie est une source d’inspiration pour repenser l’économie à la lumière des 3 principes fondamentaux qui régissent les forces de la nature: dans cet article, nous allons voir comment elle permet notamment de reformuler les définitions de la monnaie et de l’utilité.
 
 ![Le travail est un flux d'énergie mécanique]({{ site.baseurl }}/assets/Equivalence_energie_travail.png)
@@ -76,9 +85,18 @@ Bitcoin est utile économiquement en tant que système monétaire avec ses propr
 
 Bien sûr l’utilisation de l’énergie par Bitcoin l’expose aux comparaisons trompeuses des propagandistes du statu quo: le minage de l’or,  les data centers de Youtube, Youporn et des banques, tous ces systèmes utilisent chacun davantage d’énergie que Bitcoin. Ils utilisent une énergie en forte demande alors que Bitcoin utilise d’abord l’énergie la moins chère.
 
-Les data centers des banques doivent en effet se situer près des grands axes densément peuplés où la demande en énergie est déjà forte alors que les mineurs Bitcoin peuvent pratiquer un arbitrage géographique pour opérer là où l’énergie est moins chère c’est à dire là où il existe des surplus de production. 
-Or les surplus n’apparaissent qu’avec un flux d’énergie (renouvelable) car la vente d’un stock d’énergie (fossile) peut toujours être différée pour le vendre au plus haut de la demande. Un prix plancher sécurise les investissements dans les énergies renouvelables.
-La “green tech” n’est donc pas celle qu’on croit.
+Les data centers des banques doivent en effet se situer près des grands axes densément peuplés où la demande en énergie est déjà forte alors que les mineurs Bitcoin peuvent pratiquer un arbitrage géographique pour opérer là où l’énergie est moins chère c’est à dire là où existent des surplus de production. 
+Or les surplus n’apparaissent qu’avec un flux d’énergie (renouvelable) car la vente d’un stock d’énergie (fossile) peut toujours être différée pour le vendre au plus haut de la demande. 
+Un prix plancher sécurise les investissements dans les énergies renouvelables.
+
+Notons enfin que la notion de bilan carbone brandie à tout bout de champs par certains soit-disants écolos est souvent incomplète.
+L'ADEME en France, le WBCSD et le WRI aux USA ont défini un bilan carbone qui ne s'intéresse qu'aux émissions carbone et non à l'utilité telle que nous l'avons définie. Le bilan carbone est alors tronqué: le coût énergétique de la production ne représente que la colonne "passif".
+L'utilité, c'est dire l'énergie économisée ou libérée, devrait y figurer dans la colonne "actif" qui manque aujourd'hui. Par exemple, Bitcoin, en tant que substitut à l'or, permettrait d'économiser le coût du minage de l'or, nettement plus polluant. 
+On voit bien qu'exclure la colonne "utilité" du bilan carbone permet à certains de décider arbitrairement pour la collectivité ce qui est utile et ce qui ne l'est pas, en fonction de leur agenda.
+La méthodologie normalisée par l'ADEME et l'ORSE pour le calcul de ce faux bilan carbone ignore totalement l'utilité.
+Par le plus grand des hasards, le président de l'ORSE est un ancien banquier.
+
+La “green tech” n’est pas toujours celle qu’on croit.
 
 
 
