@@ -94,7 +94,6 @@ L'ADEME en France, le WBCSD et le WRI aux USA ont défini un bilan carbone qui n
 L'utilité, c'est dire l'énergie économisée ou libérée, devrait y figurer dans la colonne "actif" qui manque aujourd'hui. Par exemple, Bitcoin, en tant que substitut à l'or, permettrait d'économiser le coût du minage de l'or, nettement plus polluant. 
 On voit bien qu'exclure la colonne "utilité" du bilan carbone permet à certains de décider arbitrairement pour la collectivité ce qui est utile et ce qui ne l'est pas, en fonction de leur agenda.
 La méthodologie normalisée par l'ADEME et l'ORSE pour le calcul de ce faux bilan carbone ignore totalement l'utilité.
-Par le plus grand des hasards, le président de l'ORSE est un ancien banquier.
 
 La “green tech” n’est pas toujours celle qu’on croit.
 
