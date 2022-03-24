@@ -39,7 +39,7 @@ _Les prix ne récompensent pas toujours le discernement et la vision._
 
 Je vais donc m’efforcer de développer une perspective différente, plus factuelle qu’idéologique, pour permettre à chacun de développer sa réflexion.
 
-Mon [premier article]({{ site.baseurl }}{% link _posts/2016-10-16-preuves-de-travail-monumentales.md %}) sur ce sujet, il y a 6 ans déjà, n'a pas suffit.
+Mon [premier article]({{ site.baseurl }}{% link _posts/2016-10-16-preuves-de-travail-monumentales.md %}) sur ce sujet, il y a 6 ans déjà, n'a pas suffi.
 
 La quantité de fake news déversée depuis nous ramène à **la loi de Brandolini** qui énonce l’asymétrie entre l’énergie nécessaire à la formulation d’une proposition fausse et celle, infiniment supérieure, qui est nécessaire pour la réfuter (Jean-Pierre Riou, europeanscientist.com 2021).
 
