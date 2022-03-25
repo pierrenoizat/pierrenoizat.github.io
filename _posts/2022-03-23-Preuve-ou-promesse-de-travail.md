@@ -159,12 +159,15 @@ La création de valeur peut se définir aussi comme la conversion d’une énerg
 **Comment fonctionne l’énergie ?**
 
 Rappelons les 3 principes de la thermodynamique:
+
 1er principe: conservation de l’énergie
-2nd principe: toute transformation de l’énergie est en pratique imparfaite et  s’accompagne d’une augmentation de l’entropie qui la rend partiellement irréversible, ce qui introduit la perception d’un écoulement du temps à l’échelle macroscopique.
+
+2e principe: toute transformation de l’énergie est en pratique imparfaite et  s’accompagne d’une augmentation de l’entropie qui la rend partiellement irréversible, ce qui introduit la perception d’un écoulement du temps à l’échelle macroscopique.
+
 3e principe: toute structure dissipative (système ouvert) s’auto-organise pour maximiser le flux d’énergie qui la traverse. Elle importe de l’information pour diminuer son entropie.
 
 
-Alors que le deuxième principe de la thermodynamique (la science de l’énergie) formulé par Carnot, fait le lien en information et énergie, le 3e principe , énoncé beaucoup plus récemment, n’explique rien moins que le fonctionnement des forces de la nature.
+Alors que le deuxième principe de la thermodynamique formulé par Carnot, fait le lien en information et énergie, le 3e principe , énoncé beaucoup plus récemment, n’explique rien moins que le fonctionnement des forces de la nature.
 
 Sachant que tout système observable dans la nature est un système ouvert au sens de la thermodynamique (un système fermé ne peut exister qu’en laboratoire ou dans une expérience de pensée), on comprend la portée énorme de ce 3e principe, dit MEP en anglais pour “Maximum Entropy Production”, aux plans scientifiques, économiques et philosophiques.
 
@@ -172,13 +175,13 @@ Sachant que tout système observable dans la nature est un système ouvert au se
 
 Qu’entend on par ces expressions mystérieuses que sont auto-organisation et flux d’énergie qui traverse un système ouvert ? 
 
-Commençons par ce concept d’auto-organisation.
+Commençons par ce concept d’**auto-organisation**.
 
 Si tout système observable est un système ouvert qui s’auto-organise, ça signifie que les particules élémentaires s’organisent spontanément en atomes, les atomes en molécules, les molécules en êtres vivants, les êtres vivants en sociétés, les sociétés en espèces, jusqu’à l’univers observables tout entier et au-delà. 
 
 ![structures dissipatives]({{ site.baseurl }}/assets/structures_dissipatives.JPG)
 
-On parle aussi de structures dissipatives pour désigner ces systèmes ouverts.
+On parle aussi de **structures dissipatives** pour désigner ces systèmes ouverts.
 
 Une structure dissipative importe de l’information qui diminue son entropie interne: elle s’auto-organise afin de dissiper un maximum d’énergie.
 
@@ -188,7 +191,7 @@ Si j’ai conçu le système, j’ai réduit l’entropie de ce système pour mo
 Chaque espèce s’auto-organise pour maximiser le nombre d’individus grâce à la reproduction et chaque individu de l’espèce s’auto-organise pour maximiser ses capacités, c’est à dire son propre flux d’énergie.
 Le vivant s’auto-organise en formant des structures vivantes de plus en plus complexes: la diminution de l’entropie se traduit par une plus grande capacité à produire du travail mécanique donc à dissiper de l’énergie.
 
-Un système qui s’auto-organise a une évolution imprévisible car son entropie diminue: la réduction d’entropie consiste, par défintion, en l’apparition d’informations nouvelles imprévues.
+Un système qui s’auto-organise a une évolution imprévisible car son entropie diminue: la réduction d’entropie consiste, par définition, en l’apparition d’informations nouvelles imprévues.
 A l’opposé, l’évolution d’un système isolé vers davantage d’entropie (par exemple, la décomposition après la mort, la mort siginifiant la fin du traitement de l’énergie par la structure dissipative) est prévisible.
 
 L’imbrication vertigineuse des structures dissipatives  dans l’espace n’a semble t il ni début ni fin, pas plus que le temps qui s’écoule. 
@@ -202,7 +205,7 @@ En effet, l’évolution d’une structure dissipative complexe reste largement 
 De plus, la maximisation du flux à l’échelle de chaque structure et leur imbrication rend les schémas d’auto-organisation interdépendants.
 Ce qui est parfaitement déterminé c’est bien le sens de l’auto-organisation qui sera toujours de maximiser le flux d’énergie.
 
-Dieu est l’autre nom que les gens donnent à l’énergie.
+Dieu est l’autre nom que les croyants donnent à l’énergie.
 Comme lui, elle est à la fois invisible et omniprésente.
 
 
@@ -273,12 +276,12 @@ Les monnaies fiat centralisées sont elles-mêmes des formes corrompues de monna
 
 Du fait de ce mécanisme de création monétaire fléché vers ceux qui détiennent déjà davantage de monnaie, la monnaie fiat centralisée est la cause principale d’un accroissement des inégalités.
 
- L’effet de cette création monétaire fléchée est amplifié par l'« effet Cantillon », selon lequel “une injection de monnaie dans l'économie exerce un effet progressif et différencié sur les prix au fur et à mesure que la monnaie se propage par les échanges à partir du point où elle a été injectée”.(Wikipedia) . Autrement dit, puisque les crédits financent le plus souvent des acquistions, les prix des biens acquis par ce biais s’apprécient plus vite que les revenus salariaux.
+ L’effet de cette création monétaire fléchée est amplifié par l'« effet Cantillon », selon lequel “une injection de monnaie dans l'économie exerce un effet progressif et différencié sur les prix au fur et à mesure que la monnaie se propage par les échanges à partir du point où elle a été injectée”.(Wikipedia) . Autrement dit, puisque les crédits financent le plus souvent des acquisitions, les prix des biens acquis par ce biais s’apprécient plus vite que les revenus salariaux.
 
 Les écarts de revenus inhérentes au capitalisme qui récompense la performance sont considérablement étirés par le monopole de la monnaie promesse.
 La redistribution par l’impôt trouve ses limites dans la loi de Laffer. 
 Elle ne saurait compenser les effets d’une distribution primaire centralisée fondée sur le le crédit.
-En amont de toute redistribution, une distribution primaire équitable de la monnaie est la condition d’un capitalisme de progrès équitable.
+En amont de toute redistribution, une distribution primaire équitable de la monnaie est la condition d’un capitalisme éthique.
 
 **Preuve d’énergie et minage**
 
@@ -302,8 +305,11 @@ En réalité, la majorité des mineurs cherche à s’assurer les meilleures con
 Même si des batteries peuvent assurer un rôle d’amortisseur, outre l’empreinte environnementale très défavorable de leur fabrication, leur capacité ne peut être ajustée facilement et rapidement.
 
 En clair, elles ne peuvent absorber 100% des surplus:
+
 1) Il y aura donc toujours des surplus d’énergie renouvelable
+
 2)  Le protocole Bitcoin permet de les monétiser
+
 3) La monétisation des surplus améliore la rentabilité des investissements dans les énergies renouvelables.
 
 **Conclusion**
@@ -321,7 +327,7 @@ Avec la thermodynamique, nous pouvons mieux cerner macroscopiquement les notions
 
 **rentabilité** <> quand l’énergie d’activation est inférieure à l’énergie libérée
 
-![Utilité espérée]({{ site.baseurl }}/assets/utilité_espérée.gif)
+![Utilité espérée]({{ site.baseurl }}/assets/expected_usefullness.png)
 
 L’utilité est toujours relative: elle peut même prendre des valeurs négatives en fonction du contexte. (image: www.yildizoglu.fr). Dans l’exemple du parapluie, on économise de l’énergie en restant sec en cas de pluie mais, si il fait beau, on dépense de l’énergie juste pour porter le parapluie.
 
