@@ -21,7 +21,7 @@ author:
   last_name: 'Noizat'
 ---
 
-![Newsweek on Bitcoin mining 2017]({{ site.baseurl }}/assets/Newsweek_on_Bitcoin_mining_2017.jpeg){:height="500px" width="500px"}
+<div><img src="{{ site.baseurl }}/assets/Newsweek_on_Bitcoin_mining_2017.jpeg" width='500'></div>
 
 _Newsweek sur Bitcoin en 2017: 
 un mensonge répété suffisammment souvent peut servir de vérité._
