@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preuve et promesse de travail
+title: Preuve vs promesse de travail
 date: 2022-03-23 00:40:51.000000000 +01:00
 type: post
 published: true
@@ -10,7 +10,7 @@ categories:
 - Technologie
 - Economie
 - Environnement
-tags: [preuve]
+tags: [preuve de travail, énergie]
 meta:
   _edit_last: '1'
 author:
@@ -21,9 +21,10 @@ author:
   last_name: 'Noizat'
 ---
 
-![Newsweek on Bitcoin mining 2017]({{ site.baseurl }}/assets/Newsweek_on_Bitcoin_mining_2017.jpeg)
+![Newsweek on Bitcoin mining 2017]({{ site.baseurl }}/assets/Newsweek_on_Bitcoin_mining_2017.jpeg){:height="500px" width="500px"}
 
-_Newsweek sur Bitcoin en 2017: un mensonge répété suffisammment souvent peut servir de vérité._
+_Newsweek sur Bitcoin en 2017: 
+un mensonge répété suffisammment souvent peut servir de vérité._
 
 Nous sommes bombardés depuis plusieurs années par un narratif autour de la preuve de travail, qui la présente comme “énergivore” et néfaste à l’environnement tandis que la preuve d’enjeu serait une technologie verte et vertueuse.
 
