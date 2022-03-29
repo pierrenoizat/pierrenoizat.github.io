@@ -34,7 +34,8 @@ Il est repris aussi par les promoteurs de monnaies à preuve d’enjeu dont la c
 Il est répété enfin par des écologistes politiques qui trouvent là un discours facile à vendre à des électeurs peu informés et peu éduqués sur la science de l’énergie.
 
 
-![Krugman on Internet 1998]({{ site.baseurl }}/assets/krugman_on_internet_1998.png)
+
+<div><img src="{{ site.baseurl }}/assets/krugman_on_internet_1998.png" width='500'></div>
 
 _Les prix ne récompensent pas toujours le discernement et la vision._
 
@@ -44,8 +45,7 @@ Mon [premier article]({{ site.baseurl }}{% link _posts/2016-10-16-preuves-de-tra
 
 La quantité de fake news déversée depuis nous ramène à **la loi de Brandolini** qui énonce l’asymétrie entre l’énergie nécessaire à la formulation d’une proposition fausse et celle, infiniment supérieure, qui est nécessaire pour la réfuter (Jean-Pierre Riou, europeanscientist.com 2021).
 
-![Simple answer vs complex answer]({{ site.baseurl }}/assets/simple_and_complex_answers.png)
-
+<div><img src="{{ site.baseurl }}/assets/simple_and_complex_answers.png" width='500'></div>
 
 Nous allons commencer par rappeler les bases scientifiques du fonctionnement de l’énergie puis le lien entre monnaie et énergie.
 
@@ -165,7 +165,7 @@ Rappelons les 3 principes de la thermodynamique:
 
 2e principe: toute transformation de l’énergie est en pratique imparfaite et  s’accompagne d’une augmentation de l’entropie qui la rend partiellement irréversible, ce qui introduit la perception d’un écoulement du temps à l’échelle macroscopique.
 
-3e principe: toute structure dissipative (système ouvert) s’auto-organise pour maximiser le flux d’énergie qui la traverse. Elle importe de l’information pour diminuer son entropie.
+3e principe: toute structure dissipative (système ouvert) s’auto-organise pour maximiser le flux d’énergie qui la traverse. Elle importe de l’information pour diminuer son entropie en l'exportant vers son environnement.
 
 
 Alors que le deuxième principe de la thermodynamique formulé par Carnot, fait le lien en information et énergie, le 3e principe , énoncé beaucoup plus récemment, n’explique rien moins que le fonctionnement des forces de la nature.
@@ -247,7 +247,7 @@ L’absence d’oscillation correspond à l’état de mort: un drapeau n’est 
 
 **Et la preuve de travail dans tout ça ?**
 
-![PoW]({{ site.baseurl }}/assets/POW.jpg)
+<div><img src="{{ site.baseurl }}/assets/POW.jpg" width='500'></div>
 
 Vous l’avez compris: le réseau Bitcoin est aussi une structure dissipative.
 
@@ -295,7 +295,7 @@ En cas de chute de l’offre du fait de l’intermittence des énergies renouvel
 
 En résumé, il n’y a pas ou peu de surplus à trouver dans les pays développés hormis l’énergie du méthane qui s’échappe dans le cycle de production des industries pétrolières (‘flare methan’ en anglais).
 
-![Torchere]({{ site.baseurl }}/assets/Flare.png)
+<div><img src="{{ site.baseurl }}/assets/Flare.png" width='500'></div>
 
 Certains mineurs exploitent d’ailleurs ces surplus, ce qui a pour effet de réduire légèrement les émissions de CO2 liées à ce méthane.
 
