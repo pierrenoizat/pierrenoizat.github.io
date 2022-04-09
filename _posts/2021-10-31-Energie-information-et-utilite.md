@@ -90,7 +90,7 @@ Or les surplus n’apparaissent qu’avec un flux d’énergie (renouvelable) ca
 Un prix plancher sécurise les investissements dans les énergies renouvelables.
 
 Notons enfin que la notion de bilan carbone brandie à tout bout de champs par certains soit-disants écolos est souvent incomplète.
-L'ADEME en France, le [WBCSD et le WRI aux USA](https://ghgprotocol.org/about-wri-wbcsd) ont défini un "bilan" qui ne s'intéresse qu'aux émissions de gaz à effets de serrre et non à l'utilité telle que nous l'avons définie.
+L'ADEME en France, le [WBCSD et le WRI aux USA](https://ghgprotocol.org/about-wri-wbcsd) ont défini un "bilan" qui ne s'intéresse qu'aux émissions de gaz à effets de serre et non à l'utilité telle que nous l'avons définie.
 
 Je cite la définition prônée par l'[ADEME](https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/principes/siGras/0): "Un Bilan GES est une évaluation de la quantité de gaz à effet de serre émise (ou captée) dans l’atmosphère sur une année par les activités d’une organisation ou d'un territoire."
 
