@@ -39,7 +39,7 @@ Il est répété enfin par des écologistes politiques qui trouvent là un disco
 
 _Les prix ne récompensent pas toujours le discernement et la vision._
 
-Je vais donc m’efforcer de développer une perspective différente, plus factuelle qu’idéologique, pour permettre à chacun de développer sa réflexion.
+Je vais donc présenter ici une perspective différente, plus factuelle qu’idéologique.
 
 Mon [premier article]({{ site.baseurl }}{% link _posts/2016-10-16-preuves-de-travail-monumentales.md %}) sur ce sujet, il y a 6 ans déjà, n'a pas suffi.
 
@@ -154,7 +154,7 @@ Dans le cas où une énergie est économisée, la création de valeur se défini
 
 Par exemple, la logisitique crée de la valeur en acheminant des biens matériels ( réserves d’énergie) d’une usine (où les biens ne sont pas utilisés) à des clients qui vont les utiliser.
 
-Autre exemple: rédiger un plan de montage pour un meuble en kit crée de la valeur en économisant l’énergie que le client aurait du consacrer à deviner la logique du montage: il aurait mis le double du temps et donc de son énergie pour monter le meuble.
+Autre exemple: rédiger un plan de montage pour un meuble en kit crée de la valeur en économisant l’énergie que le client aurait du consacrer à deviner la logique du montage. Sans plan, il aurait mis le double du temps et donc de son énergie pour monter le meuble.
 
 
 **Comment fonctionne l’énergie ?**
@@ -243,7 +243,7 @@ Le flux d’énergie indidente sous la forme des grains versés est dissipé par
 Cette expérience du tas de sable a été étudiée en profondeur par le physicien Per Bak dans son livre [How nature works](https://www.amazon.com/How-Nature-Works-self-organized-criticality/dp/038798738X).
 
 Ce phénomène d’oscillations quantiques caractérise les sytèmes ouverts. 
-L’absence d’oscillation correspond à l’état de mort: un drapeau n’est à l’équilibre que quand il est en berne, en l’absence de vent, sinon il flotte au vent dans un état oscillatoire qui lui permet d’évacuer un maximum d’énergie éolienne.
+L’absence d’oscillation correspond à l’état de mort: un drapeau est à l’équilibre seulement quand il est en berne, en l’absence de vent, sinon il flotte au vent dans un état oscillatoire qui lui permet d’évacuer un maximum d’énergie éolienne.
 
 **Et la preuve de travail dans tout ça ?**
 
@@ -304,9 +304,9 @@ Certains mineurs exploitent d’ailleurs ces surplus, ce qui a pour effet de ré
 
 En réalité, la majorité des mineurs cherche à s’assurer les meilleures conditions économiques auprès des producteurs d’électricité et se tournent naturellement vers ceux qui ont des surplus, c’est à dire ceux qui exploitent des énergies renouvelables.
 
-**Les surplus sont consubstantiels aux énergies renouvelables** car il est en pratique impossible qu’un flux, par nature largement imprévisible, soit égal à toute instant à la demande.
+**Les surplus sont consubstantiels aux énergies renouvelables** car il est en pratique impossible qu’un flux, par nature largement imprévisible, soit égal à tout instant à la demande.
 
-Même si des batteries peuvent assurer un rôle d’amortisseur, outre l’empreinte environnementale très défavorable de leur fabrication, leur capacité ne peut être ajustée facilement et rapidement.
+Même si des batteries peuvent assurer un rôle d’amortisseur, outre l’impact environnemental très néfaste de leur fabrication, leur capacité ne peut être ajustée facilement et rapidement.
 
 En clair, elles ne peuvent absorber 100% des surplus:
 
