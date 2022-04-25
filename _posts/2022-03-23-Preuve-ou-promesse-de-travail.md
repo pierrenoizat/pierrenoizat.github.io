@@ -58,8 +58,6 @@ Le premier principe de la thermodynamique énonce que “Rien se perd, rien ne s
 
 Un échange d’énergie consiste à capter un flux d’énergie et/ou à libérer une réserve d’énergie.
 
-![Energie primaire et distribution]({{ site.baseurl }}/assets/primary_energy_distribution.png)
-
 Un flux d’énergie peut se rencontrer dans la vie quotidienne typiquement sous de multiples formes:  un courant électrique, un travail mécanique, un rayon de soleil ou un coup de vent.
 Le flux d’une rivière pourra alimenter un barrage qui, grâce à ses turbines, transformera ce flux d’énergie potentielle gravitationnelle de l’eau en énergie électrique.
 
@@ -108,10 +106,9 @@ Pour les pallier, il est tentant d’utiliser comme monnaie **une information re
 C’est pourquoi cette subsitution de la monnaie matière première au profit de la monnaie papier portant une information s’est opérée à partir de la Renaissance, période de développement rapide du commerce et des échanges internationaux.
 A cette époque, les gens ont commencé à déposer leur or (monnaie matière première donc stock d’énergie) chez des tiers de confiance en échange d’une promesse de remboursement de cet or (reconnaissance de dette donc information représentant l’énergie déposée chez le tiers de confiance).
 
-C’est à ce moment que les systèmes monétaires ont commencé à basculer de l’échange d’énergie à l’échange d’une information qui représente une énergie. Concrètement, on est passé depuis d’un échange contre matière première (métal) à un échange contre une promesse de remboursement ou contre une preuve de travail.
+C’est à ce moment que les systèmes monétaires ont commencé à basculer de l’échange d’énergie à l’échange d’une information représentant une énergie. Concrètement, on est passé depuis d’un échange contre matière première (métal) à un échange contre une promesse de remboursement ou contre une preuve de travail.
 
 Les pièces d’or ont été progressivement remplacées par des reconnaissances de dette sous forme de papier sans autre valeur que l’information qu’il porte.
-Les sociétés humaines ont donc fait évoluer leurs systèmes monétaires de l’énergie à une représentation de l’énergie.
 
 Comme vu précédemment, la différence entre énergie et information est fondamentale: **l’information se copie alors que l’énergie se conserve**.
 
@@ -139,16 +136,17 @@ Les scientifiques définissent l’information comme une donnée qui permet de r
 Cette incertitude se mesure par une grandeur physique, tout aussi abstraite et invisible que l’énergie, appelée entropie. 
 
 Les flux d’énergie et d’entropie, quoique intangibles, ont des effets bien réels et perceptibles.
-En effet, si je dispose d’un plan (une information sur mon environnement) pour traverser une forêt inconnue, je vais utiliser moins d’énergie que si je n’ai pas de plan.
+S'il dispose d’une information sur son environnement, comme la carte d'une forêt inconnue, il utilisera moins d’énergie pour la traverser que si il n'avait pas de carte.
 L’information  est donc équivalente à une quantité d’énergie. 
 Pourtant, le premier principe permet de distinguer une quantité d’énergie d’une information car l’information, contrairement à l’énergie, peut être répliquée autant de fois qu’on veut. 
 Si je donne une information, je l’ai encore après l’avoir donnée.
 A l’inverse, si je transfère une énergie, par exemple en transformant l’énergie chimique stockée dans une batterie en un flux d’énergie électrique, je ne l’ai plus.
 La loi de conservation est le critère qui permet de distinguer clairement l’information de l’énergie.
 
-En résumé, le travail intellectuel, à défaut de se traduire par un transfert direct d’énergie mécanique, consiste en une réduction d’entropie qui permet d’utiliser moins d’énergie et/ou de libérer une réserve d’énergie.
+En résumé, le travail intellectuel, à défaut de se traduire par un transfert direct d’énergie mécanique, consiste en une réduction d’entropie.
+Toute réduction d'entropie permet d’utiliser moins d’énergie pour produire un même travail et/ou de libérer une réserve d’énergie.
 
-De manière générale, la **création de valeur** se définit comme toute activité permettant de **libérer** une énergie (la rendre utilisable, on parle alors d’énergie libre) ou d’**économiser** une énergie.
+De manière générale, la **création de valeur** se définit comme toute activité permettant de **libérer** une énergie (la rendre utilisable, on parle alors d’énergie libre) ou d’**économiser** une énergie (produire davantage avec la même quantité d'énergie).
 
 Dans le cas où une énergie est économisée, la création de valeur se définit souvent comme la conversion d’une énergie sous une forme donnée vers une forme plus facilement utilisable, typiquement la conversion d’un flux d’énergie (travail) en un stock d’énergie (matière première utilisable, produit fini, énergie interne, énergie potentielle, etc).
 
@@ -161,16 +159,19 @@ Autre exemple: rédiger un plan de montage pour un meuble en kit crée de la val
 
 Rappelons les 3 principes de la thermodynamique:
 
-1er principe: conservation de l’énergie
+1er principe: **conservation** de l’énergie
 
-2e principe: toute transformation de l’énergie est en pratique imparfaite et s’accompagne d’une augmentation de l’entropie qui la rend partiellement irréversible, ce qui introduit la perception d’un écoulement du temps à l’échelle macroscopique.
+<div><img src="{{ site.baseurl }}/assets/primary_energy_distribution.png" width='500'></div>
 
-3e principe: toute structure dissipative (système ouvert) s’auto-organise pour maximiser le flux d’énergie qui la traverse. Elle importe de l’information pour diminuer son entropie en l'exportant vers son environnement.
+_Une grande partie de l'énergie est dissipée dans les processus de transformation et de distribution._
 
+2e principe: toute transformation de l’énergie est en pratique imparfaite et s’accompagne d’une **augmentation de l’entropie** qui la rend partiellement irréversible, ce qui introduit la perception d’un écoulement du temps à l’échelle macroscopique.
+
+3e principe: toute structure dissipative (système ouvert) **s’auto-organise pour maximiser le flux d’énergie** qui la traverse. Elle importe de l’information pour diminuer son entropie en l'exportant vers son environnement.
 
 Alors que le deuxième principe de la thermodynamique formulé par Carnot, fait le lien en information et énergie, le 3e principe , énoncé beaucoup plus récemment, n’explique rien moins que le fonctionnement des forces de la nature.
 
-Sachant que tout système observable dans la nature est un système ouvert au sens de la thermodynamique (un système fermé ne peut exister qu’en laboratoire ou dans une expérience de pensée), on comprend la portée énorme de ce 3e principe, dit MEP en anglais pour “Maximum Entropy Production”, aux plans scientifiques, économiques et philosophiques.
+Sachant que tout système observable dans la nature est un système ouvert au sens de la thermodynamique (un système fermé ne peut exister qu’en laboratoire ou dans une expérience de pensée), on comprend la portée énorme de ce 3e principe, dit MEP en anglais pour “Maximum Entropy Production”.
 
 **Illustration et conséquences du 3e principe**
 
