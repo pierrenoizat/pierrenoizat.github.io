@@ -25,23 +25,22 @@ Les partisans du monopole monétaire clament souvent que Bitcoin et les cryptomo
 Qu'en est t il vraiment ?
 
 Tirons un premier trait sur la **spéculation et le casino**. Les "spéculateurs" sont en fait des investisseurs qui utilisent les informations dont ils disposent pour parier sur un déroulement futur. 
-Par exemple, si vous avez étudié le fonctionnement des monnaies "fiat" traditionnelles, vous avez constaté que leur masse circulante augmente considérabement année après année. 
+Par exemple, si vous avez étudié le fonctionnement des monnaies "fiat" traditionnelles, vous avez constaté que leur masse circulante augmente considérablement année après année. 
 
 <div><img src="{{ site.baseurl }}/assets/Taille_Bilan_BCE_EUR.JPG" width='500'></div>
 
 _Evolution de la taille du bilan de la BCE entre 2008 et 2021_
 
-Vous pouvez donc parier qu'elles vont se déprécier au fil de temps et miser sur un actif qui, lui, va s'apprécier à cause de sa rareté combinée à une utilité. La spéculation consiste à discerner ce qui sera utile avec un horizon temporel plus ou moins lointain, que se fixe le spéculateur.
+Vous pouvez donc parier qu'elles vont se déprécier au fil de temps et miser sur un actif qui, lui, va s'apprécier à cause de sa rareté combinée à une utilité. La spéculation consiste à discerner ce qui sera utile avec un horizon temporel plus ou moins lointain que se fixe le spéculateur.
 
 Le discernement du spéculateur conditionne son succès car rareté et utilité sont des notions relatives, hautement dépendantes du contexte et de sa temporalité. L'eau est généralement abondante dans nos contrées mais rare dans le désert. Une paire de skis est utile au skieur mais sans intérêt pour celui qui n'aime pas la montagne. Une calèche était utile au 19e siècle, beaucoup moins après l'adoption de l'automobile.
 
-La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. Le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. Seuls les spéculateurs avisés qui ont travaillé leur sujet, peuvent réussir. Les autres perdent, dans un jeu à somme nulle.
-
+La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. Le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. Seuls les spéculateurs avisés qui ont travaillé leur sujet, peuvent réussir.
 Quant à l'**utilité**, qui doit la définir si elle est subjective ? 
 
-Seule une logique totalitaire permet de dicter à chacun ce qui lui est utile ou pas. Si le dictateur n'est pas amateur de ski, il va décreter que les pistes et les remontées mécaniques sont inutiles.
+Il faut une logique totalitaire pour dicter à chacun ce qui lui est utile ou pas. Si le dictateur n'est pas amateur de ski, il va décreter que les pistes et les remontées mécaniques sont inutiles.
 
-Si le monopole monétaire est tellement vertueux, pourquoi ne fait il pas l'objet d'un débat démocratique ? 
+Si le monopole monétaire est tellement vertueux, pourquoi n'en parle-t-on jamais ? 
 
 A défaut de pouvoir m'exprimer par un vote, si les défauts de l'euro ne sont pas compatibles avec ma vision du monde, Bitcoin m'est utile pour marquer mon désaccord. Il m'est utile aussi pour envoyer un paiement à l'étranger, à moindre frais et plus rapidement qu'avec les moyens de paiement bancaire. Il m'est utile encore, dans certains pays, si je veux me protéger de la confiscation arbitraire ou de l'inflation galopante.
 
