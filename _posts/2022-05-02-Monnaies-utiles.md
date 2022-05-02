@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Monnaies utiles
-date: 2022-04-22 00:40:51.000000000 +01:00
+date: 2022-05-01 00:40:51.000000000 +01:00
 type: post
-published: false
+published: true
 status: draft
 categories:
 - Bitcoin
@@ -31,11 +31,11 @@ Par exemple, si vous avez étudié le fonctionnement des monnaies "fiat" traditi
 
 _Evolution de la taille du bilan de la BCE entre 2008 et 2021_
 
-Vous pouvez donc parier qu'elles vont se déprécier au fil de temps et miser sur un actif qui, lui, va s'apprécier à cause de sa rareté combinée à une utilité. La spéculation consiste à discerner ce qui sera utile avec un horizon temporel plus ou moins lointain, qui dépend du spéculateur.
+Vous pouvez donc parier qu'elles vont se déprécier au fil de temps et miser sur un actif qui, lui, va s'apprécier à cause de sa rareté combinée à une utilité. La spéculation consiste à discerner ce qui sera utile avec un horizon temporel plus ou moins lointain, que se fixe le spéculateur.
 
 Le discernement du spéculateur conditionne son succès car rareté et utilité sont des notions relatives, hautement dépendantes du contexte et de sa temporalité. L'eau est généralement abondante dans nos contrées mais rare dans le désert. Une paire de skis est utile au skieur mais sans intérêt pour celui qui n'aime pas la montagne. Une calèche était utile au 19e siècle, beaucoup moins après l'adoption de l'automobile.
 
-La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. Le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. Seuls les spéculateurs avisés qui ont travaillé leur sujet, peuvent réussir.
+La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. Le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. Seuls les spéculateurs avisés qui ont travaillé leur sujet, peuvent réussir. Les autres perdent, dans un jeu à somme nulle.
 
 Quant à l'**utilité**, qui doit la définir si elle est subjective ? 
 
@@ -50,10 +50,15 @@ Sinon, Bitcoin est utile car différent.
 Autrement dit, si l’euro est imparfait, Bitcoin ne peut être qu'imparfaitement inutile voire parfaitement utile.
 
 Quelles sont donc les imperfections de l’euro ?
+
 1) Les **coûts** directs et les coûts d'opportunité de son organisation "labor intensive".
+
 2) L'**inéquité** de sa distribution primaire par le crédit que la redistribution par l'impot ne saurait compenser (courbe de Laffer).
+
 3) L'**arbitraire** de sa distribution primaire par le crédit qui crée une ploutocratie bénéficiant de l'effet Cantillon.
+
 4) La **fragilité** inhérente à la centralisation ("single point of failure") combinée au monopole.
+
 5) L'**incitation à la surenchère** et à la surconsommation, inhérente à la monnaie promesse créée en quantité potentiellement illimitée. Ce dernier point devrait être compensé par les effets du progrès technologiques (qui sont préemptés par la création monétaire) mais l'invention de Bitcoin est précisément un progrès.
 
 
@@ -64,6 +69,7 @@ Parmi ces défauts, le monopole monétaire, l'incitation à la surenchère élec
 Avec les présidentielles, la dégradation de la démocratie élective se manifeste périodiquement: nous élisons des professionnels des élections.
 Ces commerciaux de haute volée ont pour seul produit leur propre personne avec pour seules armes les promesses électorales et leur éloquence.
 Nous allons voir que le problème des promesses a des conséquences cachées dont la toxicité va bien au-delà de simples surenchères entre candidats.
+
 Notons au passage qu'il existe des alternatives, notamment la démocratie participative où les décisions sont prises soit par referendum soit par une assemblée tirée au sort à chaque session (une ou deux sessions par an), assemblée elle-même cornaquée par des experts à l'instar des jury d'assises tirés au sort et encadrés par des juges.
 
 Revenons donc aux problèmes des promesses électorales: 
@@ -80,9 +86,9 @@ Par ailleurs, **l’Euro est aussi une monnaie à preuve d’enjeu (PoS)**: on b
 
 Il y a cependant deux différences fondamentales entre l’Euro et les cryptomonnaies PoS: 
 
-A) contrairement à l’euro, les cryptomonnaies PoS ne sont pas émises sous forme de crédit (pas de dette donc), 
+A) contrairement à l’euro, les cryptomonnaies PoS ne sont pas émises sous forme de crédit (**pas de dette** donc), 
 
-B) l’Etat impose l’usage de l’Euro pour payer ses impôts ou recevoir son salaire ce qui soutient sa valeur d’usage, ce n’est pas le cas pour les monnaies PoS qui ne peuvent compter que sur le marketing de leur créateur.
+B) **l’Etat impose l’usage de l’Euro** , notamment pour recevoir son salaire ou payer ses impôts, ce qui soutient sa valeur d’usage, ce n’est pas le cas pour les monnaies PoS qui ne peuvent compter que sur le marketing de leur créateur.
 
 Bitcoin est une monnaie Pow (preuve de travail): chaque pièce porte une preuve d’énergie, l’énergie qui a servi à la fabriquer mathématiquement.
 
@@ -91,17 +97,19 @@ Dans le cas d’une monnaie PoS, cette énergie est quasi nulle, donc la monnaie
 Comme l’Euro, la monnaie PoS se déprécie à mesure que la quantité de monnaie PoS en circulation augmente: les prix exprimés en Euro ou en monnaie PoS augmentent pour compenser cette dilution liée à la création monétaire illimitée, c'est l'inflation des prix qui suit l'inflation de la masse monétaire.
 
 A l’inverse, la monnaie PoW en quantité limitée (Bitcoin) s’apprécie au fil du temps car la demande de monnaie augmente avec l’adoption alors que l’offre est fixe.
+
 La monnaie PoW offre davantage de résistance à la confiscation et à la censure car il est très difficile d’en prendre le contrôle durablement. Si un mineur devient majoritaire, les autres peuvent le diluer simplement en mobilisant davantage de puissance de calcul.
 
 Par contre, la monnaie PoS peut être contrôlée par un valideur qui détiendrait seulement une majorité relative de coins (la plupart des valideurs sont juste suiveurs et ne participent pas à la gouvernance). Si un valideur détient la majorité absolue des coins, il devient indétrônable car personne ne peut le forcer à vendre ses coins.
 
-L'autre inconvénient majeur de la monnaie PoS comparé à la monnaie PoW (déjà évoqué dans un de mes articles en 2016)réside dans une sécurité douteuse car **scellé ne veut pas dire protégé**: Une enveloppe scellée (l’équivalent de “tamper-evident” en anglais) ne doit pas être confondue avec un coffre-fort (“tamper-proof” ou “tamper-resistant”).
+L'autre inconvénient majeur de la monnaie PoS comparé à la monnaie PoW (déjà évoqué dans un de mes articles en 2016 )réside dans une sécurité douteuse car **scellé ne veut pas dire protégé**: Une enveloppe scellée (l’équivalent de “tamper-evident” en anglais) ne doit pas être confondue avec un coffre-fort (“tamper-proof” ou “tamper-resistant”).
 
 Or une chaîne de signature est seulement “tamper-evident”: toute modification d’un message ou d’un bloc dans la chaîne de messages ou de bloc signés est visible mais ne demande pas une grande puissance de calcul.
 
 Une chaîne de preuves de travail est non seulement “tamper-evident” mais aussi “tamper-proof” comme un coffre-fort: une modification est non seulement visible mais très difficile voire impraticable dans le cas de Bitcoin.
 
-Le modèle de sécurité sans preuve de travail explique donc aussi les coûts faramineux du système Euro, avec ses innombrables valideurs, superviseurs et autres responsables de la conformité aux réglementations.
+Le modèle de sécurité sans preuve de travail induit donc une tendance à la centralisation comme remède aux possibles failles.
+Il explique aussi les coûts faramineux du système Euro, avec ses innombrables valideurs, superviseurs et autres responsables de la conformité aux réglementations.
 Aux coûts directs de ce système s'ajoute son coût d'opportunité tout aussi considérable: les 400 000 salariés du système bancaire en France manquent cruellement dans les secteurs essentiels que sont la santé, l'éducation et la sécurité.
 
 Pierre Noizat, avril 2022
