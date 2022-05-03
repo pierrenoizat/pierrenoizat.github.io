@@ -35,10 +35,13 @@ Vous pouvez donc parier qu'elles vont se déprécier au fil de temps et miser su
 
 Le discernement du spéculateur conditionne son succès car rareté et utilité sont des notions relatives, hautement dépendantes du contexte et de sa temporalité. L'eau est généralement abondante dans nos contrées mais rare dans le désert. Une paire de skis est utile au skieur mais sans intérêt pour celui qui n'aime pas la montagne. Une calèche était utile au 19e siècle, beaucoup moins après l'adoption de l'automobile.
 
-La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. Le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. Seuls les spéculateurs avisés qui ont travaillé leur sujet, peuvent réussir.
-Quant à l'**utilité**, qui doit la définir si elle est subjective ? 
+La spéculation est donc l'exact opposée du casino où les paris sont purement aléatoires. 
 
-Il faut une logique totalitaire pour dicter à chacun ce qui lui est utile ou pas. Si le dictateur n'est pas amateur de ski, il va décreter que les pistes et les remontées mécaniques sont inutiles.
+Au casino, le hasard n'ayant pas de mémoire, il n'existe pas de martingale efficace. De plus, le casino doit faire un profit et ne peut donc proposer qu'une **espérance de gain négative**, contrepartie d'un bref droit de rêver. 
+
+Concernant la spéculation, seuls les spéculateurs avisés qui ont travaillé leur sujet bénéficient d'une espérance de gain positive.
+
+Quant à l'**utilité**, qui doit la définir si elle est subjective ? Il faut une logique totalitaire pour dicter à chacun ce qui lui est utile ou pas. Si le dictateur n'est pas amateur de ski, il va décreter que les pistes et les remontées mécaniques sont inutiles.
 
 Si le monopole monétaire est tellement vertueux, pourquoi n'en parle-t-on jamais ? 
 
