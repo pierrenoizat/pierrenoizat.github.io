@@ -104,7 +104,7 @@ La monnaie PoW offre davantage de résistance à la confiscation et à la censur
 
 Par contre, la monnaie PoS peut être contrôlée par un valideur qui détiendrait seulement une majorité relative de coins (la plupart des valideurs sont juste suiveurs et ne participent pas à la gouvernance). Si un valideur détient la majorité absolue des coins, il devient indétrônable car personne ne peut le forcer à vendre ses coins.
 
-L'autre inconvénient majeur de la monnaie PoS comparé à la monnaie PoW (déjà évoqué dans un de mes articles en 2016 )réside dans une sécurité douteuse car **scellé ne veut pas dire protégé**: Une enveloppe scellée (l’équivalent de “tamper-evident” en anglais) ne doit pas être confondue avec un coffre-fort (“tamper-proof” ou “tamper-resistant”).
+L'autre inconvénient majeur de la monnaie PoS comparé à la monnaie PoW (déjà évoqué dans un de mes articles en 2016 ) réside dans une sécurité douteuse car **scellé ne veut pas dire protégé**: Une enveloppe scellée (l’équivalent de “tamper-evident” en anglais) ne doit pas être confondue avec un coffre-fort (“tamper-proof” ou “tamper-resistant”).
 
 Or une chaîne de signature est seulement “tamper-evident”: toute modification d’un message ou d’un bloc dans la chaîne de messages ou de bloc signés est visible mais ne demande pas une grande puissance de calcul.
 
@@ -112,6 +112,6 @@ Une chaîne de preuves de travail est non seulement “tamper-evident” mais au
 
 Le modèle de sécurité sans preuve de travail induit donc une tendance à la centralisation comme remède aux possibles failles.
 Il explique aussi les coûts faramineux du système Euro, avec ses innombrables valideurs, superviseurs et autres responsables de la conformité aux réglementations.
-Aux coûts directs de ce système s'ajoute son coût d'opportunité tout aussi considérable: les 400 000 salariés du système bancaire en France manquent cruellement dans les secteurs essentiels que sont la santé, l'éducation et la sécurité.
+Aux coûts directs de ce système s'ajoute son coût d'opportunité tout aussi considérable: les 400 000 salariés du système bancaire en France manquent cruellement dans les secteurs essentiels que sont la santé, l'éducation et la justice.
 
 Pierre Noizat, avril 2022
