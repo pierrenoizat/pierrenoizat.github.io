@@ -30,12 +30,12 @@ Pour ce faire, ces institutions se consacrent de plus en plus à la propagande. 
 
 Comme disait sans rire un banquier central aux journalistes: "Si vous avez compris ma déclaration, c'est que je me suis mal exprimé."
 
-Pour la propagande , il faut remplacer l'esprit critique et le discernement par la conformité à une pensée de groupe.
+Pour la propagande, il faut remplacer l'esprit critique et le discernement par la conformité à une pensée de groupe.
 La préférence pour la croyance plutôt que la preuve est ce qui permet de fédérer un large groupe de gens autour d'un projet.
 
 La croyance est une force centralisatrice. En science physique, on dirait même une force centripète.
 
-La supériorité de la croyance, c'est qu'elle se répand dans le groupe sans l'effort intellectuel que demande l'analyse d'une preuve.
+La supériorité politique de la croyance sur la preuve, c'est qu'elle se répand dans le groupe sans l'effort que demande l'analyse d'une preuve.
 
 L'évolution darwinienne contribue aussi au succès des croyances comme l'explique brillamment Peggy Sastre à propos de "l'esprit de chapelle":
 
@@ -66,9 +66,9 @@ Le centralisme monétaire soutient le monopole de la création monétaire comme 
 
 La monétisation de l'énergie future de tout un peuple par la promesse du remboursement d'une dette s'accomode mal d'une concurrence des monnaies.
 
-Cette concurrence existe déjà de facto entre les monnaies monopolistiques (fiat) mais les tensions géopolitiques qui en résultent paraissent suffisamment lointaines pour que le peuple ne fasse pas le rapprochement.
+Une forme de concurrence existe entre les monnaies monopolistiques (fiat) mais les tensions géopolitiques qui en résultent paraissent suffisamment lointaines pour que le peuple ne fasse pas le rapprochement.
 
-La concurrence avec une monnaie décentralisée comme Bitcoin serait d'autant plus redoutable qu'elle révèlerait à la fois les défaut de la création monétaire illimitée et ceux de la centralisation au profit d'une oligarchie.
+Une concurrence véritable avec une monnaie décentralisée comme Bitcoin serait d'autant plus redoutable qu'elle révèlerait à la fois les défaut de la création monétaire illimitée et ceux de la centralisation au profit d'une oligarchie.
 
 Bitcoin est déjà en concurrence avec les monnaies à preuve d'enjeu qui se multiplient.
 Si l'enjeu consiste en coins PoS, ceux qui possèdent le plus de coins ont un avantage sur les autres participants: **il faut leur racheter des coins pour contester leur dominance**.
