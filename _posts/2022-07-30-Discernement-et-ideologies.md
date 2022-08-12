@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Propagande et discernement
+title: Discernement et idéologies
 date: 2022-07-30 00:40:51.000000000 +01:00
 type: post
 published: true
