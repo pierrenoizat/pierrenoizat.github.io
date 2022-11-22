@@ -59,7 +59,7 @@ La réputation devient un enjeu primordial et la pensée de groupe prévaut sur 
 
 Le wokisme, cette idéologie de la fin qui prétend marquer la fin des idéologies, consiste à nier le réel dans sa globalité. Ce nihilisme permettrait à l'individu de s'affranchir des contraintes ou des peurs qu'il ou elle ressent.
 L'expérience scientifique devient ainsi contestable par chacun. Plus rien n'est universellement vrai puisque plus rien n'est vérifiable. L'idéologie woke a supplanté l’esprit critique et la créativité au profit d'une balkanisation de la pensée.
-Si l'éducation reste le chemin pour s'élever vers une souveraineté du peuple et des individus qui le composent, le wokisme en est l'anti-thèse en imposant un ordre moral à l'opposé de l'esprit d'ouverture nécessaire à tout apprentissage.
+Si l'éducation reste le chemin pour s'élever vers une souveraineté du peuple et des individus qui le composent, le wokisme en est l'antithèse en imposant un ordre moral à l'opposé de l'esprit d'ouverture nécessaire à tout apprentissage.
 
 Comme le wokisme, le monopole monétaire se doit de contrôler la pensée et la parole publique pour esquiver tout débat qui pourrait le remettre en question.
 Le centralisme monétaire soutient le monopole de la création monétaire comme fondement de l'action publique et creuset d'un destin commun autour d'une monnaie.
