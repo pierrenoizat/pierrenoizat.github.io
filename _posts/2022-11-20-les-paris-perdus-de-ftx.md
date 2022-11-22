@@ -33,7 +33,7 @@ Avant d'expliquer ce que ça signifie, revenons un instant sur le fonctionnement
  
 C’est ce qu’on appelle la promesse de liquidité: à sa première demande, la plateforme s’engage à lui restituer la somme qu’elle affiche sur le tableau de bord de son compte. Le client peut donc liquider sa position sur cette plateforme en reprenant la somme correspondant au solde de son compte.
 
-On peut dire qu’un BTC déposé sur la plateforme FTX est immédiatement converti en un FTX-BTC, une sorte de stablecoin libellé en BTC: la plateforme promet un remboursement 1 pour 1 en BTC. Le FTX-BTC peut être liquidé pour un BTC à tout moment. Le FTX-BTC existe non pas dans une blockchain publique mais dans une base de données centralisée classique, un peu comme une blockchain avec un seul node (en langage réseau, node est le mot anglais pour point de présence, point-relais du réseau ou point de validation).
+On peut dire qu’un BTC déposé sur la plateforme FTX est immédiatement converti en un FTX-BTC, une sorte de stablecoin libellé en BTC: la plateforme promet un remboursement 1 pour 1 en BTC. Théoriquement et juridiquement, le FTX-BTC peut être liquidé pour un BTC à tout moment. Le FTX-BTC existe non pas dans une blockchain publique mais dans une base de données centralisée classique, un peu comme une blockchain avec un seul node (en langage réseau, node est le mot anglais pour point de présence, point-relais du réseau ou point de validation).
 
 Si la plateforme place illégalement les BTC de ses clients chez des tiers douteux et perd ensuite ces BTC, les avoirs des clients en FTX-BTC n’ont plus de valeur (la plateforme sera incapable de restituer des BTC à ses clients) mais, tant que les faits ne sont pas connus, le marché pense qu’ils correspondent à des BTC. 
 On peut dire que, pour le marché, les manoeuvres de FTX ont gonflé artificiellement la masse monétaire des BTC en créant des BTC-papier qui ont perdu leur contre-partie en BTC.
@@ -42,7 +42,7 @@ Dans le cas de FTX, ils avaient dans ce qui leurs servait de livres de comptes u
 
 Pour assurer la promesse de liquidité, **une plateforme d'échange doit donc fonctionner en mode "full reserve"** (réserves intégrales par opposition aux réserves fractionnaires de FTX et des banques traditionnelles), c’est à dire précisément ne pas affaiblir la promesse de restitution à première demande contre la promesse de rendement d’un tiers. 
 
-Il va de soi que [Paymium](https://paymium.com) fonctionne en mode full réserve et que les auditeurs qui examinent ses comptes chaque année ne les certifieraient pas autrement. Son conservatisme explique à la fois sa résilience et l'écart entre sa croissance lente mais constante et les trajectoires météoriques de certains de ses concurrents peu scrupuleux.
+Il va de soi que [Paymium](https://paymium.com) fonctionne en mode full réserve et que les auditeurs qui examinent ses comptes chaque année ne les certifieraient pas autrement. Son conservatisme explique à la fois sa résilience et l'écart entre sa croissance lente mais constante comparée aux trajectoires météoriques de certains de ses concurrents peu scrupuleux.
 
 En plaçant les BTC dans des altcoins PoS sans le dire clairement aux clients concernés, **la plateforme FTX a affaibli sa promesse de liquidité en acceptant une promesse de rendement** faite à son profit par un tiers.
 
