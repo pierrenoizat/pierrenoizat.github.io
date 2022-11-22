@@ -22,7 +22,7 @@ author:
 
 Si vous vous demandez ce qui lie l’affaire FTX et la COP27 , c’est bien l’énergie dont le fonctionnement permet d’éclairer ce qui se passe.
 
-<div><img src="{{ site.baseurl }}/assets/Bankman.JPG" width='500'></div>
+<div><img src="{{ site.baseurl }}/assets/bankman.JPG" width='500'></div>
 
 _Bankman-Fried, ancien trader de Wall Street, au temps où il était encore la star des medias qui retrouvaient avec lui le visage familier de la finance traditionnelle._
 
