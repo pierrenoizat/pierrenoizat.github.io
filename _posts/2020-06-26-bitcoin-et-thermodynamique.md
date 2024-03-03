@@ -37,7 +37,7 @@ La réponse, plus scientifique, que je vous propose ici: **Bitcoin utilise les p
 
 Pour expliciter, je dois commencer par dire que la thermodynamique pointe souvent le bout de son nez dans notre vie quotidienne.
 Par exemple, quand l’eau s’évapore. L’évaporation est un phénomène endothermique, c’est à dire consommateur d’énergie. On peut ressentir ce refroidissement en mettant un peu d’eau, d’alcool ou d’éther à température ambiante sur la peau. S’agissant de l’eau, c’est un peu comme si l’océan se protégeait contre une évaporation et un réchauffement trop rapide lorsque le soleil donne.
-La condensation (transformation inverse) est exothermique, produisant de la chaleur: c’est le principe du sauna.
+La condensation (transformation inverse) est exothermique, produisant de la chaleur: c’est le principe du hammam.
 
 Dans la vapeur les molécules sont libres, mais, dans le liquide, elles sont tenues les unes aux autres. Dans l’évaporation, ces liaisons sont cassées, c’est à dire que le désordre (entropie) des molécules d’eau augmente.
 
