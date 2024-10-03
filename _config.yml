@@ -11,8 +11,6 @@ baseurl: ""
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
-# Of course don't forget to change the username and projectname to YOUR username and project
-
 # Name of website
 title: e-ducat.fr
 
@@ -178,6 +176,7 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-gems:
+# gems have been renamed plugins here
+plugins:
   - jekyll-paginate
   - jekyll-sitemap

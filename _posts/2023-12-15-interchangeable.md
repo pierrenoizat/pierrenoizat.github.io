@@ -50,6 +50,6 @@ La fréquentation de Davos, l’hiver, donne l’illusion aux mondialistes non s
  
  
  
-Extrait de "L'énergie, face cachée de la monnaie." à paraître fin mars chez Konsensus.network, disponible en précommande [ici](https://bitcoinbook.shop/products/lenergie-face-cachee-de-la-monnaie?Format=Paperback)
+Extrait de "L'énergie, face cachée de la monnaie." publié chez Konsensus.network, disponible [ici](https://bitcoinbook.shop/products/lenergie-face-cachee-de-la-monnaie?Format=Paperback)
  
 <div><a href="https://bitcoinbook.shop/products/lenergie-face-cachee-de-la-monnaie?Format=Paperback"><img src="{{ site.baseurl }}/assets/promo_card_LCM_FR.png" width='500'></a></div>
