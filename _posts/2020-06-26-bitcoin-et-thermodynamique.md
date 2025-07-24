@@ -27,7 +27,7 @@ Déjà en 2017, le brillant pédagogue  [Andreas Antonopoulos offrait une répon
 
 Ces questions sont importantes car elles constituent les dernières munitions qui restent au lobby bancaire pour détourner nos concitoyens de la concurrence génante d'une monnaie décentralisée.
 
-Selon Antonopoulos, la rentabilité du minage Bitcoin est d'abord une affaire d'arbitrage géographique pour trouver la source d'électricité la moins chère. Le minage des preuves de travail (proof of work) permet de subventionner les infrastructures de production d'énergies renouvelables pendant leur période de montée en charge qui peut durer plusieurs années. Il accélère la décentralisation de la production d'énnergie renouvelable, une condition nécessaire de son développement.
+Selon Antonopoulos, la rentabilité du minage Bitcoin est d'abord une affaire d'arbitrage géographique pour trouver la source d'électricité la moins chère. Le minage des preuves de travail (proof of work) permet de subventionner les infrastructures de production d'énergies renouvelables pendant leur période de montée en charge qui peut durer plusieurs années. Il accélère la décentralisation de la production d'énergie renouvelable, une condition nécessaire de son développement.
 
 Plus simplement, quels que soient les chiffres, Bitcoin consommera toujours trop pour celui qui ne l'utilise pas. Et la consommation énergétique de Bitcoin n'est pas un problème pour celui qui l'utilise. 
 
