@@ -50,3 +50,19 @@ L’état nounou n’est pas seulement prédateur de richesse mais aussi de libe
 
 En bref, non seulement les gauchistes ont les deux mains dans nos poches et nous insultent mais, depuis l’assasinat de Charlie Kirk, nous savons qu’ ils veulent aussi notre mort. En l’absence de critères de succès, ils n’ont aucune limite. 
 Ils détestent Bitcoin car c’est l’aiguille qui fait exploser la bulle de la monnaie dette. Bitcoin est la fin du consensus imposé par l’arbitraire des banques centrales et la reconnaissance de la valeur du travail par la preuve. Bitcoin emmerde les gauchistes.
+
+<div><img src="{{ site.baseurl }}/assets/Tax_revenue_vs_GDP_2022_4329.JPG" width='500'></div>
+
+En réalité, le communisme s’est imposé en France, non par une révolution mais par la strangulation, l’étau de l’éducation publique et des médias infiltrés puis contrôlés par les gauchistes.
+Le pire, c’est que la plupart des électeurs ne l’ont pas réalisé au point que, comble de l’ironie, il existe même un parti anti-capitaliste en France.
+Avec 57% du PIB consacré à la dépense publique et des impôts et taxes qui totalisent 46% du PIB, la France est devenue championne du monde de la taxation tout en accroissant inexorablement sa dette. Même l’URSS des années 90 ne dépensait pas autant en proportion du PIB, elle était à 50%.
+
+<div><img src="{{ site.baseurl }}/assets/public_spending.png" width='500'></div>
+
+Un autre signe de cette dérive vers le communisme, c’est le recul du droit de propriété, mis à mal par les juges rouges et par les taxes sur le patrimoine et sa transmission.
+D’autant que l’acquisition d’un bien immobilier en France est un parcours du combattant qui commence par un apport de 30 000€ minimum, un crédit sur 25 ans avec des intérêts qui doublent le prix du bien, des frais de notaire à 8% et une taxe foncière qui augmente de 7% par an. Une fois propriétaire, des normes environnementales toujours plus exigeantes dévaluent le bien, les travaux de copropriété et les charges explosent. A la fin, les enfants paieront des droits de succession de 20%. Si le propriétaire veut louer, il est sous la menace des squatteurs qui auront les faveurs des juges rouges. Si il est confronté à un cambriolage, il ne peut pas résister car les juges rouges donneront raison au délinquant. Tout est fait pour empêcher la classe moyenne de profiter du seul effet de levier fiancier qui lui restait face à l’inflation.
+Car son salaire aussi est capturé en grande partie, autour de 65%, par l’état prédateur.
+
+<div><img src="{{ site.baseurl }}/assets/salaire_brut.png" width='500'></div>
+
+Ne me demandez pas comment on va s’en sortir, je n’en ai aucune idée mais l’exemple de Javier Milei en Argentine est à étudier: couper toutes les dépenses dratisquement et rapidement pour en tirer les bénéfices tout aussi rapidement en termes de croissance et de pouvoir d’achat retrouvé.
