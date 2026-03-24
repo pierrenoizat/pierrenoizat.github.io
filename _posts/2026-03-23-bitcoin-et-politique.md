@@ -65,4 +65,6 @@ Car son salaire aussi est capturé en grande partie, autour de 65%, par l’éta
 
 <div><img src="{{ site.baseurl }}/assets/salaire_brut.png" width='500'></div>
 
+Evidemment, le signe ultime du totalitarisme communiste c'est la dominance des médias de propagande (service public de l'audio-visuel, Le Monde, Libération,etc) et la censure organisée (Arcom). Macron est en guerre contre la liberté d'expression qui trouve un de ses rares exutoires dans les réseaux sociaux.
+
 Ne me demandez pas comment on va s’en sortir, je n’en ai aucune idée mais l’exemple de Javier Milei en Argentine est à étudier: couper toutes les dépenses dratisquement et rapidement pour en tirer les bénéfices tout aussi rapidement en termes de croissance et de pouvoir d’achat retrouvé.
