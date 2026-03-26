@@ -34,7 +34,7 @@ Les gauchistes se gargarisent de ces étiquettes qui transforment la pêche aux 
 
 Sur cette valse des étiquettes dansent les clientélistes. Sous l’étiquette de gauche et donc sous couvert de la solidarité avec l’argent des autres, ils offrent moultes subventions à des “ONG” (une association qui reçoit des subventions n’est pas “non-gouvernementale” mais au contraire une obligée du gouvernement) et des logements dits “sociaux” attribués en toute opacité à leurs clientèle.
 
-Car qu’est ce qu’être de gauche ? C’est préférer la recherche d’un consensus à celle d’une vérité. Appartenir au groupe, le camp du bien auto-proclamé, plutôt que dire la vérité, s’accomoder du mensonge plutôt qu’assumer une conviction réfutable par l’expérience.
+Car qu’est ce qu’être de gauche ? C'est vouloir appartenir au groupe, le camp du bien auto-proclamé, plutôt que dire la vérité, s’accomoder du mensonge plutôt qu’assumer une conviction réfutable par l’expérience. C’est préférer la recherche d’un consensus à celle d’une vérité. La droite cherche des solutions tandis que la gauche transforme les problèmes en fonds de commerce.
 
 Où est ce que cette dérive nous a mené ?
 Le bilan de l’évolution de la situation économique et sécuritaire en France depuis 1980 est accablant. L’état providence, devenu état nounou pour étendre son emprise puis état prédateur pour la maintenir, a capturé l’essentiel des dividendes du progrès. Un pays jadis prospère et ambitieux s’est transformé en miroir aux alouettes pour l’immigration d’assistance, incitant l’immigration de travail à se tourner vers les pays où le travail est justement reconnu et récompensé. La sécurité et le capital social ont disparu en quelques décennies, à mesure que la civilisation qui en assurait les fondations s’affaiblissait. Tout ça pour permettre à des médiocres de gagner et conserver des mandats électoraux. Ces élus gauchistes ont importé en masse un nouveau prolétariat pour compenser le recul de la pauvreté lié au progrès technologique rendu accessible par le capitalisme.
@@ -49,11 +49,11 @@ L’accélération ultime de la dette passe par les crises, toujours opportunes 
 L’état nounou n’est pas seulement prédateur de richesse mais aussi de liberté. Pour garder son job, il ne veut pas que le citoyen soit adulte et responsable, il doit l’infantiliser, le protéger contre sa propre pensée, organiser la censure, instaurer un principe de précaution généralisé. Le citoyen n’est plus individu mais pupille d’une classe dans l’école des nuls.
 
 En bref, non seulement les gauchistes ont les deux mains dans nos poches et nous insultent mais, depuis l’assasinat de Charlie Kirk, nous savons qu’ ils veulent aussi notre mort. En l’absence de critères de succès, ils n’ont aucune limite. 
-Ils détestent Bitcoin car c’est l’aiguille qui fait exploser la bulle de la monnaie dette. Bitcoin est la fin du consensus imposé par l’arbitraire des banques centrales et la reconnaissance de la valeur du travail par la preuve. Bitcoin emmerde les gauchistes.
+Ils détestent Bitcoin car c’est l’aiguille qui fait exploser la bulle de la monnaie dette. Bitcoin est la fin du consensus imposé par l’arbitraire des banques centrales et la reconnaissance de la valeur du travail par la preuve.
 
 <div><img src="{{ site.baseurl }}/assets/Tax_revenue_vs_GDP_2022_4329.JPG" width='500'></div>
 
-En réalité, le communisme s’est imposé en France, non par une révolution mais par la strangulation, l’étau de l’éducation publique et des médias infiltrés puis contrôlés par les gauchistes.
+En réalité, le communisme s’est imposé en France, non par une révolution mais par la strangulation du social-étatisme, l’étau de l’éducation nationale et des médias infiltrés puis contrôlés par les gauchistes. Les enfant sont formatés dès le primaire. Les étudiants le sont jusqu'aux études supérieures pour beaucoup d'entre eux, dans des filières sans débouché autre qu'un emploi public ou un système de Ponzi circulaire comme la sociologie où la seule perspective est de devenir prof de sociologie ou sociologue militant sponsorisé par nos impots.
 Le pire, c’est que la plupart des électeurs ne l’ont pas réalisé au point que, comble de l’ironie, il existe même un parti anti-capitaliste en France.
 Avec 57% du PIB consacré à la dépense publique et des impôts et taxes qui totalisent 46% du PIB, la France est devenue championne du monde de la taxation tout en accroissant inexorablement sa dette. Même l’URSS des années 90 ne dépensait pas autant en proportion du PIB, elle était à 50%.
 
