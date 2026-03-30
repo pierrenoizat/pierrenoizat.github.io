@@ -30,7 +30,7 @@ Ces étiquettes sont ensuite complaisamment reprises par la presse mainstream, s
 
 Chaque programme est ainsi réduit à une idéologie censée inspirer les solutions proposées plutôt qu’envisagé comme un ensemble cohérent de mesures visant des objectifs concrets et produisant des indicateurs d’efficacité.
 L’élu ne doit plus orchester l’action publique mais assurer la dominance d’un narratif affranchi des contraintes du réel.
-Les gauchistes se gargarisent de ces étiquettes qui transforment la pêche aux voix en course avec handicap. Depuis 50 ans, l’étiquette d’extrême droite permet de minorer commodément les votes de ceux qui aspirent à la continuité historique du peuple de France, à sa sécurité et à sa propérité.
+Les gauchistes se gargarisent de ces étiquettes qui transforment la pêche aux voix en course avec handicap. Depuis 50 ans, l’étiquette d’extrême droite permet de minorer commodément les votes de ceux qui aspirent à la continuité historique du peuple de France, à sa sécurité et à sa prospérité.
 
 Sur cette valse des étiquettes dansent les clientélistes. Sous l’étiquette de gauche et donc sous couvert de la solidarité avec l’argent des autres, ils offrent moultes subventions à des “ONG” (une association qui reçoit des subventions n’est pas “non-gouvernementale” mais au contraire une obligée du gouvernement) et des logements dits “sociaux” attribués en toute opacité à leurs clientèle.
 
